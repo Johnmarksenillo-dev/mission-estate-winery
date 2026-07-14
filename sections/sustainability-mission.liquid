@@ -1,0 +1,135 @@
+<section id="{{ section.settings.section_id }}" class="sustainability-mission">
+  <div class="page-width">
+    {% if section.settings.main_heading != blank %}
+    <h2 class="main-heading">{{ section.settings.main_heading }}</h2>
+    {% endif %}
+    {% if section.settings.button_text != blank %}
+    <div class="wrap_link">
+      <a href="{{ section.settings.button_url }}">{{ section.settings.button_text }}</a>
+    </div>
+    {% endif %}
+    <div class="mission-box">
+      {% if section.settings.main_image != blank %}
+      <div class="left-side">
+         {% if section.settings.box_heading != blank %}
+         <h2 class="box-heading">{{ section.settings.box_heading }}</h2>
+        {% endif %}
+ {% if section.settings.left_text != blank %}
+         <p class="wrap_leftside_texts">{{ section.settings.left_text }}</p>
+        {% endif %}
+        
+      <img src="{{ section.settings.main_image | img_url: 'master' }}" class="main-image" >
+      </div>
+      {% endif %}
+      {% if section.settings.description != blank %}
+      <div class="right-side">
+        {% if section.settings.description != blank %}
+        <div class="sustainbility_wrap_mission"><span>{{ section.settings.description }}</span></div>
+        {% endif %}
+        {% if section.settings.button_1_text != blank %}
+          <div class="buttons">
+                <a href="{{ section.settings.button_1_url }}" class="button button--primary{% if section.settings.simple_link1 %} no-button-border{% endif %}">{{ section.settings.button_1_text }}</a>
+            </div>
+        {% endif %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+{% schema %}
+  {
+    "name": "Sustainability Mission",
+    "settings": [
+      {
+        "type": "text",
+        "id": "section_id",
+        "label": "Section Id"
+      },
+      {
+        "type": "text",
+        "id": "main_heading",
+        "label": "Main Heading"
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Text"
+      },
+      {
+        "type": "url",
+        "id": "button_url",
+        "label": "Button Url"
+      },
+      {
+        "type": "text",
+        "id": "box_heading",
+        "label": "Box heading"
+      },
+      {
+        "type": "textarea",
+        "id": "left_text",
+        "label": "Content"
+      },
+      {
+        "type": "image_picker",
+        "id": "main_image",
+        "label": "Image"
+      },
+      {
+        "type": "textarea",
+        "id": "description",
+        "label": "Description"
+      },
+      {
+        "type": "url",
+        "id": "button_1_url",
+        "label": "Button Url"
+      },
+      {
+        "type": "text",
+        "id": "button_1_text",
+        "label": "Button Text"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Sustainability Mission"
+      }
+    ]
+  }
+{% endschema %}
+<style>
+  .mission-box {
+    display: flex;
+    justify-content: space-between;
+}
+  .left-side {
+    width: 44%;
+}
+  .right-side {
+    width: 49%;
+}
+section.sustainability-mission {
+    padding: 80px 2rem 95px;
+    background-color: #77c19a;
+}
+  h2.main-heading {
+    font-size: 38px;
+        color: #002855;
+}
+  h2.box-heading {
+    font-size: 28px;
+        color: #002855;
+}
+  img.main-image {
+    width: 100%;
+        margin-top: 10px;
+}
+  .right-side span {
+    color: #002855;
+}
+  .mission-box a.button.button--primary {
+    background-color: transparent;
+    color: #002855;
+}
+</style>

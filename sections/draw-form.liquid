@@ -1,0 +1,203 @@
+{% schema %}
+{
+  "name": "Draw Entry Form Section",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "top_text",
+      "label": "Top Description Text",
+      "default": "This stunning prize celebrates timeless design and expert craftsmanship. The winner can choose the signature diamond ring, or commission a custom-made piece of jewellery up to the same value."
+    },
+    {
+       "type": "text",
+      "id": "form_heading",
+      "label": "Form heading"
+    },
+
+    {
+       "type": "textarea",
+      "id": "form_description",
+      "label": "Form description"
+    },
+    {
+      "type": "image_picker",
+      "id": "right_image",
+      "label": "Right Side Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Draw Entry Form",
+      "category": "Custom Sections"
+    }
+  ]
+}
+{% endschema %}
+
+
+<div class="draw-entry-section">
+  <div class="draw-top-text">
+    {% if section.settings.top_text != blank %}
+    <p>{{ section.settings.top_text }}</p>
+    {% endif %}
+  </div>
+
+  <div class="draw-content-wrapper">
+    <!-- Left Column: Form -->
+    <div class="draw-form">
+      {% if section.settings.form_heading != blank %}
+      <h2>{{ section.settings.form_heading }}</h2>
+      {% endif %}
+
+      {% if section.settings.form_description != blank %}
+      <div class="wrap_description">{{ section.settings.form_description }}</div>
+      {% endif %}
+      <form action="/contact" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="form_type" value="contact">
+        <input type="hidden" name="utf8" value="✓">
+
+        <input type="text" name="contact[first_name]" placeholder="First Name*" required>
+        <input type="text" name="contact[last_name]" placeholder="Last Name*" required>
+        <input type="email" name="contact[email]" placeholder="Email*" required>
+        <input type="tel" name="contact[phone]" placeholder="Phone">
+
+        <div class="checkbox-group">
+          <label>
+            <input type="checkbox" required>
+            I have read the Terms & Conditions (read below)
+          </label>
+          <label>
+            <input type="checkbox" name="contact[subscribe]">
+            I wish to receive promotional emails from Maison Estate
+          </label>
+        </div>
+
+        <button type="submit" class="enter-btn">Enter</button>
+        <button type="reset" class="cancel-btn">Cancel</button>
+      </form>
+    </div>
+
+    <!-- Right Column: Image -->
+    <div class="draw-image">
+      {% if section.settings.right_image %}
+        <img src="{{ section.settings.right_image | img_url: 'master' }}" alt="Prize Image">
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<style>
+.draw-entry-section {
+  padding: 50px;
+  background-color: #f94144;
+  color: white;
+}
+
+.draw-top-text {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.draw-content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.draw-form {
+  flex: 1 1 45%;
+  background: transparent;
+  padding: 0px;
+  border-radius: 10px;
+  color: black;
+}
+
+.draw-form h2 {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.wrap_description {
+    color: #fff;
+    padding-bottom: 40px;
+}
+
+.draw-form form input {
+    background: transparent;
+    border: 1px solid #fff !important;
+    color: #fff !important;
+}
+
+.draw-form form input::placeholder {
+    color: #fff !important;
+}
+
+
+.draw-form input[type="text"],
+.draw-form input[type="email"],
+.draw-form input[type="tel"],
+.draw-form input[type="file"] {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.draw-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.checkbox-group {
+  margin: 15px 0;
+}
+
+.checkbox-group label {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.enter-btn,
+.cancel-btn {
+  font-size: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+  padding: 9px 35px;
+  font-family: 'Raleway';
+}
+
+.enter-btn {
+background-color: transparent;
+    color: white;
+    border: 1px solid #fff;
+    border-radius: 30px;
+}
+
+.cancel-btn {
+  background-color: transparent;
+    color: white;
+    border: 1px solid #fff;
+    border-radius: 30px;
+}
+
+.draw-image {
+  flex: 1 1 45%;
+  text-align: center;
+}
+
+.draw-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+</style>

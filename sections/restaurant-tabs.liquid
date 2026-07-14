@@ -1,0 +1,333 @@
+{% schema %}
+{
+  "name": "Custom Tabs",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "tab",
+      "name": "Tab",
+      "settings": [
+        {
+          "type": "text",
+          "id": "tab_name",
+          "label": "Tab Name"
+        },
+        {
+          "type": "url",
+          "id": "tab_url",
+          "label": "Tab Url"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "text",
+          "id": "sub_heading",
+          "label": "Subheading"
+        },
+        {
+          "type": "textarea",
+          "id": "box_description",
+          "label": "Box Description"
+        },
+        {
+          "type": "textarea",
+          "id": "main_description",
+          "label": "Main Description"
+        },
+        {
+          "type": "url",
+          "id": "button_url",
+          "label": "Button Url"
+        },
+        {
+          "type": "text",
+          "label": "Button Popup class",
+          "id": "button_class"
+        },
+        {
+          "type": "text",
+          "id": "button_tab",
+          "label": "Button text"
+        },
+        {
+          "type": "url",
+          "id": "button_url1",
+          "label": "Button Url"
+        },
+        {
+          "type": "text",
+          "id": "button_tab1",
+          "label": "Button text"
+        },
+        {
+          "type": "text",
+          "label": "Button Popup class",
+          "id": "button_class2"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 6,
+  "presets": [
+    {
+      "name": "Custom Tabs"
+    }
+  ]
+}
+{% endschema %}
+
+
+ {% if section.settings.title != blank %}
+<div class="wrap_tabs_title_heading">
+  <h2 class="wrap_venus_heading">{{ section.settings.title }}</h2>
+</div>
+{% endif %}
+<div id="restaurant-tabs" class="tabs-container CustomProducts_tab page-width">
+  
+  <!-- Tab Titles -->
+  <ul class="tab-links">
+    {% for block in section.blocks %}
+      <li class="{% if forloop.first %}active{% endif %}">
+       <a href="{{ block.settings.tab_url }}"> {{ block.settings.tab_name }} </a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <!-- Tab Content -->
+  <div class="tab-content">
+    {% for block in section.blocks %}
+      <div class="tab {% if forloop.first %}active{% endif %} custonmainatbs">
+        <div class="Commantab_C LeftSide">
+          <div class="HedingCont_wrap">
+            <div class="MainHeading">{{ block.settings.heading }}</div>
+            <div class="SubHeading">{{ block.settings.sub_heading }}</div>
+          </div>
+          <div class="MainDescreiption">
+            {{ block.settings.main_description }}
+          </div> 
+      {% if block.settings.button_tab != blank %}
+          <div class="tabs-buttons">
+            <a href="{{ block.settings.button_url }}" class="{%- if block.settings.button_class != blank -%} {{ block.settings.button_class }} {% endif %}">{{ block.settings.button_tab }}</a>
+            <a href="{{ block.settings.button_url1 }}" class="{%- if block.settings.button_class2 != blank -%} {{ block.settings.button_class2 }} {% endif %}">{{ block.settings.button_tab1 }}</a>
+          </div>
+           {% endif %}
+        </div>
+        <div class="Commantab_C RightSide">
+          <div class="ImageTab">
+            {% if block.settings.image != blank %}
+              <img src="{{ block.settings.image | img_url: 'master' }}" alt="Tab Image">
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+
+.CustomProducts_tab .tab-content .tab {
+  display: none;
+}
+.CustomProducts_tab .tab-content .tab.active {
+  display: block;
+}
+  .tabs-container.CustomProducts_tab {
+    display: flex;
+        padding-bottom: 8rem;
+}
+  ul.tab-links {
+    width: 20%;
+}
+ .customProduct_tabs {
+    background: #ECEDE6;
+    padding-top: 100px;
+}
+ul.tab-links li {
+   color: #002855;
+    opacity: 1;
+    font-size: 18px;
+    line-height: 23px;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    margin: 37px 10px;
+}
+
+  ul.tab-links li.active {
+    color: #002855;
+    opacity: 100%;
+    list-style: none;
+}
+div#restaurant-tabs {
+    padding-bottom: 130px !important;
+  padding-top: 130px !important;
+  
+}
+li.active:before {
+    content: "";
+    background: url("https://cdn.shopify.com/s/files/1/0738/5327/2315/files/Vector_b572bfd7-6e54-4a49-91ca-60e138b3f390.png?v=1738931787");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    color: transparent;
+    display: inline-block;
+    height: 13px;
+    width: 13px;
+    position: relative;
+    left: -3px;
+}
+
+ul.tab-links li.active {
+    color: #002855;
+    opacity: 100%;
+    list-style: none;
+    position: relative;
+    left: -14px;
+}
+
+.MainHeading {
+    font-size: 40px;
+    color: #002855; 
+    text-transform: uppercase; 
+    padding-bottom: 30px;
+}
+
+
+  
+
+.SubHeading {
+    font-size: 20px;
+    color: #002855d4;
+}
+
+   .tab-content {
+    width: 80%;
+}
+.tab.active.custonmainatbs {
+    display: flex !important;
+    width: 100%;
+}
+
+.LeftSide {
+    width: 50%;
+      padding-top: 0px;
+}
+
+.RightSide {
+    width: 50%;
+}
+  .BoxDesc {
+    background: transparent;
+    padding: 30px 0px;
+    width: 85%;
+    font-size: 30px;
+    line-height: 1.4em;
+    border-radius: 8px;
+    color: #002855;
+}
+  .MainDescreiption {
+    width: 90%;
+    font-size: 18px;
+    line-height: 1.5em;
+    margin-top: 0px !important;
+    color: #002855;
+    margin-bottom: 30px;
+    font-weight: 400 !important;
+    font-family: 'Literata-light';
+}
+.NewFleicon_dvs {
+    display: inline-flex;
+    margin-top: 0%;
+    padding-bottom: 15px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+  .NewTextPrecent {
+    line-height: 1px;
+        color: #fff !important;
+}
+
+  .tabs-buttons {
+    padding-bottom: 43px;
+}
+
+    .tabs-buttons a:last-child {
+    margin-left : 25px;
+}
+  .NewWrapper_Textdes h4 {
+    color: #fff;
+    font-size:16px;
+}
+
+  .LeftSide {
+    padding-top: 0px;
+}
+
+  .CustomProducts_tab .tab-content .tab:first-child {
+    display: flex;
+}
+  @media (max-width:1100px) and (min-width:1000px) {
+  ul.tab-links {
+    width: 22%;
+    padding: 0px;
+}
+  }
+@media screen and (min-width: 1400px) {
+/* .LeftSide {
+    width: 520px;
+} */
+
+ul.tab-links {
+    width: 258px;
+    margin-left: auto;
+}
+
+  .tab.active.custonmainatbs {
+   
+    justify-content: end;
+}
+}
+@media only screen and (min-width: 280px) and (max-width: 991px) {
+div#restaurant-tabs {
+    padding-bottom: 46px !important;
+    padding-top: 46px !important;
+}
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  let tabs = document.querySelectorAll(".tab-links li");
+  let tabContents = document.querySelectorAll(".tab-content .tab");
+
+  tabs.forEach(tab => {
+    tab.addEventListener("click", function () {
+      let target = this.getAttribute("data-tab");
+
+      tabs.forEach(t => t.classList.remove("active"));
+      tabContents.forEach(tc => tc.classList.remove("active"));
+
+      this.classList.add("active");
+      document.getElementById(target).classList.add("active");
+    });
+  });
+});
+</script>
+
+
+

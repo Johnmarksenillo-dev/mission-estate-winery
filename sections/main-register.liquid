@@ -1,0 +1,350 @@
+{{ 'customer.css' | asset_url | stylesheet_tag }}
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="customer register section-{{ section.id }}-padding">
+  <div class="page-width">
+  <div class="wrap_customer_flexs">
+  <div class="wrap_customer_left">
+     {%- if section.settings.heading != blank -%}
+            <h2>{{ section.settings.heading }}</h2>
+      {% endif %}
+    {%- if section.settings.text != blank -%}
+      <div class="description_register">{{ section.settings.text }}</div>
+    {% endif %}
+
+    {%- if section.settings.button_label != blank -%}
+                    <a href="{{ section.settings.button_link }}" target="{{ section.settings.link_target }}" class="button_wrap_learn_more"
+                    >
+                      {{ section.settings.button_label | escape }}
+                    </a>
+                  {%- endif -%}
+
+
+
+
+    {%- if section.settings.image != blank -%}
+    <div class="wrap_cusomer_imgs">
+      {%- if section.settings.image != blank -%}
+      <div class="image_wrap_flexs">
+        <img src="{{ section.settings.image | img_url: 'master' }}" alt="image">
+      </div>
+        {% endif %}
+       {%- if section.settings.image2 != blank -%}
+      <div class="image_wrap_flexs">
+        <img src="{{ section.settings.image2 | img_url: 'master' }}" alt="image">
+      </div>
+         {% endif %}
+    </div>
+    {% endif %}
+  </div>
+
+      <div class="wrap_customer_right">
+    <div class="wraps_login_wrapper">
+      <div class="wraps_form_login">
+  <h1>
+    {{ 'customer.register.title' | t }}
+  </h1>
+  {%- form 'create_customer', novalidate: 'novalidate' -%}
+    {%- if form.errors -%}
+      <h2 class="form__message wrap_error" tabindex="-1" autofocus>
+        <span class="svg-wrapper">
+          {{- 'icon-error.svg' | inline_asset_content -}}
+        </span>
+        {{ 'templates.contact.form.error_heading' | t }}
+      </h2>
+     <ul class="errors">
+  {%- for field in form.errors -%}
+    <li>
+      {%- assign error_message = form.errors.messages[field] -%}
+
+      {%- if field == 'form' and error_message contains "already associated with an account" -%}
+        This email address is already associated with an account. If this account is yours, you can
+        <a href="/account/login#recover">reset your password</a>.
+
+      {%- elsif field == 'form' -%}
+        {{ error_message }}
+
+      {%- else -%}
+        <a href="#RegisterForm-{{ field }}">
+          {{ form.errors.translated_fields[field] | capitalize }}: {{ error_message }}
+        </a>
+      {%- endif -%}
+    </li>
+  {%- endfor -%}
+</ul>
+
+
+    {%- endif -%}
+    <div class="field">
+  <input
+    type="text"
+    name="customer[first_name]"
+    id="RegisterForm-firstName"
+    {% if form.first_name %}
+      value="{{ form.first_name }}"
+    {% endif %}
+    autocomplete="given-name"
+    placeholder="{{ 'customer.register.first_name' | t }}"
+    required
+  >
+  <label for="RegisterForm-firstName">
+    {{ 'customer.register.first_name' | t }}
+  </label>
+</div>
+
+<div class="field">
+  <input
+    type="text"
+    name="customer[last_name]"
+    id="RegisterForm-lastName"
+    {% if form.last_name %}
+      value="{{ form.last_name }}"
+    {% endif %}
+    autocomplete="family-name"
+    placeholder="{{ 'customer.register.last_name' | t }}" 
+  >
+  <label for="RegisterForm-lastName">
+    {{ 'customer.register.last_name' | t }}
+  </label>
+</div>
+
+ 
+    <div class="field">
+      <input
+        type="email"
+        name="customer[email]"
+        id="RegisterForm-email"
+        {% if form.email %}
+          value="{{ form.email }}"
+        {% endif %}
+        spellcheck="false"
+        autocapitalize="off"
+        autocomplete="email"
+        aria-required="true"
+        {% if form.errors contains 'email' %}
+          aria-invalid="true"
+          aria-describedby="RegisterForm-email-error"
+        {% endif %}
+        placeholder="{{ 'customer.register.email' | t }}"
+      >
+      <label for="RegisterForm-email">
+        {{ 'customer.register.email' | t }}
+      </label>
+    </div>
+    {%- if form.errors contains 'email' -%}
+      <span id="RegisterForm-email-error" class="form__message">
+        <span class="svg-wrapper">
+          {{- 'icon-error.svg' | inline_asset_content -}}
+        </span>
+        {{ form.errors.translated_fields.email | capitalize }}
+        {{ form.errors.messages.email }}.
+      </span>
+    {%- endif -%}
+    <div class="field">
+      <input
+        type="password"
+        name="customer[password]"
+        id="RegisterForm-password"
+        aria-required="true"
+        {% if form.errors contains 'password' %}
+          aria-invalid="true"
+          aria-describedby="RegisterForm-password-error"
+        {% endif %}
+        placeholder="{{ 'customer.register.password' | t }}"
+      >
+      <label for="RegisterForm-password">
+        {{ 'customer.register.password' | t }}
+      </label>
+    </div>
+    {%- if form.errors contains 'password' -%}
+      <span id="RegisterForm-password-error" class="form__message">
+        <span class="svg-wrapper">
+          {{- 'icon-error.svg' | inline_asset_content -}}
+        </span>
+        {{ form.errors.translated_fields.password | capitalize }}
+        {{ form.errors.messages.password }}.
+      </span>
+    {%- endif -%}
+
+<div class="field checkox_wraps_etc">
+<input type="checkbox" class="wrap_checbox" id="newsletter-signup" name="customer[accepts_marketing]" value="true" checked>
+<label for="newsletter-signup">Email me with news and offers
+     </label>
+</div>
+ 
+   
+<div class="field checkox_wraps_etc margin_remove">
+<div class="terms-and-conditions-checkbox">
+  <input type="checkbox" class="wrap_checbox" id="terms-and-conditions" name="customer[accepts_terms]" required> 
+  <label for="terms-and-conditions">
+    I have read and understood the <a href="/pages/mission-rewards-terms-conditions" target="_blank">Terms & Conditions</a> and <a href="/pages/privacy-policy" target="_blank">Privacy Policy</a>.
+  </label>
+</div>
+</div>
+
+    <button id="createAccountBtn">
+      {{ 'customer.register.submit' | t }}
+    </button>
+    <p class="wraps_account_already">Already have an account? <a href="{{ routes.account_login_url }}">Login here</a></p>
+  {%- endform -%}
+</div>
+  </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const registerBtn = document.getElementById("createAccountBtn");
+    
+    if (registerBtn) {
+      registerBtn.addEventListener("click", function () {
+        sessionStorage.setItem("just_registered", "true");
+      });
+    }
+  });
+</script>
+
+ <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const params = new URLSearchParams(window.location.search);
+    const firstName = params.get("firstname");
+    const lastName = params.get("lastname");
+    const email = params.get("email");
+
+    if (firstName) {
+      const firstNameInput = document.getElementById("RegisterForm-firstName");
+      if (firstNameInput) firstNameInput.value = firstName;
+    }
+
+    if (lastName) {
+      const lastNameInput = document.getElementById("RegisterForm-lastName");
+      if (lastNameInput) lastNameInput.value = lastName;
+    }
+
+    if (email) {
+      const emailInput = document.getElementById("RegisterForm-email");
+      if (emailInput) emailInput.value = email;
+    }
+  });
+</script> 
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const form = document.querySelector('form[action="/account"]');
+    const checkbox = document.getElementById('terms-and-conditions');
+
+    if (form && checkbox) {
+      form.addEventListener('submit', function (e) {
+        if (!checkbox.checked) {
+          e.stopImmediatePropagation(); // ✅ Stronger than just preventDefault
+          e.preventDefault(); // ✅ Stops form submission
+          alert('Please accept the Terms & Conditions and Privacy Policy before registering.');
+        }
+      }, true); // ✅ Use capture phase to prevent other handlers
+    }
+  });
+</script>
+
+
+
+
+{% schema %}
+{
+  "name": "t:sections.main-register.name",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Heading",
+      "id": "heading"
+    },
+    {
+      "type": "textarea",
+      "label": "Text",
+      "id": "text"
+    },
+    {
+      "type": "image_picker",
+      "label": "Image",
+      "id": "image"
+    },
+
+    {
+      "type": "image_picker",
+      "label": "Image",
+      "id": "image2"
+    },
+    {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button Label"
+        },
+        {
+          "type": "select",
+          "id": "link_target",
+          "label": "Open link in",
+          "options": [
+            {
+              "value": "_self",
+              "label": "Same window"
+            },
+            {
+              "value": "_blank",
+              "label": "New window"
+            }
+          ],
+          "default": "_self"
+        },
+
+        {
+          "type": "text",
+          "label": "Button Popup class",
+          "id": "button_class"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link"
+        },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ]
+}
+{% endschema %}

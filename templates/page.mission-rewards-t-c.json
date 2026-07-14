@@ -1,0 +1,225 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "slideshow_fYQC66": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_yxXY78": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Banner-Vineyards.jpg",
+            "video_url": "",
+            "heading": "Mission Rewards Programme T&C's",
+            "heading_size": "hxl",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 10,
+            "color_scheme": "scheme-d536de6d-9eba-4ca5-b804-ae369f8ab959",
+            "text_alignment_mobile": "left"
+          }
+        }
+      },
+      "block_order": [
+        "slide_yxXY78"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "rich_text_VJACiM": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_eHgLrY": {
+          "type": "heading",
+          "settings": {
+            "heading": "Updated 25 September 2025",
+            "heading_size": "h2"
+          }
+        },
+        "text_8CemCT": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>1. Summary</strong></p><p>The Mission Rewards Programme is a membership programme offered by Mission Estate Winery (<strong>Mission Estate Winery</strong>, <strong>we</strong>) to Mission Rewards Members (<strong>Member</strong>, <strong>you</strong>).</p><p>By applying for Mission Rewards Membership, you agree to these terms and conditions (<strong>Terms</strong>), which govern your membership to the Mission Rewards Programme.</p><p>Membership of the Mission Rewards Programme is not transferable with membership of any other programme or club.</p><p>We draw your attention to the following important provisions:</p><ul><li>We will collect and use your personal information in accordance with the Mission Estate Winery privacy statement and these Terms (paragraph 3)</li><li>You have certain obligations as a Mission Rewards Member (paragraph 2)</li><li>We may at our discretion change the Mission Rewards Member Benefits or Rewards from time to time (paragraph 8)</li><li>Mission Rewards Points, if not used, will expire one year after they were accrued to your Account, on the anniversary of the day they were earned (paragraph 11)</li><li>We limit our liability to you in respect of your Mission Rewards Membership (paragraph 17)</li></ul>",
+            "font_desk": 18,
+            "font_mob": 16
+          }
+        },
+        "text_dPBhkB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>2. Your obligations</p><p>You must notify us promptly if you change your address or contact details.</p><p>You must keep your Membership number and your username and password details for your online Mission Rewards Membership Account secure.</p><p>You must login to your account, or present and quote your Mission Rewards number at the Cellar Door when make a Qualifying Purchase so that we can accrue Rewards Points to your Account.</p><p>You must not allow any other person to use your Mission Rewards number to earn Mission Rewards Points on your Account and you must not use any other person's Mission Rewards number to earn Mission Rewards Points on their Account, to do so would be engaging in fraud.</p><p>You must comply with the relevant terms and conditions applicable to any Mission Rewards Member Benefit you wish to redeem.</p><p>Mission Rewards Points are not convertible into cash.</p><p>You must not sell, assign or transfer Mission Rewards Points or any Mission Rewards Member Benefit to any other person for Cash or any other form of consideration.</p>",
+            "font_desk": 18,
+            "font_mob": 16
+          }
+        },
+        "text_Pw4mB9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>3. Privacy Statement</p><p>By applying for Mission Rewards Membership to earn Mission Rewards Points, you authorise Mission Estate Winery to collect and use your personal information in accordance with our privacy statement as found on <a href=\"https://www.missionestate.co.nz\" target=\"_blank\" title=\"https://www.missionestate.co.nz\">www.missionestate.co.nz</a> and these Terms.</p>",
+            "font_desk": 18,
+            "font_mob": 16
+          }
+        },
+        "button_CUNkwp": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "simple_link1": false,
+            "button_link": "#",
+            "button_style_secondary": false,
+            "button_label_2": "#",
+            "button_link_2": "#",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_eHgLrY",
+        "text_8CemCT",
+        "text_dPBhkB",
+        "text_Pw4mB9",
+        "button_CUNkwp"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "section_id": "",
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_AmGYQU": {
+      "type": "rich-text",
+      "blocks": {
+        "text_BifeGV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>4. Email communications</p><p>You acknowledge and agree that by providing us with your email address we may send you commercial electronic messages including but not limited to Mission Rewards Programme communications, Mission Rewards communications and Special Offers. </p><p>You may unsubscribe to our emails at any time by clicking on the 'unsubscribe link' in our emails. </p><p>It is your responsibility to keep your Account updated with your current email address.</p><p>5. Application for Mission Rewards Membership</p><p>Membership of the Mission Rewards Programme is personal to the Mission Rewards Member and is not transferable to any other person.</p><p>We reserve the right to accept or decline any application for Mission Rewards Membership. If your application is declined, we will inform you in writing.</p><p>Your Mission Rewards Membership will remain current until such time as it is terminated by either you or Mission Estate Winery pursuant to the termination provisions in paragraph 15.</p><p>6. Deceased Mission Rewards Member account closure</p><p>Following the date that we become aware of the death of a Mission Rewards Member, the deceased Member's Mission Rewards Account, Status Points, and all other Mission Rewards Member Benefits will be cancelled and become invalid. If we receive a written request by the executor of a Mission Rewards Member's estate to transfer the deceased Mission Rewards Member's current Mission Rewards Point balance to the Mission Rewards accounts of the beneficiaries of the Mission Rewards Member's estate, we will do so if we are satisfied that the request is valid and lawful and if the request is made within 2 years of the death of the Mission Rewards Member.</p>",
+            "font_desk": 18,
+            "font_mob": 16
+          }
+        },
+        "text_hADx8p": {
+          "type": "text",
+          "settings": {
+            "text": "<p>7. <strong>Currency</strong></p><p>Credit is shown in New Zealand Dollars – as are all products and services within our online shop - for delivery in New Zealand.</p><p><strong>8. Mission Rewards Member benefits</strong></p><p>Mission Rewards Members can earn Mission Rewards Points to redeem Rewards and enjoy a range of Mission Rewards Member benefits.</p>",
+            "font_desk": 18,
+            "font_mob": 16
+          }
+        },
+        "text_gPQL6x": {
+          "type": "text",
+          "settings": {
+            "text": "<p>9. Earning Mission Rewards Points</p><p>Mission Rewards Members may earn Mission Rewards Points on Qualifying Purchases or through other methods as outlined on our Mission Rewards Page of our website, <a href=\"https://www.missionestate.co.nz\" target=\"_blank\" title=\"https://www.missionestate.co.nz\">www.missionestate.co.nz</a>.</p><p>To earn Mission Rewards Points, you must quote your Mission Rewards Account number at the time of making a making a Qualifying Purchase at our Cellar Door or be logged into your account online before making the Qualifying Purchase.  </p><p>Points cannot be added to your account after the purchase has been made. </p><p>10. Qualifying purchases</p><p>You may earn Mission Rewards points by making Qualifying Purchases with Mission Estate Cellar Door or from our online shop at <a href=\"https://www.missionestate.co.nz\" target=\"_blank\" title=\"https://www.missionestate.co.nz\">www.missionestate.co.nz</a>.  The Mission Rewards may be earned on the value of the purchase excluding shipping costs and GST.</p><p>We may at our discretion vary the range and type of Qualifying Purchases.  Purchases of Restaurant Vouchers, Farmhouse Accommodation, Concert or purchases made at Mission Restaurant do not qualify for Mission Rewards Points.</p><p>11. Mission Rewards Points expiry</p><p>Your Mission Rewards Points will remain valid for one year from the date they were accrued to your Account. Following one year from accrual, the Mission Rewards Points will expire and be removed from your Account on the anniversary of the day they were earned.</p><p>We endeavour to notify you by email prior to expiration of any Mission Rewards Points, however we hold no responsibility if, for whatever reason this email notification does not get sent, or, if it is not received by the Member for any reason.</p>",
+            "font_desk": 18,
+            "font_mob": 16
+          }
+        },
+        "button_DW3jcq": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "simple_link1": false,
+            "button_link": "#",
+            "button_style_secondary": false,
+            "button_label_2": "#",
+            "button_link_2": "#",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "text_BifeGV",
+        "text_hADx8p",
+        "text_gPQL6x",
+        "button_DW3jcq"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "section_id": "",
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "rich_text_mqGQcE": {
+      "type": "rich-text",
+      "blocks": {
+        "text_jzhKda": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>12. Spending Mission Rewards Credit</strong></p><p>You may use your Mission Rewards Points to make purchases at our Cellar Door in person or via our online shop at <a href=\"https://www.missionestate.co.nz\" target=\"_blank\" title=\"https://www.missionestate.co.nz\">www.missionestate.co.nz</a> .</p><p>At our discretion we may change what is available for purchase using Mission Rewards Points.</p><p>The following requirements apply to all Rewards:</p><ul><li>We do not guarantee that any of the Rewards will be available at any time and we reserve the right to withdraw, cancel, change or suspend any of the Rewards we offer or advertise. We are not liable for any loss, expense, or damage any Member suffers as a result of such withdrawal, cancellation, suspension or change.</li></ul><p>13. Notice and contact details</p><p>Any notice given by us to you pursuant to these Terms and will be deemed to have been given and received by you if we email the notice to you at the email address shown on your Membership Account.</p><p>As our primary means of contact with you, it is your responsibility to always maintain an up-to-date email address on your account.  Mission Estate Winery will not be held accountable for notifications going to out of date or expired email addresses.</p><p>14. Changes to these Terms</p><p>We may make changes to these Terms from time to time. When we make changes, we will update these Terms on our website. We will also specify the date of the last update.</p><p>The changes we may make to these Terms include but are not limited to changing: the requirements relating to the Mission Rewards Member Benefits; the Mission Rewards Points earning rates; the redemption rates for Rewards and the qualifying purchases. For example, we may vary the products or services which can be used to earn Mission Rewards Points.</p><p><strong>15. Termination</strong></p><p>You may terminate your Mission Rewards Membership at any time online.</p><p>If a Mission Rewards Membership is terminated by either the Mission Rewards Member or by us (other than due to death of the Mission Rewards Member), any Mission Rewards Credit the Mission Rewards Member has earned but not redeemed prior to termination will be forfeited with no compensation.</p><p>Mission Rewards Membership will automatically terminate on the death or bankruptcy of a Mission Rewards Member.</p><p>Your Mission Rewards Account may not have a negative Mission Rewards Points balance but if it does, it may be closed without notice. </p><p>Mission Estate Winery may terminate or suspend your Mission Rewards Membership or cancel or suspend your right to access to Mission Rewards Membership Benefits by notice in writing if we reasonably believe that you have:</p><ul><li>Abused, misused or obtained by any misrepresentation any Mission Rewards Points, Mission Rewards Member Benefits or other facilities or arrangements provided by or in connection with the Mission Rewards Programme;</li><li>Behaved in a manner which Mission Estate Winery reasonably considers to be unacceptable while using any Mission Rewards Member Benefits or other facilities, services, or arrangements provided by or in connection with the Mission Rewards Programme;</li><li>Acted in any way that is detrimental to the interests of Mission Estate Winery or the Mission Rewards Programme; or</li><li>Provided incorrect or misleading information to Mission Estate Winery in connection with your Mission Rewards Membership.</li></ul><p>If we decide to discontinue the Mission Rewards Programme we may terminate your Mission Rewards Membership by giving you 1 month written notice.</p><p>If we cease to operate, we may terminate Mission Rewards Membership any time without notice.</p><p><strong>16. Limitation of liability</strong></p><p>Subject to applicable consumer protection laws and to the fullest extent permitted by law, you agree that Mission Estate Winery will have no liability (in negligence, tort, breach of contract, or otherwise) for any loss or damage (including direct or indirect loss, or special or consequential loss or damage) arising out of or in connection with:</p><ul><li>Our variation to these Terms from time to time;</li><li>Our variation of Mission Rewards Member Benefits from time to time;</li><li>Your participation in a Mission Rewards Account </li><li>Our termination of your Mission Rewards Membership in accordance with these Terms;</li><li>The use of (or inability to use), the availability of, and or the lack of suitability of any Mission Rewards Member Benefit for you or anyone else;</li><li>The Mission Rewards  Points that you forfeit upon termination of your Mission Rewards Membership;</li><li>The availability of Rewards, Mission Rewards Member Benefits, </li><li>Our failure or delay to provide Rewards due to force majeure, pandemic, or other events beyond our control;</li><li>Your legal and tax obligations and liabilities;</li><li>Any unauthorised or fraudulent activity in relation to your Mission Rewards Membership and Account in circumstances where the person attempting or carrying out the activity:</li><li>Represents themselves to Mission Estate Winery as you and provides Mission Estate Winery with your Mission Rewards Membership number; or</li><li>Uses your online Mission Estate Winery Account username and password.</li><li>The breach in the security of your computer, mobile or other device or the access to any information held on your computer, mobile or other device by unauthorised third parties. You are responsible for ensuring the security of the personal information held on your computer, mobile or other device.</li></ul><p>Nothing in these Terms shall exclude or limit our liability for death or personal injury caused by negligence or for fraud and fraudulent misrepresentation.</p>",
+            "font_desk": 18,
+            "font_mob": 16
+          }
+        },
+        "text_4J4zmH": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>17. Disclaimers</strong></p><p>To the fullest extent permitted by law, Mission Estate Winery makes no warranties (express or implied), and makes no representations with respect to:</p><ul><li>To the suitability of the Mission Rewards Programme or Mission Rewards Member Benefits for you or anyone else;</li><li>The ability (or inability) to redeem any Reward by you or anyone else;</li><li>Your compliance with laws in the country in which you reside, including any laws that may relate to you earning and redeeming Mission Rewards Points. You are responsible for ensuring your compliance with all relevant local laws in the country of your residence.</li><li>You are responsible for ensuring you comply with the legal age required to purchase alcohol in your country of residence.</li></ul><p>18. Laws of New Zealand apply</p><p>These Terms shall be governed by and construed in accordance with the laws of New Zealand. You and Mission Estate Winery consent to the exclusive jurisdiction of the courts of New Zealand in connection with any legal action that may arise in relation to these Terms, your Mission Rewards Membership and/or the Mission Rewards Programme.</p><p>If you reside in New Zealand you must be above the age of 18 to join Mission Rewards Programme as this is the legal age required to purchase alcohol in New Zealand.</p><p>19. Miscellaneous</p><p>If any term or provision of these Terms is held to be illegal, invalid or unenforceable it will be severed from the Terms without affecting the legality, validity or enforceability of the remaining provisions.</p><p>Additional information about the Mission Rewards Programme may be found on the Mission Estate Winery website. To the extent of any inconsistency, these Terms, as amended from time to time, shall prevail.</p><p>We reserve the right to audit each Mission Rewards Account. We reserve the right to amend, debit and correct the Mission Rewards Credit and/or Status Point balance in a Mission Rewards Account if we identify any inaccuracy (due to our mistake or otherwise), or if we identify that the Qualifying Purchase was not paid for in full.</p><p>We reserve the right to audit your Account and Mission Rewards Membership.</p><p>We reserve the right to adjust the Mission Rewards Credit and Status Points balance in your Account if we identify any inaccuracy.</p><p><strong>20. Definitions</strong></p><p>In these Terms:</p><p>The terms used in these Terms and Conditions have the following meanings:</p><p><strong>Account or Mission Rewards Account</strong> means the record maintained online that you may access as a registered user of our website with your Mission Rewards login and password to view your Mission Rewards balance details.</p><p><strong>The records</strong> include the Member Details, Mission Rewards credit earned through Qualifying Purchases, the Mission Rewards credit deducted following the redemption of your Mission Rewards credit for Qualifying Purchases, the Status Points earned and current Tier Status.</p><p><strong>Mission Rewards Programme</strong> means the customer loyalty programme for Mission Rewards Members operated by Mission Estate Winery in accordance with these Terms.</p><p><strong>Mission Estate Winery</strong>, <strong>MEW</strong>, <strong>we, our</strong> and <strong>us</strong> means Mission Estate Winery, which is the trading name for Marist Holdings (Greenmeadows) Ltd.</p>",
+            "font_desk": 18,
+            "font_mob": 16
+          }
+        }
+      },
+      "block_order": [
+        "text_jzhKda",
+        "text_4J4zmH"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "section_id": "",
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 12,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_fYQC66",
+    "rich_text_VJACiM",
+    "rich_text_AmGYQU",
+    "rich_text_mqGQcE"
+  ]
+}

@@ -1,0 +1,29 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-register",
+      "settings": {
+        "heading": "Join Mission Rewards",
+        "text": "<p>Rewarding Mission wine lovers with great benefits. There is NO joining fee, NO minimum purchase, NO scheduled shipments and NO membership tiers.</p>\n<p>Just create an account and start earning points every time you shop or  engage with our brand.  Redeem your points for discounts and enjoy exclusive offers designed just for our loyal wine lovers.</p>",
+        "button_label": "Learn more",
+        "link_target": "_blank",
+        "button_class": "",
+        "button_link": "shopify://pages/mission-rewards",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

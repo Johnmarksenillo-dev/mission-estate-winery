@@ -1,0 +1,495 @@
+{% comment %}
+  Renders product buy-buttons.
+  Accepts:
+  - product: {Object} product object.
+  - block: {Object} passing the block information.
+  - product_form_id: {String} product form id.
+  - section_id: {String} id of section to which this snippet belongs.
+  - show_pickup_availability: {Boolean} for the pickup availability. If true the pickup availability is rendered, false - not rendered (optional).
+
+  Usage:
+  {% render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true %}
+{% endcomment %}
+<div class="wrapper_addtiwrapscrt {% if product.metafields.custom.custom_properties %} custom_properties {% endif %}" {{ block.shopify_attributes }}>
+  {%- if product != blank -%}
+    {%- liquid
+      assign gift_card_recipient_feature_active = false
+      if block.settings.show_gift_card_recipient and product.gift_card?
+        assign gift_card_recipient_feature_active = true
+      endif
+
+      assign show_dynamic_checkout = false
+      if block.settings.show_dynamic_checkout and gift_card_recipient_feature_active == false
+        assign show_dynamic_checkout = true
+      endif
+    -%}
+
+    <product-form
+      class="product-form"
+      data-hide-errors="{{ gift_card_recipient_feature_active }}"
+      data-section-id="{{ section.id }}"
+    >
+      <div class="product-form__error-message-wrapper" role="alert" hidden>
+        <span class="svg-wrapper">
+          {{- 'icon-error.svg' | inline_asset_content -}}
+        </span>
+        <span class="product-form__error-message"></span>
+      </div>
+
+      {%- form 'product',
+        product,
+        id: product_form_id,
+        class: 'form',
+        novalidate: 'novalidate',
+        data-type: 'add-to-cart-form'
+      -%}
+
+      {% if product.metafields.custom.custom_properties %}
+         {%- render 'voucher-recipient-form', product: product, form: form, section: section -%}
+      {% endif %}
+
+        <input
+          type="hidden"
+          name="id"
+          value="{{ product.selected_or_first_available_variant.id }}"
+          {% if product.selected_or_first_available_variant.available == false
+            or quantity_rule_soldout
+            or product.selected_or_first_available_variant == null
+          %}
+            disabled
+          {% endif %}
+          class="product-variant-id"
+        >
+
+        {%- if gift_card_recipient_feature_active -%}
+          {%- render 'gift-card-recipient-form', product: product, form: form, section: section -%}
+        {%- endif -%}
+
+        {% if product.handle == 'restaurant-gift-card' %}
+<div class="customer">
+  <div class="recipient-form-wrapper" id="recipient-form-wrapper-{{ section.id }}">
+    <input
+      id="Recipient-checkbox-{{ section.id }}"
+      type="checkbox"
+      class="recipient-checkbox__input visually-hidden"
+    >
+    <label class="recipient-checkbox" for="Recipient-checkbox-{{ section.id }}">
+      <svg class="icon icon-checkmark-unchecked" viewBox="0 0 18 18" width="18" height="18" aria-hidden="true">
+        <rect x="0.5" y="0.5" width="17" height="17" rx="2" fill="none" stroke="currentColor" stroke-width="1"/>
+      </svg>
+      <svg class="icon icon-checkmark-checked" viewBox="0 0 18 18" width="18" height="18" aria-hidden="true">
+        <rect x="0.5" y="0.5" width="17" height="17" rx="2" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+        <path d="M4 9l3 3 7-7" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>I want to send this as a gift</span>
+    </label>
+
+    <div class="recipient-fields" id="recipient-fields-{{ section.id }}">
+      <hr>
+      
+      <div class="recipient-fields__field">
+        <div class="field">
+          <input
+            class="field__input"
+            id="Recipient-email-{{ section.id }}"
+            type="email"
+            placeholder="Recipient's email"
+            name="properties[Recipient email]"
+            value=""
+          >
+          <label class="field__label" for="Recipient-email-{{ section.id }}">
+            <span class="recipient-email-label">Recipient email <span aria-hidden="true">*</span></span>
+          </label>
+        </div>
+        <div id="RecipientForm-email-error-{{ section.id }}" class="form__message hidden">
+          <svg aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13">
+            <circle cx="6.5" cy="6.5" r="5.5" fill="none" stroke="currentColor"/>
+            <path d="M6.5 4v3" stroke="currentColor" stroke-linecap="round"/>
+            <circle cx="6.5" cy="9" r="0.5" fill="currentColor"/>
+          </svg>
+          <span class="error-message">Please enter a valid email address</span>
+        </div>
+      </div>
+
+      <div class="recipient-fields__field">
+        <div class="field">
+          <input
+            class="field__input"
+            autocomplete="name"
+            type="text"
+            id="Recipient-name-{{ section.id }}"
+            name="properties[Recipient name]"
+            placeholder="Recipient's name"
+            value=""
+          >
+          <label class="field__label" for="Recipient-name-{{ section.id }}">
+            Recipient name
+          </label>
+        </div>
+      </div>
+
+      <div class="recipient-fields__field">
+        <div class="field">
+          <textarea
+            rows="10"
+            id="Recipient-message-{{ section.id }}"
+            class="text-area field__input"
+            name="properties[Message]"
+            maxlength="200"
+            placeholder="Message to recipient"
+          ></textarea>
+          <label class="form__label field__label" for="Recipient-message-{{ section.id }}">
+            Message (optional)
+          </label>
+        </div>
+        <label class="form__label recipient-form-field-label recipient-form-field-label--space-between">
+          <span id="char-count-{{ section.id }}">200 characters maximum</span>
+        </label>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<style>
+  .recipient-form-wrapper {
+    margin-bottom: 1.5rem;
+  }
+
+  .recipient-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    cursor: pointer;
+    font-size: 1.4rem;
+    line-height: 1.4;
+  }
+
+  .recipient-checkbox__input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+
+  .recipient-checkbox .icon-checkmark-checked {
+    display: none;
+  }
+
+  .recipient-checkbox .icon-checkmark-unchecked {
+    display: block;
+  }
+
+  .recipient-checkbox__input:checked + .recipient-checkbox .icon-checkmark-checked {
+    display: block;
+  }
+
+  .recipient-checkbox__input:checked + .recipient-checkbox .icon-checkmark-unchecked {
+    display: none;
+  }
+
+  .recipient-checkbox__input:focus-visible + .recipient-checkbox .icon {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+  }
+
+  .recipient-fields {
+    display: none;
+    padding-top: 1rem;
+  }
+
+  .recipient-fields.is-visible {
+    display: block;
+  }
+
+  .recipient-fields hr {
+    margin: 1rem 0 1.5rem;
+    border: none;
+    border-top: 1px solid rgba(var(--color-foreground), 0.1);
+  }
+
+  .recipient-fields__field {
+    margin-bottom: 1.5rem;
+  }
+
+  .recipient-fields__field .field {
+    position: relative;
+  }
+
+  .recipient-fields__field .field__input {
+    width: 100%;
+    padding: 1.5rem 1.5rem 0.5rem;
+    font-size: 1.4rem;
+    font-family: inherit;
+    border: 1px solid rgba(var(--color-foreground), 0.55);
+    border-radius: 0;
+    background-color: rgb(var(--color-background));
+    color: rgba(var(--color-foreground), 1);
+    transition: border-color 0.2s ease;
+    appearance: none;
+  }
+
+  .recipient-fields__field .field__input:focus {
+    outline: none;
+    border-color: rgba(var(--color-foreground), 1);
+    box-shadow: 0 0 0 1px rgba(var(--color-foreground), 1);
+  }
+
+  .recipient-fields__field .field__input.is-invalid {
+    border-color: #ff6b6b;
+  }
+
+  .recipient-fields__field .field__input.text-area {
+    resize: vertical;
+    min-height: 12rem;
+    padding-top: 2rem;
+  }
+
+  .recipient-fields__field .field__input::placeholder {
+    opacity: 0;
+  }
+
+  .recipient-fields__field .field__label {
+    position: absolute;
+    top: 50%;
+    left: 1.5rem;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
+    color: rgba(var(--color-foreground), 0.75);
+    pointer-events: none;
+    transition: all 0.2s ease;
+  }
+
+  .recipient-fields__field .text-area + .field__label {
+    top: 1.8rem;
+    transform: translateY(0);
+  }
+
+  .recipient-fields__field .field__input:focus + .field__label,
+  .recipient-fields__field .field__input:not(:placeholder-shown) + .field__label {
+    top: 0.8rem;
+    transform: translateY(0);
+    font-size: 1.1rem;
+  }
+
+  .recipient-fields__field .text-area:focus + .field__label,
+  .recipient-fields__field .text-area:not(:placeholder-shown) + .field__label {
+    top: 0.6rem;
+    font-size: 1.1rem;
+  }
+
+  .recipient-form-field-label {
+    font-size: 1.2rem;
+    color: rgba(var(--color-foreground), 0.55);
+    margin: 0.5rem 0 0 0;
+  }
+
+  .recipient-form-field-label--space-between {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .recipient-fields__field .form__message {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    color: #ff6b6b;
+    margin-top: 0.5rem;
+  }
+
+  .recipient-fields__field .form__message.hidden {
+    display: none;
+  }
+
+  .recipient-fields__field .form__message svg {
+    color: #ff6b6b;
+    flex-shrink: 0;
+  }
+</style>
+
+<script>
+  (function() {
+    const sectionId = '{{ section.id }}';
+    const toggle = document.getElementById('Recipient-checkbox-' + sectionId);
+    const fields = document.getElementById('recipient-fields-' + sectionId);
+    const emailInput = document.getElementById('Recipient-email-' + sectionId);
+    const nameInput = document.getElementById('Recipient-name-' + sectionId);
+    const messageInput = document.getElementById('Recipient-message-' + sectionId);
+    const emailError = document.getElementById('RecipientForm-email-error-' + sectionId);
+    const charCount = document.getElementById('char-count-' + sectionId);
+    const form = document.getElementById('{{ product_form_id }}');
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    function isValidEmail(email) {
+      return emailRegex.test(email);
+    }
+
+    function showError(input, errorEl) {
+      input.classList.add('is-invalid');
+      errorEl.classList.remove('hidden');
+    }
+
+    function hideError(input, errorEl) {
+      input.classList.remove('is-invalid');
+      errorEl.classList.add('hidden');
+    }
+
+    function resetFields() {
+      emailInput.value = '';
+      nameInput.value = '';
+      messageInput.value = '';
+      toggle.checked = false;
+      fields.classList.remove('is-visible');
+      hideError(emailInput, emailError);
+      charCount.textContent = '200 characters maximum';
+    }
+
+    // Toggle fields
+    toggle.addEventListener('change', function() {
+      if (this.checked) {
+        fields.classList.add('is-visible');
+      } else {
+        fields.classList.remove('is-visible');
+        resetFields();
+      }
+    });
+
+    // Validate on blur
+    emailInput.addEventListener('blur', function() {
+      if (toggle.checked && this.value.trim() !== '' && !isValidEmail(this.value.trim())) {
+        showError(emailInput, emailError);
+      } else {
+        hideError(emailInput, emailError);
+      }
+    });
+
+    // Clear error on input
+    emailInput.addEventListener('input', function() {
+      if (this.classList.contains('is-invalid') && isValidEmail(this.value.trim())) {
+        hideError(emailInput, emailError);
+      }
+    });
+
+    // Character counter
+    messageInput.addEventListener('input', function() {
+      const remaining = 200 - this.value.length;
+      charCount.textContent = remaining + ' characters remaining';
+    });
+
+    // Form validation on submit
+    if (form) {
+      form.addEventListener('submit', function(e) {
+        if (toggle.checked) {
+          // Validate email
+          if (emailInput.value.trim() === '' || !isValidEmail(emailInput.value.trim())) {
+            showError(emailInput, emailError);
+            e.preventDefault();
+            e.stopPropagation();
+            emailInput.focus();
+            return false;
+          }
+
+          // Reset after successful submission
+          setTimeout(resetFields, 500);
+        }
+      });
+    }
+  })();
+</script>
+{% endif %}
+
+        <div class="product-form__buttons">
+          {%- liquid
+            assign check_against_inventory = true
+            if product.selected_or_first_available_variant.inventory_management != 'shopify' or product.selected_or_first_available_variant.inventory_policy == 'continue'
+              assign check_against_inventory = false
+            endif
+            if product.selected_or_first_available_variant.quantity_rule.min > product.selected_or_first_available_variant.inventory_quantity and check_against_inventory
+              assign quantity_rule_soldout = true
+            endif
+          -%}
+          <button
+            id="ProductSubmitButton-{{ section_id }}"
+            type="submit"
+            name="add"
+            class="product-form__submit button button--full-width {% if show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
+            {% if product.selected_or_first_available_variant.available == false
+              or quantity_rule_soldout
+              or product.selected_or_first_available_variant == null
+            %}
+              disabled
+            {% endif %}
+          >
+            <span>
+              {%- if product.selected_or_first_available_variant == null -%}
+                {{ 'products.product.unavailable' | t }}
+              {%- elsif product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
+                {{ 'products.product.sold_out' | t }}
+              {%- else -%}
+              <img src="https://cdn.shopify.com/s/files/1/0738/5327/2315/files/Untitled_design_-_2025-06-02T171301.326.png?v=1748864620" class="cart-icon-add-cart">  {{ 'products.product.add_to_cart' | t }}
+              {%- endif -%}
+            </span>
+            {%- render 'loading-spinner' -%}
+          </button>
+          {%- if show_dynamic_checkout -%}
+            {{ form | payment_button }}
+          {%- endif -%}
+        </div>
+      {%- endform -%}
+    </product-form>
+  {%- else -%}
+    <div class="product-form">
+      <div class="product-form__buttons form">
+        <button
+          type="submit"
+          name="add"
+          class="product-form__submit button button--full-width button--primary"
+          disabled
+        >
+          {{ 'products.product.sold_out' | t }}
+        </button>
+      </div>
+    </div>
+  {%- endif -%}
+
+  {%- if show_pickup_availability -%}
+    {{ 'component-pickup-availability.css' | asset_url | stylesheet_tag }}
+
+    {%- assign pick_up_availabilities = product.selected_or_first_available_variant.store_availabilities
+      | where: 'pick_up_enabled', true
+    -%}
+
+    <pickup-availability
+      class="product__pickup-availabilities quick-add-hidden"
+      {% if product.selected_or_first_available_variant.available and pick_up_availabilities.size > 0 %}
+        available
+      {% endif %}
+      data-root-url="{{ routes.root_url }}"
+      data-variant-id="{{ product.selected_or_first_available_variant.id }}"
+      data-has-only-default-variant="{{ product.has_only_default_variant }}"
+      data-product-page-color-scheme="gradient color-{{ section.settings.color_scheme }}"
+    >
+      <template>
+        <pickup-availability-preview class="pickup-availability-preview">
+          <span class="svg-wrapper">
+            {{- 'icon-unavailable.svg' | inline_asset_content -}}
+          </span>
+          <div class="pickup-availability-info">
+            <p class="caption-large">{{ 'products.product.pickup_availability.unavailable' | t }}</p>
+            <button class="pickup-availability-button link link--text underlined-link">
+              {{ 'products.product.pickup_availability.refresh' | t }}
+            </button>
+          </div>
+        </pickup-availability-preview>
+      </template>
+    </pickup-availability>
+
+    <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
+  {%- endif -%}
+</div>

@@ -1,0 +1,16 @@
+{%- liquid
+  assign visibility_classes = ''
+  if settings.hide_mobile
+    assign visibility_classes = visibility_classes | append: ' hide-mobile'
+  endif
+  if settings.hide_tablet
+    assign visibility_classes = visibility_classes | append: ' hide-tablet'
+  endif
+  if settings.hide_desktop
+    assign visibility_classes = visibility_classes | append: ' hide-desktop'
+  endif
+-%}
+
+{% if visibility_classes != '' %}
+  {{ visibility_classes }}
+{% endif %}

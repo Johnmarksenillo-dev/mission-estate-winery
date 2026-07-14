@@ -1,0 +1,367 @@
+{% capture slides %}
+  {% content_for 'blocks' %}
+{% endcapture %}
+
+{% capture carousel_attribute %}
+ {% if block.settings.disable_mobile_carousel %}
+   desktop-carousel
+ {% endif %}
+{% endcapture %}
+
+<div
+  class='carousel-block carousel-block--width-{{ block.settings.width }} spacing-style'
+  {{ block.shopify_attributes }}
+  style='
+      {% render 'spacing-style', settings: block.settings %}
+      {% render 'carousel-style', settings: block.settings %}
+    --gap-mobile: {{ block.settings.gap_mobile }}px;
+  '
+>
+  {% render 'carousel', class: '', settings: block.settings, slides: slides, attribute: carousel_attribute %}
+</div>
+
+{% schema %}
+{
+  "name": "Carousel",
+  "tag": null,
+  "blocks": [
+    {
+      "type": "_slide"
+    }
+  ],
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "scroll",
+      "label": "Scroll",
+      "options": [
+        {
+          "value": "normal",
+          "label": "Normal"
+        },
+        {
+          "value": "autoplay",
+          "label": "Auto play"
+        },
+        {
+          "value": "autoscroll",
+          "label": "Auto scroll"
+        }
+      ],
+      "default": "normal"
+    },
+    {
+      "type": "checkbox",
+      "id": "fade",
+      "label": "Fade",
+      "default": false,
+      "visible_if": "{{ block.settings.scroll != 'autoscroll' }}"
+    },
+    {
+      "type": "checkbox",
+      "id": "reverse_direction",
+      "label": "Reverse direction",
+      "default": false,
+      "visible_if": "{{ block.settings.scroll == 'autoscroll' }}"
+    },
+    {
+      "type": "checkbox",
+      "id": "loop",
+      "label": "Loop",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "align_center",
+      "label": "Align Center",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "disable_drag_events",
+      "label": "Disable drag events",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "drag_free",
+      "label": "Drag Free",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "disable_mobile_carousel",
+      "label": "Disable mobile carousel",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "gap",
+      "label": "t:settings.gap",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "gap_mobile",
+      "label": "Mobile gap",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "header",
+      "content": "Carousel navigation",
+      "visible_if": "{{ block.settings.scroll != 'autoscroll'}}"
+    },
+    {
+      "type": "select",
+      "id": "control",
+      "label": "Control",
+      "options": [
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "nav",
+          "label": "Nav"
+        },
+        {
+          "value": "dots",
+          "label": "Dots"
+        },
+        {
+          "value": "both",
+          "label": "Both"
+        }
+      ],
+      "default": "nav",
+      "visible_if": "{{ block.settings.scroll != 'autoscroll' }}"
+    },
+    {
+      "type": "select",
+      "id": "horizontal_alignment",
+      "label": "Alignment",
+      "options": [
+        {
+          "value": "start",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "end",
+          "label": "Right"
+        }
+      ],
+      "default": "start",
+      "visible_if": "{{ block.settings.control != 'none' and block.settings.control != 'both'}}"
+    },
+    {
+      "type": "color",
+      "id": "control_background",
+      "label": "Color",
+      "default": "#214123",
+      "visible_if": "{{ block.settings.control != 'none' }}"
+    },
+    {
+      "type": "color",
+      "id": "icon_color",
+      "label": "Icon color",
+      "default": "#fff",
+      "visible_if": "{{ block.settings.control != 'none' }}"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_counter",
+      "label": "Counter",
+      "default": false,
+      "visible_if": "{{ block.settings.control != 'none' }}"
+    },
+    {
+      "type": "header",
+      "content": "Size",
+      "info": "Applies to all slides."
+    },
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Width",
+      "options": [
+        {
+          "value": "fit-content",
+          "label": "Fit"
+        },
+        {
+          "value": "custom",
+          "label": "Custom"
+        }
+      ],
+      "default": "custom"
+    },
+    {
+      "type": "select",
+      "id": "custom_width",
+      "label": "Custom width",
+      "options": [
+        { "value": "16.66", "label": "16.66%" },
+        { "value": "19", "label": "19%" },
+        { "value": "20", "label": "20%" },
+        { "value": "25", "label": "25%" },
+        { "value": "33.33", "label": "33.33%" },
+        { "value": "50", "label": "50%" },
+        { "value": "56.66", "label": "56.66%" },
+        { "value": "66.66", "label": "66.66%" },
+        { "value": "75", "label": "75%" },
+        { "value": "100", "label": "100%" }
+      ],
+      "default": "33.33",
+      "visible_if": "{{ block.settings.width == 'custom' }}"
+    },
+    {
+      "type": "select",
+      "id": "width_tablet",
+      "label": "Tablet width",
+      "options": [
+        { "value": "25", "label": "25%" },
+        { "value": "33.33", "label": "33.33%" },
+        { "value": "50", "label": "50%" },
+        { "value": "66.66", "label": "66.66%" },
+        { "value": "75", "label": "75%" },
+        { "value": "100", "label": "100%" }
+      ],
+      "default": "33.33",
+      "visible_if": "{{ block.settings.width == 'custom' }}"
+    },
+    {
+      "type": "select",
+      "id": "width_mobile",
+      "label": "Mobile width",
+      "options": [
+        { "value": "50", "label": "50%" },
+        { "value": "66.66", "label": "66.66%" },
+        { "value": "75", "label": "75%" },
+        { "value": "100", "label": "100%" }
+      ],
+      "default": "50",
+      "visible_if": "{{ block.settings.width == 'custom' }}"
+    },
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start",
+      "label": "Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end",
+      "label": "Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-inline-start",
+      "label": "Left",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-inline-end",
+      "label": "Right",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "checkbox",
+      "id": "padding_on_mobile",
+      "label": "Mobile padding"
+    },
+    {
+      "type": "header",
+      "content": "Mobile padding",
+      "visible_if": "{{ block.settings.padding_on_mobile }}"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start-mobile",
+      "label": "Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0,
+      "visible_if": "{{ block.settings.padding_on_mobile }}"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end-mobile",
+      "label": "Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0,
+      "visible_if": "{{ block.settings.padding_on_mobile }}"
+    },
+    {
+      "type": "range",
+      "id": "padding-inline-start-mobile",
+      "label": "Left",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0,
+      "visible_if": "{{ block.settings.padding_on_mobile }}"
+    },
+    {
+      "type": "range",
+      "id": "padding-inline-end-mobile",
+      "label": "Right",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0,
+      "visible_if": "{{ block.settings.padding_on_mobile }}"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Carousel",
+      "category": "Layout"
+    }
+  ]
+}
+{% endschema %}

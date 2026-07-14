@@ -1,0 +1,62 @@
+{%- doc -%}
+  Intended for use in a block similar to the button block.
+
+  @param {string} link - link to render
+  @param {object} [block] - The block
+
+  @example
+  {% render 'button', link: '/collections/all' %}
+{%- enddoc -%}
+
+{% assign block_settings = block.settings %}
+
+{% capture overrides_style %}
+   {% if block_settings.overrides_color and block_settings.overrides_color != '' and block_settings.overrides_color != 'transparent' and block_settings.overrides_color != 'rgba(0,0,0,0)' %}
+    --button-background-color: {{ block_settings.overrides_color }};
+    --button-border-color: {{ block_settings.overrides_color }};
+    {% endif %}
+{% endcapture %}
+
+<a
+  {% if link == blank %}
+    role='link'
+    aria-disabled='true'
+  {% else %}
+    href='{{ link }}'
+  {% endif %}
+  class='
+    size-style
+    {{ block_settings.style_class }}
+    {{ block_settings.style_class }}--{{ block.id }}
+       {% render 'visibility', settings: block.settings %}
+  '
+  style='{% render 'size-style', settings: block_settings %} --font-size: {{ block_settings.font_size }}; --font-size-mobile: {{ block_settings.font_size_mobile }}; {{ overrides_style }}'
+
+  {%- if block_settings.open_in_new_tab -%}
+    target='_blank'
+    rel='noopener noreferrer'
+  {%- endif -%}
+  {{ block.shopify_attributes }}
+>
+  <span class='tw:leading-none'>
+    {{ block_settings.label }}
+  </span>
+</a>
+
+{% stylesheet %}
+  a.size-style {
+    &[style*='--button-background-color'] {
+      background-color: var(--button-background-color);
+      border-color: var(--button-border-color);
+    }
+  }
+  .link {
+    text-decoration: none;
+    text-decoration-color: currentcolor;
+
+    &:hover {
+      color: var(--color-primary-hover);
+      text-decoration-color: transparent;
+    }
+  }
+{% endstylesheet %}

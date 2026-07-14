@@ -1,0 +1,70 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "link_list_BqKJDg": {
+          "type": "link_list",
+          "settings": {
+            "heading": "",
+            "logo": "shopify://shop_images/Mission_Text.png",
+            "logo_width": 550,
+            "menu": "footer",
+            "show_social": true
+          }
+        },
+        "email_AMEq7G": {
+          "type": "email",
+          "settings": {
+            "email_heading": "Don’t miss out",
+            "email_heading_color": "#f8e08e",
+            "email_text": "Keep up to date with Mission Estate!",
+            "email_enable": true,
+            "social_enable": false
+          }
+        },
+        "image_KMter6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Mission_Logo_5f3ce484-5a5d-488b-af0e-089058af90bb.png",
+            "image_width": 60,
+            "alignment": "right"
+          }
+        }
+      },
+      "block_order": [
+        "link_list_BqKJDg",
+        "email_AMEq7G",
+        "image_KMter6"
+      ],
+      "settings": {
+        "color_scheme": "scheme-8acb60fd-109c-4d1b-b010-b0aee4f150d7",
+        "newsletter_enable": false,
+        "newsletter_heading": "Subscribe to our emails",
+        "enable_follow_on_shop": false,
+        "show_social": false,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "payment_enable": true,
+        "show_policy": false,
+        "margin_top": 0,
+        "padding_top": 100,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

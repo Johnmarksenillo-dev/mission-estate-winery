@@ -1,0 +1,20 @@
+{%- if settings.width == 'custom' -%}
+  --size-slider-width:
+  {{- settings.custom_width }}%; --size-slider-width-tablet:
+  {{- settings.width_tablet }}%; --size-slider-width-mobile:
+  {{- settings.width_mobile }}%;
+{%- else -%}
+  --size-slider-width: auto;
+{%- endif -%}
+
+{% if settings.control != 'none' and settings.control != 'both' %}
+  --control-horizontal-alignment: {{ settings.horizontal_alignment }};
+{% else %}
+  --control-horizontal-alignment: center;
+{% endif %}
+
+{% if settings.control != 'none' %}
+  --control-background: {{ settings.control_background }}; --icon-color: {{ settings.icon_color }};
+{% endif %}
+
+{% render 'gap-style', value: settings.gap %}

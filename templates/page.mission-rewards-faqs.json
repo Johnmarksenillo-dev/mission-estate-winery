@@ -1,0 +1,483 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "slideshow_R3R7Xx": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_LE7rEr": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Asset_19.png",
+            "video_url": "",
+            "heading": "Mission Rewards Support & FAQs",
+            "heading_size": "hxl",
+            "subheading": "Have a question about Mission Rewards? From earning and redeeming points to changes from the old system, you’ll find everything you need below.",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 30,
+            "color_scheme": "scheme-d536de6d-9eba-4ca5-b804-ae369f8ab959",
+            "text_alignment_mobile": "left"
+          }
+        }
+      },
+      "block_order": [
+        "slide_LE7rEr"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "large",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "rich_text_z6yVRJ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_8EWLTR": {
+          "type": "heading",
+          "settings": {
+            "heading": "Have a question about Mission Rewards?",
+            "heading_size": "h1"
+          }
+        },
+        "text_kQzm8p": {
+          "type": "text",
+          "settings": {
+            "text": "<p>From earning and redeeming points to understanding what’s changed from the old system, you’ll find everything you need here.<em> </em></p>",
+            "font_desk": 26,
+            "font_mob": 16
+          }
+        },
+        "button_XaiM9Y": {
+          "type": "button",
+          "settings": {
+            "button_label": "Join Mission Rewards",
+            "simple_link1": false,
+            "button_link": "/account/register",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_8EWLTR",
+        "text_kQzm8p",
+        "button_XaiM9Y"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "section_id": "",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 60
+      }
+    },
+    "collapsible_content_EPtejf": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_386Bda": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I join Mission Rewards?",
+            "icon": "none",
+            "row_content": "<p><em>Simply create an account on our </em><a href=\"/account/register\" target=\"_blank\" title=\"/account/register\"><em>website</em></a><em> to start earning points.</em></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_UwnfJ9": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_E4tzcD": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do I need to sign up again to keep earning rewards?",
+            "icon": "none",
+            "row_content": "<p><em>No. If you already have a Mission account, you’re automatically enrolled. Simply log in and update your password to start earning and get your free shipping.</em></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_gVNpUy": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I see my current wallet balance and points?",
+            "icon": "none",
+            "row_content": "<p><em>Log in and click the ‘Rewards’ button to view your points and any wallet credit.</em></p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_386Bda",
+        "collapsible_row_UwnfJ9",
+        "collapsible_row_E4tzcD",
+        "collapsible_row_gVNpUy"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "Getting started",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "layout": "section",
+        "color_scheme": "scheme-575c04fd-c80f-4d35-bbf5-4d5cfadf9d7b",
+        "container_color_scheme": "scheme-4d22978a-983c-403a-8a3c-fe6a3d8628a2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_i8cb7W": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_fec9XE": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": " How do I earn points?",
+            "icon": "none",
+            "row_content": "<p><em>Sign up for Mission Rewards online — it’s free and easy. Simply enter your name, email, and a password to get started.</em></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_UL6YKR": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How many Mission Reward Points will I earn?",
+            "icon": "none",
+            "row_content": "<p><em>Earn 1 point for every $1 spent on cases purchased online or at our Cellar Door. You can also earn bonus points for following us on social media or referring friends. Be sure you’re logged in when you purchase.</em></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_B89LnD": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I redeem my points?",
+            "icon": "none",
+            "row_content": "<p><em>Once you reach 400 points, you can redeem them for discounts online or at the Cellar Door. To redeem online, click the blue Mission Rewards button at the bottom right of our website, select ‘Mission Checkout $,’ and you’ll receive a reward code by email. Add a case of wine or two to your cart and enter the code at checkout to apply your discount</em></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_Nmwzdx": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do my points expire?",
+            "icon": "none",
+            "row_content": "<p><em>Yes. Points expire two years after they are earned. We’ll send you a reminder email one month before expiry. If your account is inactive for two years, your full balance will also expire.</em></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_Vf8T4E": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I use rewards on all products?",
+            "icon": "none",
+            "row_content": "<p><em>Rewards can be used on most wine purchases, though some exclusions may apply during promotions or limited releases. Vouchers can be redeemed online or at the Cellar Door.</em></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_aeTYni": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What happens if my friend doesn’t complete a purchase?",
+            "icon": "none",
+            "row_content": "<p><em>Your referral reward is only issued once your friend places and completes their first order.</em></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_j4dFgQ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do I need to become a member to buy wine?",
+            "icon": "none",
+            "row_content": "<p><em>No. You’re welcome to checkout as a guest.</em></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_d3CTa4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What if I forget to log in when I buy wine online?",
+            "icon": "none",
+            "row_content": "<p><em>If you use your usual email address at checkout, your points will be added automatically.</em></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_zdrhgY": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What if I forget to log in when I buy wine at the cellar door?",
+            "icon": "none",
+            "row_content": "<p><em>If you forget to give your email at the Cellar Door, email us at info@missionestate.co.nz with your receipt image, and we’ll add the points manually.</em></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_VCQwwE": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I change my email address and password?",
+            "icon": "none",
+            "row_content": "<p><em>To change your password, click ‘Forgot Password’ on the login screen. To update your email address, contact us at </em><a href=\"mailto:info@missionestate.co.nz\" title=\"mailto:info@missionestate.co.nz\"><em>info@missionestate.co.nz</em></a><em>.</em></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_CzLPPh": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I gift or transfer my points to someone else?",
+            "icon": "none",
+            "row_content": "<p><em>No. Mission Rewards points can’t be transferred, but you can gift wine once redeemed.</em></p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_fec9XE",
+        "collapsible_row_UL6YKR",
+        "collapsible_row_B89LnD",
+        "collapsible_row_Nmwzdx",
+        "collapsible_row_Vf8T4E",
+        "collapsible_row_aeTYni",
+        "collapsible_row_j4dFgQ",
+        "collapsible_row_d3CTa4",
+        "collapsible_row_zdrhgY",
+        "collapsible_row_VCQwwE",
+        "collapsible_row_CzLPPh"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "Earning & redeeming",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "layout": "section",
+        "color_scheme": "scheme-1",
+        "container_color_scheme": "scheme-1",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_3nTdcH": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_UfcarJ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What’s changed in the new Mission Rewards programme?",
+            "icon": "none",
+            "row_content": "<p><em>It’s simpler. No more tiers — just easy-to-earn points, exclusive perks, and straightforward redemptions</em></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_KKDwTj": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_BpQtdB": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What happened to my wallet balance from the old rewards programme?",
+            "icon": "none",
+            "row_content": "<p><em>If you previously had a wallet balance, it was converted to ‘Mission Checkout $’ via a unique code emailed to you when the new system launched. Codes remain valid for three years from the email date.</em></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_jVgYJF": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "How long do I have to use my wallet balance?",
+            "icon": "none",
+            "row_content": "<p>Wallet balances from the old programme will remain active for 12 months after the changeover. Be sure to use them before they expire!</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_LTFMHA": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long do I have to use my wallet balance?",
+            "icon": "none",
+            "row_content": "<p><em>Wallet codes from the old programme remain valid for three years from the launch of the new system. Be sure to use them before they expire.</em></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_nDXNa9": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Why did you remove the tier system?",
+            "icon": "none",
+            "row_content": "<p><em>Customer feedback told us the old tier system felt complicated and slow to reward. The new programme is simpler, clearer, and more rewarding from the start — so you enjoy benefits sooner, without climbing levels.</em></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_Trhkhq": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What happened to the Mission Status Points I had earned?",
+            "icon": "none",
+            "row_content": "<p><em>Any vouchers you had earned have been uploaded to your new account. Status Points themselves weren’t transferred, as they only related to tier progress. Log in to your Mission Rewards account to view your discount codes. All vouchers will be honoured, but must be redeemed within three years of the new programme launch.</em></p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_UfcarJ",
+        "collapsible_row_KKDwTj",
+        "collapsible_row_BpQtdB",
+        "collapsible_row_jVgYJF",
+        "collapsible_row_LTFMHA",
+        "collapsible_row_nDXNa9",
+        "collapsible_row_Trhkhq"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "Changes from the old programme",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "layout": "section",
+        "color_scheme": "scheme-575c04fd-c80f-4d35-bbf5-4d5cfadf9d7b",
+        "container_color_scheme": "scheme-4d22978a-983c-403a-8a3c-fe6a3d8628a2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_inmrba": {
+      "type": "featured-collection",
+      "disabled": true,
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "frontpage",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "show_rating": true,
+        "quick_add": "standard",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_ACEHTT": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_YNeqwX": {
+          "type": "heading",
+          "settings": {
+            "heading": "STILL HAVE QUESTIONS?",
+            "heading_size": "h1"
+          }
+        },
+        "text_3qW7ky": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Just email us at <a href=\"mailto:info@missionestate.co.nz\" title=\"mailto:info@missionestate.co.nz\">info@missionestate.co.nz</a></p>",
+            "font_desk": 26,
+            "font_mob": 16
+          }
+        },
+        "button_7pDAmE": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Learn more about Mission Rewards here",
+            "simple_link1": false,
+            "button_link": "shopify://pages/mission-rewards-terms-conditions",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_YNeqwX",
+        "text_3qW7ky",
+        "button_7pDAmE"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "section_id": "",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_R3R7Xx",
+    "rich_text_z6yVRJ",
+    "collapsible_content_EPtejf",
+    "collapsible_content_i8cb7W",
+    "collapsible_content_3nTdcH",
+    "featured_collection_inmrba",
+    "rich_text_ACEHTT"
+  ]
+}

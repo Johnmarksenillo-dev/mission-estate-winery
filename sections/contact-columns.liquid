@@ -1,0 +1,80 @@
+<div class="wraps_content">
+  <div class="page-width">
+    <div class="wraps_flex_contact_colums" id= "{{ section.settings.section_id }}">
+      {% for block in section.blocks %}
+        <div class="wraps_column-inner">
+          {%- if block.settings.title != blank -%}
+            <h3>{{ block.settings.title }}</h3>
+          {% endif %}
+        
+          {%- if block.settings.content != blank -%}
+            <p>{{ block.settings.content }}</p>
+          {% endif %}
+        
+          {%- if block.settings.call != blank -%}
+            <p>{{ block.settings.call }}</p>
+           {% endif %}
+        
+          {%- if block.settings.button1 != blank -%}
+            <a href="{{ block.settings.buttonlink1 }}"><button class="wrap_contact_link">{{ block.settings.button1 }}</button></a>
+           {% endif %}
+        
+        </div>
+        {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Contact Column",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Section Id",
+      "id": "section_id"
+    }
+    ],
+    "blocks": [
+    {
+      "type": "hero",
+      "name": "Block",
+      "settings": [
+          {
+             "id": "title",
+             "type": "text",
+             "label": "Title"
+           },
+          {
+             "id": "content",
+             "type": "text",
+             "label": "Text"
+           },
+         
+          {
+             "id": "call",
+             "type": "textarea",
+             "label": "Text"
+           },
+          {
+             "id": "button1",
+             "type": "textarea",
+             "label": "Button text"
+           },
+        {
+             "id": "buttonlink1",
+             "type": "url",
+             "label": "Button URL"
+           }
+       ]
+    }
+],
+
+    "presets": [
+    {
+      "name": "Contact Column",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

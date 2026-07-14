@@ -1,0 +1,470 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "slideshow_rxLHkY": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_Px8QVN": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2025-10-06_at_2.59.12_PM.png",
+            "video_url": "",
+            "heading": "CELLAR DOOR",
+            "heading_size": "hxl",
+            "subheading": "Offering elegant, classic surroundings, magnificent views, world class cuisine and wines combined with the stunning vineyard location makes Mission Restaurant one of Hawke’s Bays premier venues.",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-d536de6d-9eba-4ca5-b804-ae369f8ab959",
+            "text_alignment_mobile": "left"
+          }
+        },
+        "slide_aQYPiA": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "video_url": "",
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_Px8QVN",
+        "slide_aQYPiA"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "large",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "restaurant_tabs_C4Ttcj": {
+      "type": "restaurant-tabs",
+      "blocks": {
+        "tab_VKebEX": {
+          "type": "tab",
+          "settings": {
+            "tab_name": "Cellar Door",
+            "tab_url": "#restaurant-tabs",
+            "heading": "",
+            "sub_heading": "",
+            "box_description": "",
+            "main_description": "<p>The Cellar Door is housed in the Grande Maison, an elegantly restored seminary building nested in the Taradale hills, offering visitors sweeping views of the vineyards and coast beyond.</p>\n\n<p>Mission is proud of being New Zealand’s oldest winery. We look forward to sharing our wine and our rich history with guests in a beautiful setting that embraces the old and new.\n</p>\n\n<p>Join us for a tasting in the beautiful and elegantly restored seminary building.</p>",
+            "button_url": "https://booking.resdiary.com/widget/Standard/MissionEstateCellarDoor/11928",
+            "button_class": "",
+            "button_tab": "Book a tasting",
+            "button_url1": "shopify://products/cellar-door-gift-card",
+            "button_tab1": "Buy gift card",
+            "button_class2": "",
+            "image": "shopify://shop_images/Asset_2-100_85ac48b1-9a3b-45a7-8231-718c7135ce65.jpg"
+          }
+        },
+        "tab_AJGhAq": {
+          "type": "tab",
+          "settings": {
+            "tab_name": "Book a Tasting",
+            "tab_url": "#wrap_farmhouse",
+            "heading": "",
+            "sub_heading": "",
+            "box_description": "",
+            "main_description": "<p>Sample a range of premium wines, learn about our heritage and the extraordinary history of the Mission and the Missionaries who built it from our Cellar Door Hosts.</p>",
+            "button_url": "https://booking.resdiary.com/widget/Standard/MissionEstateCellarDoor/11928?includeJquery=false",
+            "button_class": "",
+            "button_tab": "Book a Testing",
+            "button_url1": "#",
+            "button_tab1": "Gift Voucher",
+            "button_class2": "",
+            "image": "shopify://shop_images/Asset_3-100_75e7c2f1-99ff-4c2d-ab25-5ae06d501ca8.jpg"
+          }
+        },
+        "tab_zfc6gQ": {
+          "type": "tab",
+          "settings": {
+            "tab_name": "Tasting Options",
+            "tab_url": "#tasting_options",
+            "heading": "",
+            "sub_heading": "",
+            "box_description": "",
+            "main_description": "<p>Hosted tasting of 6 seasonally selected wines from our premium tiers. We will guide you through the wines and provide a commentary of the Mission Estate History. </p>",
+            "button_url": "https://booking.resdiary.com/widget/Standard/MissionEstateCellarDoor/11928?includeJquery=false",
+            "button_class": "",
+            "button_tab": "Book a Tasting",
+            "button_url1": "#",
+            "button_tab1": "Gift Voucher",
+            "button_class2": "",
+            "image": "shopify://shop_images/Asset_5-100_578a44f3-24d4-49f5-bc62-cb5b7813d1a0.jpg"
+          }
+        },
+        "tab_nqrkjD": {
+          "type": "tab",
+          "settings": {
+            "tab_name": "Opening Hours",
+            "tab_url": "#wrap_opening_hours",
+            "heading": "",
+            "sub_heading": "",
+            "box_description": "",
+            "main_description": "",
+            "button_url": "https://booking.resdiary.com/widget/Standard/MissionEstateCellarDoor/11928?includeJquery=false",
+            "button_class": "",
+            "button_tab": "Book Now",
+            "button_url1": "#",
+            "button_tab1": "Gift Voucher",
+            "button_class2": "",
+            "image": "shopify://shop_images/Asset_6-100_795ad2b9-d1c7-4551-af09-091ead213b2e.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "tab_VKebEX",
+        "tab_AJGhAq",
+        "tab_zfc6gQ",
+        "tab_nqrkjD"
+      ],
+      "name": "Custom Tabs",
+      "settings": {
+        "title": ""
+      }
+    },
+    "image_with_text_LUDAAn": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_QgDJKX": {
+          "type": "heading",
+          "settings": {
+            "heading": "BOOK A TASTING",
+            "heading_size": "h1"
+          }
+        },
+        "text_bXG8WD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Sample a range of premium wines, learn about our heritage and the extraordinary history of the Mission and the Missionaries who built it from our Cellar Door Hosts.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_Gh8wkL": {
+          "type": "button",
+          "settings": {
+            "button_label": "Book a tasting",
+            "link_target": "_self",
+            "button_class": "",
+            "button_link": "https://booking.resdiary.com/widget/Standard/MissionEstateCellarDoor/11928",
+            "button_label1": "Buy gift card",
+            "button_link1": "shopify://products/cellar-door-gift-card",
+            "link_target1": "_self",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_QgDJKX",
+        "text_bXG8WD",
+        "button_Gh8wkL"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "section_id": "wrap_farmhouse",
+        "image": "shopify://shop_images/tasting-wine.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-575c04fd-c80f-4d35-bbf5-4d5cfadf9d7b",
+        "color_scheme": "scheme-575c04fd-c80f-4d35-bbf5-4d5cfadf9d7b",
+        "image_link": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "tasting_options_afcpzX": {
+      "type": "tasting_options",
+      "custom_css": [],
+      "name": "Tasting Options",
+      "settings": {
+        "section_id": "tasting_options",
+        "heading": "TASTING OPTIONS",
+        "textfirst": "<h3 style=\"font-weight:600;font-size:20px\">Premium Hosted Tasting - $20pp</h3>\n<p>Hosted tasting of 6 seasonally selected wines from our premium tiers. We will guide you through the wines and provide a commentary of the Mission Estate History. </p>\n\n<div class=\"wraps_icons_textstesting_options\">\n<p><svg width=\"18\" height=\"20\" viewbox=\"0 0 18 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M9 2.07792C6.82975 2.07792 5.07042 3.88041 5.07042 6.1039C5.07042 8.32738 6.82975 10.1299 9 10.1299C11.1702 10.1299 12.9296 8.32738 12.9296 6.1039C12.9296 3.88041 11.1702 2.07792 9 2.07792ZM3.04225 6.1039C3.04225 2.73281 5.70963 0 9 0C12.2904 0 14.9577 2.73281 14.9577 6.1039C14.9577 9.47499 12.2904 12.2078 9 12.2078C5.70963 12.2078 3.04225 9.47499 3.04225 6.1039Z\" fill=\"white\"></path>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M9 12.2078C4.64853 12.2078 2.02817 15.6053 2.02817 18.961C2.02817 19.5348 1.57415 20 1.01408 20C0.454021 20 0 19.5348 0 18.961C0 14.5246 3.46414 10.1299 9 10.1299C14.5359 10.1299 18 14.5246 18 18.961C18 19.5348 17.546 20 16.9859 20C16.4258 20 15.9718 19.5348 15.9718 18.961C15.9718 15.6053 13.3515 12.2078 9 12.2078Z\" fill=\"white\"></path>\n</svg> <span>Hosted</span></p>\n\n<p><svg width=\"24\" height=\"17\" viewbox=\"0 0 24 17\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3.00002 5.25065C2.99991 4.38046 3.21611 3.52388 3.62916 2.75797C4.04222 1.99206 4.63918 1.34084 5.36635 0.862868C6.09352 0.384898 6.92809 0.095174 7.79501 0.0197559C8.66193 -0.0556621 9.53399 0.0855906 10.3328 0.430809C11.1316 0.776028 11.832 1.31439 12.3711 1.99746C12.9102 2.68054 13.2711 3.48691 13.4213 4.34404C13.5714 5.20118 13.5062 6.0822 13.2314 6.90787C12.9566 7.73353 12.4809 8.47794 11.847 9.07415C13.0421 9.65434 14.0797 10.514 14.8719 11.5804C15.6641 12.6468 16.1876 13.8885 16.398 15.2001C16.4212 15.3461 16.4153 15.4952 16.3809 15.6389C16.3464 15.7826 16.2839 15.9181 16.1971 16.0377C16.1102 16.1573 16.0007 16.2586 15.8747 16.3358C15.7487 16.4131 15.6087 16.4648 15.4628 16.4879C15.3168 16.511 15.1677 16.5052 15.024 16.4707C14.8803 16.4363 14.7448 16.3738 14.6252 16.287C14.5056 16.2001 14.4043 16.0906 14.3271 15.9646C14.2498 15.8386 14.1982 15.6986 14.175 15.5526C13.95 14.1431 13.2299 12.8599 12.144 11.9336C11.058 11.0072 9.6774 10.4984 8.25002 10.4984C6.82264 10.4984 5.44201 11.0072 4.35607 11.9336C3.27012 12.8599 2.55 14.1431 2.32502 15.5526C2.30177 15.6986 2.25001 15.8386 2.17267 15.9645C2.09534 16.0905 1.99396 16.2 1.87431 16.2868C1.75466 16.3735 1.61909 16.4359 1.47534 16.4703C1.3316 16.5047 1.18248 16.5104 1.03652 16.4871C0.890553 16.4639 0.750597 16.4121 0.624638 16.3348C0.49868 16.2575 0.389187 16.1561 0.302411 16.0364C0.215634 15.9168 0.153274 15.7812 0.118891 15.6375C0.0845071 15.4937 0.0787736 15.3446 0.102018 15.1986C0.311676 13.8871 0.834909 12.6455 1.62724 11.5795C2.41957 10.5135 3.45757 9.65452 4.65302 9.07565C4.13102 8.58465 3.71507 7.99199 3.43078 7.33417C3.1465 6.67634 2.9999 5.96727 3.00002 5.25065ZM16.5 3.00065C17.3715 3.00126 18.2241 3.25484 18.9543 3.73062C19.6845 4.2064 20.2609 4.88391 20.6135 5.68092C20.9661 6.47792 21.0798 7.36015 20.9407 8.2205C20.8016 9.08085 20.4158 9.88233 19.83 10.5276C20.7435 10.9802 21.5552 11.6142 22.2155 12.3911C22.8757 13.1679 23.3706 14.0711 23.67 15.0456C23.7295 15.2347 23.7378 15.4362 23.6943 15.6296C23.6507 15.823 23.5567 16.0014 23.4219 16.1467C23.2871 16.2921 23.1162 16.3991 22.9267 16.4571C22.7371 16.515 22.5355 16.5218 22.3425 16.4766C22.1495 16.432 21.9717 16.3372 21.8271 16.2018C21.6825 16.0664 21.5763 15.8953 21.519 15.7056C21.2498 14.8362 20.7598 14.0514 20.0967 13.4278C19.4337 12.8042 18.6203 12.3631 17.736 12.1476C17.4904 12.0883 17.2719 11.9481 17.1157 11.7494C16.9595 11.5508 16.8747 11.3053 16.875 11.0526V10.5246C16.8749 10.3152 16.9332 10.1099 17.0435 9.93178C17.1537 9.7537 17.3115 9.60992 17.499 9.51665C17.9538 9.29128 18.319 8.91878 18.5353 8.45967C18.7516 8.00055 18.8064 7.48178 18.6906 6.98763C18.5749 6.49347 18.2955 6.05295 17.8978 5.73762C17.5002 5.42229 17.0075 5.25067 16.5 5.25065C16.2017 5.25065 15.9155 5.13212 15.7045 4.92114C15.4935 4.71016 15.375 4.42402 15.375 4.12565C15.375 3.82728 15.4935 3.54113 15.7045 3.33015C15.9155 3.11917 16.2017 3.00065 16.5 3.00065ZM8.25002 2.25065C7.85051 2.24161 7.45322 2.31249 7.08148 2.4591C6.70974 2.60572 6.37104 2.82513 6.08526 3.10445C5.79948 3.38377 5.57239 3.71737 5.41731 4.08566C5.26223 4.45396 5.18229 4.84952 5.18219 5.24913C5.18209 5.64874 5.26183 6.04434 5.41673 6.41271C5.57162 6.78108 5.79855 7.1148 6.08419 7.39426C6.36982 7.67372 6.70842 7.8933 7.08009 8.0401C7.45175 8.18691 7.84901 8.25798 8.24852 8.24915C9.03236 8.23181 9.77827 7.90831 10.3266 7.34789C10.8749 6.78747 11.182 6.03466 11.1822 5.25063C11.1824 4.4666 10.8756 3.71364 10.3276 3.15294C9.7796 2.59225 9.03385 2.26837 8.25002 2.25065Z\" fill=\"white\"></path>\n</svg> <span>For groups of 2-12</span></p>\n\n<p><svg width=\"20\" height=\"20\" viewbox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18ZM10 0C11.3132 0 12.6136 0.258658 13.8268 0.761205C15.0401 1.26375 16.1425 2.00035 17.0711 2.92893C17.9997 3.85752 18.7362 4.95991 19.2388 6.17317C19.7413 7.38642 20 8.68678 20 10C20 12.6522 18.9464 15.1957 17.0711 17.0711C15.1957 18.9464 12.6522 20 10 20C4.47 20 0 15.5 0 10C0 7.34784 1.05357 4.8043 2.92893 2.92893C4.8043 1.05357 7.34784 0 10 0ZM10.5 5V10.25L15 12.92L14.25 14.15L9 11V5H10.5Z\" fill=\"white\"></path>\n</svg> <span>30-40 mins</span></p>\n</div>\n\n<p class=\"wrap_souvenir_icn_text\"><svg width=\"16\" height=\"22\" viewbox=\"0 0 16 22\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M15.2497 7.71906L13.2088 0.788125C13.163 0.632842 13.0683 0.496522 12.9387 0.39953C12.8091 0.302539 12.6516 0.250084 12.4897 0.25H3.51034C3.34846 0.250084 3.19096 0.302539 3.06135 0.39953C2.93175 0.496522 2.83701 0.632842 2.79128 0.788125L0.750337 7.71906C0.430125 8.78139 0.413366 9.9121 0.701955 10.9835C0.990543 12.0548 1.57298 13.0241 2.38346 13.7819C3.71672 15.0321 5.42972 15.8007 7.25002 15.9653V19.75H4.25003C4.05111 19.75 3.86035 19.829 3.7197 19.9697C3.57904 20.1103 3.50003 20.3011 3.50003 20.5C3.50003 20.6989 3.57904 20.8897 3.7197 21.0303C3.86035 21.171 4.05111 21.25 4.25003 21.25H11.75C11.9489 21.25 12.1397 21.171 12.2804 21.0303C12.421 20.8897 12.5 20.6989 12.5 20.5C12.5 20.3011 12.421 20.1103 12.2804 19.9697C12.1397 19.829 11.9489 19.75 11.75 19.75H8.75002V15.9653C10.5703 15.8007 12.2833 15.0321 13.6166 13.7819C14.4271 13.0241 15.0095 12.0548 15.2981 10.9835C15.5867 9.9121 15.5699 8.78139 15.2497 7.71906ZM4.07096 1.75H11.9291L13.8125 8.14281C13.821 8.17094 13.8285 8.19906 13.836 8.22719C11.8278 8.94719 9.56659 8.07719 8.3394 7.45563C5.97784 6.26031 4.10284 6.10844 2.72003 6.33719L4.07096 1.75ZM12.5938 12.6859C11.3484 13.8521 9.70614 14.5009 8.00002 14.5009C6.29391 14.5009 4.65165 13.8521 3.40628 12.6859C2.79979 12.1176 2.36428 11.391 2.14892 10.5882C1.93356 9.78541 1.94693 8.9384 2.18753 8.14281L2.22971 8.00031C3.35471 7.61969 5.14252 7.51844 7.66065 8.79437C8.70596 9.32406 10.3944 9.99906 12.201 9.99906C12.8048 10.0021 13.406 9.92 13.9869 9.75531C13.9104 10.8734 13.4125 11.9207 12.5938 12.6859Z\" fill=\"white\"></path>\n</svg> <span>Complimentary souvenir glass from Mission Estate.</span></p>",
+        "button_1_url": "https://booking.resdiary.com/widget/Standard/MissionEstateCellarDoor/11928",
+        "button_1_text": "Book a tasting",
+        "button_class": "",
+        "button_2_url": "",
+        "button_2_text": "",
+        "button_class1": "",
+        "textsecond": "<h3 style=\"font-weight:600;font-size:20px\">Platinum Hosted Tasting - $50pp</h3>\n<p>A hosted tasting of six very special wines. The selection will include two wines from our Huchet range, plus a seasonal mix of Jewelstone, limited edition or pre-release wines dependent on availability. We will guide you through the wines and the Mission history, with limited edition buying privileges extended to all tasters. Limited availability and must be pre-booked.</p>\n\n<div class=\"wraps_icons_textstesting_options\">\n<p><svg width=\"18\" height=\"20\" viewbox=\"0 0 18 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M9 2.07792C6.82975 2.07792 5.07042 3.88041 5.07042 6.1039C5.07042 8.32738 6.82975 10.1299 9 10.1299C11.1702 10.1299 12.9296 8.32738 12.9296 6.1039C12.9296 3.88041 11.1702 2.07792 9 2.07792ZM3.04225 6.1039C3.04225 2.73281 5.70963 0 9 0C12.2904 0 14.9577 2.73281 14.9577 6.1039C14.9577 9.47499 12.2904 12.2078 9 12.2078C5.70963 12.2078 3.04225 9.47499 3.04225 6.1039Z\" fill=\"white\"></path>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M9 12.2078C4.64853 12.2078 2.02817 15.6053 2.02817 18.961C2.02817 19.5348 1.57415 20 1.01408 20C0.454021 20 0 19.5348 0 18.961C0 14.5246 3.46414 10.1299 9 10.1299C14.5359 10.1299 18 14.5246 18 18.961C18 19.5348 17.546 20 16.9859 20C16.4258 20 15.9718 19.5348 15.9718 18.961C15.9718 15.6053 13.3515 12.2078 9 12.2078Z\" fill=\"white\"></path>\n</svg> <span>Hosted</span></p>\n\n<p><svg width=\"24\" height=\"17\" viewbox=\"0 0 24 17\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3.00002 5.25065C2.99991 4.38046 3.21611 3.52388 3.62916 2.75797C4.04222 1.99206 4.63918 1.34084 5.36635 0.862868C6.09352 0.384898 6.92809 0.095174 7.79501 0.0197559C8.66193 -0.0556621 9.53399 0.0855906 10.3328 0.430809C11.1316 0.776028 11.832 1.31439 12.3711 1.99746C12.9102 2.68054 13.2711 3.48691 13.4213 4.34404C13.5714 5.20118 13.5062 6.0822 13.2314 6.90787C12.9566 7.73353 12.4809 8.47794 11.847 9.07415C13.0421 9.65434 14.0797 10.514 14.8719 11.5804C15.6641 12.6468 16.1876 13.8885 16.398 15.2001C16.4212 15.3461 16.4153 15.4952 16.3809 15.6389C16.3464 15.7826 16.2839 15.9181 16.1971 16.0377C16.1102 16.1573 16.0007 16.2586 15.8747 16.3358C15.7487 16.4131 15.6087 16.4648 15.4628 16.4879C15.3168 16.511 15.1677 16.5052 15.024 16.4707C14.8803 16.4363 14.7448 16.3738 14.6252 16.287C14.5056 16.2001 14.4043 16.0906 14.3271 15.9646C14.2498 15.8386 14.1982 15.6986 14.175 15.5526C13.95 14.1431 13.2299 12.8599 12.144 11.9336C11.058 11.0072 9.6774 10.4984 8.25002 10.4984C6.82264 10.4984 5.44201 11.0072 4.35607 11.9336C3.27012 12.8599 2.55 14.1431 2.32502 15.5526C2.30177 15.6986 2.25001 15.8386 2.17267 15.9645C2.09534 16.0905 1.99396 16.2 1.87431 16.2868C1.75466 16.3735 1.61909 16.4359 1.47534 16.4703C1.3316 16.5047 1.18248 16.5104 1.03652 16.4871C0.890553 16.4639 0.750597 16.4121 0.624638 16.3348C0.49868 16.2575 0.389187 16.1561 0.302411 16.0364C0.215634 15.9168 0.153274 15.7812 0.118891 15.6375C0.0845071 15.4937 0.0787736 15.3446 0.102018 15.1986C0.311676 13.8871 0.834909 12.6455 1.62724 11.5795C2.41957 10.5135 3.45757 9.65452 4.65302 9.07565C4.13102 8.58465 3.71507 7.99199 3.43078 7.33417C3.1465 6.67634 2.9999 5.96727 3.00002 5.25065ZM16.5 3.00065C17.3715 3.00126 18.2241 3.25484 18.9543 3.73062C19.6845 4.2064 20.2609 4.88391 20.6135 5.68092C20.9661 6.47792 21.0798 7.36015 20.9407 8.2205C20.8016 9.08085 20.4158 9.88233 19.83 10.5276C20.7435 10.9802 21.5552 11.6142 22.2155 12.3911C22.8757 13.1679 23.3706 14.0711 23.67 15.0456C23.7295 15.2347 23.7378 15.4362 23.6943 15.6296C23.6507 15.823 23.5567 16.0014 23.4219 16.1467C23.2871 16.2921 23.1162 16.3991 22.9267 16.4571C22.7371 16.515 22.5355 16.5218 22.3425 16.4766C22.1495 16.432 21.9717 16.3372 21.8271 16.2018C21.6825 16.0664 21.5763 15.8953 21.519 15.7056C21.2498 14.8362 20.7598 14.0514 20.0967 13.4278C19.4337 12.8042 18.6203 12.3631 17.736 12.1476C17.4904 12.0883 17.2719 11.9481 17.1157 11.7494C16.9595 11.5508 16.8747 11.3053 16.875 11.0526V10.5246C16.8749 10.3152 16.9332 10.1099 17.0435 9.93178C17.1537 9.7537 17.3115 9.60992 17.499 9.51665C17.9538 9.29128 18.319 8.91878 18.5353 8.45967C18.7516 8.00055 18.8064 7.48178 18.6906 6.98763C18.5749 6.49347 18.2955 6.05295 17.8978 5.73762C17.5002 5.42229 17.0075 5.25067 16.5 5.25065C16.2017 5.25065 15.9155 5.13212 15.7045 4.92114C15.4935 4.71016 15.375 4.42402 15.375 4.12565C15.375 3.82728 15.4935 3.54113 15.7045 3.33015C15.9155 3.11917 16.2017 3.00065 16.5 3.00065ZM8.25002 2.25065C7.85051 2.24161 7.45322 2.31249 7.08148 2.4591C6.70974 2.60572 6.37104 2.82513 6.08526 3.10445C5.79948 3.38377 5.57239 3.71737 5.41731 4.08566C5.26223 4.45396 5.18229 4.84952 5.18219 5.24913C5.18209 5.64874 5.26183 6.04434 5.41673 6.41271C5.57162 6.78108 5.79855 7.1148 6.08419 7.39426C6.36982 7.67372 6.70842 7.8933 7.08009 8.0401C7.45175 8.18691 7.84901 8.25798 8.24852 8.24915C9.03236 8.23181 9.77827 7.90831 10.3266 7.34789C10.8749 6.78747 11.182 6.03466 11.1822 5.25063C11.1824 4.4666 10.8756 3.71364 10.3276 3.15294C9.7796 2.59225 9.03385 2.26837 8.25002 2.25065Z\" fill=\"white\"></path>\n</svg> <span>For groups of 2-12</span></p>\n\n<p><svg width=\"20\" height=\"20\" viewbox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18ZM10 0C11.3132 0 12.6136 0.258658 13.8268 0.761205C15.0401 1.26375 16.1425 2.00035 17.0711 2.92893C17.9997 3.85752 18.7362 4.95991 19.2388 6.17317C19.7413 7.38642 20 8.68678 20 10C20 12.6522 18.9464 15.1957 17.0711 17.0711C15.1957 18.9464 12.6522 20 10 20C4.47 20 0 15.5 0 10C0 7.34784 1.05357 4.8043 2.92893 2.92893C4.8043 1.05357 7.34784 0 10 0ZM10.5 5V10.25L15 12.92L14.25 14.15L9 11V5H10.5Z\" fill=\"white\"></path>\n</svg> <span>30-40 mins</span></p>\n</div>\n\n<p class=\"wrap_souvenir_icn_text\"><svg width=\"16\" height=\"22\" viewbox=\"0 0 16 22\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M15.2497 7.71906L13.2088 0.788125C13.163 0.632842 13.0683 0.496522 12.9387 0.39953C12.8091 0.302539 12.6516 0.250084 12.4897 0.25H3.51034C3.34846 0.250084 3.19096 0.302539 3.06135 0.39953C2.93175 0.496522 2.83701 0.632842 2.79128 0.788125L0.750337 7.71906C0.430125 8.78139 0.413366 9.9121 0.701955 10.9835C0.990543 12.0548 1.57298 13.0241 2.38346 13.7819C3.71672 15.0321 5.42972 15.8007 7.25002 15.9653V19.75H4.25003C4.05111 19.75 3.86035 19.829 3.7197 19.9697C3.57904 20.1103 3.50003 20.3011 3.50003 20.5C3.50003 20.6989 3.57904 20.8897 3.7197 21.0303C3.86035 21.171 4.05111 21.25 4.25003 21.25H11.75C11.9489 21.25 12.1397 21.171 12.2804 21.0303C12.421 20.8897 12.5 20.6989 12.5 20.5C12.5 20.3011 12.421 20.1103 12.2804 19.9697C12.1397 19.829 11.9489 19.75 11.75 19.75H8.75002V15.9653C10.5703 15.8007 12.2833 15.0321 13.6166 13.7819C14.4271 13.0241 15.0095 12.0548 15.2981 10.9835C15.5867 9.9121 15.5699 8.78139 15.2497 7.71906ZM4.07096 1.75H11.9291L13.8125 8.14281C13.821 8.17094 13.8285 8.19906 13.836 8.22719C11.8278 8.94719 9.56659 8.07719 8.3394 7.45563C5.97784 6.26031 4.10284 6.10844 2.72003 6.33719L4.07096 1.75ZM12.5938 12.6859C11.3484 13.8521 9.70614 14.5009 8.00002 14.5009C6.29391 14.5009 4.65165 13.8521 3.40628 12.6859C2.79979 12.1176 2.36428 11.391 2.14892 10.5882C1.93356 9.78541 1.94693 8.9384 2.18753 8.14281L2.22971 8.00031C3.35471 7.61969 5.14252 7.51844 7.66065 8.79437C8.70596 9.32406 10.3944 9.99906 12.201 9.99906C12.8048 10.0021 13.406 9.92 13.9869 9.75531C13.9104 10.8734 13.4125 11.9207 12.5938 12.6859Z\" fill=\"white\"></path>\n</svg> <span>Complimentary souvenir glass from Mission Estate.</span></p>",
+        "button_3_url": "https://booking.resdiary.com/widget/Standard/MissionEstateCellarDoor/11928",
+        "button_3_text": "Book a tasting",
+        "button_class2": "",
+        "button_4_url": "",
+        "button_4_text": "",
+        "button_class3": "",
+        "textthird": "<h3 style=\"font-weight:600;font-size:20px\">Self-Guided Tastings - $15pp</h3>\n<p>Alternative self-guided tastings of 4 pre-selected wines are available and include wine tasting notes.</p>\n<p><svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3.00002 8.25065C2.99991 7.38046 3.21611 6.52388 3.62916 5.75797C4.04222 4.99206 4.63918 4.34084 5.36635 3.86287C6.09352 3.3849 6.92809 3.09517 7.79501 3.01976C8.66193 2.94434 9.53399 3.08559 10.3328 3.43081C11.1316 3.77603 11.832 4.31439 12.3711 4.99746C12.9102 5.68054 13.2711 6.48691 13.4213 7.34404C13.5714 8.20118 13.5062 9.0822 13.2314 9.90787C12.9566 10.7335 12.4809 11.4779 11.847 12.0741C13.0421 12.6543 14.0797 13.514 14.8719 14.5804C15.6641 15.6468 16.1876 16.8885 16.398 18.2001C16.4212 18.3461 16.4153 18.4952 16.3809 18.6389C16.3464 18.7826 16.2839 18.9181 16.1971 19.0377C16.1102 19.1573 16.0007 19.2586 15.8747 19.3358C15.7487 19.4131 15.6087 19.4648 15.4628 19.4879C15.3168 19.511 15.1677 19.5052 15.024 19.4707C14.8803 19.4363 14.7448 19.3738 14.6252 19.287C14.5056 19.2001 14.4043 19.0906 14.3271 18.9646C14.2498 18.8386 14.1982 18.6986 14.175 18.5526C13.95 17.1431 13.2299 15.8599 12.144 14.9336C11.058 14.0072 9.6774 13.4984 8.25002 13.4984C6.82264 13.4984 5.44201 14.0072 4.35607 14.9336C3.27012 15.8599 2.55 17.1431 2.32502 18.5526C2.30177 18.6986 2.25001 18.8386 2.17267 18.9645C2.09534 19.0905 1.99396 19.2 1.87431 19.2868C1.75466 19.3735 1.61909 19.4359 1.47534 19.4703C1.3316 19.5047 1.18248 19.5104 1.03652 19.4871C0.890553 19.4639 0.750597 19.4121 0.624638 19.3348C0.49868 19.2575 0.389187 19.1561 0.302411 19.0364C0.215634 18.9168 0.153274 18.7812 0.118891 18.6375C0.0845071 18.4937 0.0787736 18.3446 0.102018 18.1986C0.311676 16.8871 0.834909 15.6455 1.62724 14.5795C2.41957 13.5135 3.45757 12.6545 4.65302 12.0756C4.13102 11.5847 3.71507 10.992 3.43078 10.3342C3.1465 9.67634 2.9999 8.96727 3.00002 8.25065ZM16.5 6.00065C17.3715 6.00126 18.2241 6.25484 18.9543 6.73062C19.6845 7.2064 20.2609 7.88391 20.6135 8.68092C20.9661 9.47792 21.0798 10.3601 20.9407 11.2205C20.8016 12.0808 20.4158 12.8823 19.83 13.5276C20.7435 13.9802 21.5552 14.6142 22.2155 15.3911C22.8757 16.1679 23.3706 17.0711 23.67 18.0456C23.7295 18.2347 23.7378 18.4362 23.6943 18.6296C23.6507 18.823 23.5567 19.0014 23.4219 19.1467C23.2871 19.2921 23.1162 19.3991 22.9267 19.4571C22.7371 19.515 22.5355 19.5218 22.3425 19.4766C22.1495 19.432 21.9717 19.3372 21.8271 19.2018C21.6825 19.0664 21.5763 18.8953 21.519 18.7056C21.2498 17.8362 20.7598 17.0514 20.0967 16.4278C19.4337 15.8042 18.6203 15.3631 17.736 15.1476C17.4904 15.0883 17.2719 14.9481 17.1157 14.7494C16.9595 14.5508 16.8747 14.3053 16.875 14.0526V13.5246C16.8749 13.3152 16.9332 13.1099 17.0435 12.9318C17.1537 12.7537 17.3115 12.6099 17.499 12.5166C17.9538 12.2913 18.319 11.9188 18.5353 11.4597C18.7516 11.0006 18.8064 10.4818 18.6906 9.98763C18.5749 9.49347 18.2955 9.05295 17.8978 8.73762C17.5002 8.42229 17.0075 8.25067 16.5 8.25065C16.2017 8.25065 15.9155 8.13212 15.7045 7.92114C15.4935 7.71016 15.375 7.42402 15.375 7.12565C15.375 6.82728 15.4935 6.54113 15.7045 6.33015C15.9155 6.11917 16.2017 6.00065 16.5 6.00065ZM8.25002 5.25065C7.85051 5.24161 7.45322 5.31249 7.08148 5.4591C6.70974 5.60572 6.37104 5.82513 6.08526 6.10445C5.79948 6.38377 5.57239 6.71737 5.41731 7.08566C5.26223 7.45396 5.18229 7.84952 5.18219 8.24913C5.18209 8.64874 5.26183 9.04434 5.41673 9.41271C5.57162 9.78108 5.79855 10.1148 6.08419 10.3943C6.36982 10.6737 6.70842 10.8933 7.08009 11.0401C7.45175 11.1869 7.84901 11.258 8.24852 11.2491C9.03236 11.2318 9.77827 10.9083 10.3266 10.3479C10.8749 9.78747 11.182 9.03466 11.1822 8.25063C11.1824 7.4666 10.8756 6.71364 10.3276 6.15294C9.7796 5.59225 9.03385 5.26837 8.25002 5.25065Z\" fill=\"white\"></path>\n</svg> <span>For groups of 1-6</span><br><br></p>\n<h3 style=\"font-weight:600;font-size:20px\">Visit the Grounds and Cellar</h3>\n<p>If you are not tasting wines, you are invited to walk in our grounds, take in the view of the home vineyard and visit the display in our Cellar.</p>",
+        "image": "shopify://shop_images/Asset_5-100_578a44f3-24d4-49f5-bc62-cb5b7813d1a0.jpg",
+        "slideshow_image_1": "shopify://shop_images/Asset_4-100_1f28b7a1-e1b7-41b0-a330-c8325bc3941d.jpg",
+        "padding_top_desktop": 30,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 30,
+        "padding_bottom_mobile": 30
+      }
+    },
+    "image_text_slideshow_mKy6DG": {
+      "type": "image-text-slideshow",
+      "custom_css": [
+        ".wraps_texts_cellerdoors {font-size: 0.8em;}"
+      ],
+      "name": "Image and Text Slideshow",
+      "settings": {
+        "section_id": "wrap_opening_hours",
+        "slider_class": "",
+        "enable_fullwidth": true,
+        "enable_slideshow": true,
+        "slide_speed": 5000,
+        "autoplay": true,
+        "autoplay_speed": 5000,
+        "image_position": "left",
+        "slideshow_image_1": "shopify://shop_images/CellarDoor_Inpage-rose.jpg",
+        "heading": "CELLAR DOOR HOURS",
+        "heading_url": "",
+        "heading_color": "#ffffff",
+        "text": "<p class=\"wraps_texts_cellerdoors\" style><strong><svg width=\"20\" height=\"20\" viewbox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18ZM10 0C11.3132 0 12.6136 0.258658 13.8268 0.761205C15.0401 1.26375 16.1425 2.00035 17.0711 2.92893C17.9997 3.85752 18.7362 4.95991 19.2388 6.17317C19.7413 7.38642 20 8.68678 20 10C20 12.6522 18.9464 15.1957 17.0711 17.0711C15.1957 18.9464 12.6522 20 10 20C4.47 20 0 15.5 0 10C0 7.34784 1.05357 4.8043 2.92893 2.92893C4.8043 1.05357 7.34784 0 10 0ZM10.5 5V10.25L15 12.92L14.25 14.15L9 11V5H10.5Z\" fill=\"white\"></path>\n</svg>\n Mon to Sat: 9am to 5pm</strong> <span><svg width=\"22\" height=\"19\" viewbox=\"0 0 22 19\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12.2991 1.14844L20.9331 16.1024C21.0647 16.3305 21.134 16.5891 21.134 16.8524C21.134 17.1157 21.0647 17.3744 20.9331 17.6024C20.8014 17.8304 20.6121 18.0198 20.384 18.1515C20.156 18.2831 19.8974 18.3524 19.6341 18.3524H2.36605C2.10275 18.3524 1.84409 18.2831 1.61606 18.1515C1.38804 18.0198 1.19869 17.8304 1.06704 17.6024C0.935393 17.3744 0.866087 17.1157 0.866089 16.8524C0.866091 16.5891 0.9354 16.3305 1.06705 16.1024L9.70105 1.14844C10.2781 0.148438 11.7211 0.148438 12.2991 1.14844ZM11.0001 2.89844L3.23205 16.3524H18.7681L11.0001 2.89844ZM11.0001 13.0004C11.2653 13.0004 11.5196 13.1058 11.7072 13.2933C11.8947 13.4809 12.0001 13.7352 12.0001 14.0004C12.0001 14.2657 11.8947 14.52 11.7072 14.7075C11.5196 14.8951 11.2653 15.0004 11.0001 15.0004C10.7348 15.0004 10.4805 14.8951 10.2929 14.7075C10.1054 14.52 10.0001 14.2657 10.0001 14.0004C10.0001 13.7352 10.1054 13.4809 10.2929 13.2933C10.4805 13.1058 10.7348 13.0004 11.0001 13.0004ZM11.0001 6.00044C11.2653 6.00044 11.5196 6.10579 11.7072 6.29333C11.8947 6.48087 12.0001 6.73522 12.0001 7.00044V11.0004C12.0001 11.2657 11.8947 11.52 11.7072 11.7075C11.5196 11.8951 11.2653 12.0004 11.0001 12.0004C10.7348 12.0004 10.4805 11.8951 10.2929 11.7075C10.1054 11.52 10.0001 11.2657 10.0001 11.0004V7.00044C10.0001 6.73522 10.1054 6.48087 10.2929 6.29333C10.4805 6.10579 10.7348 6.00044 11.0001 6.00044Z\" fill=\"white\"></path>\n</svg> Last wine tasting at 4.30pm</span></p>\n\n<p class=\"wraps_texts_cellerdoors\"><strong><svg width=\"20\" height=\"20\" viewbox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18ZM10 0C11.3132 0 12.6136 0.258658 13.8268 0.761205C15.0401 1.26375 16.1425 2.00035 17.0711 2.92893C17.9997 3.85752 18.7362 4.95991 19.2388 6.17317C19.7413 7.38642 20 8.68678 20 10C20 12.6522 18.9464 15.1957 17.0711 17.0711C15.1957 18.9464 12.6522 20 10 20C4.47 20 0 15.5 0 10C0 7.34784 1.05357 4.8043 2.92893 2.92893C4.8043 1.05357 7.34784 0 10 0ZM10.5 5V10.25L15 12.92L14.25 14.15L9 11V5H10.5Z\" fill=\"white\"></path>\n</svg>\n Sunday: 10am to 4.30pm</strong> <span><svg width=\"22\" height=\"19\" viewbox=\"0 0 22 19\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12.2991 1.14844L20.9331 16.1024C21.0647 16.3305 21.134 16.5891 21.134 16.8524C21.134 17.1157 21.0647 17.3744 20.9331 17.6024C20.8014 17.8304 20.6121 18.0198 20.384 18.1515C20.156 18.2831 19.8974 18.3524 19.6341 18.3524H2.36605C2.10275 18.3524 1.84409 18.2831 1.61606 18.1515C1.38804 18.0198 1.19869 17.8304 1.06704 17.6024C0.935393 17.3744 0.866087 17.1157 0.866089 16.8524C0.866091 16.5891 0.9354 16.3305 1.06705 16.1024L9.70105 1.14844C10.2781 0.148438 11.7211 0.148438 12.2991 1.14844ZM11.0001 2.89844L3.23205 16.3524H18.7681L11.0001 2.89844ZM11.0001 13.0004C11.2653 13.0004 11.5196 13.1058 11.7072 13.2933C11.8947 13.4809 12.0001 13.7352 12.0001 14.0004C12.0001 14.2657 11.8947 14.52 11.7072 14.7075C11.5196 14.8951 11.2653 15.0004 11.0001 15.0004C10.7348 15.0004 10.4805 14.8951 10.2929 14.7075C10.1054 14.52 10.0001 14.2657 10.0001 14.0004C10.0001 13.7352 10.1054 13.4809 10.2929 13.2933C10.4805 13.1058 10.7348 13.0004 11.0001 13.0004ZM11.0001 6.00044C11.2653 6.00044 11.5196 6.10579 11.7072 6.29333C11.8947 6.48087 12.0001 6.73522 12.0001 7.00044V11.0004C12.0001 11.2657 11.8947 11.52 11.7072 11.7075C11.5196 11.8951 11.2653 12.0004 11.0001 12.0004C10.7348 12.0004 10.4805 11.8951 10.2929 11.7075C10.1054 11.52 10.0001 11.2657 10.0001 11.0004V7.00044C10.0001 6.73522 10.1054 6.48087 10.2929 6.29333C10.4805 6.10579 10.7348 6.00044 11.0001 6.00044Z\" fill=\"white\"></path>\n</svg> Last wine tasting at 3.45pm</span></p>\n\n<p class=\"wraps_texts_cellerdoors\">NB: Wine tastings take approx 40 minutes.</p>\n<p class=\"wraps_texts_cellerdoors\">We are closed: Good Friday & Christmas Day</p>\n\n<p><strong>Contact the Cellar Door</strong></p>\n\n<p class=\"wraps_texts_cellerdoors\"><strong><svg width=\"20\" height=\"20\" viewbox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 1C6.5 1 8.5 5.5 8.5 6C8.5 7 7 8 6.5 9C6 10 7 11 8 12C8.39 12.39 10 14 11 13.5C12 13 13 11.5 14 11.5C14.5 11.5 19 13.5 19 14C19 16 17.5 17.5 16 18C14.5 18.5 13.5 18.5 11.5 18C9.5 17.5 8 17 5.5 14.5C3 12 2.5 10.5 2 8.5C1.5 6.5 1.5 5.5 2 4C2.5 2.5 4 1 6 1Z\" stroke=\"white\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>\n Call us: <a style=\"color:#FFFFFF\" href=\"tel:64%206%20845%209353\">64 6 845 9353</a></strong></p> \n <p class=\"wraps_texts_cellerdoors\"> \n<span><svg width=\"20\" height=\"16\" viewbox=\"0 0 20 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M20 2C20 0.9 19.1 0 18 0H2C0.9 0 0 0.9 0 2V14C0 15.1 0.9 16 2 16H18C19.1 16 20 15.1 20 14V2ZM18 2L10 7L2 2H18ZM18 14H2V4L10 9L18 4V14Z\" fill=\"white\"></path>\n</svg>\n Email us: <a style=\"color:#FFFFFF\" href=\"mailto:cellardoor@missionestate.co.nz\">cellardoor@missionestate.co.nz</a></span></p>\n\n<p><strong>Bookings are recommended</strong></p>\n<p style=\"font-size:0.8em;\">We highly recommend booking for tastings, as we can get very busy on weekends, during holidays, and between Labour Weekend to Easter.</p>\n<p style=\"font-size: 0.8em;\">*For large groups please contact us for specific arrangements *Bus tours; prior booking only</p>",
+        "text_color": "#ffffff",
+        "simple_link1": false,
+        "button_1_url": "https://booking.resdiary.com/widget/Standard/MissionEstateCellarDoor/11928?includeJquery=false",
+        "link_target1": "_blank",
+        "button_1_text": "Book a tasting",
+        "button_class": "",
+        "button1_bg_color": "rgba(0,0,0,0)",
+        "button1_color": "#ffffff",
+        "simple_link2": false,
+        "button_2_url": "",
+        "link_target2": "_self",
+        "button_2_text": "",
+        "button_class2": "",
+        "button2_bg_color": "rgba(0,0,0,0)",
+        "button2_color": "#002855",
+        "secondary": false,
+        "simple_link3": false,
+        "button_3_url": "https://booking.resdiary.com/widget/Standard/MissionEstateCellarDoor/11928",
+        "link_target3": "_self",
+        "button_3_text": "",
+        "button_class3": "",
+        "simple_link4": false,
+        "button_4_url": "",
+        "link_target4": "_self",
+        "button_4_text": "",
+        "button_class4": "",
+        "background_color": "#005151",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "image_text_slideshow_3NTi3g": {
+      "type": "image-text-slideshow",
+      "disabled": true,
+      "name": "Image and Text Slideshow",
+      "settings": {
+        "section_id": "wrap_upcoming_events",
+        "slider_class": "wrap_aboutussec",
+        "enable_fullwidth": true,
+        "enable_slideshow": true,
+        "slide_speed": 5000,
+        "autoplay": true,
+        "autoplay_speed": 5000,
+        "image_position": "right",
+        "slideshow_image_1": "shopify://shop_images/Asset_7-100.jpg",
+        "heading": "MISSION EVENTS",
+        "heading_url": "",
+        "heading_color": "#002855",
+        "text": "<p>Mission Estate Winery, established in 1851, offers an unparalleled setting for weddings, corporate functions, and special events.</p>",
+        "text_color": "#002855",
+        "simple_link1": false,
+        "button_1_url": "#",
+        "link_target1": "_self",
+        "button_1_text": "Discover more",
+        "button_class": "",
+        "button1_bg_color": "#002855",
+        "button1_color": "#ffffff",
+        "simple_link2": false,
+        "button_2_url": "",
+        "link_target2": "_self",
+        "button_2_text": "",
+        "button_class2": "",
+        "button2_bg_color": "rgba(0,0,0,0)",
+        "button2_color": "#002855",
+        "secondary": false,
+        "simple_link3": false,
+        "button_3_url": "",
+        "link_target3": "_self",
+        "button_3_text": "",
+        "button_class3": "",
+        "simple_link4": false,
+        "button_4_url": "",
+        "link_target4": "_self",
+        "button_4_text": "",
+        "button_class4": "",
+        "background_color": "#ffffff",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "review_grid_HEc4zB": {
+      "type": "review-grid",
+      "blocks": {
+        "review_8K9GVn": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "review_text": "Beautiful setting and an excellent selection of wines. I’d recommend having a tasting,\nwhich was expertly led and great value - Oliver R"
+          }
+        },
+        "review_w4T6xP": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "review_text": "Superb place in Napier, the best place in the north island for wines – Patrick J"
+          }
+        },
+        "review_PftrTD": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "review_text": "Wunderbares und schönes Weingut...Die Weine sind lecker und das Ambiente ist – Lea F"
+          }
+        }
+      },
+      "block_order": [
+        "review_8K9GVn",
+        "review_w4T6xP",
+        "review_PftrTD"
+      ],
+      "name": "Review Grid",
+      "settings": {
+        "section_title": "recent reviews"
+      }
+    },
+    "rich_text_ACjAab": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_q47cJN": {
+          "type": "heading",
+          "settings": {
+            "heading": "Explore our wines",
+            "heading_size": "h1"
+          }
+        },
+        "button_CRwVf7": {
+          "type": "button",
+          "settings": {
+            "button_label": "View the range",
+            "button_new_tab": false,
+            "simple_link1": false,
+            "button_link": "/collections/all",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_q47cJN",
+        "button_CRwVf7"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "section_id": "our-people-rich-text",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 24
+      }
+    },
+    "featured_collection_6ym7wH": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "frontpage",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "show_rating": true,
+        "quick_add": "standard",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_rxLHkY",
+    "restaurant_tabs_C4Ttcj",
+    "image_with_text_LUDAAn",
+    "tasting_options_afcpzX",
+    "image_text_slideshow_mKy6DG",
+    "image_text_slideshow_3NTi3g",
+    "review_grid_HEc4zB",
+    "rich_text_ACjAab",
+    "featured_collection_6ym7wH"
+  ]
+}

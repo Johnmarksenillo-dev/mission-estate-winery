@@ -1,0 +1,125 @@
+{% schema %}
+{
+  "name": "Team Profiles",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_heading",
+      "label": "Section Heading",
+      "default": "Culinary & Hospitality Leadership"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "profile",
+      "name": "Profile",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Profile Image"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Name",
+          "default": "John Doe"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Job Title"
+        },
+        {
+          "type": "richtext",
+          "id": "bio",
+          "label": "Bio",
+          "default": "<p>This is a short biography.</p>"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 6,
+  "presets": [
+    {
+      "name": "Team Profiles",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+  .team-section {
+  background-color: #fda896;
+  padding: 60px 0px;
+}
+
+.team-heading {
+  color: #002855;
+  font-size: 38px !important;
+  font-weight: 600;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+.team-member {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.team-name {
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #002855;
+}
+
+.team-title {
+  font-weight: 600;
+  color: #666;
+  margin-bottom: 10px;
+  color: #002855;
+  font-family: 'Raleway';
+}
+
+.team-bio p {
+  margin: 0;
+  color: #002855;
+}
+</style>
+
+<section class="team-section">
+  <div class="page-width">
+    <div class="team-grid">
+      <h2 class="team-heading">{{ section.settings.section_heading }}</h2>
+      {% for block in section.blocks %}
+        <div class="team-member">
+          {% if block.settings.image %}
+            <img
+              src="{{ block.settings.image | img_url: 'master' }}"
+              alt="{{ block.settings.name }}"
+              class="team-image"
+            >
+          {% endif %}
+          <h3 class="team-name">{{ block.settings.name }}</h3>
+          <p class="team-title">{{ block.settings.title }}</p>
+          <div class="team-bio">{{ block.settings.bio }}</div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

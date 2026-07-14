@@ -1,0 +1,334 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "slideshow_KLYePA": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_B9R7dh": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/florence-charvin-MISSION-portraits-DSCF2960.jpg",
+            "video_url": "",
+            "heading": "Our People",
+            "heading_size": "hxl",
+            "subheading": "Our people are our foundation and our future.  Our values are rooted deeply in our culture and everything we do nurtures an environment for support and success.",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-d536de6d-9eba-4ca5-b804-ae369f8ab959",
+            "text_alignment_mobile": "left"
+          }
+        }
+      },
+      "block_order": [
+        "slide_B9R7dh"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "large",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "multicolumn_EcpRT4": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_PKjPcN": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Michael_Wentworth.jpg",
+            "title": "Michael Wentworth",
+            "subtitle": "CEO",
+            "text": "<p>A respected leader, Michael joins us in our 175th year to guide the next chapter of Mission Estate. He leads the evolution of our historic winery, iconic hospitality venues, and diverse business ventures, building on a legacy of excellence and innovation.</p>",
+            "simple_link1": true,
+            "secondary_link1": false,
+            "button_1_url": "",
+            "button_1_text": "",
+            "button1_bg_color": "#002855",
+            "button1_color": "#000000",
+            "primary_link2": false,
+            "button_2_url": "",
+            "button_class": "",
+            "button_2_text": "",
+            "button2_bg_color": "rgba(0,0,0,0)",
+            "button2_color": "#002855"
+          }
+        },
+        "column_LwEtdC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/people_maxine-yule.jpg",
+            "title": "Maxine Yule",
+            "subtitle": "Interim Financial Controller",
+            "text": "<p>Maxine is a Chartered Accountant with a passion for New Zealand’s agribusiness and land-based industries.  Having experience both as an analyst and an accountant in agri-based businesses, Maxine understands commercial drivers and the people.</p>",
+            "simple_link1": true,
+            "secondary_link1": false,
+            "button_1_url": "",
+            "button_1_text": "",
+            "button1_bg_color": "#002855",
+            "button1_color": "#000000",
+            "primary_link2": false,
+            "button_2_url": "",
+            "button_class": "",
+            "button_2_text": "",
+            "button2_bg_color": "rgba(0,0,0,0)",
+            "button2_color": "#002855"
+          }
+        },
+        "column_DNLQ7c": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/people_fiona-paul.jpg",
+            "title": "Fiona Paul",
+            "subtitle": "Marketing Manager",
+            "text": "<p>Fiona brings extensive experience to Mission Estate Winery, with a career spanning senior sales and marketing roles across both New Zealand and the United Kingdom. She has successfully led marketing strategy across multiple wine brands and the cellar door, underpinned by a global perspective on the wine industry.</p>",
+            "simple_link1": true,
+            "secondary_link1": false,
+            "button_1_url": "",
+            "button_1_text": "",
+            "button1_bg_color": "#002855",
+            "button1_color": "#000000",
+            "primary_link2": false,
+            "button_2_url": "",
+            "button_class": "",
+            "button_2_text": "",
+            "button2_bg_color": "rgba(0,0,0,0)",
+            "button2_color": "#002855"
+          }
+        },
+        "column_WNP8Hk": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Tony_Stanford_Cropped_head_shot.jpg",
+            "title": "Tony Stanford",
+            "subtitle": "National Sales Manager",
+            "text": "<p>Tony is a highly experienced National Sales Manager whose journey at Mission started in 1999.  Tony manages all the key accounts and a bright team of area representatives proudly keeping our great wines well stocked around the country.</p>",
+            "simple_link1": true,
+            "secondary_link1": false,
+            "button_1_url": "",
+            "button_1_text": "",
+            "button1_bg_color": "#002855",
+            "button1_color": "#000000",
+            "primary_link2": false,
+            "button_2_url": "",
+            "button_class": "",
+            "button_2_text": "",
+            "button2_bg_color": "rgba(0,0,0,0)",
+            "button2_color": "#002855"
+          }
+        },
+        "column_QxmC8n": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/people_kris-love.jpg",
+            "title": "Kris Love",
+            "subtitle": "Export Manager",
+            "text": "<p>Kris has extensive wine industry experience in some of the most competitive markets in the world. He holds a WSET Diploma in Wine, completed while based in the UK wine market for 10 years. He has worked in senior roles on both sides of import and export and supplied some of the world’s leading on-trade accounts and importers. He firmly believes in establishing long-term, mutually beneficial partnerships.</p>",
+            "simple_link1": true,
+            "secondary_link1": false,
+            "button_1_url": "",
+            "button_1_text": "",
+            "button1_bg_color": "#002855",
+            "button1_color": "#000000",
+            "primary_link2": false,
+            "button_2_url": "",
+            "button_class": "",
+            "button_2_text": "",
+            "button2_bg_color": "rgba(0,0,0,0)",
+            "button2_color": "#002855"
+          }
+        },
+        "column_WL8xaU": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/people_alex-roper.jpg",
+            "title": "Alex Roper",
+            "subtitle": "Head Winemaker",
+            "text": "<p>Alex Roper worked alongside Paul Mooney since 2011, learning his winemaking techniques and philosophies. Alex is focussed on respecting tradition without shying away from innovation. He is always striving for continual improvement of quality, efficiency and environmental management while creating beautiful wines for us all to enjoy.</p>",
+            "simple_link1": true,
+            "secondary_link1": false,
+            "button_1_url": "",
+            "button_1_text": "",
+            "button1_bg_color": "#002855",
+            "button1_color": "#000000",
+            "primary_link2": false,
+            "button_2_url": "",
+            "button_class": "",
+            "button_2_text": "",
+            "button2_bg_color": "rgba(0,0,0,0)",
+            "button2_color": "#002855"
+          }
+        },
+        "column_BFUfy7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/people_paul-robinson.jpg",
+            "title": "Paul Robinson",
+            "subtitle": "Viticulturist",
+            "text": "<p>Paul has worked in various roles in Hawke’s Bay viticulture for the past 17 years and won the National Young Viticulturist of the year in 2014. Paul is responsible for overseeing the company’s fruit supply and is always looking for ways to grow our vineyards more sustainably. He enjoys the diversity of the role where every day brings something new and a different challenge.</p>",
+            "simple_link1": true,
+            "secondary_link1": false,
+            "button_1_url": "",
+            "button_1_text": "",
+            "button1_bg_color": "#002855",
+            "button1_color": "#000000",
+            "primary_link2": false,
+            "button_2_url": "",
+            "button_class": "",
+            "button_2_text": "",
+            "button2_bg_color": "rgba(0,0,0,0)",
+            "button2_color": "#002855"
+          }
+        },
+        "column_rEGypz": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/people_cariappa-kuttapa.jpg",
+            "title": "Cariappa Kuttappa",
+            "subtitle": "Winery Operations Manager",
+            "text": "<p>With 10 years of experience in FMCG manufacturing operations, Cariappa is<br/>passionate about driving continuous improvement and operational excellence. He leads the day-to-day management of our winery operations, focusing on streamlining processes to deliver the highest quality with efficiency and precision across vineyard and winery operations.</p>",
+            "simple_link1": true,
+            "secondary_link1": false,
+            "button_1_url": "",
+            "button_1_text": "",
+            "button1_bg_color": "#002855",
+            "button1_color": "#000000",
+            "primary_link2": false,
+            "button_2_url": "",
+            "button_class": "",
+            "button_2_text": "",
+            "button2_bg_color": "rgba(0,0,0,0)",
+            "button2_color": "#002855"
+          }
+        }
+      },
+      "block_order": [
+        "column_PKjPcN",
+        "column_LwEtdC",
+        "column_DNLQ7c",
+        "column_WNP8Hk",
+        "column_QxmC8n",
+        "column_WL8xaU",
+        "column_BFUfy7",
+        "column_rEGypz"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "section_id": "our-people",
+        "title": "",
+        "heading_size": "h0",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "scheme-2da7a709-01d3-4bb8-8ee9-d3d5efac063e",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_HWQh9y": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_WtyQtW": {
+          "type": "heading",
+          "settings": {
+            "heading": "Explore our wines",
+            "heading_size": "h1"
+          }
+        },
+        "button_K3JmJf": {
+          "type": "button",
+          "settings": {
+            "button_label": "View the range",
+            "simple_link1": false,
+            "button_link": "/collections/all",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_WtyQtW",
+        "button_K3JmJf"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "section_id": "our-people-rich-text",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-ccdf85bc-5e76-4e49-b1d5-b858928d4956",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 24
+      }
+    },
+    "featured_collection_YxwWbW": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "frontpage",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "show_rating": true,
+        "quick_add": "standard",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_KLYePA",
+    "multicolumn_EcpRT4",
+    "rich_text_HWQh9y",
+    "featured_collection_YxwWbW"
+  ]
+}

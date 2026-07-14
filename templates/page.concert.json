@@ -1,0 +1,341 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "slideshow_XJACEe": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_UQfBFk": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/concert-slider.jpg",
+            "video_url": "",
+            "heading": "The Mission Concert",
+            "heading_size": "hxl",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-d536de6d-9eba-4ca5-b804-ae369f8ab959",
+            "text_alignment_mobile": "left"
+          }
+        }
+      },
+      "block_order": [
+        "slide_UQfBFk"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "large",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "image_with_text_FKXVbi": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_EfphCN": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "text_dpzkjX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For over 30 years, the Mission Concert has brought some of the world’s biggest artists to the lawns of Mission Estate – New Zealand’s oldest winery. With views across our home vineyard, the concert is a highlight of the Hawke’s Bay cultural calendar, drawing friends, families, and fans together enjoy unforgettable world-class performances. </p><p>The very first Mission Concert was held in 1993, headlined by Dame Kiri Te Kanawa with the New Zealand Symphony Orchestra. That landmark moment sparked a tradition that would grow to become a defining part of the region’s cultural calendar.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_er4YPA": {
+          "type": "button",
+          "settings": {
+            "button_label": "Visit the official Mission Concert website",
+            "link_target": "_blank",
+            "button_class": "",
+            "button_link": "https://www.missionconcert.co.nz/",
+            "button_label1": "",
+            "button_link1": "",
+            "link_target1": "_self",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_EfphCN",
+        "text_dpzkjX",
+        "button_er4YPA"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "section_id": "wrap_unforgetable",
+        "image": "shopify://shop_images/event-concert.jpg",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-100f2722-9e2d-4226-8841-01bbb8136b93",
+        "color_scheme": "scheme-100f2722-9e2d-4226-8841-01bbb8136b93",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "image_text_slideshow_8DbJ7Q": {
+      "type": "image-text-slideshow",
+      "disabled": true,
+      "name": "Image and Text Slideshow",
+      "settings": {
+        "section_id": "cellar-door",
+        "slider_class": "wrap_aboutussec",
+        "enable_fullwidth": true,
+        "enable_slideshow": true,
+        "slide_speed": 5000,
+        "autoplay": true,
+        "autoplay_speed": 5000,
+        "image_position": "left",
+        "slideshow_image_1": "shopify://shop_images/Screenshot_2025-05-15_at_12.18.01_PM.png",
+        "heading": "Mission Concert",
+        "heading_url": "",
+        "heading_color": "#ffffff",
+        "text": "Unforgettable occasions demand an exceptional venue.\n\nMission Estate is one of Hawke’s Bays premiere wedding venues; offering elegant and classic surroundings, magnificent views, world class cuisine and wines combined with a stunning vineyard location.\n\nIt ticks all the boxes as a venue.",
+        "text_color": "#ffffff",
+        "simple_link1": true,
+        "button_1_url": "https://www.missionconcert.co.nz/",
+        "link_target1": "_self",
+        "button_1_text": "Discover More",
+        "button_class": "",
+        "button1_bg_color": "rgba(0,0,0,0)",
+        "button1_color": "#ffffff",
+        "simple_link2": false,
+        "button_2_url": "",
+        "link_target2": "_self",
+        "button_2_text": "",
+        "button_class2": "",
+        "button2_bg_color": "rgba(0,0,0,0)",
+        "button2_color": "#002855",
+        "secondary": false,
+        "simple_link3": false,
+        "button_3_url": "",
+        "link_target3": "_self",
+        "button_3_text": "",
+        "button_class3": "",
+        "simple_link4": false,
+        "button_4_url": "",
+        "link_target4": "_self",
+        "button_4_text": "",
+        "button_class4": "",
+        "background_color": "#ff3e51",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 30,
+        "padding_bottom_mobile": 30
+      }
+    },
+    "image_text_slideshow_6NDgWg": {
+      "type": "image-text-slideshow",
+      "name": "Image and Text Slideshow",
+      "settings": {
+        "section_id": "wrap_event_pink_ribben",
+        "slider_class": "wraps_slider-section",
+        "enable_fullwidth": false,
+        "enable_slideshow": true,
+        "slide_speed": 5000,
+        "autoplay": true,
+        "autoplay_speed": 5000,
+        "image_position": "right",
+        "slideshow_image_1": "shopify://shop_images/consert-elton-john.jpg",
+        "heading": "WE'VE HOSTED SOME BIG NAMES",
+        "heading_url": "",
+        "heading_color": "#002855",
+        "text": "<p>From legends like Elton John, Dionne Warwick, Sting, The Beach Boys, Ray Charles, and Carole King, to memorable performances by Rod Stewart, Shirley Bassey, Michael Bublé, Phil Collins, The Dixie Chicks, and The B52s, the Mission Concert has welcomed a truly world-class lineup over the years.</p>\n<p>The most recent concert in November 2023 saw Robbie Williams light up the stage for another sold-out crowd. While there is currently no confirmed date for the next event, Mission Estate remains committed to continuing the legacy. We know how much the concert means to our community and music lovers nationwide, and we look forward to welcoming you back when the time is right.</p>",
+        "text_color": "#002855",
+        "simple_link1": true,
+        "button_1_url": "#",
+        "link_target1": "_self",
+        "button_1_text": "",
+        "button_class": "",
+        "button1_bg_color": "rgba(0,0,0,0)",
+        "button1_color": "#002855",
+        "simple_link2": false,
+        "button_2_url": "",
+        "link_target2": "_self",
+        "button_2_text": "",
+        "button_class2": "",
+        "button2_bg_color": "rgba(0,0,0,0)",
+        "button2_color": "#002855",
+        "secondary": false,
+        "simple_link3": false,
+        "button_3_url": "",
+        "link_target3": "_self",
+        "button_3_text": "",
+        "button_class3": "",
+        "simple_link4": false,
+        "button_4_url": "",
+        "link_target4": "_self",
+        "button_4_text": "",
+        "button_class4": "",
+        "background_color": "#f0f0ed",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 30,
+        "padding_bottom_mobile": 30
+      }
+    },
+    "image_text_slideshow_ceBW8P": {
+      "type": "image-text-slideshow",
+      "name": "Image and Text Slideshow",
+      "settings": {
+        "section_id": "upcoming-events",
+        "slider_class": "wraps_slider-section",
+        "enable_fullwidth": false,
+        "enable_slideshow": true,
+        "slide_speed": 5000,
+        "autoplay": true,
+        "autoplay_speed": 5000,
+        "image_position": "right",
+        "slideshow_image_1": "shopify://shop_images/ap110204-4169.jpg",
+        "heading": "The Mission Concert venue",
+        "heading_url": "",
+        "heading_color": "#002855",
+        "text": "The Mission Concert is held in our natural amphitheatre in Greenmeadows, Taradale. With both General Admission and Reserved Seating available, guests can choose their own experience – from relaxed picnics on the grass to closer views of the stage. Many return year after year for the atmosphere, the chance to enjoy Mission’s wines in the place they’re made, and the feeling of being part of something truly special in the heart of Hawke’s Bay.",
+        "text_color": "#002855",
+        "simple_link1": true,
+        "button_1_url": "https://www.missionconcert.co.nz/",
+        "link_target1": "_blank",
+        "button_1_text": "Visit the official Mission Concert website",
+        "button_class": "",
+        "button1_bg_color": "rgba(0,0,0,0)",
+        "button1_color": "#002855",
+        "simple_link2": false,
+        "button_2_url": "shopify://pages/our-people",
+        "link_target2": "_self",
+        "button_2_text": "",
+        "button_class2": "",
+        "button2_bg_color": "rgba(0,0,0,0)",
+        "button2_color": "#002855",
+        "secondary": false,
+        "simple_link3": false,
+        "button_3_url": "",
+        "link_target3": "_self",
+        "button_3_text": "",
+        "button_class3": "",
+        "simple_link4": false,
+        "button_4_url": "",
+        "link_target4": "_self",
+        "button_4_text": "",
+        "button_class4": "",
+        "background_color": "#f8e08e",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 30,
+        "padding_bottom_mobile": 30
+      }
+    },
+    "rich_text_wtFVQT": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_YU6NQf": {
+          "type": "heading",
+          "settings": {
+            "heading": "Explore our wines",
+            "heading_size": "h1"
+          }
+        },
+        "button_cXbXBb": {
+          "type": "button",
+          "settings": {
+            "button_label": "View the range",
+            "simple_link1": false,
+            "button_link": "/collections/all",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_YU6NQf",
+        "button_cXbXBb"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "section_id": "our-people-rich-text",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2da7a709-01d3-4bb8-8ee9-d3d5efac063e",
+        "full_width": true,
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "featured_collection_hqCgVh": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "frontpage",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "show_rating": true,
+        "quick_add": "standard",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_XJACEe",
+    "image_with_text_FKXVbi",
+    "image_text_slideshow_8DbJ7Q",
+    "image_text_slideshow_6NDgWg",
+    "image_text_slideshow_ceBW8P",
+    "rich_text_wtFVQT",
+    "featured_collection_hqCgVh"
+  ]
+}

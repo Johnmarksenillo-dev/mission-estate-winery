@@ -1,0 +1,327 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "slideshow_fYQC66": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_yxXY78": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/VineYard_Banner.png",
+            "video_url": "",
+            "heading": "<strong>My page heading</strong>",
+            "heading_size": "hxl",
+            "subheading": "Mission Estate introduced the first vines to Hawke’s Bay in the 1850s, beginning a legacy that makes us New Zealand’s oldest winery. Today, we grow in two of the country’s most celebrated wine regions.",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 10,
+            "color_scheme": "scheme-d536de6d-9eba-4ca5-b804-ae369f8ab959",
+            "text_alignment_mobile": "left"
+          }
+        }
+      },
+      "block_order": [
+        "slide_yxXY78"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "text_with_img_jRdRbK": {
+      "type": "text-with-img",
+      "blocks": {
+        "heading_FyBk3G": {
+          "type": "heading",
+          "settings": {
+            "heading": "Section Heading",
+            "heading_size": "h1"
+          }
+        },
+        "text_CK9eUH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum, eros eu commodo ornare, felis purus sagittis enim, et porta nunc enim id ligula. Fusce porta tempus dui, eu blandit risus malesuada tristique. Vestibulum vehicula tellus eget nisi feugiat dignissim. Quisque molestie a sem viverra luctus. Aliquam pretium nisi non nisi viverra consectetur. Mauris vitae dapibus magna. Duis fermentum nisi nec faucibus viverra. Maecenas imperdiet massa ut nisi vulputate, vel finibus nunc consequat. In dapibus a mi a imperdiet. Suspendisse dapibus eros a laoreet gravida.</p><ul><li>Bibendum quis sem quis rutrum. Donec consectetur, erat vitae faucibus pellentesque, nunc leo vehicula velit, faucibus pellentesque eros erat vitae diam. Sed fringilla ut enim interdum scelerisque.<br/></li><li>Henlesque convallis augue elit, quis iaculis enim tempor quis. Duis eu ipsum et quam pellentesque laoreet.</li></ul><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum, eros eu commodo ornare, felis purus sagittis enim, et porta nunc enim.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_aBBGrJ": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button 1",
+            "link_target": "_self",
+            "button_class": "",
+            "button_link": "#",
+            "button_label1": "Button 2",
+            "button_link1": "#",
+            "link_target1": "_self",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_FyBk3G",
+        "text_CK9eUH",
+        "button_aBBGrJ"
+      ],
+      "name": "Text with Image",
+      "settings": {
+        "section_id": "",
+        "image": "shopify://shop_images/mulledwine.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 130,
+        "padding_bottom": 130
+      }
+    },
+    "text_with_img_Q4xNCg": {
+      "type": "text-with-img",
+      "blocks": {
+        "heading_cyxUNa": {
+          "type": "heading",
+          "settings": {
+            "heading": "Second Section",
+            "heading_size": "h1"
+          }
+        },
+        "text_fNq3DQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum, eros eu commodo ornare, felis purus sagittis enim, et porta nunc enim id ligula. Fusce porta tempus dui, eu blandit risus malesuada tristique. Vestibulum vehicula tellus eget nisi feugiat dignissim. Quisque molestie a sem viverra luctus. Aliquam pretium nisi non nisi viverra consectetur. Mauris vitae dapibus magna. Duis fermentum nisi nec faucibus viverra. Maecenas imperdiet massa ut nisi vulputate, vel finibus nunc consequat. In dapibus a mi a imperdiet. Suspendisse dapibus eros a laoreet gravida.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_YK7tC8": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "link_target": "_self",
+            "button_class": "",
+            "button_link": "",
+            "button_label1": "Button 2",
+            "button_link1": "#",
+            "link_target1": "_self",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_cyxUNa",
+        "text_fNq3DQ",
+        "button_YK7tC8"
+      ],
+      "name": "Text with Image",
+      "settings": {
+        "section_id": "",
+        "image": "shopify://shop_images/008a_Greenmeadows_Vineyards_001.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 130,
+        "padding_bottom": 130
+      }
+    },
+    "text_with_img_E6AEDx": {
+      "type": "text-with-img",
+      "blocks": {
+        "heading_YCdPkh": {
+          "type": "heading",
+          "settings": {
+            "heading": "Section Heading",
+            "heading_size": "h1"
+          }
+        },
+        "text_z7yk8i": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum, eros eu commodo ornare, felis purus sagittis enim, et porta nunc enim id ligula. Fusce porta tempus dui, eu blandit risus malesuada tristique. Vestibulum vehicula tellus eget nisi feugiat dignissim. Quisque molestie a sem viverra luctus. Aliquam pretium nisi non nisi viverra consectetur. Mauris vitae dapibus magna. Duis fermentum nisi nec faucibus viverra. Maecenas imperdiet massa ut nisi vulputate, vel finibus nunc consequat. In dapibus a mi a imperdiet. Suspendisse dapibus eros a laoreet gravida.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_XkQa7p": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "link_target": "_self",
+            "button_class": "",
+            "button_link": "",
+            "button_label1": "Button 2",
+            "button_link1": "#",
+            "link_target1": "_self",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_YCdPkh",
+        "text_z7yk8i",
+        "button_XkQa7p"
+      ],
+      "name": "Text with Image",
+      "settings": {
+        "section_id": "",
+        "image": "shopify://shop_images/Product-Hero-Home.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-03a28b90-5a0b-4e3c-b61b-c40dde63fd46",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 130,
+        "padding_bottom": 130
+      }
+    },
+    "text_with_img_3GGUUY": {
+      "type": "text-with-img",
+      "blocks": {
+        "heading_k9wMre": {
+          "type": "heading",
+          "settings": {
+            "heading": "Second Section",
+            "heading_size": "h1"
+          }
+        },
+        "text_fDzcM4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum, eros eu commodo ornare, felis purus sagittis enim, et porta nunc enim id ligula. Fusce porta tempus dui, eu blandit risus malesuada tristique. Vestibulum vehicula tellus eget nisi feugiat dignissim. Quisque molestie a sem viverra luctus. Aliquam pretium nisi non nisi viverra consectetur. Mauris vitae dapibus magna. Duis fermentum nisi nec faucibus viverra. Maecenas imperdiet massa ut nisi vulputate, vel finibus nunc consequat. In dapibus a mi a imperdiet. Suspendisse dapibus eros a laoreet gravida.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_mdjwQn": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button 1",
+            "link_target": "_self",
+            "button_class": "",
+            "button_link": "#",
+            "button_label1": "",
+            "button_link1": "",
+            "link_target1": "_self",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_k9wMre",
+        "text_fDzcM4",
+        "button_mdjwQn"
+      ],
+      "name": "Text with Image",
+      "settings": {
+        "section_id": "",
+        "image": "shopify://shop_images/restaurant-dinner.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 130,
+        "padding_bottom": 130
+      }
+    },
+    "rich_text_E6bXgL": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_fc3yTy": {
+          "type": "heading",
+          "settings": {
+            "heading": "Updated 5 August 2025",
+            "heading_size": "h2"
+          }
+        },
+        "text_37Grhp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Mission Rewards Programme is a membership programme offered by Mission Estate Winery (Mission Estate Winery, we) to Mission Rewards Members (Member, you).</p><p>By applying for Mission Rewards Membership, you agree to these terms and conditions (Terms), which govern your membership to the Mission Rewards Programme.</p><p>Membership of the Mission Rewards Programme is not transferable to membership of any other programme or club.</p><p>We draw your attention to the following important provisions:</p><ul><li>We will collect and use your personal information in accordance with the Mission Estate Winery privacy statement and these Terms (paragraph 3)</li><li>You have certain obligations as a Mission Rewards Member (paragraph 2)</li><li>We may at our discretion change the Mission Rewards Member Benefits or Rewards from time to time (paragraph 8)</li><li>Mission Rewards Points, if not used, will expire 12 months after they were accrued to your Account, on the anniversary of the day they were earned (paragraph 11)</li><li>We may at our discretion vary these Terms from time to time (paragraph 15)</li><li>We limit our liability to you in respect of your Mission Rewards Membership (paragraph 17)</li></ul>",
+            "font_desk": 18,
+            "font_mob": 16
+          }
+        },
+        "button_V8B6Fg": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button 1",
+            "simple_link1": false,
+            "button_link": "#",
+            "button_style_secondary": false,
+            "button_label_2": "Button 2",
+            "button_link_2": "#",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_fc3yTy",
+        "text_37Grhp",
+        "button_V8B6Fg"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "section_id": "",
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_fYQC66",
+    "text_with_img_jRdRbK",
+    "text_with_img_Q4xNCg",
+    "text_with_img_E6AEDx",
+    "text_with_img_3GGUUY",
+    "rich_text_E6bXgL"
+  ]
+}

@@ -1,0 +1,312 @@
+{% schema %}
+{
+  "name": "Product Tabs",
+  "class": "customProduct_tabs",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "add block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon_image",
+          "label": "Icon Image"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "title",
+          "label": "Subtitle"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Tabs",
+    }
+  ]
+}
+{% endschema %}
+
+<div class="tabs-container CustomProducts_tab page-width" id="product_tabs_starts">
+  <!-- Tab Titles -->
+  <ul class="tab-links">
+   {% assign compare = product.metafields.custom.product_tabs.value %} 
+    {% for compare in compare %}
+      <li class="{% if forloop.first %}active{% endif %}">
+      <a class="wrap_compare_link" href="{{ compare.tab_link }}">  {{ compare.tab_name }}</a>
+      </li>
+   {% endfor %}
+  </ul>
+
+  <!-- Tab Content -->
+  <div class="tab-content">
+    {% assign tab_content = product.metafields.custom.tab_content.value %}
+    {% for tab_content in tab_content %}
+      <div class="tab {% if forloop.first %}active{% endif %} custonmainatbs">
+        <div class="Commantab_C LeftSide">
+          <div class="HedingCont_wrap">
+            <div class="MainHeading">{{ tab_content.heading }}</div>
+             <div class="SubHeading">{{ tab_content.sub_heading }}</div>
+          </div>
+          <div class="BoxDesc">
+            {{ tab_content.box_description }}
+          </div>
+          <div class="MainDescreiption">
+            {{ tab_content.main_description }}
+          </div>
+          <!-- <div class="NewFleicon_dvs">
+
+                  {% assign feature = product.metafields.custom.product_feature.value  %}
+                    {% for feature in feature %}
+                     
+                   
+                  <div class="wraps_inner-icons NewInner_wrap">
+                      <div class="inner_wrapper-texts NewWrapper_Text">
+                        <div class="wrapper_innericon NewWrap_innericon">
+                            <img src="{{ feature.image | img_url: 'master' }}" alt="wine">
+                        </div>
+                         <div class="wrapper_textdes NewWrapper_Textdes">
+                            <p class="textpercent NewTextPrecent"> {{ feature.subtitle  }} </p>
+                            <h4>{{ feature.title  }}</h4>      
+                         </div> 
+                      </div>
+                  </div>
+                   {% endfor %}
+                </div> -->
+        {%- if product.metafields.custom.product_feature_heading != blank -%}
+          <h3 class="wraos_foodparing_headings">{{ product.metafields.custom.product_feature_heading }}</h3>
+         {%- endif -%}
+
+          {% assign food_pairing = product.metafields.custom.product_food_pairing.value %}
+        <div class="food-icon-wrapper mb-30">
+        {% for food_pairing in food_pairing %}
+          <div class="food-pairing-icon font-size-18 line-height-120 font-sans-light color-grey">
+             {% assign gallery = food_pairing.icon.value %}
+           {%- if gallery != blank -%}
+            <img class="wrap_icon" src="{{ gallery | img_url }}" alt="{{ gallery.alt }}"> {% endif %} {{ food_pairing.text }}
+          </div>
+       {% endfor %}
+        </div>
+          
+      {%- if product.metafields.custom.product_feature_text != blank -%}
+        <p class="eraps_productfeature_texts">{{ product.metafields.custom.product_feature_text }}</p>
+      {%- endif -%}
+
+          <div class="wraps_icons_textsblock NewFleicon_dvs">   
+     {% for block in section.blocks %}
+       {%- if block.settings.title != blank -%}
+      <div class="wraps_inner-icons NewInner_wrap wrapsinner{{forloop.index}}">
+          <div class="inner_wrapper-texts NewWrapper_Text">
+            <div class="wrapper_innericon NewWrap_innericon">
+                <img src="{{ block.settings.icon_image | img_url: 'master' }}" alt="wine">
+            </div>
+             <div class="wrapper_textdes NewWrapper_Textdes">
+                <p class="textpercent NewTextPrecent"> {{ block.settings.subtitle  }} </p>
+                <div class="wraps_value-icon_texts">{{ block.settings.title  }}</div>      
+             </div> 
+          </div>
+      </div>
+   {% endif %}
+     {% endfor %}
+    </div>
+        </div>
+        <div class="Commantab_C RightSide">
+          <div class="ImageTab">
+            {% assign gallery = tab_content.image.value %}
+          {% for image in gallery %}
+          {% assign image_url = image | img_url: '500x' %}
+          <img src="{{ image_url }}" >
+          {% endfor %}
+          </div>
+          
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<!-- <div class="page-width">
+ <div class="NewFleicon_dvs">   
+     {% for block in section.blocks %}
+       {%- if block.settings.title != blank -%}
+      <div class="wraps_inner-icons NewInner_wrap wrapsinner{{forloop.index}}">
+          <div class="inner_wrapper-texts NewWrapper_Text">
+            <div class="wrapper_innericon NewWrap_innericon">
+                <img src="{{ block.settings.icon_image | img_url: 'master' }}" alt="wine">
+            </div>
+             <div class="wrapper_textdes NewWrapper_Textdes">
+                <p class="textpercent NewTextPrecent"> {{ block.settings.subtitle  }} </p>
+                <h4>{{ block.settings.title  }}</h4>      
+             </div> 
+          </div>
+      </div>
+   {% endif %}
+     {% endfor %}
+    </div>
+</div> -->
+<style>
+
+.CustomProducts_tab ul.tab-links li {
+    margin-top: 30px;
+}
+.CustomProducts_tab .tab-content .tab {
+  display: none;
+}
+.CustomProducts_tab .tab-content .tab.active {
+  display: block;
+}
+  .tabs-container.CustomProducts_tab {
+    display: flex;
+        padding-bottom: 2rem;
+}
+  ul.tab-links {
+    width: 20%;
+}
+ .customProduct_tabs {
+    background: #ECEDE6;
+    padding-top: 100px;
+   padding-bottom: 95px;
+}
+ul.tab-links li {
+    color: #002855;
+    opacity: 1;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Raleway';
+}
+
+  ul.tab-links li.active {
+    color: #002855;
+    opacity: 100%;
+    list-style: none;
+}
+
+li.active:before {
+    content: "";
+    background: url("https://cdn.shopify.com/s/files/1/0738/5327/2315/files/Vector_b572bfd7-6e54-4a49-91ca-60e138b3f390.png?v=1738931787");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    color: transparent;
+    display: inline-block;
+    height: 13px;
+    width: 13px;
+    position: relative;
+    left: -3px;
+}
+
+ul.tab-links li.active {
+    color: #002855;
+    opacity: 100%;
+    list-style: none;
+    position: relative;
+    left: -14px;
+}
+
+.MainHeading {
+    font-size: 36px;
+    color: #002855;
+    font-family: 'Raleway';
+    text-transform: uppercase;
+}
+ 
+
+.SubHeading {
+    font-size: 20px;
+    color: #002855d4;
+    font-family: 'Raleway';
+    font-weight: 600;
+    padding-top: 5px;
+}
+
+   .tab-content {
+    width: 80%;
+}
+.tab.active.custonmainatbs {
+    display: flex !important;
+    width: 100%;
+}
+
+.LeftSide {
+    width: 50%;
+}
+
+.RightSide {
+    width: 50%;
+}
+  .BoxDesc {
+    background: transparent;
+    padding: 30px 0px;
+    width: 85%;
+    font-size: 27px;
+    line-height: 1.4em;
+    border-radius: 8px;
+    color: #002855;
+    font-style: italic;
+}
+ .MainDescreiption {
+    width: 90%;
+    font-size: 16px;
+    line-height: 1.9em;
+    margin-top: 0px !important;
+    color: #002855;
+    font-family: 'Literata-light';
+}
+  
+.NewFleicon_dvs {
+    display: flex;
+    margin-top: 0%;
+    padding-bottom: 15px;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+  .NewTextPrecent {
+    line-height: 1px;
+        color: #002855 !important;
+}
+  .NewWrapper_Textdes h4 {
+    color: #002855;
+    font-size:18px;
+}
+
+div#product_tabs_starts a.wrap_compare_link {
+    padding: 10px 0px !important;
+    padding-left: 25px !important;
+    position: relative;
+    left: -25px;
+}
+
+  .CustomProducts_tab .tab-content .tab:first-child {
+    display: flex;
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  let tabs = document.querySelectorAll(".tab-links li");
+  let tabContents = document.querySelectorAll(".tab-content .tab");
+
+  tabs.forEach(tab => {
+    tab.addEventListener("click", function () {
+      let target = this.getAttribute("data-tab");
+
+      tabs.forEach(t => t.classList.remove("active"));
+      tabContents.forEach(tc => tc.classList.remove("active"));
+
+      this.classList.add("active");
+      document.getElementById(target).classList.add("active");
+    });
+  });
+});
+</script>
+
+
+

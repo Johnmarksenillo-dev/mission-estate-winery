@@ -1,0 +1,194 @@
+{% style %}
+   .{{ section.id }} .custom-slideshow-section {
+    background-color: {{ section.settings.background_color }};
+    padding-top: {{ section.settings.padding_top_mobile }}px;
+    padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+   }
+@media screen  and (min-width: 769px) {
+  .{{ section.id }} .custom-slideshow-section {
+    padding-top: {{ section.settings.padding_top_desktop }}px;
+    padding-bottom: {{ section.settings.padding_bottom_desktop }}px;
+  }
+}
+
+  .{{ section.id }} .heading{
+    color:{{section.settings.heading_color}};
+  }
+  .{{ section.id }} .text{
+    color:{{section.settings.text_color}};
+  }
+  .{{ section.id }} a.button--primary{
+    background-color:{{section.settings.button1_bg_color}};
+    color:{{section.settings.button1_color}};
+    border:1px solid {{section.settings.button1_color}};
+    width:fit-content;
+  }
+  .{{ section.id }} a.button--secondary{
+    background-color: rgba(0,0,0,0);
+    color: #ffffff;
+    border: none;
+    width: auto;
+    padding: 0px;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+  }
+{% endstyle %}
+ 
+<div id="{{ section.settings.section_id }}" class="{{ section.id }} {% if section.settings.slider_class != blank %} {{ section.settings.slider_class }} {% endif %}">
+<div class="page-width">
+  <div class="wraps_flex-etc">
+    <div class="wrap_reserviction">
+      {% if section.settings.heading != blank %}
+        <h2>{{ section.settings.heading }} </h2>
+        {% endif %}
+        
+      {% if section.settings.textfirst != blank %}
+      <div class="wraps_text-texts">
+        {{ section.settings.textfirst }} 
+      </div>
+      {% endif %}
+ {% if section.settings.button_1_text != blank %}
+      <div class="wraps_reservation_buttons">
+        {% if section.settings.button_1_text != blank %}
+        <a href="{{ section.settings.button_1_url }}" class="button button--secondary no-button-border">{{ section.settings.button_1_text }}</a>
+        {% endif %}
+
+        {% if section.settings.button_2_text != blank %}
+        <a href="{{ section.settings.button_2_url }}" class="button button--secondary no-button-border">{{ section.settings.button_2_text }}</a>
+        {% endif %}
+      </div>
+  {% endif %}
+      {% if section.settings.textsecond != blank %}
+      <div class="wraopper_richtexts">
+        {{ section.settings.textsecond }}
+      </div>
+      {% endif %}
+    </div>
+    <div class="reservition_images">
+      {%- if section.settings.image != blank -%}
+    <img src="{{ section.settings.image | img_url: 'master' }}" alt="image" class="first_image">
+{% endif %}
+
+      {%- if section.settings.slideshow_image_1 != blank -%}
+    <img src="{{ section.settings.slideshow_image_1 | img_url: 'master' }}" alt="image" class="second_image">
+{% endif %}
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- Your custom script -->
+
+
+{% schema %}
+{
+  "name": "Accomodation image text",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Section Id",
+      "id": "section_id"
+    },
+   
+   {
+      "type": "image_picker",
+      "label": "Background Image",
+      "id": "bgimage"
+    },
+   {
+      "type": "text",
+      "label": "Heading",
+      "id": "heading"
+   },
+
+    {
+      "type": "richtext",
+      "label": "Text",
+      "id": "textfirst"
+   },
+
+    {
+      "type": "url",
+      "label": "Button 1 URL",
+      "id": "button_1_url"
+    },
+    {
+      "type": "textarea",
+      "label": "Button 1 Text",
+      "id": "button_1_text"
+    },
+   
+    {
+      "type": "url",
+      "label": "Button 2 URL",
+      "id": "button_2_url"
+    },
+    {
+      "type": "textarea",
+      "label": "Button 2 Text",
+      "id": "button_2_text"
+    },
+
+    {
+      "type": "richtext",
+      "label": "Text",
+      "id": "textsecond"
+   },
+    
+    {
+      "type": "image_picker",
+      "label": "Image ",
+      "id": "image"
+    },
+    {
+      "type": "image_picker",
+      "label": "Image 2",
+      "id": "slideshow_image_1"
+    },
+   
+    {
+      "type": "range",
+      "label": "Padding Top (Desktop)",
+      "id": "padding_top_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "default": 50
+    },
+    {
+      "type": "range",
+      "label": "Padding Bottom (Desktop)",
+      "id": "padding_bottom_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "default": 50
+    },
+    {
+      "type": "range",
+      "label": "Padding Top (Mobile)",
+      "id": "padding_top_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "default": 30
+    },
+    {
+      "type": "range",
+      "label": "Padding Bottom (Mobile)",
+      "id": "padding_bottom_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "default": 30
+    }
+  ],
+  "presets": [
+    {
+      "name": "Accomodation image text",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

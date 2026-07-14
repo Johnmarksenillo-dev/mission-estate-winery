@@ -1,0 +1,75 @@
+<div id= "{{ section.settings.section_id }}" class="location_wraps_content">
+  <div class="page-width">
+    <div class="wraps_flex_contact_location" >
+     <div class="location_map">
+       {%- if section.settings.map_cont != blank -%}
+            <div class="map">{{ section.settings.map_cont }}</div>
+          {% endif %}
+     </div>
+        <div class="wraps_location-inner">
+          {%- if section.settings.title != blank -%}
+            <h3>{{ section.settings.title }}</h3>
+          {% endif %}
+        
+          {%- if section.settings.text_cont != blank -%}
+            <div class="wraps_locations-conts">{{ section.settings.text_cont }}</div>
+          {% endif %}
+        
+        
+        
+          {%- if section.settings.button != blank -%}
+            <a href="{{ section.settings.buttonlink }}"><button class="wrap_contact_link">{{ section.settings.button }}</button></a>
+           {% endif %}
+        </div>
+       
+    </div>
+  </div>
+</div>
+
+
+
+
+{% schema %}
+{
+  "name": "Contact Location",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Section Id",
+      "id": "section_id"
+    },
+    {
+      "type": "textarea",
+      "label": "Map",
+      "id": "map_cont"
+    },
+    {
+      "type": "text",
+      "label": "Heading",
+      "id": "title"
+    },
+    {
+      "type": "textarea",
+      "label": "Content",
+      "id": "text_cont"
+    },
+    {
+       "id": "button",
+       "type": "textarea",
+       "label": "Button text"
+     },
+    {
+       "id": "buttonlink",
+       "type": "url",
+       "label": "Button URL"
+     }
+    ],
+    
+    "presets": [
+    {
+      "name": "Contact Location",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,448 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "slideshow_wdJdyH": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_MFUHUc": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Asset_1-100.jpg",
+            "video_url": "",
+            "heading": "VISIT US",
+            "heading_size": "hxl",
+            "subheading": "Discover the charm of Mission Estate, where elegance, history and world-class hospitality come together.",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-d536de6d-9eba-4ca5-b804-ae369f8ab959",
+            "text_alignment_mobile": "left"
+          }
+        }
+      },
+      "block_order": [
+        "slide_MFUHUc"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "large",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "restaurant_tabs_JyyAGx": {
+      "type": "restaurant-tabs",
+      "blocks": {
+        "tab_raPPL6": {
+          "type": "tab",
+          "settings": {
+            "tab_name": "Restaurant",
+            "tab_url": "#restaurant-tabs",
+            "heading": "Restaurant",
+            "sub_heading": "",
+            "box_description": "",
+            "main_description": "Offering elegant, classic surroundings, magnificent views, world class cuisine and wines combined with the stunning vineyard location makes Mission Restaurant one of Hawke’s Bays premier venues.",
+            "button_url": "shopify://pages/restaurant",
+            "button_class": "",
+            "button_tab": "Discover more",
+            "button_url1": "#",
+            "button_tab1": "Book now",
+            "button_class2": "open-custom-popup",
+            "image": "shopify://shop_images/food-pairing.png"
+          }
+        },
+        "tab_JA7QcB": {
+          "type": "tab",
+          "settings": {
+            "tab_name": "Cellar Door",
+            "tab_url": "#cellar-door",
+            "heading": "Cellar Door",
+            "sub_heading": "",
+            "box_description": "",
+            "main_description": "Celler Door Offering elegant, classic surroundings, magnificent views, world class cuisine and wines combined with the stunning vineyard location makes Mission Restaurant one of Hawke’s Bays premier venues.",
+            "button_url": "shopify://pages/cellar-door",
+            "button_class": "",
+            "button_tab": "Discover more",
+            "button_url1": "",
+            "button_tab1": "",
+            "button_class2": "",
+            "image": "shopify://shop_images/Asset_2-100_aef15038-addd-45ab-a3cd-f78aec19f9df.jpg"
+          }
+        },
+        "tab_zpfFBy": {
+          "type": "tab",
+          "settings": {
+            "tab_name": "Accommodation",
+            "tab_url": "#accomodation-section",
+            "heading": "Accommodation",
+            "sub_heading": "",
+            "box_description": "",
+            "main_description": "Accommodation Offering elegant, classic surroundings, magnificent views, world class cuisine and wines combined with the stunning vineyard location makes Mission Restaurant one of Hawke’s Bays premier venues.",
+            "button_url": "shopify://pages/accommodation",
+            "button_class": "",
+            "button_tab": "Discover more",
+            "button_url1": "",
+            "button_tab1": "",
+            "button_class2": "",
+            "image": "shopify://shop_images/Asset_2-100_aef15038-addd-45ab-a3cd-f78aec19f9df.jpg"
+          }
+        },
+        "tab_eecUNN": {
+          "type": "tab",
+          "settings": {
+            "tab_name": "Weddings",
+            "tab_url": "#celebration-functions",
+            "heading": "Weddings",
+            "sub_heading": "",
+            "box_description": "",
+            "main_description": "Weddings Offering elegant, classic surroundings, magnificent views, world class cuisine and wines combined with the stunning vineyard location makes Mission Restaurant one of Hawke’s Bays premier venues.",
+            "button_url": "shopify://pages/weddings",
+            "button_class": "",
+            "button_tab": "Discover more",
+            "button_url1": "",
+            "button_tab1": "",
+            "button_class2": "",
+            "image": "shopify://shop_images/Asset_2-100_aef15038-addd-45ab-a3cd-f78aec19f9df.jpg"
+          }
+        },
+        "tab_Vrw78P": {
+          "type": "tab",
+          "settings": {
+            "tab_name": "Functions & Special Events",
+            "tab_url": "#missionwrap-section",
+            "heading": "Functions & Special Events",
+            "sub_heading": "",
+            "box_description": "",
+            "main_description": "Mission Events Offering elegant, classic surroundings, magnificent views, world class cuisine and wines combined with the stunning vineyard location makes Mission Restaurant one of Hawke’s Bays premier venues.",
+            "button_url": "shopify://pages/mission-rewards",
+            "button_class": "",
+            "button_tab": "Discover more",
+            "button_url1": "",
+            "button_tab1": "",
+            "button_class2": "",
+            "image": "shopify://shop_images/Asset_2-100_aef15038-addd-45ab-a3cd-f78aec19f9df.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "tab_raPPL6",
+        "tab_JA7QcB",
+        "tab_zpfFBy",
+        "tab_eecUNN",
+        "tab_Vrw78P"
+      ],
+      "name": "Restaurant tabs",
+      "settings": {
+        "title": ""
+      }
+    },
+    "image_text_slideshow_tkqTam": {
+      "type": "image-text-slideshow",
+      "name": "Image and Text Slideshow",
+      "settings": {
+        "section_id": "cellar-door",
+        "slider_class": "wrap_aboutussec",
+        "enable_fullwidth": true,
+        "enable_slideshow": true,
+        "slide_speed": 5000,
+        "autoplay": true,
+        "autoplay_speed": 5000,
+        "image_position": "right",
+        "slideshow_image_1": "shopify://shop_images/Asset_4-100.jpg",
+        "heading": "CELLAR DOOR",
+        "heading_url": "",
+        "heading_color": "#002855",
+        "text": "The Cellar Door is housed in the Grande Maison, an elegantly restored seminary building nested in the Taradale hills, offering visitors sweeping views of the vineyards and coast beyond.",
+        "text_color": "#002855",
+        "simple_link1": false,
+        "button_1_url": "shopify://pages/cellar-door",
+        "link_target1": "_self",
+        "button_1_text": "Discover more",
+        "button_class": "",
+        "button1_bg_color": "#ffffff",
+        "button1_color": "#002855",
+        "simple_link2": false,
+        "button_2_url": "#",
+        "link_target2": "_self",
+        "button_2_text": "Book now",
+        "button_class2": "open-enquiry-popup",
+        "button2_bg_color": "#ffffff",
+        "button2_color": "#002855",
+        "secondary": false,
+        "simple_link3": false,
+        "button_3_url": "",
+        "link_target3": "_self",
+        "button_3_text": "",
+        "button_class3": "",
+        "simple_link4": false,
+        "button_4_url": "",
+        "link_target4": "_self",
+        "button_4_text": "",
+        "button_class4": "",
+        "background_color": "#ffffff",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "image_text_slideshow_tiKaPU": {
+      "type": "image-text-slideshow",
+      "name": "Image and Text Slideshow",
+      "settings": {
+        "section_id": "accomodation-section",
+        "slider_class": "wraps_slider-section",
+        "enable_fullwidth": false,
+        "enable_slideshow": true,
+        "slide_speed": 5000,
+        "autoplay": true,
+        "autoplay_speed": 5000,
+        "image_position": "right",
+        "slideshow_image_1": "shopify://shop_images/Asset_3-100.jpg",
+        "heading": "ACCOMODATION",
+        "heading_url": "",
+        "heading_color": "#002855",
+        "text": "The ideal accommodation option for weekend escapes, business visits and weddings. A complimentary bottle of Mission Fête sparkling wine is provided on arrival.",
+        "text_color": "#4a4b54",
+        "simple_link1": false,
+        "button_1_url": "shopify://pages/accommodation",
+        "link_target1": "_self",
+        "button_1_text": "Discover more",
+        "button_class": "",
+        "button1_bg_color": "rgba(0,0,0,0)",
+        "button1_color": "#ffffff",
+        "simple_link2": false,
+        "button_2_url": "https://book.resonline.com.au/make-booking?ap=373629",
+        "link_target2": "_self",
+        "button_2_text": "Book now",
+        "button_class2": "",
+        "button2_bg_color": "rgba(0,0,0,0)",
+        "button2_color": "#002855",
+        "secondary": false,
+        "simple_link3": false,
+        "button_3_url": "",
+        "link_target3": "_self",
+        "button_3_text": "",
+        "button_class3": "",
+        "simple_link4": false,
+        "button_4_url": "",
+        "link_target4": "_self",
+        "button_4_text": "",
+        "button_class4": "",
+        "background_color": "#005151",
+        "padding_top_desktop": 150,
+        "padding_bottom_desktop": 130,
+        "padding_top_mobile": 30,
+        "padding_bottom_mobile": 30
+      }
+    },
+    "image_with_text_FVzpPR": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_hq89E4": {
+          "type": "heading",
+          "settings": {
+            "heading": "WEDDINGS",
+            "heading_size": "h1"
+          }
+        },
+        "text_L84Vw8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Unforgettable occasions demand an exceptional venue.</p><p>Mission Estate is one of Hawke’s Bays premiere wedding venues; offering elegant and classic surroundings, magnificent views, world class cuisine and wines combined with a stunning vineyard location.</p><p>It ticks all the boxes as a venue.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_xVrneX": {
+          "type": "button",
+          "settings": {
+            "button_label": "Discover more",
+            "link_target": "_self",
+            "button_class": "",
+            "button_link": "shopify://pages/weddings",
+            "button_label1": "",
+            "button_link1": "",
+            "link_target1": "_self",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_hq89E4",
+        "text_L84Vw8",
+        "button_xVrneX"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "section_id": "celebration-functions",
+        "image": "shopify://shop_images/Asset_5-100.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-575c04fd-c80f-4d35-bbf5-4d5cfadf9d7b",
+        "color_scheme": "scheme-4d22978a-983c-403a-8a3c-fe6a3d8628a2",
+        "image_link": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_text_slideshow_tjWBdi": {
+      "type": "image-text-slideshow",
+      "name": "Image and Text Slideshow",
+      "settings": {
+        "section_id": "missionwrap-section",
+        "slider_class": "wraps_slider-section",
+        "enable_fullwidth": false,
+        "enable_slideshow": true,
+        "slide_speed": 5000,
+        "autoplay": true,
+        "autoplay_speed": 5000,
+        "image_position": "right",
+        "slideshow_image_1": "shopify://shop_images/Restaurant-outdoor-table.jpg",
+        "heading": "FUNCTIONS & SPECIAL EVENTS",
+        "heading_url": "",
+        "heading_color": "#002855",
+        "text": "Mission Estate Winery, established in 1851, offers an unparalleled setting for weddings, corporate functions, and special events.",
+        "text_color": "#4a4b54",
+        "simple_link1": true,
+        "button_1_url": "shopify://pages/functions-events",
+        "link_target1": "_self",
+        "button_1_text": "Discover more",
+        "button_class": "",
+        "button1_bg_color": "#002855",
+        "button1_color": "#ffffff",
+        "simple_link2": false,
+        "button_2_url": "",
+        "link_target2": "_self",
+        "button_2_text": "",
+        "button_class2": "",
+        "button2_bg_color": "rgba(0,0,0,0)",
+        "button2_color": "#002855",
+        "secondary": false,
+        "simple_link3": false,
+        "button_3_url": "",
+        "link_target3": "_self",
+        "button_3_text": "",
+        "button_class3": "",
+        "simple_link4": false,
+        "button_4_url": "",
+        "link_target4": "_self",
+        "button_4_text": "",
+        "button_class4": "",
+        "background_color": "#002855",
+        "padding_top_desktop": 150,
+        "padding_bottom_desktop": 130,
+        "padding_top_mobile": 30,
+        "padding_bottom_mobile": 30
+      }
+    },
+    "rich_text_iJ7qqt": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_AkJ9rr": {
+          "type": "heading",
+          "settings": {
+            "heading": "Explore our wines",
+            "heading_size": "h1"
+          }
+        },
+        "button_baJiyD": {
+          "type": "button",
+          "settings": {
+            "button_label": "View the range",
+            "simple_link1": false,
+            "button_link": "/collections/all",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_AkJ9rr",
+        "button_baJiyD"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "section_id": "our-people-rich-text",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-ccdf85bc-5e76-4e49-b1d5-b858928d4956",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 24
+      }
+    },
+    "featured_collection_BLhdnC": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "frontpage",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "show_rating": true,
+        "quick_add": "standard",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_wdJdyH",
+    "restaurant_tabs_JyyAGx",
+    "image_text_slideshow_tkqTam",
+    "image_text_slideshow_tiKaPU",
+    "image_with_text_FVzpPR",
+    "image_text_slideshow_tjWBdi",
+    "rich_text_iJ7qqt",
+    "featured_collection_BLhdnC"
+  ]
+}

@@ -1,0 +1,318 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "slideshow_Cb7Ukj": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_83mx84": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Restaurant_3x_08310f09-ef7e-46a4-ac10-6a2e86ceecf6.png",
+            "video_url": "",
+            "heading": "Mission Rewards",
+            "heading_size": "hxl",
+            "subheading": "For nearly two centuries, we’ve shared our passion for wine. Now, with Mission Rewards, we’re sharing a little something more.",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-d536de6d-9eba-4ca5-b804-ae369f8ab959",
+            "text_alignment_mobile": "left"
+          }
+        }
+      },
+      "block_order": [
+        "slide_83mx84"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "large",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "rich_text_CWF8AR": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_ckcyNp": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sharing a love of wine since 1851",
+            "heading_size": "h1"
+          }
+        },
+        "text_aAVRJR": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>For nearly two centuries, we’ve shared our passion for wine. Now, with Mission Rewards, we’re sharing a little something more.</strong></p>",
+            "font_desk": 24,
+            "font_mob": 14
+          }
+        },
+        "text_kDCp6m": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Welcome to Mission Rewards! Start earning points from your first order and unlock exclusive discounts, birthday treats, and more. Every moment with Mission becomes a little more rewarding.</strong></p>",
+            "font_desk": 24,
+            "font_mob": 14
+          }
+        }
+      },
+      "block_order": [
+        "heading_ckcyNp",
+        "text_aAVRJR",
+        "text_kDCp6m"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "section_id": "",
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 52
+      }
+    },
+    "text_with_img_qWjUVy": {
+      "type": "text-with-img",
+      "blocks": {
+        "heading_fzWeHX": {
+          "type": "heading",
+          "settings": {
+            "heading": "How Mission Rewards works",
+            "heading_size": "h1"
+          }
+        },
+        "text_DGbP9Y": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Joining Mission Rewards is simple – and rewarding from day one. Just create an account and start earning points every time you shop. Redeem your points for discounts and enjoy exclusive offers designed just for our loyal wine lovers. And the best part? Free shipping for orders of one case or more.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_i6JX6n": {
+          "type": "button",
+          "settings": {
+            "button_label": "Join Mission Rewards",
+            "link_target": "_self",
+            "button_class": "",
+            "button_link": "/account/register",
+            "button_label1": "Read Term & Conditions",
+            "button_link1": "shopify://pages/mission-rewards-terms-conditions",
+            "link_target1": "_self",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_fzWeHX",
+        "text_DGbP9Y",
+        "button_i6JX6n"
+      ],
+      "name": "Text with Image",
+      "settings": {
+        "section_id": "",
+        "image": "shopify://shop_images/email-banner-sparkling.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 20,
+        "padding_bottom": 100
+      }
+    },
+    "rich_text_gqThiL": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_t89fVc": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ways to earn points",
+            "heading_size": "h1"
+          }
+        },
+        "text_NzD94H": {
+          "type": "text",
+          "settings": {
+            "text": "<p>There are plenty of ways to start collecting points with Mission Rewards:</p><ul><li><strong>Make a purchase</strong> – Earn 1 point for every $1 spent on cases purchased online or at our cellar door</li><li><strong>Anniversary gift</strong> – 50 points to mark your time with us</li><li><strong>Follow or share on social media</strong> – 20 points when you follow or share us on Instagram or Facebook</li><li><strong>Refer a friend</strong> – They get $5 off, and so do you when they order</li></ul><p>Keep an eye out for seasonal promotions and extra ways to earn!</p>",
+            "font_desk": 18,
+            "font_mob": 14
+          }
+        },
+        "heading_GYtNFc": {
+          "type": "heading",
+          "settings": {
+            "heading": "BE REWARDED",
+            "heading_size": "h1"
+          }
+        },
+        "text_PcgbM4": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>Redeem points for $ to spend on future wine orders or experiences at our cellar door.</li><li>Collect 400 points and receive a $50 voucher to spend.</li></ul><p></p>",
+            "font_desk": 18,
+            "font_mob": 14
+          }
+        }
+      },
+      "block_order": [
+        "heading_t89fVc",
+        "text_NzD94H",
+        "heading_GYtNFc",
+        "text_PcgbM4"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "section_id": "",
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "scheme-d536de6d-9eba-4ca5-b804-ae369f8ab959",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "rich_text_XaPTWp": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_mFmQtb": {
+          "type": "heading",
+          "settings": {
+            "heading": "Start earning in just a few clicks",
+            "heading_size": "h1"
+          }
+        },
+        "text_8DeMER": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Signing up is quick and easy – and your first reward is just moments away. Once you create your account, every purchase brings you closer to your next reward.</p>",
+            "font_desk": 18,
+            "font_mob": 16
+          }
+        },
+        "button_H9tEcF": {
+          "type": "button",
+          "settings": {
+            "button_label": "Join Mission Rewards",
+            "simple_link1": false,
+            "button_link": "/account/register",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_mFmQtb",
+        "text_8DeMER",
+        "button_H9tEcF"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "section_id": "",
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "rich_text_GDYVNx": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_gN6jAB": {
+          "type": "heading",
+          "settings": {
+            "heading": "What’s new in Mission Rewards",
+            "heading_size": "h1"
+          }
+        },
+        "text_hiMjBf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We’ve made some exciting changes to Mission Rewards – all designed to make your experience simpler, clearer, and more rewarding from the start.</p><p>Here’s what’s new:</p><ul><li><strong>Free shipping on case buys</strong> – Buy a 6-pack or more of wine and receive free shipping!</li><li><strong>No more tiers</strong> – We’ve removed the tier system based on your feedback. Now, everyone earns points and enjoys perks without needing to level up.</li><li><strong>Simplified points and redemptions</strong> – Earn 1 point for every $1 you spend, and redeem 400 points for a $50 voucher.</li><li><strong>Social sharing & referrals</strong> – Earn points when you follow or share Mission Estate on Instagram or Facebook, or refer a friend.</li><li><strong>Wallet balances still valid</strong> – If you had credits in your old Mission Rewards wallet, you will have received an online code for their value; just make sure to redeem them within three years of the upgrade.</li></ul><p>This new programme is fully integrated with our online store – making it easier than ever to earn points and access perks.</p>",
+            "font_desk": 18,
+            "font_mob": 14
+          }
+        },
+        "button_6qdEVT": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read the full FAQ here",
+            "simple_link1": false,
+            "button_link": "shopify://pages/mission-rewards-faq",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
+        "text_aktyh7": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Disclosure and Terms:</strong> <br/><em>Mission Rewards is intended to thank customers for their loyalty. Rewards are not transferable, have no cash value, and are subject to change or expiry. Discounts and point offers exclude alcohol purchases where prohibited by law. We encourage the responsible enjoyment of wine at all times.</em></p><p><strong>NB. Mission Rewards cannot be accrued, earned or redeemed in the Mission Estate Restaurant or Concert.</strong></p><p><em>Have more questions? Visit our full </em><a href=\"https://1yyktp-yk.myshopify.com/pages/mission-rewards-faq\" title=\"https://1yyktp-yk.myshopify.com/pages/mission-rewards-faq\"><em>Mission Rewards FAQ </em></a><em>to learn more about earning points, redeeming rewards, and what’s changed. </em></p><p><a href=\"/pages/mission-rewards-terms-conditions\" title=\"Mission Rewards Terms & Conditions\"><em>Read the Mission Rewards Term & Conditions</em></a></p>",
+            "font_desk": 14,
+            "font_mob": 12
+          }
+        }
+      },
+      "block_order": [
+        "heading_gN6jAB",
+        "text_hiMjBf",
+        "button_6qdEVT",
+        "text_aktyh7"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "section_id": "new_mission_rewards",
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "scheme-575c04fd-c80f-4d35-bbf5-4d5cfadf9d7b",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_Cb7Ukj",
+    "rich_text_CWF8AR",
+    "text_with_img_qWjUVy",
+    "rich_text_gqThiL",
+    "rich_text_XaPTWp",
+    "rich_text_GDYVNx"
+  ]
+}

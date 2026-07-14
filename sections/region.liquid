@@ -1,0 +1,78 @@
+{% schema %}
+{
+  "name": "Product Region",
+  "class": "customProduct_region",
+  "settings": [
+{
+"type": "header",
+"content": "Select Text"
+},
+    {
+      "type": "text",
+      "id":"customid",
+      "label": "Custom ID"
+    },
+{
+"type": "text",
+"label": "Title",
+"id": "title"
+}
+],
+  "presets": [
+    {
+      "name": "Product Region",
+    }
+  ]
+}
+{% endschema %}
+
+{% assign product_regions = product.metafields.custom.product_region.value %}
+
+{% for region in product_regions %}
+  {% if region.product_region_heading != blank %}
+    <section class="wraps_region" id="{% if section.settings.customid != blank %}{{ section.settings.customid }}{% endif %}">
+      <div class="page-width">
+        <div class="wrapper_wraps_products">
+
+          <!-- Region Heading -->
+          <div class="wraps_heading_regions">
+            <h2>{{ region.product_region_heading }}</h2>
+          </div>
+
+          <!-- Image and Text Layout -->
+          <div class="wrapper_image-texts">
+
+            <!-- Images -->
+             <div class="image_region">
+               
+           
+                <div class="region-images">
+                 {% if region.image != blank %}  
+                    <img 
+                      src="{{ region.image | img_url: 'master'  }}" 
+                      alt="{{ region.product_region_heading | escape }}"
+                    >
+                
+          {% endif %}
+    {% if region.image_second != blank %}
+                    <img 
+                      src="{{ region.image_second | img_url: 'master'  }}" 
+                      alt="{{ region.product_region_heading | escape }}"
+                    >
+                </div>
+           {% endif %}
+            </div>
+
+            <!-- Text -->
+            {% if region.text != blank %}
+              <div class="wraps_region_texts">
+                {{ region.text | metafield_tag }}
+              </div>
+            {% endif %}
+
+          </div>
+        </div>
+      </div>
+    </section>
+  {% endif %}
+{% endfor %}

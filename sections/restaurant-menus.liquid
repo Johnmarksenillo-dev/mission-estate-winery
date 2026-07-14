@@ -1,0 +1,753 @@
+{% style %}
+   .{{ section.id }} .custom-slideshow-section {
+    background-color: {{ section.settings.background_color }};
+    padding-top: {{ section.settings.padding_top_mobile }}px;
+    padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+   }
+@media screen  and (min-width: 769px) {
+  .{{ section.id }} .custom-slideshow-section {
+    padding-top: {{ section.settings.padding_top_desktop }}px;
+    padding-bottom: {{ section.settings.padding_bottom_desktop }}px;
+  }
+}
+
+  .{{ section.id }} .heading{
+    color:{{section.settings.heading_color}};
+  }
+  .{{ section.id }} .text{
+    color:{{section.settings.text_color}};
+  }
+  .{{ section.id }} a.button--primary{
+    background-color:{{section.settings.button1_bg_color}};
+    color:{{section.settings.button1_color}};
+    border:1px solid {{section.settings.button1_bg_color}};
+  }
+  .{{ section.id }} a.button--secondary{
+    background-color:{{section.settings.button2_bg_color}};
+    color:{{section.settings.button2_color}};
+    border:1px solid {{section.settings.button2_color}};
+  }
+{% endstyle %}
+ 
+<div class="{{ section.id }} {% if section.settings.slider_class != blank %} {{ section.settings.slider_class }} {% endif %}" id ="{%- if section.settings.id_menus != blank -%}{{section.settings.id_menus}}{% endif %}">
+  <div class="custom-slideshow-section" style="{% if section.settings.bgimage != blank %} background-image: url('{{ section.settings.bgimage | img_url: 'master' }}'); {% endif %}">
+    <div class="{% if section.settings.enable_fullwidth %}container{% else %}page-width{% endif %}">
+<div class="wrapper_heading">
+ {% if section.settings.heading %}
+              <h2 class="heading color-blue font-size-54 line-height-40 font-glare-light m-0 pb-26">{{ section.settings.heading }}</h2>
+            {% endif %}
+</div>
+<div class="tabs-container">
+  <!-- Tab Titles -->
+  <ul class="tab-links">
+    {% for block in section.blocks %}
+      <li class="{% if forloop.first %}active{% endif %}" data-tab="tab-{{ block.id }}">
+        {{ block.settings.tab_title }}
+      </li>
+    {% endfor %}
+  </ul>
+
+  <!-- Tab Content -->
+  <div class="tab-content">
+    {% for block in section.blocks %}
+
+      <div id="tab-{{ block.id }}" class="tab {% if forloop.first %}active{% endif %} {{ block.settings.tab_title }}">
+          {% if block.settings.tab_title == 'Set Menu' %}
+
+    <div class="wrapper_setmenusetc">
+      <div class="wrapper_menu_serflex">
+        <div class="wraps_menussets">
+            <div class="wraps_heading_according">
+            {%- if block.settings.set_menu_heading != blank -%}
+              <h3>{{ block.settings.set_menu_heading }}</h3>
+              {% endif %}
+            {%- if block.settings.set_menu_price != blank -%}
+              <p class="wraps_entree_main">{{ block.settings.set_menu_price }}</p>
+              {% endif %}
+            {%- if block.settings.set_menu_text != blank -%}
+              <p class="wraps_shared_bread">{{ block.settings.set_menu_text }}</p>
+              {% endif %}
+            </div>
+            {%- if block.settings.image_first != blank -%}
+            <div class="first_image"> 
+                <img src="{{ block.settings.image_first | img_url: 'master' }}" alt="image">
+            </div>
+           {% endif %}
+            
+                <div class="accordion">
+        {%- if block.settings.accordion_heading != blank -%}
+        <div class="accordion-item">
+            <div class="accordion-header">{{ block.settings.accordion_heading }} <span class="arrow_down"><svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 0.999999L6 6L11 1" stroke="#002855" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span></div>
+            <div class="accordion-content active">{{ block.settings.accordion_content }}</div>
+        </div>
+        {% endif %}
+        
+        {%- if block.settings.accordion_heading1 != blank -%}
+        <div class="accordion-item">
+            <div class="accordion-header">{{ block.settings.accordion_heading1 }} <span class="arrow_down"><svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 0.999999L6 6L11 1" stroke="#002855" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span></div>
+            <div class="accordion-content">{{ block.settings.accordion_content1 }}</div>
+        </div>
+        {% endif %}
+        
+        {%- if block.settings.accordion_heading2 != blank -%}
+        <div class="accordion-item">
+            <div class="accordion-header">{{ block.settings.accordion_heading2 }} <span class="arrow_down"><svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 0.999999L6 6L11 1" stroke="#002855" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span></div>
+            <div class="accordion-content">{{ block.settings.accordion_content2 }}</div>
+        </div>
+        {% endif %}     
+      </div>
+          
+        </div>
+
+        <div class="wraps_menussets">
+            <div class="wraps_heading_according">
+            {%- if block.settings.set_menu_heading1 != blank -%}
+              <h3>{{ block.settings.set_menu_heading1 }}</h3>
+              {% endif %}
+            {%- if block.settings.set_menu_price1 != blank -%}
+              <p class="wraps_entree_main">{{ block.settings.set_menu_price1 }}</p>
+              {% endif %}
+            {%- if block.settings.set_menu_text1 != blank -%}
+              <p class="wraps_shared_bread">{{ block.settings.set_menu_text1 }}</p>
+              {% endif %}
+            </div>
+            {%- if block.settings.image_second != blank -%}
+            <div class="first_image"> 
+                <img src="{{ block.settings.image_second | img_url: 'master' }}" alt="image">
+            </div>
+           {% endif %}
+
+                <div class="accordion">
+        {%- if block.settings.accordion_heading3 != blank -%}
+        <div class="accordion-item">
+            <div class="accordion-header">{{ block.settings.accordion_heading3 }} <span class="arrow_down"><svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 0.999999L6 6L11 1" stroke="#002855" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span></div>
+            <div class="accordion-content active">{{ block.settings.accordion_content3 }}</div>
+        </div>
+        {% endif %}
+        
+        {%- if block.settings.accordion_heading4 != blank -%}
+        <div class="accordion-item">
+            <div class="accordion-header">{{ block.settings.accordion_heading4 }} <span class="arrow_down"><svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 0.999999L6 6L11 1" stroke="#002855" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span></div>
+            <div class="accordion-content">{{ block.settings.accordion_content4 }}</div>
+        </div>
+        {% endif %}
+        
+        {%- if block.settings.accordion_heading5 != blank -%}
+        <div class="accordion-item">
+            <div class="accordion-header">{{ block.settings.accordion_heading5 }} <span class="arrow_down"><svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 0.999999L6 6L11 1" stroke="#002855" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span></div>
+            <div class="accordion-content">{{ block.settings.accordion_content5 }}</div>
+        </div>
+        {% endif %}       
+      </div>
+        </div>
+
+        <div class="wraps_menussets">
+<div class="wraps_heading_according">
+            {%- if block.settings.set_menu_heading2 != blank -%}
+              <h3>{{ block.settings.set_menu_heading2 }}</h3>
+              {% endif %}
+            {%- if block.settings.set_menu_price2 != blank -%}
+              <p class="wraps_entree_main">{{ block.settings.set_menu_price2 }}</p>
+              {% endif %}
+            {%- if block.settings.set_menu_text2 != blank -%}
+              <p class="wraps_shared_bread">{{ block.settings.set_menu_text2 }}</p>
+              {% endif %}
+            </div>
+            {%- if block.settings.image_third != blank -%}
+            <div class="first_image"> 
+                <img src="{{ block.settings.image_third | img_url: 'master' }}" alt="image">
+            </div>
+           {% endif %}
+
+                <div class="accordion">
+        {%- if block.settings.accordion_heading6 != blank -%}
+        <div class="accordion-item">
+            <div class="accordion-header">{{ block.settings.accordion_heading6 }} <span class="arrow_down"><svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 0.999999L6 6L11 1" stroke="#002855" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span></div>
+            <div class="accordion-content active">{{ block.settings.accordion_content6 }}</div>
+        </div>
+        {% endif %}
+        
+        {%- if block.settings.accordion_heading7 != blank -%}
+        <div class="accordion-item">
+            <div class="accordion-header">{{ block.settings.accordion_heading7 }} <span class="arrow_down"><svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 0.999999L6 6L11 1" stroke="#002855" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span></div>
+            <div class="accordion-content">{{ block.settings.accordion_content7 }}</div>
+        </div>
+        {% endif %}
+        
+        {%- if block.settings.accordion_heading8 != blank -%}
+        <div class="accordion-item">
+            <div class="accordion-header">{{ block.settings.accordion_heading8 }} <span class="arrow_down"><svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 0.999999L6 6L11 1" stroke="#002855" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span></div>
+            <div class="accordion-content">{{ block.settings.accordion_content8 }}</div>
+        </div>
+        {% endif %}
+
+        {%- if block.settings.accordion_heading9 != blank -%}
+        <div class="accordion-item">
+            <div class="accordion-header">{{ block.settings.accordion_heading9 }} <span class="arrow_down"><svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 0.999999L6 6L11 1" stroke="#002855" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span></div>
+            <div class="accordion-content">{{ block.settings.accordion_content9 }}</div>
+        </div>
+        {% endif %}        
+      </div>
+        </div>
+      </div>
+
+    <div class="wraps_link_buttns">
+        {%- if block.settings.button_1_text != blank -%}
+              <a class="wraps_reservation {% if block.settings.button_class != blank %} {{ block.settings.button_class }} {% endif %}" href="{{ block.settings.button_1_url }}">{{ block.settings.button_1_text }}</a>
+       {% endif %}
+
+        {%- if block.settings.button_2_text != blank -%}
+              <a class="wraps_link-voucher {% if block.settings.button_class2 != blank %} {{ block.settings.button_class2 }} {% endif %}" href="{{ block.settings.button_2_url }}">{{ block.settings.button_2_text }}</a>
+       {% endif %}
+       </div> 
+            
+     <div class="wrapper_setmenu_etc">
+            {%- if block.settings.set_menu_bottom_text != blank -%}
+       {{ block.settings.set_menu_bottom_text }}
+              {% endif %}
+
+       {%- if block.settings.set_menu_bottom_text2 != blank -%}
+        {{ block.settings.set_menu_bottom_text2 }}
+         {% endif %}
+     </div>
+    </div>
+
+    {% else %}
+
+      <div class="wrapper_flex">
+       <div class="wrap_left">
+        <div class="wrap_imgs">
+            {%- if block.settings.image_first != blank -%}
+            <div class="first_image"> 
+                <img src="{{ block.settings.image_first | img_url: 'master' }}" alt="image">
+            </div>
+           {% endif %}
+            {%- if block.settings.image_second != blank -%}
+             <div class="second_image"> 
+                  <img src="{{ block.settings.image_second | img_url: 'master' }}" alt="image">
+            </div> 
+            {% endif %}
+        </div>
+       </div>
+        <div class="wrap_right">
+          <div class="headingwrapper-title">
+            {%- if block.settings.tab_heading != blank -%}
+              <h3>{{ block.settings.tab_heading }}</h3>
+            {% endif %}
+          </div>
+{%- if block.settings.set_menu_heading != blank -%}
+          <div class="wraps_texts_menus_restrurents">
+              <h3>{{ block.settings.set_menu_heading }}</h3>
+            {%- if block.settings.set_menu_price != blank -%}
+              <h3>{{ block.settings.set_menu_price }}</h3>
+            {% endif %}
+            {%- if block.settings.set_menu_text != blank -%}
+              <p class="wraps_shared_bread">{{ block.settings.set_menu_text }}</p>
+              {% endif %}
+          </div>
+           {% endif %}
+
+      <div class="accordion">
+        {%- if block.settings.accordion_heading != blank -%}
+        <div class="accordion-item">
+            <div class="accordion-header">{{ block.settings.accordion_heading }} <span class="arrow_down"><svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 0.999999L6 6L11 1" stroke="#002855" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span></div>
+            <div class="accordion-content">{{ block.settings.accordion_content }}</div>
+        </div>
+        {% endif %}
+        
+        {%- if block.settings.accordion_heading1 != blank -%}
+        <div class="accordion-item">
+            <div class="accordion-header">{{ block.settings.accordion_heading1 }} <span class="arrow_down"><svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 0.999999L6 6L11 1" stroke="#002855" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span></div>
+            <div class="accordion-content">{{ block.settings.accordion_content1 }}</div>
+        </div>
+        {% endif %}
+        
+        {%- if block.settings.accordion_heading != blank -%}
+        <div class="accordion-item">
+            <div class="accordion-header">{{ block.settings.accordion_heading2 }} <span class="arrow_down"><svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 0.999999L6 6L11 1" stroke="#002855" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span></div>
+            <div class="accordion-content">{{ block.settings.accordion_content2 }}</div>
+        </div>
+        {% endif %}
+
+        {%- if block.settings.accordion_heading3 != blank -%}
+        <div class="accordion-item">
+            <div class="accordion-header">{{ block.settings.accordion_heading3 }} <span class="arrow_down"><svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 0.999999L6 6L11 1" stroke="#002855" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span></div>
+            <div class="accordion-content">{{ block.settings.accordion_content3 }}</div>
+        </div>
+        {% endif %}
+
+        {%- if block.settings.accordion_heading4 != blank -%}
+        <div class="accordion-item">
+            <div class="accordion-header">{{ block.settings.accordion_heading4 }} <span class="arrow_down"><svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 0.999999L6 6L11 1" stroke="#002855" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span></div>
+            <div class="accordion-content">{{ block.settings.accordion_content4 }}</div>
+        </div>
+        {% endif %}
+
+  {%- if block.settings.accordion_heading5 != blank -%}
+        <div class="accordion-item">
+            <div class="accordion-header">{{ block.settings.accordion_heading5 }} <span class="arrow_down"><svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 0.999999L6 6L11 1" stroke="#002855" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span></div>
+            <div class="accordion-content">{{ block.settings.accordion_content5 }}</div>
+        </div>
+        {% endif %}
+
+  {%- if block.settings.accordion_heading6 != blank -%}
+        <div class="accordion-item">
+            <div class="accordion-header">{{ block.settings.accordion_heading6 }} <span class="arrow_down"><svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 0.999999L6 6L11 1" stroke="#002855" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span></div>
+            <div class="accordion-content">{{ block.settings.accordion_content6 }}</div>
+        </div>
+        {% endif %}
+        
+      </div>
+
+      <div class="wrapper_buttons">
+       <div class="wraps_link_buttns">
+        {%- if block.settings.button_1_text != blank -%}
+              <a class="wraps_reservation {% if block.settings.button_class != blank %} {{ block.settings.button_class }} {% endif %}" href="{{ block.settings.button_1_url }}">{{ block.settings.button_1_text }}</a>
+       {% endif %}
+
+        {%- if block.settings.button_2_text != blank -%}
+              <a class="wraps_link-voucher {% if block.settings.button_class2 != blank %} {{ block.settings.button_class2 }} {% endif %}" href="{{ block.settings.button_2_url }}">{{ block.settings.button_2_text }}</a>
+       {% endif %}
+       </div> 
+      </div>
+        </div>
+        </div>
+  {% endif %}
+      </div>
+  
+    {% endfor %}
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+<style>
+
+.tab-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+  margin:0px;
+}
+.tab-links li {
+    padding: 12px 32px;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 0px 0px 8px 8px;
+    color: #002855;
+    border: 1px solid #002855;
+    font-size: 14.4px;
+    font-family: 'PP Fragment Sans Light';
+}
+.tab-links li.active {
+  background: #002855;
+  color: white;
+  border: 1px solid #002855;
+}
+.tab-content .tab {
+  display: none;
+  padding: 0px;
+}
+.tab-content .tab.active {
+  display: block;
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  let tabs = document.querySelectorAll(".tab-links li");
+  let tabContents = document.querySelectorAll(".tab-content .tab");
+
+  tabs.forEach(tab => {
+    tab.addEventListener("click", function () {
+      let target = this.getAttribute("data-tab");
+
+      tabs.forEach(t => t.classList.remove("active"));
+      tabContents.forEach(tc => tc.classList.remove("active"));
+
+      this.classList.add("active");
+      document.getElementById(target).classList.add("active");
+    });
+  });
+});
+</script>
+
+
+<script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const headers = document.querySelectorAll(".accordion-header");
+
+            headers.forEach(header => {
+                header.addEventListener("click", function () {
+                    const content = this.nextElementSibling;
+                    
+                    document.querySelectorAll(".accordion-content").forEach(item => {
+                        if (item !== content) {
+                            item.style.display = "none";
+                        }
+                    });
+
+                    content.style.display = content.style.display === "block" ? "none" : "block";
+                });
+            });
+        });
+    </script>
+
+{% schema %}
+{
+  "name": "Tabs Section",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Section Id",
+      "id": "id_menus"
+    },
+    {
+      "type": "text",
+      "label": "Slider Class/Name",
+      "id": "slider_class"
+    },
+   {
+      "type": "image_picker",
+      "label": "Background Image",
+      "id": "bgimage"
+    },
+    {
+      "type": "checkbox",
+      "label": "Enable FullWidth",
+      "id": "enable_fullwidth",
+      "default": true
+    },
+     {
+      "type": "text",
+      "label": "Heading",
+      "id": "heading"
+    },
+    {
+      "type": "color",
+      "label": "Heading Color",
+      "id": "heading_color",
+      "default": "#002855"
+    },
+    {
+      "type": "range",
+      "label": "Padding Top (Desktop)",
+      "id": "padding_top_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "default": 50
+    },
+    {
+      "type": "range",
+      "label": "Padding Bottom (Desktop)",
+      "id": "padding_bottom_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "default": 50
+    },
+    {
+      "type": "range",
+      "label": "Padding Top (Mobile)",
+      "id": "padding_top_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "default": 30
+    },
+    {
+      "type": "range",
+      "label": "Padding Bottom (Mobile)",
+      "id": "padding_bottom_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "default": 30
+    }
+  ],
+  "blocks": [
+    {
+      "type": "tab",
+      "name": "Tab",
+      "settings": [
+        {
+          "type": "text",
+          "id": "tab_title",
+          "label": "Tab Title",
+          "default": "Tab 1"
+        },
+        {
+          "type": "image_picker",
+          "label": "Image First",
+          "id": "image_first"
+        },
+          {
+          "type": "text",
+          "id": "set_menu_heading",
+          "label": "Set Menu Heading"
+        },
+        {
+          "type": "text",
+          "id": "set_menu_price",
+          "label": "Set Menu Text"
+        },
+        {
+          "type": "textarea",
+          "id": "set_menu_text",
+          "label": "Set Menu Text"
+        },
+        {
+          "type": "image_picker",
+          "label": "Image Second",
+          "id": "image_second"
+        },
+        {
+          "type": "text",
+          "id": "set_menu_heading1",
+          "label": "Set Menu Heading"
+        },
+        {
+          "type": "text",
+          "id": "set_menu_price1",
+          "label": "Set Menu Text"
+        },
+        {
+          "type": "text",
+          "id": "set_menu_text1",
+          "label": "Set Menu Text"
+        },
+        {
+          "type": "image_picker",
+          "label": "Image Third",
+          "id": "image_third"
+        },
+        {
+          "type": "text",
+          "id": "set_menu_heading2",
+          "label": "Set Menu Heading"
+        },
+        {
+          "type": "text",
+          "id": "set_menu_price2",
+          "label": "Set Menu Text"
+        },
+        {
+          "type": "text",
+          "id": "set_menu_text2",
+          "label": "Set Menu Text"
+        },
+        {
+          "type": "text",
+          "id": "tab_heading",
+          "label": "Tab Heading"
+        },
+        {
+          "type": "text",
+          "id": "accordion_heading",
+          "label": "Accordion Title"
+        },
+        {
+          "type": "textarea",
+          "id": "accordion_content",
+          "label": "Accordion Content"
+        },
+        {
+          "type": "text",
+          "id": "accordion_heading1",
+          "label": "Accordion Title"
+        },
+        {
+          "type": "textarea",
+          "id": "accordion_content1",
+          "label": "Accordion Content"
+        },
+        {
+          "type": "text",
+          "id": "accordion_heading2",
+          "label": "Accordion Title"
+        },
+        {
+          "type": "textarea",
+          "id": "accordion_content2",
+          "label": "Accordion Content"
+        },
+        {
+          "type": "text",
+          "id": "accordion_heading3",
+          "label": "Accordion Title"
+        },
+        {
+          "type": "textarea",
+          "id": "accordion_content3",
+          "label": "Accordion Content"
+        },
+        {
+          "type": "text",
+          "id": "accordion_heading4",
+          "label": "Accordion Title"
+        },
+        {
+          "type": "textarea",
+          "id": "accordion_content4",
+          "label": "Accordion Content"
+        },
+        {
+  "type": "text",
+  "id": "accordion_heading5",
+  "label": "Accordion Title",
+},
+{
+  "type": "textarea",
+  "id": "accordion_content5",
+  "label": "Accordion Content"
+},
+
+{
+  "type": "text",
+  "id": "accordion_heading6",
+  "label": "Accordion Title"
+},
+{
+  "type": "textarea",
+  "id": "accordion_content6",
+  "label": "Accordion Content"
+},
+
+{
+  "type": "text",
+  "id": "accordion_heading7",
+  "label": "Accordion Title"
+},
+{
+  "type": "textarea",
+  "id": "accordion_content7",
+  "label": "Accordion Content"
+},
+
+{
+  "type": "text",
+  "id": "accordion_heading8",
+  "label": "Accordion Title"
+},
+{
+  "type": "textarea",
+  "id": "accordion_content8",
+  "label": "Accordion Content"
+},
+
+
+{
+  "type": "text",
+  "id": "accordion_heading9",
+  "label": "Accordion Title"
+},
+{
+  "type": "textarea",
+  "id": "accordion_content9",
+  "label": "Accordion Content"
+},
+
+{
+  "type": "text",
+  "id": "accordion_heading10",
+  "label": "Accordion Title"
+},
+{
+  "type": "textarea",
+  "id": "accordion_content10",
+  "label": "Accordion Content"
+},
+        {
+          "type": "textarea",
+          "label": "Button Text",
+          "id": "button_1_text"
+        },
+        {
+          "type": "text",
+          "label": "Button Popup class",
+          "id": "button_class"
+        },
+        {
+          "type": "url",
+          "label": "Button Link",
+          "id": "button_1_url"
+        },
+        {
+          "type": "textarea",
+          "label": "Button Text",
+          "id": "button_2_text"
+        },
+        {
+          "type": "text",
+          "label": "Button Popup class",
+          "id": "button_class2"
+        },
+        {
+          "type": "url",
+          "label": "Button Link",
+          "id": "button_2_url"
+        },
+          {
+          "type": "textarea",
+          "label": "Set Menu Text",
+          "id": "set_menu_bottom_text"
+        },
+        {
+          "type": "textarea",
+          "label": "Set Menu Icon Text",
+          "id": "set_menu_bottom_text2"
+        }
+    
+      ]
+    }
+  ],
+  "max_blocks": 15,
+  "presets": [
+    {
+      "name": "Tabs Section",
+      "category": "Custom",
+      "blocks": [
+        { "type": "tab" },
+        { "type": "tab" },
+        { "type": "tab" }
+      ]
+    }
+  ]
+}
+{% endschema %}

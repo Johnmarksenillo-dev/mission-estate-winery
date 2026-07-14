@@ -1,0 +1,340 @@
+{% assign block_settings = block.settings %}
+{% assign icon_block_class = 'icon-block__media icon-block-' | append: block.id %}
+
+{% capture icon %}
+  {% render 'icon-or-image',
+    icon: block_settings.icon,
+    image_upload: block_settings.image_upload,
+    width: block_settings.width,
+    width_mobile: block_settings.width_mobile,
+    class_name: icon_block_class,
+    attributes: block.shopify_attributes
+  %}
+{% endcapture %}
+
+{%- if block_settings.link != blank -%}
+  <a
+    href='{{ block_settings.link }}'
+    class='text-inherit'
+    {% if block_settings.open_in_new_tab %}
+      target='_blank' rel='noopener'
+    {% endif %}
+  >
+    {{ icon }}
+  </a>
+{%- else -%}
+  {{ icon }}
+{%- endif -%}
+
+{% stylesheet %}
+  .icon-block {
+    display: flex;
+    fill: currentcolor;
+    flex-shrink: 0;
+  }
+
+  .icon-block__media {
+    height: auto;
+    @media (max-width: 749px) {
+      width: var(--width-mobile) !important;
+    }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Icon",
+  "class": "icon-block",
+  "settings": [
+    {
+      "type": "select",
+      "id": "icon",
+      "label": "Icon",
+      "options": [
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "apple",
+          "label": "Apple"
+        },
+        {
+          "value": "arrow",
+          "label": "Arrow"
+        },
+        {
+          "value": "banana",
+          "label": "Banana"
+        },
+        {
+          "value": "bottle",
+          "label": "Bottle"
+        },
+        {
+          "value": "box",
+          "label": "Box"
+        },
+        {
+          "value": "carrot",
+          "label": "Carrot"
+        },
+        {
+          "value": "chat_bubble",
+          "label": "Chat bubble"
+        },
+        {
+          "value": "check_box",
+          "label": "Check box"
+        },
+        {
+          "value": "clipboard",
+          "label": "Clipboard"
+        },
+        {
+          "value": "dairy",
+          "label": "Dairy"
+        },
+        {
+          "value": "dairy_free",
+          "label": "Dairy free"
+        },
+        {
+          "value": "dryer",
+          "label": "Dryer"
+        },
+        {
+          "value": "eye",
+          "label": "Eye"
+        },
+        {
+          "value": "fire",
+          "label": "Fire"
+        },
+        {
+          "value": "gluten_free",
+          "label": "Gluten free"
+        },
+        {
+          "value": "heart",
+          "label": "Heart"
+        },
+        {
+          "value": "iron",
+          "label": "Iron"
+        },
+        {
+          "value": "leaf",
+          "label": "Leaf"
+        },
+        {
+          "value": "leather",
+          "label": "Leather"
+        },
+        {
+          "value": "lightning_bolt",
+          "label": "Lightning bolt"
+        },
+        {
+          "value": "lipstick",
+          "label": "Lipstick"
+        },
+        {
+          "value": "lock",
+          "label": "Lock"
+        },
+        {
+          "value": "map_pin",
+          "label": "Map pin"
+        },
+        {
+          "value": "nut_free",
+          "label": "Nut free"
+        },
+        {
+          "value": "pants",
+          "label": "Pants"
+        },
+        {
+          "value": "paw_print",
+          "label": "Paw print"
+        },
+        {
+          "value": "pepper",
+          "label": "Pepper"
+        },
+        {
+          "value": "perfume",
+          "label": "Perfume"
+        },
+        {
+          "value": "plane",
+          "label": "Plane"
+        },
+        {
+          "value": "plant",
+          "label": "Plant"
+        },
+        {
+          "value": "price_tag",
+          "label": "Price tag"
+        },
+        {
+          "value": "question_mark",
+          "label": "Question mark"
+        },
+        {
+          "value": "recycle",
+          "label": "Recycle"
+        },
+        {
+          "value": "return",
+          "label": "Return"
+        },
+        {
+          "value": "ruler",
+          "label": "Ruler"
+        },
+        {
+          "value": "serving_dish",
+          "label": "Serving dish"
+        },
+        {
+          "value": "shirt",
+          "label": "Shirt"
+        },
+        {
+          "value": "shoe",
+          "label": "Shoe"
+        },
+        {
+          "value": "silhouette",
+          "label": "Silhouette"
+        },
+        {
+          "value": "bluesky",
+          "label": "Social: Bluesky"
+        },
+        {
+          "value": "facebook",
+          "label": "Social: Facebook"
+        },
+        {
+          "value": "instagram",
+          "label": "Social: Instagram"
+        },
+        {
+          "value": "linkedin",
+          "label": "Social: LinkedIn"
+        },
+        {
+          "value": "pinterest",
+          "label": "Social: Pinterest"
+        },
+        {
+          "value": "snapchat",
+          "label": "Social: Snapchat"
+        },
+        {
+          "value": "spotify",
+          "label": "Social: Spotify"
+        },
+        {
+          "value": "threads",
+          "label": "Social: Threads"
+        },
+        {
+          "value": "tiktok",
+          "label": "Social: TikTok"
+        },
+        {
+          "value": "tumblr",
+          "label": "Social: Tumblr"
+        },
+        {
+          "value": "twitter",
+          "label": "Social: X (Twitter)"
+        },
+        {
+          "value": "vimeo",
+          "label": "Social: Vimeo"
+        },
+        {
+          "value": "youtube",
+          "label": "Social: YouTube"
+        },
+        {
+          "value": "whatsapp",
+          "label": "Social: WhatsApp"
+        },
+        {
+          "value": "snowflake",
+          "label": "Snowflake"
+        },
+        {
+          "value": "star",
+          "label": "Star"
+        },
+        {
+          "value": "stopwatch",
+          "label": "Stopwatch"
+        },
+        {
+          "value": "truck",
+          "label": "Truck"
+        },
+        {
+          "value": "washing",
+          "label": "Washing"
+        }
+      ],
+      "default": "apple"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_upload",
+      "label": "Image icon"
+    },
+    {
+      "type": "range",
+      "id": "width",
+      "label": "Width",
+      "min": 12,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "width_mobile",
+      "label": "Mobile width",
+      "min": 12,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "url",
+      "id": "link",
+      "label": "Link"
+    },
+    {
+      "type": "checkbox",
+      "id": "open_in_new_tab",
+      "label": "Open link in new tab",
+      "default": false
+    }
+  ],
+  "presets": [
+    {
+      "name": "Icon",
+      "category": "Basic",
+      "settings": {
+        "icon": "price_tag"
+      }
+    }
+  ]
+}
+{% endschema %}

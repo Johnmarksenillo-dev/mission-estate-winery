@@ -1,0 +1,611 @@
+{% schema %}
+{
+  "name": "Grid Slider",
+  "settings": [
+    {
+      "type": "image_picker",
+      "label": "Background Image",
+      "id": "background_image"
+    },
+    {
+      "type": "color",
+      "label": "Background Overlay Color",
+      "id": "background_overlay_color",
+      "default": "#B7B695"
+    },
+    {
+      "type": "range",
+      "label": "Background Overlay Opacity",
+      "id": "background_overlay_opacity",
+      "min": 0,
+      "max": 1,
+      "step": 0.1,
+      "default": 0.5
+    },
+    {
+      "type": "color",
+      "label": "Slider Heading Color",
+      "id": "slider_heading_color",
+      "default": "#fff"
+    },
+    {
+      "type": "color",
+      "label": "Slider Text Color",
+      "id": "slider_text_color",
+      "default": "#fff"
+    },
+    {
+      "type": "color",
+      "label": "Button1 Background Color",
+      "id": "button1_bg_color",
+      "default": "#002855"
+    },
+    {
+      "type": "color",
+      "label": "Button1 Text Color",
+      "id": "button1_color",
+      "default": "#fff"
+    },
+    {
+      "type": "color",
+      "label": "Button2 Background Color",
+      "id": "button2_bg_color",
+      "default": "#fff"
+    },
+    {
+      "type": "color",
+      "label": "Button2 Text Color",
+      "id": "button2_color",
+      "default": "#002855"
+    },
+    {
+      "type": "header",
+      "content": "Column 1 Settings"
+    },
+    {
+      "type": "image_picker",
+      "label": "Slider Image 1 (Column 1)",
+      "id": "slider_image_1"
+    },
+    {
+      "type": "image_picker",
+      "label": "Slider Image 2 (Column 1)",
+      "id": "slider_image_2"
+    },
+    {
+      "type": "image_picker",
+      "label": "Slider Image 3 (Column 1)",
+      "id": "slider_image_3"
+    },
+    {
+      "type": "text",
+      "label": "Content Block Heading (Column 1)",
+      "id": "content_heading_1"
+    },
+    {
+      "type": "textarea",
+      "label": "Content Block Text (Column 1)",
+      "id": "content_text_1"
+    },
+    {
+      "type": "url",
+      "label": "Button 1 URL",
+      "id": "button_1_1_url"
+    },
+    {
+      "type": "text",
+      "label": "Button 1 Text",
+      "id": "button_1_1_text"
+    },
+    {
+      "type": "url",
+      "label": "Button 2 URL",
+      "id": "button_1_2_url"
+    },
+    {
+      "type": "text",
+      "label": "Button 2 Text",
+      "id": "button_1_2_text"
+    },
+    {
+      "type": "number",
+      "label": "Column 1 Vertical Offset",
+      "id": "offset_1",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Column 2 Settings"
+    },
+    {
+      "type": "image_picker",
+      "label": "Slider Image 1 (Column 2)",
+      "id": "slider_image_4"
+    },
+    {
+      "type": "image_picker",
+      "label": "Slider Image 2 (Column 2)",
+      "id": "slider_image_5"
+    },
+    {
+      "type": "image_picker",
+      "label": "Slider Image 3 (Column 2)",
+      "id": "slider_image_6"
+    },
+    {
+      "type": "text",
+      "label": "Content Block Heading (Column 2)",
+      "id": "content_heading_2"
+    },
+    {
+      "type": "textarea",
+      "label": "Content Block Text (Column 2)",
+      "id": "content_text_2"
+    },
+    {
+      "type": "url",
+      "label": "Button 1 URL",
+      "id": "button_2_1_url"
+    },
+    {
+      "type": "text",
+      "label": "Button 1 Text",
+      "id": "button_2_1_text"
+    },
+    {
+      "type": "url",
+      "label": "Button 2 URL",
+      "id": "button_2_2_url"
+    },
+    {
+      "type": "text",
+      "label": "Button 2 Text",
+      "id": "button_2_2_text"
+    },
+    {
+      "type": "number",
+      "label": "Column 2 Vertical Offset",
+      "id": "offset_2",
+      "default": 10
+    },
+    {
+      "type": "header",
+      "content": "Column 3 Settings"
+    },
+    {
+      "type": "image_picker",
+      "label": "Slider Image 1 (Column 3)",
+      "id": "slider_image_7"
+    },
+    {
+      "type": "image_picker",
+      "label": "Slider Image 2 (Column 3)",
+      "id": "slider_image_8"
+    },
+    {
+      "type": "image_picker",
+      "label": "Slider Image 3 (Column 3)",
+      "id": "slider_image_9"
+    },
+    {
+      "type": "text",
+      "label": "Content Block Heading (Column 3)",
+      "id": "content_heading_3"
+    },
+    {
+      "type": "textarea",
+      "label": "Content Block Text (Column 3)",
+      "id": "content_text_3"
+    },
+    {
+      "type": "url",
+      "label": "Button 1 URL",
+      "id": "button_3_1_url"
+    },
+    {
+      "type": "text",
+      "label": "Button 1 Text",
+      "id": "button_3_1_text"
+    },
+    {
+      "type": "url",
+      "label": "Button 2 URL",
+      "id": "button_3_2_url"
+    },
+    {
+      "type": "text",
+      "label": "Button 2 Text",
+      "id": "button_3_2_text"
+    },
+    {
+      "type": "number",
+      "label": "Column 3 Vertical Offset",
+      "id": "offset_3",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Main Section Settings"
+    },
+    {
+      "type": "text",
+      "label": "Main Heading",
+      "id": "main_heading"
+    },
+    {
+      "type": "textarea",
+      "label": "Main Text",
+      "id": "main_text"
+    },
+    {
+      "type": "text",
+      "label": "Main Button Text",
+      "id": "main_button_text"
+    },
+    {
+      "type": "url",
+      "label": "Main Button URL",
+      "id": "main_button_url"
+    },
+     {
+      "type": "color",
+      "label": "Main Heading Color",
+      "id": "main_heading_color",
+      "default": "#fff"
+    },
+    {
+      "type": "color",
+      "label": "Main Text Color",
+      "id": "main_text_color",
+      "default": "#fff"
+    },
+    {
+      "type": "color",
+      "label": "Main Button Background Color",
+      "id": "main_button_bg_color",
+      "default": "#002855"
+    },
+    {
+      "type": "color",
+      "label": "Main Text Color",
+      "id": "main_button_text_color",
+      "default": "#fff"
+    },
+    {
+      "type": "radio",
+      "label": "Position of Main Row",
+      "id": "main_row_position",
+      "options": [
+        {
+          "value": "top",
+          "label": "Above the 3 Columns"
+        },
+        {
+          "value": "bottom",
+          "label": "Below the 3 Columns"
+        }
+      ],
+      "default": "top"
+    },
+    {
+      "type": "range",
+      "label": "Padding Top (Desktop)",
+      "id": "padding_top_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "default": 50
+    },
+    {
+      "type": "range",
+      "label": "Padding Bottom (Desktop)",
+      "id": "padding_bottom_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "default": 50
+    },
+    {
+      "type": "range",
+      "label": "Padding Top (Mobile)",
+      "id": "padding_top_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "default": 30
+    },
+    {
+      "type": "range",
+      "label": "Padding Bottom (Mobile)",
+      "id": "padding_bottom_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "default": 30
+    }
+  ],
+  "presets": [
+    {
+      "name": "Grid Slider",
+      "settings": {
+        "main_heading": "Main Heading",
+        "main_text": "This is the main text for the section.",
+        "main_button_text": "Learn More",
+        "main_button_url": "/page-link",
+        "main_row_position": "top"
+      }
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+.{{ section.id }} .grid-slider-section {
+  background-size: cover;
+  background-position: center;
+  padding-top: {{ section.settings.padding_top_desktop }}px;
+  padding-bottom: {{ section.settings.padding_bottom_desktop }}px;
+  position: relative;
+  padding-left: 90px;
+  padding-right: 90px;
+}
+
+.{{ section.id }} .grid-slider-section:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: {{ section.settings.background_overlay_color }};
+  opacity: {{ section.settings.background_overlay_opacity }};
+  z-index:0;
+  content:"";
+}
+
+@media screen and (max-width: 768px) {
+  .{{ section.id }} .grid-slider-section {
+    padding-top: {{ section.settings.padding_top_mobile }}px;
+    padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+  }
+}
+.{{ section.id }} .main-row {
+  text-align: center;
+  margin-bottom: 40px;
+  position:relative;
+  width: 100%;
+  max-width: 45%;
+  margin:auto;
+}
+
+.{{ section.id }} .columns-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  height:100vw;
+  max-height:700px;
+}
+
+.{{ section.id }} .column {
+  width: 32%;
+  position: relative;
+  border-radius:10px;
+}
+
+.{{ section.id }} .slider {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.{{ section.id }} .slide img {
+  width: 100%;
+}
+
+.{{ section.id }} .content-block {
+  position: absolute;
+    top: -19%;
+    right: 15%;
+    transform: translateY(0%);
+    padding: 20px;
+    z-index: 2;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 70%;
+    height: 100%;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1400px) {
+.{{ section.id }} .content-block {
+    top: -18%;
+}
+}
+
+.slick-prev, .slick-next {
+  z-index: 99;
+}
+
+  .{{ section.id }} .main-grid-slider-heading{
+    color:{{section.settings.main_heading_color}};
+  }
+  .{{ section.id }} .main-grid-slider-text{
+    color:{{section.settings.main_text_color}};
+  }
+  .{{ section.id }} a.main-grid-slider-button{
+    background-color:{{section.settings.main_button_bg_color}};
+    color:{{section.settings.main_button_text_color}};
+    border:1px solid {{section.settings.main_button_bg_color}};
+  }
+  .{{ section.id }} .grid-slider-heading{
+    color:{{section.settings.slider_heading_color}};
+  }
+  .{{ section.id }} .grid-slider-text{
+    color:{{section.settings.slider_text_color}};
+    margin: 0px;
+  }
+  .{{ section.id }} .grid-buttons a.grid-slider-button-primary{
+    background-color:{{section.settings.button1_bg_color}};
+    color:{{section.settings.button1_text_color}};
+    border:1px solid {{section.settings.button1_bg_color}};
+  }
+  .{{ section.id }} .grid-buttons a.grid-slider-button-secondary{
+    background-color:{{section.settings.button2_bg_color}};
+    color:{{section.settings.button2_text_color}};
+    border:1px solid #002855;
+  }
+  .{{ section.id }} .grid-slider {
+    margin: 30px;
+  }
+  .{{ section.id }} .grid-slider img {
+    border-radius: 10px;
+   }
+  .{{ section.id }} .grid-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 767px) {
+.{{ section.id }} .column {
+  width: 100%;
+  position: relative;
+  border-radius:10px;
+}
+
+.{{ section.id }} .grid-slider-section {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.{{ section.id }} .columns-wrapper {
+  height:auto;
+  max-height:none;
+}
+
+.{{ section.id }} .content-block {
+  position: relative;
+    top: 0px;
+    right: 0px;
+    transform: none;
+    padding: 20px;
+    z-index: 2;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+
+.{{ section.id }} .main-row {
+  margin-bottom: 20px;
+  max-width: 90%;
+  margin:auto;
+ margin-top: 20px;
+}
+}
+</style>
+<div class="{{ section.id }}">
+<div class="grid-slider-section" style="background-image: url({{ section.settings.background_image | img_url: 'grande' }});background-size:cover;">
+
+  <!-- Main Section Row (Position Based on Settings) -->
+  {% if section.settings.main_row_position == 'top' %}
+    <div class="main-row">
+      <h2 class="main-grid-slider-heading font-size-54 font-glare-light line-height-40 m-0 pb-13">{{ section.settings.main_heading }}</h2>
+      <p class="main-grid-slider-text font-size-18 font-sans-light line-height-120 mb-46">{{ section.settings.main_text }}</p>
+      <a href="{{ section.settings.main_button_url }}" class="button button--primary main-grid-slider-button">{{ section.settings.main_button_text }}</a>
+    </div>
+  {% endif %}
+  
+  <!-- Columns Row -->
+  <div class="columns-wrapper">
+    <!-- Column 1 -->
+    <div class="column" style="position: relative; top: {{ section.settings.offset_1 }}px;">
+      <div class="grid-slider">
+        <div class="slide"><img src="{{ section.settings.slider_image_1 | img_url: 'large' }}" alt="Slider Image 1"></div>
+        <div class="slide"><img src="{{ section.settings.slider_image_2 | img_url: 'large' }}" alt="Slider Image 2"></div>
+        <div class="slide"><img src="{{ section.settings.slider_image_3 | img_url: 'large' }}" alt="Slider Image 3"></div>
+      </div>
+      <div class="content-block" style="background-color: {{ section.settings.content_bg_color_1 }};">
+        <h3 class="grid-slider-heading font-size-24 font-glare-light line-height-120 m-0 pb-13">{{ section.settings.content_heading_1 }}</h3>
+        <p class="grid-slider-text font-size-18 font-sans-light line-height-120">{{ section.settings.content_text_1 }}</p>
+        <div class="grid-buttons">
+            {% if section.settings.button_1_1_url %}
+              <a href="{{ section.settings.button_1_1_url }}" class="button button--primary grid-slider-button-primary mt-23">{{ section.settings.button_1_1_text }}</a>
+            {% endif %}
+            {% if section.settings.button_1_2_url %}
+              <a href="{{ section.settings.button_1_2_url }}" class="button button--secondary grid-slider-button-secondary mt-23">{{ section.settings.button_1_2_text }}</a>
+            {% endif %}
+        </div>
+      </div>
+    </div>
+
+    <!-- Column 2 -->
+    <div class="column" style="position: relative; top: {{ section.settings.offset_2 }}px;">
+      <div class="grid-slider">
+        <div class="slide"><img src="{{ section.settings.slider_image_4 | img_url: 'large' }}" alt="Slider Image 1"></div>
+        <div class="slide"><img src="{{ section.settings.slider_image_5 | img_url: 'large' }}" alt="Slider Image 2"></div>
+        <div class="slide"><img src="{{ section.settings.slider_image_6 | img_url: 'large' }}" alt="Slider Image 3"></div>
+      </div>
+      <div class="content-block" style="background-color: {{ section.settings.content_bg_color_2 }};">
+        <h3 class="grid-slider-heading font-size-24 font-glare-light line-height-120 m-0 pb-13">{{ section.settings.content_heading_2 }}</h3>
+        <p class="grid-slider-text font-size-18 font-sans-light line-height-120">{{ section.settings.content_text_2 }}</p>
+         <div class="grid-buttons">
+            {% if section.settings.button_2_1_url %}
+              <a href="{{ section.settings.button_2_1_url }}" class="button button--primary grid-slider-button-primary mt-23">{{ section.settings.button_2_1_text }}</a>
+            {% endif %}
+            {% if section.settings.button_2_2_url %}
+              <a href="{{ section.settings.button_2_2_url }}" class="button button--secondary grid-slider-button-secondary mt-23">{{ section.settings.button_2_2_text }}</a>
+            {% endif %}
+        </div>
+      </div>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="column" style="position: relative; top: {{ section.settings.offset_3 }}px;">
+      <div class="grid-slider">
+        <div class="slide"><img src="{{ section.settings.slider_image_7 | img_url: 'large' }}" alt="Slider Image 1"></div>
+        <div class="slide"><img src="{{ section.settings.slider_image_8 | img_url: 'large' }}" alt="Slider Image 2"></div>
+        <div class="slide"><img src="{{ section.settings.slider_image_9 | img_url: 'large' }}" alt="Slider Image 3"></div>
+      </div>
+      <div class="content-block" style="background-color: {{ section.settings.content_bg_color_3 }};">
+        <h3 class="grid-slider-heading font-size-24 font-glare-light line-height-120 m-0 pb-13">{{ section.settings.content_heading_3 }}</h3>
+        <p class="grid-slider-text font-size-18 font-sans-light line-height-120">{{ section.settings.content_text_3 }}</p>
+        <div class="grid-buttons">
+            {% if section.settings.button_3_1_url %}
+              <a href="{{ section.settings.button_3_1_url }}" class="button button--primary grid-slider-button-primary mt-23">{{ section.settings.button_3_1_text }}</a>
+            {% endif %}
+            {% if section.settings.button_3_2_url %}
+              <a href="{{ section.settings.button_3_2_url }}" class="button button--secondary grid-slider-button-secondary mt-23">{{ section.settings.button_3_2_text }}</a>
+            {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Main Row (Position Based on Settings) -->
+  {% if section.settings.main_row_position == 'bottom' %}
+    <div class="main-row">
+      <h2 class="main-grid-slider-heading font-size-54 font-glare-light line-height-40 m-0 pb-13">{{ section.settings.main_heading }}</h2>
+      <p class="main-grid-slider-text font-size-18 font-sans-light line-height-120 mb-46">{{ section.settings.main_text }}</p>
+      <a href="{{ section.settings.main_button_url }}" class="button button--primary main-grid-slider-button">{{ section.settings.main_button_text }}</a>
+    </div>
+  {% endif %}
+  
+</div>
+</div>
+<!-- Slick Slider Initialization -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    $('.grid-slider').slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      arrows: false,
+      dots: true
+    });
+  });
+</script>

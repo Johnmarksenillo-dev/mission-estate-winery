@@ -1,0 +1,162 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement-bar-0": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to our store",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement-bar-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-1",
+        "show_line_separator": true,
+        "show_social": false,
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "booking_menu_block_QxhRGJ": {
+          "type": "booking_menu_block",
+          "settings": {
+            "booking_menu": "booking-menu"
+          }
+        }
+      },
+      "block_order": [
+        "booking_menu_block_QxhRGJ"
+      ],
+      "settings": {
+        "logo_position": "middle-left",
+        "menu": "main-menu",
+        "menu_type_desktop": "dropdown",
+        "sticky_header_type": "always",
+        "show_line_separator": false,
+        "color_scheme": "scheme-d536de6d-9eba-4ca5-b804-ae369f8ab959",
+        "menu_color_scheme": "scheme-1",
+        "call": true,
+        "call_text": "+6468459354",
+        "booking": true,
+        "booking_url": "#",
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "enable_customer_avatar": true,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "image_text_slideshow_4eKbfN": {
+      "type": "image-text-slideshow",
+      "disabled": true,
+      "name": "Image and Text show",
+      "settings": {
+        "section_id": "",
+        "slider_class": "trade-banner",
+        "bgimage": "shopify://shop_images/banner-girl-aromatic-wine.jpg",
+        "enable_fullwidth": true,
+        "enable_slideshow": true,
+        "slide_speed": 5000,
+        "autoplay": true,
+        "autoplay_speed": 5000,
+        "image_position": "right",
+        "heading": "Trade And Media",
+        "heading_url": "",
+        "heading_color": "#ffffff",
+        "text": "",
+        "text_color": "#4a4b54",
+        "simple_link1": false,
+        "button_1_url": "",
+        "link_target1": "_self",
+        "button_1_text": "",
+        "button_class": "",
+        "button1_bg_color": "#002855",
+        "button1_color": "#ffffff",
+        "simple_link2": false,
+        "button_2_url": "",
+        "link_target2": "_self",
+        "button_2_text": "",
+        "button_class2": "",
+        "button2_bg_color": "rgba(0,0,0,0)",
+        "button2_color": "#002855",
+        "secondary": false,
+        "simple_link3": false,
+        "button_3_url": "",
+        "link_target3": "_self",
+        "button_3_text": "",
+        "button_class3": "",
+        "simple_link4": false,
+        "button_4_url": "",
+        "link_target4": "_self",
+        "button_4_text": "",
+        "button_class4": "",
+        "background_color": "#ffffff",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 30,
+        "padding_bottom_mobile": 30
+      }
+    },
+    "review_grid_PrkmTV": {
+      "type": "review-grid",
+      "disabled": true,
+      "name": "Review Grid",
+      "settings": {
+        "section_title": "REVIEWS"
+      }
+    },
+    "mission_trade_media_gw3CyP": {
+      "type": "mission-trade-media",
+      "disabled": true,
+      "name": "Trade and Media",
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "enable_filtering": true,
+        "filter_type": "vertical",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header",
+    "image_text_slideshow_4eKbfN",
+    "review_grid_PrkmTV",
+    "mission_trade_media_gw3CyP"
+  ]
+}

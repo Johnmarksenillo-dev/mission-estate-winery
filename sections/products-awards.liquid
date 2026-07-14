@@ -1,0 +1,75 @@
+{% schema %}
+{
+  "name": "Product Awards",
+  "class": "customProduct_awards",
+  "settings": [
+{
+"type": "header",
+"content": "Select Text"
+},
+    {
+"type": "text",
+"label": "Custom Id",
+"id": "custom_id"
+},
+{
+"type": "text",
+"label": "Title",
+"id": "title"
+},
+    {
+"type": "text",
+"label": "Sub Heading",
+"id": "sub_text"
+}
+],
+
+  "presets": [
+    {
+      "name": "Product Awards",
+    }
+  ]
+}
+{% endschema %}
+
+{%- if product.metafields.custom.awards_heading != blank -%}
+<section class="products_awards" id="{% if section.settings.custom_id != blank %}{{section.settings.custom_id}}{% endif %}">
+  <div class="page-width">
+  <div class="wrapper_wraps_products">
+    <div class="wraps_awards">
+       
+          {%- if product.metafields.custom.awards_heading != blank -%}
+          <h2>{{product.metafields.custom.awards_heading}}</h2>
+        {% endif %}
+        {%- if section.settings.sub_text != blank -%}
+          <p>{{section.settings.sub_text}}</p>
+        {% endif %}
+    </div>
+    <div class="wraps_awards_columns">
+     {% assign compare = product.metafields.custom.product_awards.value %} 
+    {% for compare in compare %}
+      <div class="inner_column_awards">
+        <div class="wrapper_column_inner">
+          <div class="inner_column_img">
+             {% if compare.icon != blank %}
+              <img src="{{ compare.icon | img_url: 'master' }}">
+             {% endif %}
+        </div>
+          <div class="inner_column_text">
+              {% if compare.heading != blank %}
+                <h5>{{ compare.heading }} | {% if compare.score != blank %}<span class="wrap_scores">{{ compare.score }}</span>{% endif %}</h5>
+            {% endif %}
+           {% if compare.text != blank %}
+                <p>{{ compare.text }}</p>
+             {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+
+    </div>
+  </div>
+  </div>
+</section>
+{% endif %}
+      

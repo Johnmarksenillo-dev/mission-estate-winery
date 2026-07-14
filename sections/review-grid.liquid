@@ -1,0 +1,122 @@
+{% schema %}
+{
+  "name": "Review Grid",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Section Title",
+      "default": "REVIEWS"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Review",
+      "settings": [
+        {
+          "type": "range",
+          "id": "rating",
+          "label": "Star Rating",
+          "min": 1,
+          "max": 5,
+          "default": 5
+        },
+        {
+          "type": "textarea",
+          "id": "review_text",
+          "label": "Review Text"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 12,
+  "presets": [
+    {
+      "name": "Review Grid",
+      "category": "Testimonials"
+    }
+  ]
+}
+{% endschema %}
+
+<section class="review-section" style="background-color: #002855; color: #fff; padding: 40px 0; 60px">
+  <div class="page-width">
+    <div class="wraps_custom_reviews">
+    <h2 style="color: white;">{{ section.settings.section_title }}</h2>
+    <div class="grid grid--2-col-tablet grid--4-col-desktop">
+      {% for block in section.blocks %}
+        {% assign stars = block.settings.rating %}
+        <div class="review-card" style="margin: 20px 0;">
+          <div class="stars" style="color: #ff8a65; font-size: 30px; margin-bottom: 10px;">
+            {% for i in (1..5) %}
+              {% if i <= block.settings.rating %}
+                ★
+              {% else %}
+                <span style="color: #ccc;">★</span>
+              {% endif %}
+            {% endfor %}
+          </div>
+          <p style="color: #fff;">{{ block.settings.review_text }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  </div>
+</section>
+<style>
+
+  .wraps_custom_reviews {
+    width: 100%;
+    margin: 0px auto;
+}
+.review-section {
+  background-color: #002855;
+  color: white;
+  padding: 60px 20px;
+}
+
+.review-section h2 {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 5px; 
+}
+
+.review-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.review-card {
+  width: calc(50% - 15px); /* 2 columns with 30px gap */
+  margin-bottom: 30px;
+}
+
+.review-stars {
+  color: #ff8a65;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.review-text {
+  color: white;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.review-card p {
+    font-size: 15px;
+}
+
+  .wraps_custom_reviews .grid {
+    column-gap: 25px;
+}
+@media screen and (max-width: 767px) {
+  .review-card {
+    width: 100%;
+  }
+}
+</style>

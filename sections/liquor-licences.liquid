@@ -1,0 +1,39 @@
+{% schema %}
+{
+  "name": "Liquor Licences",
+  "class": "liquor_licences",
+  "settings": [
+{
+"type": "header",
+"content": "Select Text"
+},
+    {
+      "type": "text",
+      "id":"customid",
+      "label": "Custom ID"
+    },
+  {
+        "type": "image_picker",
+        "id": "main_image",
+        "label": "Image"
+      }
+],
+  "presets": [
+    {
+      "name": "Liquor Licences",
+    }
+  ]
+}
+{% endschema %}
+
+
+
+<section class="wraps_region" id="{%- if section.settings.customid != blank -%}{{section.settings.customid}}{% endif %}">
+  <div class="page-width">
+  {% if section.settings.main_image != blank %}
+      <div class="main-wrap_imgs">
+      <img src="{{ section.settings.main_image | img_url: 'master' }}" class="main-image" >
+      </div>
+  {% endif %}
+  </div>
+</section>

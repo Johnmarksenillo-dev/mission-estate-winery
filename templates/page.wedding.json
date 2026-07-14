@@ -1,0 +1,377 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "slideshow_8CmGVz": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_6wjXRa": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/026-Grace-Logan-Mission-Estate-Abby-Harrison-Wedding-Photographer.jpg",
+            "video_url": "",
+            "heading": "WEDDINGS",
+            "heading_size": "hxl",
+            "subheading": "Plan your wedding or elopement at Mission Estate Winery – a historic Hawke’s Bay vineyard offering elegant venues, scenic views, and tailored packages.",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-d536de6d-9eba-4ca5-b804-ae369f8ab959",
+            "text_alignment_mobile": "left"
+          }
+        }
+      },
+      "block_order": [
+        "slide_6wjXRa"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "large",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "image_with_text_CL9L9w": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_BppNiT": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Weddings & Elopements at Mission Estate</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_rwcxMb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Mission Estate is one of Hawke’s Bay’s most iconic wedding venues – where classic elegance, sweeping vineyard views, and locally inspired fine dining come to gether in a truly picturesque setting. Just 10 minutes from Napier city and airport, yet surrounded by rolling farmland and vines, it feels like a world of its own.</p><p>With over 25 years of experience creating unforgettable weddings, our expert team will guide every detail from your first consultation to the final toast. We coordinate the key elements – from ceremony setup and music to working alongside our recommended stylists and suppliers – ensuring your day runs seamlessly in our stunning grounds.</p><p>Whether you’re drawn to the romance of our tree-lined driveway, the charm of our historic buildings, or the beauty of a vineyard backdrop, Mission Estate is the perfect canvas for your wedding day.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_TJ4Q7f": {
+          "type": "button",
+          "settings": {
+            "wrap_button_class": "",
+            "button_label": "Call Us",
+            "link_target": "_self",
+            "button_class": "wedding-call-us",
+            "button_link": "tel:+6468459354",
+            "button_label1": "",
+            "button_link1": "",
+            "link_target1": "_blank",
+            "button_style_secondary": false
+          }
+        },
+        "button_RjcG6X": {
+          "type": "button",
+          "settings": {
+            "wrap_button_class": "lets-talk-wrapper",
+            "button_label": "Let's talk about your plans",
+            "link_target": "_self",
+            "button_class": "open-enquiry-popup",
+            "button_link": "#",
+            "button_label1": "",
+            "button_link1": "#",
+            "link_target1": "_blank",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_BppNiT",
+        "text_rwcxMb",
+        "button_TJ4Q7f",
+        "button_RjcG6X"
+      ],
+      "custom_css": [],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "section_id": "wedding_elopments",
+        "image": "shopify://shop_images/Wedding-Mission-Estate.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_link": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "image_text_slideshow_kEbPE4": {
+      "type": "image-text-slideshow",
+      "name": "Image and Text Slideshow",
+      "settings": {
+        "section_id": "wraps_wedding_package",
+        "slider_class": "",
+        "enable_fullwidth": true,
+        "enable_slideshow": true,
+        "slide_speed": 5000,
+        "autoplay": true,
+        "autoplay_speed": 5000,
+        "image_position": "left",
+        "slideshow_image_1": "shopify://shop_images/DSC1823.jpg",
+        "heading": "Wedding packages for every kind of love story",
+        "heading_url": "",
+        "heading_color": "#002855",
+        "text": "<p>From intimate elopements to grand celebrations, our thoughtfully crafted packages are designed to suit your unique day with style and simplicity. Each includes expert planning support, picture-perfect ceremony and reception settings, and exceptional catering – so you can stay present in every unforgettable moment.</p>",
+        "text_color": "#4a4b54",
+        "simple_link1": false,
+        "button_1_url": "https://cdn.shopify.com/s/files/1/0738/5327/2315/files/Mission_Wedding_Package_2025-2026_1__compressed.pdf?v=1760584866",
+        "link_target1": "_self",
+        "button_1_text": "Download wedding info package",
+        "button_class": "",
+        "button1_bg_color": "#ffffff",
+        "button1_color": "#002855",
+        "simple_link2": false,
+        "button_2_url": "https://cdn.shopify.com/s/files/1/0738/5327/2315/files/Mission_Elopement_Wedding_Package_2025-2026_024f29b7-9e3b-4d77-8461-3452e7735046.pdf?v=1760584749",
+        "link_target2": "_self",
+        "button_2_text": "Download elopement package",
+        "button_class2": "",
+        "button2_bg_color": "#ffffff",
+        "button2_color": "#002855",
+        "secondary": false,
+        "simple_link3": false,
+        "button_3_url": "https://cdn.shopify.com/s/files/1/0738/5327/2315/files/Mission_Elopement_Wedding_Package_2025-2026_024f29b7-9e3b-4d77-8461-3452e7735046.pdf?v=1760584749",
+        "link_target3": "_self",
+        "button_3_text": "",
+        "button_class3": "",
+        "simple_link4": false,
+        "button_4_url": "",
+        "link_target4": "_self",
+        "button_4_text": "",
+        "button_class4": "",
+        "background_color": "#ffa791",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 30,
+        "padding_bottom_mobile": 30
+      }
+    },
+    "image_text_slideshow_6nxgzT": {
+      "type": "image-text-slideshow",
+      "custom_css": [],
+      "name": "Image and Text Slideshow",
+      "settings": {
+        "section_id": "versatile_venue",
+        "slider_class": "",
+        "enable_fullwidth": true,
+        "enable_slideshow": true,
+        "slide_speed": 5000,
+        "autoplay": true,
+        "autoplay_speed": 5000,
+        "image_position": "right",
+        "slideshow_image_1": "shopify://shop_images/WEDDING-_Chapel.jpg",
+        "heading": "Versatile venue spaces to match your vision",
+        "heading_url": "",
+        "heading_color": "#002855",
+        "text": "<p>Whether you’re dreaming of a romantic gazebo ceremony, a modern hilltop lookout, or a vine-draped terrace, Mission Estate offers stunning ceremony settings to suit every style. From the elegant Chapel with vaulted ceiling to a marquee on the lawn or terrace dining under the stars, we have flexible indoor and outdoor reception options to suit all seasons and ensure peace of mind, whatever the weather.</p>",
+        "text_color": "#4a4b54",
+        "simple_link1": false,
+        "button_1_url": "#",
+        "link_target1": "_self",
+        "button_1_text": "Let's talk about your plans",
+        "button_class": "open-enquiry-popup",
+        "button1_bg_color": "#ffffff",
+        "button1_color": "#002855",
+        "simple_link2": false,
+        "button_2_url": "#",
+        "link_target2": "_self",
+        "button_2_text": "Call Us",
+        "button_class2": "",
+        "button2_bg_color": "rgba(0,0,0,0)",
+        "button2_color": "#002855",
+        "secondary": false,
+        "simple_link3": false,
+        "button_3_url": "#",
+        "link_target3": "_self",
+        "button_3_text": "Call US",
+        "button_class3": "",
+        "simple_link4": false,
+        "button_4_url": "",
+        "link_target4": "_self",
+        "button_4_text": "",
+        "button_class4": "",
+        "background_color": "#ffffff",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 30,
+        "padding_bottom_mobile": 30
+      }
+    },
+    "image_with_text_tWzeGB": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_YhBK4L": {
+          "type": "heading",
+          "settings": {
+            "heading": "Seasonal menus inspired by Hawke’s Bay",
+            "heading_size": "h1"
+          }
+        },
+        "text_PxtQL6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Curated by Executive Chef Ricky Littleton, our menus showcase fresh, locally sourced ingredients crafted into dishes that reflect the region’s rich flavours and seasonal abundance. Whether you choose a refined plated dinner, a relaxed shared feast, or elegant roaming canapés, your wedding meal will be a highlight of the day.</p><p>Wedding menus can be tailored to suit your style and guest preferences, with thoughtful options available for all dietary requirements.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_cRnGw6": {
+          "type": "button",
+          "settings": {
+            "wrap_button_class": "",
+            "button_label": "Let's talk about your plans",
+            "link_target": "_self",
+            "button_class": "open-enquiry-popup",
+            "button_link": "#",
+            "button_label1": "",
+            "button_link1": "",
+            "link_target1": "_blank",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_YhBK4L",
+        "text_PxtQL6",
+        "button_cRnGw6"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "section_id": "wrap_seasonal_menu",
+        "image": "shopify://shop_images/The-Mission-Estate-Rose-all-Day-FAWC-Summer-2019-22_2ceb7d00-9671-469f-8e57-6415233e4f86.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-1",
+        "image_link": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "image_with_text_g3Lab4": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_8Ym7Kb": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ready to start planning your dream wedding?",
+            "heading_size": "h1"
+          }
+        },
+        "text_eJwK4y": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Complete the form to download our latest wedding brochure, packed with detailed information on venues, packages, and inclusions. Let’s create a day that’s uniquely yours – at New Zealand’s oldest winery.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_jqtVaP": {
+          "type": "button",
+          "settings": {
+            "wrap_button_class": "",
+            "button_label": "Call Us",
+            "link_target": "_self",
+            "button_class": "wedding-call-us",
+            "button_link": "tel:+6468459354",
+            "button_label1": "",
+            "button_link1": "",
+            "link_target1": "_blank",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_8Ym7Kb",
+        "text_eJwK4y",
+        "button_jqtVaP"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "section_id": "wrap_start_planing",
+        "image": "shopify://shop_images/MissionEstateStyledShoot-118.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_link": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "text_with_video_3QHdY4": {
+      "type": "text-with-video",
+      "name": "Video with text",
+      "settings": {
+        "section_id": "wrap_mission_video",
+        "heading": "MISSION CHAPEL",
+        "heading_size": "h1",
+        "descriptions": "<p>Rebuilt after the Napier’s 1931 earthquake, Mission’s beautiful Chapel is available for weddings, private functions or conferences. Working closely with you, our team can help. </p>",
+        "button_text": "Call Us",
+        "button_class": "wedding-call-us",
+        "button_url": "tel:+6468459354",
+        "button_text_2": "",
+        "button_class_2": "d-none",
+        "button_url_2": "",
+        "enable_video_looping": true,
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 80
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_8CmGVz",
+    "image_with_text_CL9L9w",
+    "image_text_slideshow_kEbPE4",
+    "image_text_slideshow_6nxgzT",
+    "image_with_text_tWzeGB",
+    "image_with_text_g3Lab4",
+    "text_with_video_3QHdY4"
+  ]
+}

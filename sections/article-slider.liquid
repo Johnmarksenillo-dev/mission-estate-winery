@@ -1,0 +1,420 @@
+{% schema %}
+{
+  "name": "Article Slider",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Article Slider Settings"
+    },
+    {
+      "type": "text",
+      "id": "main_heading",
+      "label": "Main Heading",
+      "default": "Our Latest Articles"
+    },
+    {
+      "type": "textarea",
+      "id": "main_text",
+      "label": "Main Text",
+      "default": "Check out the latest news and articles in our blog."
+    },
+    {
+      "type": "text",
+      "id": "main_button_text",
+      "label": "Main Button Text",
+      "default": "See All Articles"
+    },
+    {
+      "type": "url",
+      "id": "main_button_url",
+      "label": "Main Button URL"
+    },
+    {
+      "type": "color",
+      "label": "Main Heading Color",
+      "id": "main_heading_color",
+      "default": "#002855"
+    },
+    {
+      "type": "color",
+      "label": "Main Text Color",
+      "id": "main_text_color",
+      "default": "#4A4B54"
+    },
+    {
+      "type": "color",
+      "label": "Main Button Background Color",
+      "id": "main_button_bg_color",
+      "default": "#002855"
+    },
+    {
+      "type": "color",
+      "label": "Main Text Color",
+      "id": "main_button_text_color",
+      "default": "#fff"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_article_image",
+      "label": "Show Article Image",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_article_description",
+      "label": "Show Article Description",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_read_more_button",
+      "label": "Show Read More Button",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "slider_item_count",
+      "label": "Number of Articles to Display",
+      "min": 1,
+      "max": 10,
+      "default": 5
+    },
+    {
+      "type": "blog",
+      "id": "article_blog",
+      "label": "Select Blog",
+      "info": "Select a blog to display articles from in the slider."
+    },
+    {
+      "type": "checkbox",
+      "id": "autoplay",
+      "label": "Enable Autoplay",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "autoplay_speed",
+      "label": "Autoplay Speed (ms)",
+      "min": 1000,
+      "max": 5000,
+      "step": 1000,
+      "default": 5000
+    },
+    {
+      "type": "range",
+      "id": "slide_speed",
+      "label": "Slide Speed (ms)",
+      "min": 200,
+      "max": 1000,
+      "step": 100,
+      "default": 500
+    },
+     {
+      "type": "range",
+      "label": "Padding Top (Desktop)",
+      "id": "padding_top_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "default": 50
+    },
+    {
+      "type": "range",
+      "label": "Padding Bottom (Desktop)",
+      "id": "padding_bottom_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "default": 50
+    },
+    {
+      "type": "range",
+      "label": "Padding Top (Mobile)",
+      "id": "padding_top_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "default": 30
+    },
+    {
+      "type": "range",
+      "label": "Padding Bottom (Mobile)",
+      "id": "padding_bottom_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "default": 30
+    }
+  ],
+  "presets": [
+    {
+      "name": "Article Slider",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
+<div class="{{ section.id }}">
+<div class="article-slider-wrapper">
+  <!-- Main Row with Heading, Text, and Button -->
+  <div class="main-slider-row">
+    <div class="page-widths">
+      <h2 class="article-slider-heading font-size-50 font-glare-light line-height-40 m-0 pb-13">{{ section.settings.main_heading }}</h2>
+      <p class="article-slider-text font-size-18 font-sans-light line-height-120 mb-46">{{ section.settings.main_text }}</p>
+      <a href="{{ section.settings.main_button_url }}" class="button button--primary article-slider-button">{{ section.settings.main_button_text }}</a>
+    </div>
+  </div>
+  
+  <!-- Article Slider Section -->
+  <div class="article-slider-section">
+    <div class="page-widths">
+      <div class="slick-slider-container">
+        <div id="article-slider-{{ section.id }}" class="article-slider">
+          {% assign blog = blogs[section.settings.article_blog] %}
+          {% assign articles = blog.articles %}
+          {% for article in articles limit: section.settings.slider_item_count %}
+            <div class="slick-slide">
+              <div class="article-slide">
+                {% if section.settings.show_article_image %}
+                  <!-- <img src="{{ article.featured_image | img_url: 'medium' }}" alt="{{ article.title }}"> -->
+                  <div class="article-card__image-wrapper card__media">
+                    <div class="article-card__image">
+                  {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
+                      <img
+                        srcset="
+                          {%- if article.image.src.width >= 165 -%}{{ article.image.src | image_url: width: 165 }} 165w,{%- endif -%}
+                          {%- if article.image.src.width >= 360 -%}{{ article.image.src | image_url: width: 360 }} 360w,{%- endif -%}
+                          {%- if article.image.src.width >= 533 -%}{{ article.image.src | image_url: width: 533 }} 533w,{%- endif -%}
+                          {%- if article.image.src.width >= 720 -%}{{ article.image.src | image_url: width: 720 }} 720w,{%- endif -%}
+                          {%- if article.image.src.width >= 1000 -%}{{ article.image.src | image_url: width: 1000 }} 1000w,{%- endif -%}
+                          {%- if article.image.src.width >= 1500 -%}{{ article.image.src | image_url: width: 1500 }} 1500w,{%- endif -%}
+                          {{ article.image.src | image_url }} {{ article.image.src.width }}w
+                        "
+                        src="{{ article.image.src | image_url: width: 533 }}"
+                        sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                        alt="{{ article.image.src.alt | escape }}"
+                        class="motion-reduce"
+                        {% unless lazy_load == false %}
+                          loading="lazy"
+                        {% endunless %}
+                        width="{{ article.image.width }}"
+                        height="{{ article.image.height }}"
+                      >
+                    </div>
+                  </div>
+                      {% comment %}theme-check-enable ImgLazyLoading{% endcomment %}
+                {% endif %}
+                <div class="article-details">
+
+                  <h3 class="card__heading wrap_artilce_title">
+              <a href="{{ article.url }}" class="full-unstyled-link">
+                {{ article.title | truncate: 50 | escape }}
+              </a>
+            </h3>
+                  <div class="wrap_none_tag article-tag {{ article.tags }} mt-30 font-size-14 font-sans-light line-height-140">{{ article.tags }}</div>
+                  {% if section.settings.show_article_description %}
+                    {% if article.metafields.custom.short_description != blank  %}
+                      <p class="article-description ptb-26 font-size-24 line-height-120">{{ article.metafields.custom.short_description }}</p>
+                  {% else %}
+                     <p class="article-description ptb-26 font-size-24 line-height-120">{{ article.content | strip_html | truncatewords: 18 }}</p>
+                  {% endif %}
+                  {% endif %}
+                  {% if section.settings.show_read_more_button %}
+                    <a href="{{ article.url }}" class="button button-secondary">Read More</a>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- CSS Styling -->
+<style>
+  @media screen and (max-width: 768px) {
+  .{{ section.id }} .article-slider-wrapper {
+    padding-top: {{ section.settings.padding_top_mobile }}px!important;
+  }
+    .{{ section.id }} .article-slider-section{
+    padding-bottom: {{ section.settings.padding_bottom_mobile }}px!important;
+  }
+}
+  .{{ section.id }} .article-slider-wrapper {
+    padding-top: {{ section.settings.padding_top_desktop }}px;
+  }
+  .{{ section.id }} .article-slider-section{
+    padding-bottom: {{ section.settings.padding_bottom_desktop }}px;
+  }
+  .{{ section.id }} .article-slider-section {
+    width: 100%;
+    overflow: hidden;
+  }
+  .{{ section.id }} .page-widths{
+    padding: 0px 0px 0px 65px;
+    width:100%;
+    margin:auto;
+  }
+  .{{ section.id }} .slick-slider-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .{{ section.id }} .article-slider-heading{
+    color:{{section.settings.main_heading_color}};
+  }
+  .{{ section.id }} .article-slider-text{
+    color:{{section.settings.main_text_color}};
+    margin-bottom:20px;
+  }
+  .{{ section.id }} a.article-slider-button{
+    background-color:{{section.settings.main_button_bg_color}};
+    color:{{section.settings.main_button_text_color}};
+    border:1px solid {{section.settings.main_button_bg_color}};
+  }
+  .{{ section.id }} .article-details {
+    position:relative;
+  }
+
+  .{{ section.id }} .main-slider-row {
+    text-align: left;
+    margin-bottom: 30px;
+    margin-left: 40px;
+  }
+  .{{ section.id }} .article-slider .article-card__image img {
+    object-fit: cover;
+  }
+  .{{ section.id }} .article-slider .article-card__image {
+      display: block;
+      width: 100%;
+      height: 380px;
+  }
+  .{{ section.id }} .article-slider .article-card__image img {
+    height: 100%;
+    border-radius: 0px;
+  }
+  .{{ section.id }} .article-card__image-wrapper.card__media {
+    display: block;
+    width: 100%;
+  }
+  .{{ section.id }} .article-slider a.button.button-secondary {
+    background-color: transparent;
+    border: 1px solid #002855;
+    color: #002855;
+    padding: 0px 30px;
+  }
+  .{{ section.id }} .article-slide {
+    margin-left: 32px;
+    margin-bottom: 30px;
+  }
+  .{{ section.id }} .article-tag{
+    display: inline-block;
+    width: auto;
+    padding: 0px;
+    font-size: 20px;
+    font-family: var(--font-heading-family);
+    color: #002855;
+  }
+  /* .{{ section.id }} .article-tag.Events {
+    background-color: #C6B5AD;
+  }
+  .{{ section.id }} .article-tag.News {
+    background-color: #B7B695;
+  } */
+
+
+@media only screen and (min-width: 280px) and (max-width: 767px) {
+.{{ section.id }} .page-widths{
+    padding: 0px 0px 0px 0px;
+    width:100%;
+    margin:auto;
+  }
+
+.{{ section.id }} .main-slider-row {
+    margin-left: 0px;
+    padding: 0px 20px;
+  }
+
+.{{ section.id }} .article-slide {
+    margin-left: 0px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+
+</style>
+
+<!-- JavaScript to Initialize Slick Slider -->
+<!-- <script>
+  jQuery(document).ready(function($) {
+    // Initialize Slick Slider for the article section
+    $('#article-slider-{{ section.id }}').slick({
+      autoplay: {{ section.settings.autoplay | json }},
+      autoplaySpeed: {{ section.settings.autoplay_speed }},
+      speed: {{ section.settings.slide_speed }},
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      infinite: true,
+      arrows: false,
+      dots: true,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+  });
+</script> -->
+<!-- Slick Slider Initialization -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    $('.article-slider').slick({
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      autoplay: false,
+      infinite:true,
+      autoplaySpeed: 2000,
+      arrows: false,
+      dots: true,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+  });
+</script>

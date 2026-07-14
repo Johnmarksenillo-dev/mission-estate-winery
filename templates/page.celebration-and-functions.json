@@ -1,0 +1,738 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "slideshow_8CmGVz": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_6wjXRa": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/banner-functions-2.jpg",
+            "video_url": "",
+            "heading": "Functions & Special Events",
+            "heading_size": "hxl",
+            "subheading": "Mission Estate Winery, established in 1851, offers an unparalleled setting for weddings, corporate functions, and special events.",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-d536de6d-9eba-4ca5-b804-ae369f8ab959",
+            "text_alignment_mobile": "left"
+          }
+        },
+        "slide_TRMXCV": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/banner-funtions-1400x560.jpg",
+            "video_url": "",
+            "heading": "Functions & Special Events",
+            "heading_size": "h0",
+            "subheading": "Mission Estate Winery, established in 1851, offers an unparalleled setting for weddings, corporate functions, and special events.",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-d536de6d-9eba-4ca5-b804-ae369f8ab959",
+            "text_alignment_mobile": "left"
+          }
+        }
+      },
+      "block_order": [
+        "slide_6wjXRa",
+        "slide_TRMXCV"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "large",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "image_with_text_CL9L9w": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_BppNiT": {
+          "type": "heading",
+          "settings": {
+            "heading": "Host your next event at our historic venue",
+            "heading_size": "h1"
+          }
+        },
+        "text_rwcxMb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Set on a hillside overlooking Hawke’s Bay’s most historic vineyards – just ten minutes from Napier city and airport – Mission Estate offers a distinctive venue with a relaxed, welcoming atmosphere. With versatile indoor and outdoor spaces, exceptional food and wine, and personalised service, it’s perfect for weddings, milestone celebrations, and corporate events.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_bhiWFc": {
+          "type": "button",
+          "settings": {
+            "button_label": "Tell us about your event",
+            "link_target": "_self",
+            "button_class": "open-enquiry-popup",
+            "button_link": "#",
+            "button_label1": "",
+            "button_link1": "",
+            "link_target1": "_self",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_BppNiT",
+        "text_rwcxMb",
+        "button_bhiWFc"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "section_id": "wedding_elopments",
+        "image": "shopify://shop_images/functions-venue.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "image_text_slideshow_kEbPE4": {
+      "type": "image-text-slideshow",
+      "disabled": true,
+      "name": "Image and Text Slideshow",
+      "settings": {
+        "section_id": "wraps_wedding_package",
+        "slider_class": "",
+        "enable_fullwidth": true,
+        "enable_slideshow": true,
+        "slide_speed": 5000,
+        "autoplay": true,
+        "autoplay_speed": 5000,
+        "image_position": "left",
+        "slideshow_image_1": "shopify://shop_images/DSC1823.jpg",
+        "heading": "Elopements",
+        "heading_url": "",
+        "heading_color": "#002855",
+        "text": "<p>Lorem ipsum dolor sit amet consectetur. Blandit at orci. Lorem ipsum dolor sit amet consectetur. Imperdiet a pulvinar dignissim nunc. Nunc nunc in risus aliquet pulvinar pharetra arcu sit. Ipsum facilisi ullamcorper egestas quam consequat. Ultrices rhoncus mattis augue phasellus. Et viverra tincidunt. Lorem ipsum dolor sit amet consectetur. Gravida scelerisque.</p>",
+        "text_color": "#4a4b54",
+        "simple_link1": false,
+        "button_1_url": "#",
+        "link_target1": "_self",
+        "button_1_text": "View Package",
+        "button_class": "",
+        "button1_bg_color": "#002855",
+        "button1_color": "#ffffff",
+        "simple_link2": false,
+        "button_2_url": "",
+        "link_target2": "_self",
+        "button_2_text": "",
+        "button_class2": "",
+        "button2_bg_color": "rgba(0,0,0,0)",
+        "button2_color": "#002855",
+        "secondary": false,
+        "simple_link3": false,
+        "button_3_url": "",
+        "link_target3": "_self",
+        "button_3_text": "",
+        "button_class3": "",
+        "simple_link4": false,
+        "button_4_url": "",
+        "link_target4": "_self",
+        "button_4_text": "",
+        "button_class4": "",
+        "background_color": "#ffffff",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 30,
+        "padding_bottom_mobile": 30
+      }
+    },
+    "image_with_text_ge4WYT": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_D3jDA6": {
+          "type": "heading",
+          "settings": {
+            "heading": "Flexible indoor and outdoor spaces",
+            "heading_size": "h1"
+          }
+        },
+        "text_UEtrqW": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Whether you're hosting an intimate meeting or a grand celebration, Mission Estate provides an inspiring backdrop to connect, celebrate, and create lasting memories. </p><ul><li><strong>The Chapel</strong>: An impressive space for seated dinners or theatre-style presentations</li><li><strong>The Chanel Room: </strong>The space benefits from ample natural light, making it ideal for intimate events or gatherings.</li><li><strong>The Library: </strong>A versatile venue designed for daytime workshops and meetings, seamlessly transitioning into evening functions.</li><li><strong>Boardroom</strong>: A refined, private setting ideal for smaller meetings.</li><li><strong>Terrace & lawn</strong>: Perfect for outdoor ceremonies, cocktail functions, or casual networking – surrounded by vines and views of Napier and the coastline beyond.</li><li><strong>Marque option</strong>: The expansive lawn accommodates a marquee, ideal for large-scale functions or celebrations.</li></ul>",
+            "text_style": "body"
+          }
+        },
+        "button_VWYicg": {
+          "type": "button",
+          "settings": {
+            "button_label": "Make an enquiry",
+            "link_target": "_self",
+            "button_class": "open-enquiry-popup",
+            "button_link": "#",
+            "button_label1": "",
+            "button_link1": "",
+            "link_target1": "_self",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_D3jDA6",
+        "text_UEtrqW",
+        "button_VWYicg"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "section_id": "wrap_seasonal_menu",
+        "image": "shopify://shop_images/functions-golden-tall.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-ccdf85bc-5e76-4e49-b1d5-b858928d4956",
+        "color_scheme": "scheme-ccdf85bc-5e76-4e49-b1d5-b858928d4956",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "image_text_slideshow_FmGTTJ": {
+      "type": "image-text-slideshow",
+      "disabled": true,
+      "name": "Image and Text Slideshow",
+      "settings": {
+        "section_id": "wraps_wedding_package",
+        "slider_class": "",
+        "enable_fullwidth": true,
+        "enable_slideshow": true,
+        "slide_speed": 5000,
+        "autoplay": true,
+        "autoplay_speed": 5000,
+        "image_position": "left",
+        "slideshow_image_1": "shopify://shop_images/DSC1823.jpg",
+        "heading": "Flexible indoor and outdoor spaces to suit every event",
+        "heading_url": "",
+        "heading_color": "#002855",
+        "text": "Whether you're hosting an intimate meeting or a grand celebration, Mission Estate provides an inspiring backdrop to connect, celebrate, and create lasting memories. \n<ul>\n<li>The Chapel: An impressive space for seated dinners or theatre-style presentations</li>\n<li>The Chanel Room: The space benefits from ample natural light, making it ideal for intimate events or gatherings.</li>\n<li>The Library: A versatile venue designed for daytime workshops and meetings, seamlessly transitioning into evening functions.</li>\n<li>Boardroom: A refined, private setting ideal for smaller meetings.\n</li>\n<li>Terrace & lawn: Perfect for outdoor ceremonies, cocktail functions, or casual networking – surrounded by vines and views of Napier and the coastline beyond.</li>\n<li>Marquee option: The expansive lawn accommodates a marquee, ideal for large-scale functions or celebrations.</li>\n</ul>",
+        "text_color": "#4a4b54",
+        "simple_link1": false,
+        "button_1_url": "#",
+        "link_target1": "_self",
+        "button_1_text": "View Package",
+        "button_class": "",
+        "button1_bg_color": "#002855",
+        "button1_color": "#ffffff",
+        "simple_link2": false,
+        "button_2_url": "",
+        "link_target2": "_self",
+        "button_2_text": "",
+        "button_class2": "",
+        "button2_bg_color": "rgba(0,0,0,0)",
+        "button2_color": "#002855",
+        "secondary": false,
+        "simple_link3": false,
+        "button_3_url": "",
+        "link_target3": "_self",
+        "button_3_text": "",
+        "button_class3": "",
+        "simple_link4": false,
+        "button_4_url": "",
+        "link_target4": "_self",
+        "button_4_text": "",
+        "button_class4": "",
+        "background_color": "#ffffff",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 30,
+        "padding_bottom_mobile": 30
+      }
+    },
+    "restaurant_tabs_ChCGTz": {
+      "type": "restaurant-tabs",
+      "blocks": {
+        "tab_hWXyrf": {
+          "type": "tab",
+          "settings": {
+            "tab_name": "The Chapel",
+            "tab_url": "#versatile_venue",
+            "heading": "",
+            "sub_heading": "",
+            "box_description": "",
+            "main_description": "<p>Nestled into the side of the Taradale hills and surrounded by farmland and vineyard, yet only 10 minutes from the city and airport, Mission is a convenient and picturesque winery setting for your wedding.</p>\n<p>The Mission Restaurant has a reputation for outstanding food and we have an experienced and professional team dedicated to providing exceptional service and the extra touches that will make your day extraordinary.</p>\n<p>From the garden ceremony, to picture perfect vineyard wedding photos, right through to the last dance you can place your special day into our hands with confidence.</p>\n<p>Please feel free to call our Functions Manager directly to discuss your wedding plans or to arrange a visit to view our facilities.</p>\n<p><strong>Functions Manager</strong></p>\n<div class=\"wraps_icons_text_tabs\">\n<p><span><svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M8 3C8.5 3 10.5 7.5 10.5 8C10.5 9 9 10 8.5 11C8 12 9 13 10 14C10.39 14.39 12 16 13 15.5C14 15 15 13.5 16 13.5C16.5 13.5 21 15.5 21 16C21 18 19.5 19.5 18 20C16.5 20.5 15.5 20.5 13.5 20C11.5 19.5 10 19 7.5 16.5C5 14 4.5 12.5 4 10.5C3.5 8.5 3.5 7.5 4 6C4.5 4.5 6 3 8 3Z\" stroke=\"white\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg> </span> Call: 64 6 844 6003</p>\n<p><span><svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6ZM20 6L12 11L4 6H20ZM20 18H4V8L12 13L20 8V18Z\" fill=\"white\"></path>\n</svg>\n</span>  Email</p>\n</div>",
+            "button_url": "#",
+            "button_class": "open-enquiry-popup",
+            "button_tab": "Make an enquiry",
+            "button_url1": "",
+            "button_tab1": "",
+            "button_class2": ""
+          }
+        },
+        "tab_nGRWJY": {
+          "type": "tab",
+          "settings": {
+            "tab_name": "",
+            "tab_url": "",
+            "heading": "",
+            "sub_heading": "",
+            "box_description": "",
+            "main_description": "",
+            "button_url": "",
+            "button_class": "",
+            "button_tab": "",
+            "button_url1": "",
+            "button_tab1": "",
+            "button_class2": ""
+          }
+        },
+        "tab_ENyQrK": {
+          "type": "tab",
+          "settings": {
+            "tab_name": "St Peters Chapel",
+            "tab_url": "#wrap_seasonal_menu",
+            "heading": "",
+            "sub_heading": "",
+            "box_description": "",
+            "main_description": "<p>Nestled into the side of the Taradale hills and surrounded by farmland and vineyard, yet only 10 minutes from the city and airport, Mission is a convenient and picturesque winery setting for your wedding.</p>\n<p>The Mission Restaurant has a reputation for outstanding food and we have an experienced and professional team dedicated to providing exceptional service and the extra touches that will make your day extraordinary.</p>\n<p>From the garden ceremony, to picture perfect vineyard wedding photos, right through to the last dance you can place your special day into our hands with confidence.</p>\n<p>Please feel free to call our Functions Manager directly to discuss your wedding plans or to arrange a visit to view our facilities.</p>\n<p><strong>Functions Manager</strong></p>\n<div class=\"wraps_icons_text_tabs\">\n<p><span><svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M8 3C8.5 3 10.5 7.5 10.5 8C10.5 9 9 10 8.5 11C8 12 9 13 10 14C10.39 14.39 12 16 13 15.5C14 15 15 13.5 16 13.5C16.5 13.5 21 15.5 21 16C21 18 19.5 19.5 18 20C16.5 20.5 15.5 20.5 13.5 20C11.5 19.5 10 19 7.5 16.5C5 14 4.5 12.5 4 10.5C3.5 8.5 3.5 7.5 4 6C4.5 4.5 6 3 8 3Z\" stroke=\"white\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg> </span> Call: 64 6 844 6003</p>\n<p><span><svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6ZM20 6L12 11L4 6H20ZM20 18H4V8L12 13L20 8V18Z\" fill=\"white\"></path>\n</svg>\n</span>  Email</p>\n</div>",
+            "button_url": "#",
+            "button_class": "open-enquiry-popup",
+            "button_tab": "Make an enquiry",
+            "button_url1": "",
+            "button_tab1": "",
+            "button_class2": ""
+          }
+        },
+        "tab_Fm7QUf": {
+          "type": "tab",
+          "settings": {
+            "tab_name": "The Library",
+            "tab_url": "#wrap_start_planing",
+            "heading": "",
+            "sub_heading": "",
+            "box_description": "",
+            "main_description": "<p>Nestled into the side of the Taradale hills and surrounded by farmland and vineyard, yet only 10 minutes from the city and airport, Mission is a convenient and picturesque winery setting for your wedding.</p>\n<p>The Mission Restaurant has a reputation for outstanding food and we have an experienced and professional team dedicated to providing exceptional service and the extra touches that will make your day extraordinary.</p>\n<p>From the garden ceremony, to picture perfect vineyard wedding photos, right through to the last dance you can place your special day into our hands with confidence.</p>\n<p>Please feel free to call our Functions Manager directly to discuss your wedding plans or to arrange a visit to view our facilities.</p>\n<p><strong>Functions Manager</strong></p>\n<div class=\"wraps_icons_text_tabs\">\n<p><span><svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M8 3C8.5 3 10.5 7.5 10.5 8C10.5 9 9 10 8.5 11C8 12 9 13 10 14C10.39 14.39 12 16 13 15.5C14 15 15 13.5 16 13.5C16.5 13.5 21 15.5 21 16C21 18 19.5 19.5 18 20C16.5 20.5 15.5 20.5 13.5 20C11.5 19.5 10 19 7.5 16.5C5 14 4.5 12.5 4 10.5C3.5 8.5 3.5 7.5 4 6C4.5 4.5 6 3 8 3Z\" stroke=\"white\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg> </span> Call: 64 6 844 6003</p>\n<p><span><svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6ZM20 6L12 11L4 6H20ZM20 18H4V8L12 13L20 8V18Z\" fill=\"white\"></path>\n</svg>\n</span>  Email</p>\n</div>",
+            "button_url": "#",
+            "button_class": "open-enquiry-popup",
+            "button_tab": "Make an enquiry",
+            "button_url1": "",
+            "button_tab1": "",
+            "button_class2": ""
+          }
+        }
+      },
+      "block_order": [
+        "tab_hWXyrf",
+        "tab_nGRWJY",
+        "tab_ENyQrK",
+        "tab_Fm7QUf"
+      ],
+      "disabled": true,
+      "name": "Custom Tabs",
+      "settings": {
+        "title": ""
+      }
+    },
+    "image_with_text_tWzeGB": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_YhBK4L": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Chapel",
+            "heading_size": "h1"
+          }
+        },
+        "text_PxtQL6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>An impressive space for seated dinners or theatre-style presentations.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_zRtjXg": {
+          "type": "button",
+          "settings": {
+            "button_label": "Make an enquiry",
+            "link_target": "_self",
+            "button_class": "open-enquiry-popup",
+            "button_link": "#",
+            "button_label1": "",
+            "button_link1": "",
+            "link_target1": "_self",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_YhBK4L",
+        "text_PxtQL6",
+        "button_zRtjXg"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "section_id": "wrap_seasonal_menu",
+        "image": "shopify://shop_images/The-Mission-Estate-Rose-all-Day-FAWC-Summer-2019-22_2ceb7d00-9671-469f-8e57-6415233e4f86.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "image_with_text_fBEyAh": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_6Ft8MF": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Chanel Room",
+            "heading_size": "h1"
+          }
+        },
+        "text_tgYgmg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The space benefits from ample natural light, making it ideal for intimate events or gatherings.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_9Njd6b": {
+          "type": "button",
+          "settings": {
+            "button_label": "Make an enquiry",
+            "link_target": "_self",
+            "button_class": "open-enquiry-popup",
+            "button_link": "#",
+            "button_label1": "",
+            "button_link1": "",
+            "link_target1": "_self",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_6Ft8MF",
+        "text_tgYgmg",
+        "button_9Njd6b"
+      ],
+      "disabled": true,
+      "name": "Spaces - Image with text",
+      "settings": {
+        "section_id": "wrap_seasonal_menu",
+        "image": "shopify://shop_images/The-Mission-Estate-Rose-all-Day-FAWC-Summer-2019-22_2ceb7d00-9671-469f-8e57-6415233e4f86.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "image_with_text_g3Lab4": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_8Ym7Kb": {
+          "type": "heading",
+          "settings": {
+            "heading": "On-site dining & catering by Mission Estate Restaurant",
+            "heading_size": "h1"
+          }
+        },
+        "text_eJwK4y": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Your guests will enjoy fresh, seasonal dishes prepared by the talented culinary team at <a href=\"/pages/restaurant\" title=\"Restaurant\">Mission Estate Restaurant</a>. Whether you're after elegant canapés, a plated multi-course menu, working lunches, or light refreshments, our team will work with you to design catering that complements your event and celebrates local Hawke’s Bay produce.</p><p>We offer:</p><ul><li>Wine tastings and <a href=\"/pages/cellardoor\" title=\"CellarDoor\">Cellar Door experiences</a></li><li>Outdoor dining options</li><li>Sit-down dining</li><li>Roving canapés menus</li></ul>",
+            "text_style": "body"
+          }
+        },
+        "button_jqtVaP": {
+          "type": "button",
+          "settings": {
+            "button_label": "Make an enquiry",
+            "link_target": "_self",
+            "button_class": "open-enquiry-popup",
+            "button_link": "#",
+            "button_label1": "",
+            "button_link1": "",
+            "link_target1": "_self",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_8Ym7Kb",
+        "text_eJwK4y",
+        "button_jqtVaP"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "section_id": "wrap_start_planing",
+        "image": "shopify://shop_images/functions-food.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "image_with_text_i9Jmw7": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_9PeCnj": {
+          "type": "heading",
+          "settings": {
+            "heading": "Event support and coordination",
+            "heading_size": "h1"
+          }
+        },
+        "text_jTk9rP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Mission Estate, you're not just booking a venue, you’re gaining a dedicated event partner. Our experienced and friendly team supports you from initial planning through to flawless execution, bringing your vision to life.<br/><br/><strong>We offer: </strong></p><ul><li>On-site catering and bar service</li><li>AV and assistance with tech support, complimentary Wi-Fi</li><li>Ample parking and easy access for buses or minivans</li><li>Assistance with layout and supplier liaison</li></ul>",
+            "text_style": "body"
+          }
+        },
+        "button_nmyY9L": {
+          "type": "button",
+          "settings": {
+            "button_label": "Tell us about your event",
+            "link_target": "_self",
+            "button_class": "open-enquiry-popup",
+            "button_link": "#",
+            "button_label1": "",
+            "button_link1": "",
+            "link_target1": "_self",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_9PeCnj",
+        "text_jTk9rP",
+        "button_nmyY9L"
+      ],
+      "name": "Event Support - Image with text",
+      "settings": {
+        "section_id": "wedding_elopments",
+        "image": "shopify://shop_images/functions-speaker.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "text_with_video_3QHdY4": {
+      "type": "text-with-video",
+      "disabled": true,
+      "name": "Video with text",
+      "settings": {
+        "section_id": "wrap_mission_video",
+        "heading": "Private Dining",
+        "heading_size": "h1",
+        "descriptions": "<p>Lorem ipsum dolor sit amet consectetur. Ac libero ac nullam in nibh gravida tempor. Vulputate sed rhoncus malesuada purus ipsum pretium et. Eros pharetra fermentum proin ut dolor leo elit lobortis neque. Urna parturient amet habitant donec. Lorem ipsum dolor sit amet consectetur. Ac libero ac nullam in nibh gravida tempor. Vulputate sed rhoncus malesuada purus ipsum pretium et. Eros pharetra fermentum proin ut dolor leo elit lobortis neque. Urna parturient amet habitant donec.</p>",
+        "button_text": "Make an enquiry",
+        "button_class": "open-enquiry-popup",
+        "button_url": "#",
+        "enable_video_looping": true,
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 80
+      }
+    },
+    "image_with_text_XhR6Vi": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_KLmyhp": {
+          "type": "heading",
+          "settings": {
+            "heading": "Start planning your event",
+            "heading_size": "h1"
+          }
+        },
+        "text_7BELnz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We’d love to help you create something memorable. Reach out to arrange a site visit, request a proposal, or chat with our functions and events team.</p><p>Call: <a href=\"tel:006468459354\" title=\"Phone us\">+64 6 845 9354</a><br/>Email: <a href=\"mailto:functions@missionestate.co.nz\" target=\"_blank\" title=\"mailto:functions@missionestate.co.nz\">functions@missionestate.co.nz</a></p>",
+            "text_style": "body"
+          }
+        },
+        "button_AzMeKz": {
+          "type": "button",
+          "settings": {
+            "button_label": "Make an enquiry",
+            "link_target": "_self",
+            "button_class": "open-enquiry-popup",
+            "button_link": "#",
+            "button_label1": "",
+            "button_link1": "",
+            "link_target1": "_self",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_KLmyhp",
+        "text_7BELnz",
+        "button_AzMeKz"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "section_id": "wrap_start_planing",
+        "image": "shopify://shop_images/functions-table-setting.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "image_with_text_Mw9maD": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_6JjnHz": {
+          "type": "heading",
+          "settings": {
+            "heading": "Accommodation",
+            "heading_size": "h1"
+          }
+        },
+        "text_RdhDzN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The ideal accommodation option for weekend escapes, business visits and weddings. A complimentary bottle of Mission Fête sparkling wine is provided on arrival.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_D7CQRc": {
+          "type": "button",
+          "settings": {
+            "button_label": "Discover more",
+            "link_target": "_self",
+            "button_class": "",
+            "button_link": "shopify://pages/accommodation",
+            "button_label1": "",
+            "button_link1": "",
+            "link_target1": "_self",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_6JjnHz",
+        "text_RdhDzN",
+        "button_D7CQRc"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "section_id": "wrap_start_accomdation",
+        "image": "shopify://shop_images/MissionEstateStyledShoot-118.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_8CmGVz",
+    "image_with_text_CL9L9w",
+    "image_text_slideshow_kEbPE4",
+    "image_with_text_ge4WYT",
+    "image_text_slideshow_FmGTTJ",
+    "restaurant_tabs_ChCGTz",
+    "image_with_text_tWzeGB",
+    "image_with_text_fBEyAh",
+    "image_with_text_g3Lab4",
+    "image_with_text_i9Jmw7",
+    "text_with_video_3QHdY4",
+    "image_with_text_XhR6Vi",
+    "image_with_text_Mw9maD"
+  ]
+}

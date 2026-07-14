@@ -1,0 +1,141 @@
+{%- comment -%}
+  Intended for blocks and sections that provide values for all the referenced settings.
+
+  <div class="spacing-style" style="{%  render 'spacing-style', settings: section.settings %}">
+
+   Accepts:
+      settings: {settings || section.settings}
+{%- endcomment -%}
+
+{% assign preset = preset | default: settings.type_preset %}
+
+{%- capture variables -%}
+  {%- if preset != 'rte' and settings.color != "" -%}
+    --color: {{ settings.color }};
+  {%- endif -%}
+  {%- if preset == 'custom' -%}
+    {% liquid
+      unless type
+        comment
+          When choosing to customize the font, picking a specific font size
+          determines the type of text block.
+        endcomment
+        if settings.font_size != ''
+          assign font_size_value = settings.font_size | split: 'rem' | first | times: 1.0
+
+          if font_size_value > 4.5
+            assign type = 'display'
+          elsif font_size_value > 3.5
+            assign type = 'heading'
+          else
+            assign type = 'body'
+          endif
+        endif
+      endunless
+    %}
+    {% comment %}
+    {%- if settings.font_size != blank -%}
+      {%- liquid
+        assign font_size_rem = settings.font_size | split: 'rem' | first | times: 1.0
+        assign fluid_size_cutoff_rem = 3.0
+
+        if font_size_rem >= fluid_size_cutoff_rem
+          assign target_viewport = 1400
+          assign vw_value = font_size_rem | times: 16 | divided_by: target_viewport | times: 100
+
+          assign scale_factor = font_size_rem | divided_by: fluid_size_cutoff_rem
+          assign base_min_rem = 3.0
+          assign scaling_bonus_rem = scale_factor | minus: 1 | times: 0.25
+          assign dynamic_min_rem = base_min_rem | plus: scaling_bonus_rem
+        endif
+      -%}
+      {%- if font_size_rem >= fluid_size_cutoff_rem -%}
+        --font-size: clamp({{ dynamic_min_rem }}rem, {{ vw_value }}vw, {{ settings.font_size }});
+      {%- else -%}
+        --font-size: {{ settings.font_size }};
+      {%- endif -%}
+    {%- endif -%}
+     {% endcomment %}
+
+     {%- if settings.font_size != blank or settings.font_size_mobile != blank -%}
+      {%- liquid
+        assign desktop_raw = settings.font_size
+        assign mobile_raw  = settings.font_size_mobile
+
+        # Parse to numbers (rem -> float)
+        assign max_rem = 0
+        assign min_rem = 0
+
+        if desktop_raw != blank
+          assign max_rem = desktop_raw | split: 'rem' | first | times: 1.0
+        endif
+        if mobile_raw != blank
+          assign min_rem = mobile_raw | split: 'rem' | first | times: 1.0
+        endif
+
+        # Fallbacks:
+        # - If only desktop is set, derive mobile ≈ 90% of desktop
+        if desktop_raw != blank and mobile_raw == blank
+          assign min_rem = max_rem | times: 0.9
+        endif
+
+        # - If only mobile is set, use same for desktop (no scaling)
+        if desktop_raw == blank and mobile_raw != blank
+          assign max_rem = min_rem
+        endif
+
+        # Guard against zeros (neither set) — handled by outer if
+
+        # If equal -> static size
+        if max_rem == min_rem
+          assign font_decl = '--font-size: ' | append: max_rem | append: 'rem;'
+        else
+          # Viewport window to scale across (adjust if you want)
+          assign VW_MIN = 360
+          assign VW_MAX = 1400
+
+          # Work in px for the linear interpolation
+          assign min_px  = min_rem | times: 16
+          assign max_px  = max_rem | times: 16
+          assign delta   = max_px  | minus: min_px
+          assign range   = VW_MAX  | minus: VW_MIN
+
+          # slope in px per vw: A = 100 * (delta / range)
+          assign A_num = delta | times: 100
+          assign A     = A_num | divided_by: range
+
+          # intercept in px: B = min_px - A * (VW_MIN / 100)
+          assign temp = A | times: VW_MIN | divided_by: 100
+          assign B    = min_px | minus: temp
+
+          assign font_decl = '--font-size: clamp('
+          assign font_decl = font_decl | append: min_rem | append: 'rem, '
+          assign font_decl = font_decl | append: 'calc(' | append: B | append: 'px + ' | append: A | append: 'vw), '
+          assign font_decl = font_decl | append: max_rem | append: 'rem);'
+        endif
+      -%}
+      {{- font_decl -}}
+    {%- endif -%}
+
+    {%- if settings.weight != blank -%}
+      --font-weight: {{ settings.weight }};
+    {% else %}
+      --font-weight: var({{ settings.font | replace: 'family', 'weight' }});
+    {%- endif -%}
+    --font-family: var({{ settings.font }});
+    --text-transform: {{ settings.case }};
+    --text-wrap: {{ settings.wrap }};
+    {% if settings.type_preset == 'custom' and settings.font_size == blank %}
+      --line-height--display: var(--line-height--display-{{ settings.line_height }});
+      --line-height--heading: var(--line-height--heading-{{ settings.line_height }});
+      --line-height--body: var(--line-height--body-{{ settings.line_height }});
+    {% else %}
+      --line-height: var(--line-height--{{ type }}-{{ settings.line_height }});
+    {% endif %}
+    --letter-spacing: var(--letter-spacing--{{ type }}-{{ settings.letter_spacing }});
+  {%- endif -%}
+  {%- if settings.font_size_mobile != blank -%}
+    --font-size-mobile: {{ settings.font_size_mobile }};
+  {%- endif -%}
+{%- endcapture -%}
+{{- variables | strip | strip_newlines -}}

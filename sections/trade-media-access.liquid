@@ -1,0 +1,29 @@
+{% if section.settings.enable_script %}
+  {% comment %} {% if customer %}
+    {% unless customer.tags contains 'Trade & Media' %}
+      <script>window.location.href = "/account/login";</script>
+    {% endunless %}
+  {% else %}
+    <script>window.location.href = "/account/login";</script>
+  {% endif %} {% endcomment %}
+{% endif %}
+
+{% schema %}
+{
+  "name": "Trade Media Access",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "enable_script",
+      "label": "Enable Trade Media Access Script",
+      "default": false
+    }
+  ],
+  "presets": [
+    {
+      "name": "Trade Media Access",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

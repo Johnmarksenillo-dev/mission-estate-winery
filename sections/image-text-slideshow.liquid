@@ -1,0 +1,492 @@
+{% style %}
+   .{{ section.id }} .custom-slideshow-section {
+    background-color: {{ section.settings.background_color }};
+    padding-top: {{ section.settings.padding_top_mobile }}px;
+    padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+   }
+@media screen  and (min-width: 769px) {
+  .{{ section.id }} .custom-slideshow-section {
+    padding-top: {{ section.settings.padding_top_desktop }}px;
+    padding-bottom: {{ section.settings.padding_bottom_desktop }}px;
+  }
+}
+
+  .{{ section.id }} .heading{
+    color:{{section.settings.heading_color}};
+        font-size: 38px;
+    font-weight: 600;
+  }
+  .{{ section.id }} .text{
+    color:{{section.settings.text_color}};
+    font-weight: 300 !important;
+    font-size: 18px;
+  }
+ body.about-us .{{ section.id }} .text{
+    color: rgb(0 40 85 / 75%);
+    font-size: 18px;
+  }
+  .{{ section.id }} a.button--primary{
+    background-color:{{section.settings.button1_bg_color}};
+    color:{{section.settings.button1_color}};
+    border:1px solid {{section.settings.button1_color}};
+    width:fit-content;
+            font-size: 18px;
+    font-weight: 400;
+  }
+  .{{ section.id }} a.button--secondary{
+    background-color: rgba(0,0,0,0);
+    color: #ffffff;
+    border: none;
+    width: auto;
+    padding: 0px;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+        font-size: 18px;
+    font-weight: 400;
+  }
+{% endstyle %}
+ 
+<div id="{{ section.settings.section_id }}" class="{{ section.id }} {% if section.settings.slider_class != blank %} {{ section.settings.slider_class }} {% endif %}">
+  <div class="custom-slideshow-section" style="{% if section.settings.bgimage != blank %} background-image: url('{{ section.settings.bgimage | img_url: 'master' }}'); {% endif %}">
+    <div class="{% if section.settings.enable_fullwidth %}container{% else %}page-width{% endif %}">
+      <div class="row {% if section.settings.image_position == 'right' %}col-reverse{% endif %}">
+        {% if section.settings.enable_slideshow %}
+          <div class="col">
+            <div class="slideshow-wrapper">
+              {% assign image_count = 1 %}
+              <div class="slick-slider" id="slick-slider-{{ section.id }}">
+                {% for i in (1..5) %}
+                  {% assign image_key = "slideshow_image_" | append: i %}
+                  {% assign image = section.settings[image_key] %}
+                  {% if image %}
+                    <div>
+                      <img src="{{ image | img_url: '1024x1024' }}" alt="Slide Image {{ i }}">
+                    </div>
+                  {% endif %}
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        {% endif %}
+        
+        <div class="col text-col-wrapper">
+          <div class="text-col">
+            {% if section.settings.heading %}
+             <a href="{{ section.settings.heading_url }}" target="_blank" > <h2 class="heading color-blue font-size-44 line-height-40 font-glare-light m-0 pb-26">{{ section.settings.heading }}</h2> </a>
+            {% endif %}
+            {% if section.settings.text %}
+                <div class="text font-size-18 font-sans-light pb-26" style="line-height:1.5em;">
+                  {{ section.settings.text }}
+                </div>            {% endif %}
+            <div class="text-col text-col-buttons">
+            <div class="buttons">
+              {% if section.settings.button_1_url %}
+                <a href="{{ section.settings.button_1_url }}" target="{{ section.settings.link_target1 }}" class="button button--primary{% if section.settings.simple_link1 %} no-button-border{% endif %} {% if section.settings.button_class != blank %} {{ section.settings.button_class }} {% endif %}">{{ section.settings.button_1_text }}</a>
+              {% endif %}
+              {% if section.settings.button_2_url %}
+                <a href="{{ section.settings.button_2_url }}" target="{{ section.settings.link_target2 }}" class="button button--secondary{% if section.settings.simple_link2 %} no-button-border{% endif %} {% if section.settings.button_class2 != blank %} {{ section.settings.button_class2 }} {% endif %}">{{ section.settings.button_2_text }}</a>
+              {% endif %}
+            </div>
+            {% if section.settings.secondary %}
+            <div class="secondary-buttons">
+              {% if section.settings.button_3_url %}
+                <a href="{{ section.settings.button_3_url }}" target="{{ section.settings.link_target3 }}" class="button button--secondary {% if section.settings.simple_link3 %} no-button-border {% endif %}font-size-14 line-height-120 font-sans-light {% if section.settings.button_class3 != blank %} {{ section.settings.button_class3 }} {% endif %}">{{ section.settings.button_3_text }}</a>
+              {% endif %}
+              {% if section.settings.button_4_url %}
+                <a href="{{ section.settings.button_4_url }}" target="{{ section.settings.link_target4 }}" class="button button--secondary {% if section.settings.simple_link4 %} no-button-border {% endif %}font-size-14 line-height-120 font-sans-light {% if section.settings.button_class4 != blank %} {{ section.settings.button_class4 }} {% endif %}">{{ section.settings.button_4_text }}</a>
+              {% endif %}
+            </div>
+            {% endif %}
+          </div>
+          </div>
+          
+        </div>
+      
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Your custom JavaScript to initialize the Slick Slider -->
+<!-- <script>
+  // Make sure to use jQuery when it's loaded
+  jQuery(document).ready(function($) {
+    // Iterate over all elements with the class '.slick-slider' and initialize each one independently
+    $('.slick-slider').each(function() {
+      // Initialize Slick Slider only if images are available for each specific instance
+      if ($(this).find('.slick-slide').length > 0) {
+        $(this).slick({
+          autoplay: {{ section.settings.autoplay | json }},
+          autoplaySpeed: {{ section.settings.autoplay_speed }},
+          speed: {{ section.settings.slide_speed }},
+          arrows: false,
+          dots: true
+        });
+      }
+    });
+  });
+</script> -->
+
+<!-- Your custom script -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    $('.slick-slider').slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay:  {{ section.settings.autoplay | json }},
+      autoplaySpeed:  {{ section.settings.autoplay_speed }},
+      speed: {{ section.settings.slide_speed }},
+      arrows: false,
+      dots: true
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Image and Text show",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Section Id",
+      "id": "section_id"
+    },
+    {
+      "type": "text",
+      "label": "Slider Class/Name",
+      "id": "slider_class"
+    },
+   {
+      "type": "image_picker",
+      "label": "Background Image",
+      "id": "bgimage"
+    },
+    {
+      "type": "checkbox",
+      "label": "Enable FullWidth",
+      "id": "enable_fullwidth",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "label": "Enable Slideshow",
+      "id": "enable_slideshow",
+      "default": true
+    },
+    {
+      "type": "range",
+      "label": "Slide Speed (ms)",
+      "id": "slide_speed",
+      "min": 1000,
+      "max": 5000,
+      "step": 500,
+      "default": 5000,
+      "unit": "ms"
+    },
+    {
+      "type": "checkbox",
+      "label": "Enable Autoplay",
+      "id": "autoplay",
+      "default": true
+    },
+    {
+      "type": "range",
+      "label": "Autoplay Speed (ms)",
+      "id": "autoplay_speed",
+      "min": 1000,
+      "max": 5000,
+      "step": 500,
+      "default": 5000,
+      "unit": "ms"
+    },
+    {
+      "type": "radio",
+      "label": "Image Position",
+      "id": "image_position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
+    },
+    
+    {
+      "type": "image_picker",
+      "label": "Image 1",
+      "id": "slideshow_image_1"
+    },
+    {
+      "type": "text",
+      "label": "Heading",
+      "id": "heading"
+    },
+    {
+      "type": "url",
+      "id": "heading_url",
+      "label": "Heading Url"
+    },
+    {
+      "type": "color",
+      "label": "Heading Color",
+      "id": "heading_color",
+      "default": "#002855"
+    },
+    {
+      "type": "textarea",
+      "label": "Text",
+      "id": "text"
+    },
+    {
+      "type": "color",
+      "label": "Text Color",
+      "id": "text_color",
+      "default": "#4A4B54"
+    },
+    {
+      "type": "checkbox",
+      "label": "Button1 Simple Link",
+      "id": "simple_link1",
+      "default": false
+    },
+    {
+      "type": "url",
+      "label": "Button 1 URL",
+      "id": "button_1_url"
+    },
+
+    {
+      "type": "select",
+      "id": "link_target1",
+      "label": "Open link in",
+      "options": [
+        {
+          "value": "_self",
+          "label": "Same window"
+        },
+        {
+          "value": "_blank",
+          "label": "New window"
+        }
+      ],
+      "default": "_self"
+    },
+
+    {
+      "type": "textarea",
+      "label": "Button 1 Text",
+      "id": "button_1_text"
+    },
+    {
+      "type": "text",
+      "label": "Button Popup class",
+      "id": "button_class"
+    },
+    {
+      "type": "color",
+      "label": "Button1 Background Color",
+      "id": "button1_bg_color",
+      "default": "#002855"
+    },
+    {
+      "type": "color",
+      "label": "Button1 Text Color",
+      "id": "button1_color",
+      "default": "#fff"
+    },
+    {
+      "type": "checkbox",
+      "label": "Button2 Simple Link",
+      "id": "simple_link2",
+      "default": false
+    },
+    {
+      "type": "url",
+      "label": "Button 2 URL",
+      "id": "button_2_url"
+    },
+
+    {
+      "type": "select",
+      "id": "link_target2",
+      "label": "Open link in",
+      "options": [
+        {
+          "value": "_self",
+          "label": "Same window"
+        },
+        {
+          "value": "_blank",
+          "label": "New window"
+        }
+      ],
+      "default": "_self"
+    },
+
+    {
+      "type": "textarea",
+      "label": "Button 2 Text",
+      "id": "button_2_text"
+    },
+
+    {
+      "type": "text",
+      "label": "Button Popup class",
+      "id": "button_class2"
+    },
+    {
+      "type": "color",
+      "label": "Button2 Background Color",
+      "id": "button2_bg_color",
+      "default": "transparent"
+    },
+    {
+      "type": "color",
+      "label": "Button2 Text Color",
+      "id": "button2_color",
+      "default": "#002855"
+    },
+    {
+      "type": "checkbox",
+      "label": "Enable Two secondary buttons",
+      "id": "secondary",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "label": "Button3 Simple Link",
+      "id": "simple_link3",
+      "default": false
+    },
+     {
+      "type": "url",
+      "label": "Button 3 URL",
+      "id": "button_3_url"
+    },
+
+    {
+      "type": "select",
+      "id": "link_target3",
+      "label": "Open link in",
+      "options": [
+        {
+          "value": "_self",
+          "label": "Same window"
+        },
+        {
+          "value": "_blank",
+          "label": "New window"
+        }
+      ],
+      "default": "_self"
+    },
+
+    {
+      "type": "textarea",
+      "label": "Button 3 Text",
+      "id": "button_3_text"
+    },
+
+    {
+      "type": "text",
+      "label": "Button Popup class",
+      "id": "button_class3"
+    },
+    {
+      "type": "checkbox",
+      "label": "Button4 Simple Link",
+      "id": "simple_link4",
+      "default": false
+    },
+     {
+      "type": "url",
+      "label": "Button 4 URL",
+      "id": "button_4_url"
+    },
+
+    {
+      "type": "select",
+      "id": "link_target4",
+      "label": "Open link in",
+      "options": [
+        {
+          "value": "_self",
+          "label": "Same window"
+        },
+        {
+          "value": "_blank",
+          "label": "New window"
+        }
+      ],
+      "default": "_self"
+    },
+    {
+      "type": "textarea",
+      "label": "Button 4 Text",
+      "id": "button_4_text"
+    },
+
+    {
+      "type": "text",
+      "label": "Button Popup class",
+      "id": "button_class4"
+    },
+
+    
+
+    {
+      "type": "color",
+      "label": "Section Background Color",
+      "id": "background_color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "label": "Padding Top (Desktop)",
+      "id": "padding_top_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "default": 50
+    },
+    {
+      "type": "range",
+      "label": "Padding Bottom (Desktop)",
+      "id": "padding_bottom_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "default": 50
+    },
+    {
+      "type": "range",
+      "label": "Padding Top (Mobile)",
+      "id": "padding_top_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "default": 30
+    },
+    {
+      "type": "range",
+      "label": "Padding Bottom (Mobile)",
+      "id": "padding_bottom_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "default": 30
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image and Text show",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

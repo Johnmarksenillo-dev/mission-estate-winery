@@ -1,0 +1,278 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "rich_text_mUrMcV": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_aymKwH": {
+          "type": "heading",
+          "settings": {
+            "heading": "Privacy Policy",
+            "heading_size": "hxl"
+          }
+        },
+        "text_NhangB": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Discover how Mission Estate leads the way in sustainable winemaking. Mission Estate’s commitment to sustainability ensures a greener future while producing exceptional wines.</p>",
+            "font_desk": 16,
+            "font_mob": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_aymKwH",
+        "text_NhangB"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "section_id": "",
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "scheme-5962b243-e7a7-4798-ac90-08968b8dc7eb",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 4
+      }
+    },
+    "slideshow_8XxKK9": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_w9iN4U": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/MISSION_Brand_Evo_1_1_.pdf-image-023.jpg",
+            "video_url": "",
+            "heading": "Privacy Policy",
+            "heading_size": "h0",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 20,
+            "color_scheme": "scheme-d536de6d-9eba-4ca5-b804-ae369f8ab959",
+            "text_alignment_mobile": "left"
+          }
+        }
+      },
+      "block_order": [
+        "slide_w9iN4U"
+      ],
+      "disabled": true,
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "rich_text_BaMgai": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_9xb4P8": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_YmJFf8": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>1. Policy Purpose</h2><p>Mission Estate is committed to protecting your privacy. We have systems in place to provide you with services and information tailored to your individual needs while complying with our obligations under the Privacy Act 2020 (Privacy Act).<br/><br/>The Services are intended for use by people located in New Zealand and are not intended for use by anyone located outside of New Zealand.<br/></p><p></p><h2>2. Key Definitions</h2><p>This Privacy Policy applies to any personal information we collect when you interact with us including when you:</p><ul><li>use Mission’s online store;</li><li>reservations of The Farmhouse;</li><li>Concert registration;</li><li>Registration to receive regular marketing communications;</li><li>Any other services we provide now or in the future. (referred to as the Services)</li></ul><p><strong>Collection of personal information and your privacy</strong><br/><br/>From time to time, we may collect or request personal information from you while providing you, or by you using or accessing our Services.  Personal information is any information about you that identifies you, or by which your identity can reasonably be ascertained.<br/><br/>The type of personal information we may collect whilst you access our Services includes your name and postal or delivery address, email address, phone number and any other information that we may request.<br/><br/>We may also collect from you by you using the Services, information that is not personal information at the tie of collection (Non-identifiable Information), for example payment card information.  However, by choosing to register to use any of the Services you agree that we may combine the Non-identifiable Information with your personal information that we collect, or is otherwise held by us, our partners or service providers, in a manner that will change the nature of the Non-identifiable Information such that it becomes personal information.  You agree that we may use this Non-identifiable Information in accordance with the Privacy Policy.</p><h2>3. Third Party Disclosure</h2><p>In providing you with, or by you using the Services, we may sometimes need to disclose your personal information to others.  By using one or all of the Services you agree that we may disclose your personal information for any of the purposes listed in the in the above section to:</p><ul><li>Mission and its staff;</li><li>Mission Concert Club and its staff;</li><li>Any relevant third party that offers goods or services that we think may be of interest to you (for example, wine promotions);</li><li>A third party outside of Mission who is contracted to us to provide a particular service to you on our behalf;</li><li>A third party outside of Mission who is contracted to us to provide a particular service to us;</li><li>To our appointed payment provider to process your payments for purchases; and</li><li>Third parties when we believe in good faith that we are required to do so by law.</li></ul><p>You consent to the disclosure of your personal information to the parties listed above.<br/></p><h2>4. Cookies</h2><p>A cookie is a short piece of data that is sent from a web server to a web browser on the user’s machine when the browser visits the server’s site. The cookie is stored on the user’s machine, but it is not an executable program and cannot do anything to your machine. Whenever a web browser requests a file from the same web server that sent the cookie, the browser sends a copy of that cookie back to the server along with the request. In this way, the server knows you have visited before and can co-ordinate your access to different pages on its website. A server cannot find out a name or email address, or anything about a user’s computer, by using cookies.<br/><br/>By using the Services, you consent to the storing and accessing of cookies or other information on your device in connection with your use of the Site.</p><h2>5. Clickstream Data</h2><p>Clickstreams are paths a user takes when navigating a web page or the internet in general. When you visit our website, our Internet Service Provider makes a record of your visit and logs the following information for statistical purposes – the user’s assigned IP address, the user’s top level domain name (for example .co.nz, .gov, .com.au, .uk etc), the data and time and duration of visit to the site, and the type of browser and operating system used.</p><h2>6. Direct Marketing</h2><p>When you register to receive marketing communications from us, your name and contact details will be added to our database and you consent to receiving messages from us by email, text message or physical mail.<br/><br/>All commercial electronic messages from us contains an unsubscribe function if you no longer want to receive commercial electronic messages from us. You can unsubscribe at any time by clicking the link in the email you have received from us.7. Security of Personal Information<br/><br/>Security of personal information is very important to us and we will take all reasonable steps to protect your personal information from misuse, loss, unauthorized access, modification or disclosure, However, you acknowledge that security of the transmission of data over the internet can never be guaranteed. It is your sole responsibility to protect access to any emails you receive from us that provide access to your account.<br/><br/>To the maximum extent permitted by law, Mission will not be liable for any direct or indirect damage or loss if any third party gains unauthorized access to your information.</p><h2>7. Security of Personal Information</h2><p>Security of personal information is very important to us and we will take all reasonable steps to protect your personal information from misuse, loss, unauthorized access, modification or disclosure, However, you acknowledge that security of the transmission of data over the internet can never be guaranteed. It is your sole responsibility to protect access to any emails you receive from us that provide access to your account.<br/><br/>To the maximum extent permitted by law, Mission will not be liable for any direct or indirect damage or loss if any third party gains unauthorized access to your information.</p><h2>8. Accessing, correcting and updating personal information</h2><p>Your personal information will be held by Mission, and by Mission’s trusted data services providers. Under the privacy act you have the right to access your personal information we hold, and to have that information corrected and/or updated. You can do this by calling <a href=\"tel:06 845 9350\" target=\"_blank\" title=\"Phone us\">06 845 9350</a> or by emailing: <a href=\"mailto:info@missionestate.co.nz\" target=\"_blank\" title=\"Email us\">info@missionestate.co.nz</a>.</p><h2>9. Further Information</h2><p>The procedures and principles in this policy reflect the Information Privacy Principles and other provisions of the Privacy Act 2020. For more information refer to the Act or the Office of the Privacy Commissioner (website <a href=\"https://privacy.org.nz\" target=\"_blank\" title=\"Visit privacy.org.nz\">privacy.org.nz</a> )</p>",
+            "font_desk": 16,
+            "font_mob": 12
+          }
+        },
+        "button_xAzpGj": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "simple_link1": false,
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_9xb4P8",
+        "text_YmJFf8",
+        "button_xAzpGj"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "section_id": "",
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "terms_conditions_tabs_8QQy8x": {
+      "type": "terms-conditions-tabs",
+      "blocks": {
+        "tab_mNcbNb": {
+          "type": "tab",
+          "settings": {
+            "tab_name": "Policy Purpose",
+            "tab_url": "",
+            "heading": "1. Policy Purpose",
+            "sub_heading": "",
+            "box_description": "",
+            "main_description": "Mission Estate is committed to protecting your privacy. We have systems in place to provide you with services and information tailored to your individual needs while complying with our obligations under the Privacy Act 2020 (Privacy Act).\n\nThe Services are intended for use by people located in New Zealand and are not intended for use by anyone located outside of New Zealand.",
+            "image": "shopify://shop_images/dummy-image-square.jpg"
+          }
+        },
+        "tab_4bmPVC": {
+          "type": "tab",
+          "settings": {
+            "tab_name": "Key Definitions",
+            "tab_url": "",
+            "heading": "2. Key Definitions",
+            "sub_heading": "",
+            "box_description": "",
+            "main_description": "This Privacy Policy applies to any personal information we collect when you interact with us including when you:\n\n<li>Use Mission’s online store;</li>\n<li>Reservations of The Farmhouse;</li>\n<li>Concert registration;</li>\n<li>Registration to receive regular marketing communications;</li>\n<li>Any other services we provide now or in the future.</li>\n<li>(referred to as the Services)</li>\n\n<b>Collection of personal information and your privacy</b>\n\nFrom time to time, we may collect or request personal information from you while providing you, or by you using or accessing our Services.  Personal information is any information about you that identifies you, or by which your identity can reasonably be ascertained.\n\nThe type of personal information we may collect whilst you access our Services includes your name and postal or delivery address, email address, phone number and any other information that we may request.\n\nWe may also collect from you by you using the Services, information that is not personal information at the tie of collection (Non-identifiable Information), for example payment card information.  However, by choosing to register to use any of the Services you agree that we may combine the Non-identifiable Information with your personal information that we collect, or is otherwise held by us, our partners or service providers, in a manner that will change the nature of the Non-identifiable Information such that it becomes personal information.  You agree that we may use this Non-identifiable Information in accordance with the Privacy Policy.",
+            "image": "shopify://shop_images/dummy-image-square.jpg"
+          }
+        },
+        "tab_WgfDhK": {
+          "type": "tab",
+          "settings": {
+            "tab_name": "Third Party Disclosure",
+            "tab_url": "",
+            "heading": "3. Third Party Disclosure",
+            "sub_heading": "",
+            "box_description": "",
+            "main_description": "In providing you with, or by you using the Services, we may sometimes need to disclose your personal information to others.  By using one or all of the Services you agree that we may disclose your personal information for any of the purposes listed in the in the above section to:\n\n<li>Mission and its staff;</li>\n<li>Mission Concert Club and its staff;</li>\n<li>Any relevant third party that offers goods or services that we think may be of interest to you (for example, wine promotions);</li>\n<li>A third party outside of Mission who is contracted to us to provide a particular service to you on our behalf;</li>\n<li>A third party outside of Mission who is contracted to us to provide a particular service to us;</li>\n<li>To our appointed payment provider to process your payments for purchases; and</li>\n<li>Third parties when we believe in good faith that we are required to do so by law.</li>\n\nYou consent to the disclosure of your personal information to the parties listed above.",
+            "image": "shopify://shop_images/dummy-image-square.jpg"
+          }
+        },
+        "tab_8feM3F": {
+          "type": "tab",
+          "settings": {
+            "tab_name": "Cookies",
+            "tab_url": "",
+            "heading": "4. Cookies",
+            "sub_heading": "",
+            "box_description": "",
+            "main_description": "A cookie is a short piece of data that is sent from a web server to a web browser on the user’s machine when the browser visits the server’s site. The cookie is stored on the user’s machine, but it is not an executable program and cannot do anything to your machine. Whenever a web browser requests a file from the same web server that sent the cookie, the browser sends a copy of that cookie back to the server along with the request. In this way, the server knows you have visited before and can co-ordinate your access to different pages on its website. A server cannot find out a name or email address, or anything about a user’s computer, by using cookies.\n\nBy using the Services, you consent to the storing and accessing of cookies or other information on your device in connection with your use of the Site.",
+            "image": "shopify://shop_images/dummy-image-square.jpg"
+          }
+        },
+        "tab_YGngjx": {
+          "type": "tab",
+          "settings": {
+            "tab_name": "Clickstream Data",
+            "tab_url": "",
+            "heading": "5. Clickstream Data",
+            "sub_heading": "",
+            "box_description": "",
+            "main_description": "Clickstreams are paths a user takes when navigating a web page or the internet in general. When you visit our website, our Internet Service Provider makes a record of your visit and logs the following information for statistical purposes – the user’s assigned IP address, the user’s top level domain name (for example .co.nz, .gov, .com.au, .uk etc), the data and time and duration of visit to the site, and the type of browser and operating system used.",
+            "image": "shopify://shop_images/dummy-image-square.jpg"
+          }
+        },
+        "tab_BTYMnb": {
+          "type": "tab",
+          "settings": {
+            "tab_name": "Direct Marketing",
+            "tab_url": "",
+            "heading": "6. Direct Marketing",
+            "sub_heading": "",
+            "box_description": "",
+            "main_description": "When you register to receive marketing communications from us, your name and contact details will be added to our database and you consent to receiving messages from us by email, text message or physical mail. \nAll commercial electronic messages from us contains an unsubscribe function if you no longer want to receive commercial electronic messages from us. You can unsubscribe at any time by clicking the link in the email you have received from us.7. Security of Personal Information\n\nSecurity of personal information is very important to us and we will take all reasonable steps to protect your personal information from misuse, loss, unauthorised access, modification or disclosure, However, you acknowledge that security of the transmission of data over the internet can never be guaranteed. It is your sole responsibility to protect access to any emails you receive from us that provide access to your account.\n\nTo the maximum extent permitted by law, Mission will not be liable for any direct or indirect damage or loss if any third party gains unauthorised access to your information.",
+            "image": "shopify://shop_images/dummy-image-square.jpg"
+          }
+        },
+        "tab_FDVchL": {
+          "type": "tab",
+          "settings": {
+            "tab_name": "Security of Personal Information",
+            "tab_url": "",
+            "heading": "7. Security of Personal Information",
+            "sub_heading": "",
+            "box_description": "",
+            "main_description": "Security of personal information is very important to us and we will take all reasonable steps to protect your personal information from misuse, loss, unauthorized access, modification or disclosure, However, you acknowledge that security of the transmission of data over the internet can never be guaranteed. It is your sole responsibility to protect access to any emails you receive from us that provide access to your account.\n\nTo the maximum extent permitted by law, Mission will not be liable for any direct or indirect damage or loss if any third party gains unauthorized access to your information.",
+            "image": "shopify://shop_images/dummy-image-square.jpg"
+          }
+        },
+        "tab_ExwWyT": {
+          "type": "tab",
+          "settings": {
+            "tab_name": "Accessing, correcting and updating personal information",
+            "tab_url": "",
+            "heading": "8. Accessing, correcting and updating personal information",
+            "sub_heading": "",
+            "box_description": "",
+            "main_description": "Your personal information will be held by Mission, and by Mission’s trusted data services providers. Under the privacy act you have the right to access your personal information we hold, and to have that information corrected and/or updated. You can do this by calling 06 845 9350 or by emailing: info@missionestate.co.nz.",
+            "image": "shopify://shop_images/dummy-image-square.jpg"
+          }
+        },
+        "tab_CgL77q": {
+          "type": "tab",
+          "settings": {
+            "tab_name": "Further Information",
+            "tab_url": "",
+            "heading": "9. Further Information",
+            "sub_heading": "",
+            "box_description": "",
+            "main_description": "The procedures and principles in this policy reflect the Information Privacy Principles and other provisions of the Privacy Act 2020. For more information refer to the Act or the Office of the Privacy Commissioner (website privacy.org.nz).",
+            "image": "shopify://shop_images/dummy-image-square.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "tab_mNcbNb",
+        "tab_4bmPVC",
+        "tab_WgfDhK",
+        "tab_8feM3F",
+        "tab_YGngjx",
+        "tab_BTYMnb",
+        "tab_FDVchL",
+        "tab_ExwWyT",
+        "tab_CgL77q"
+      ],
+      "disabled": true,
+      "name": "Terms & Condition Tab",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_mUrMcV",
+    "slideshow_8XxKK9",
+    "rich_text_BaMgai",
+    "terms_conditions_tabs_8QQy8x"
+  ]
+}

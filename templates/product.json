@@ -1,0 +1,453 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "judge_me_reviews_preview_badge_F7yP4c": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "judge_me_reviews_preview_badge_F7yP4c",
+        "title",
+        "price",
+        "description",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-8acb60fd-109c-4d1b-b010-b0aee4f150d7",
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "product_tab_section_my4bDq": {
+      "type": "product-tab-section",
+      "blocks": {
+        "image_LXmKgi": {
+          "type": "image",
+          "settings": {
+            "icon_image": "shopify://shop_images/7_59679b8a-c82b-432f-ae0e-c75d8728c825.png",
+            "subtitle": "Cellar potential",
+            "title": "<p>{{ product.metafields.custom.cellar_potential | metafield_tag }}</p>"
+          }
+        },
+        "image_wQi79h": {
+          "type": "image",
+          "settings": {
+            "icon_image": "shopify://shop_images/5_1908125b-c4de-42ac-9414-12fdb6a7c395.png",
+            "subtitle": "Alcohol percentage",
+            "title": "<p>{{ product.metafields.custom.alcohol_percentage | metafield_tag }}</p>"
+          }
+        },
+        "image_qt7HXY": {
+          "type": "image",
+          "settings": {
+            "icon_image": "shopify://shop_images/6_3ed6b0da-6c77-409a-ade4-83c87f35250e.png",
+            "subtitle": "Residual sugar",
+            "title": "<p>{{ product.metafields.custom.residual_sugar_value | metafield_tag }}</p>"
+          }
+        },
+        "image_fRwNbL": {
+          "type": "image",
+          "settings": {
+            "icon_image": "shopify://shop_images/8_8a51cc6f-ce54-44c9-a68a-242556b51dda.png",
+            "subtitle": "Acidity",
+            "title": "<p>{{ product.metafields.custom.acidity_value | metafield_tag }}</p>"
+          }
+        }
+      },
+      "block_order": [
+        "image_LXmKgi",
+        "image_wQi79h",
+        "image_qt7HXY",
+        "image_fRwNbL"
+      ],
+      "settings": {}
+    },
+    "product_image_icon_text_bfYCKY": {
+      "type": "product-image-icon-text",
+      "blocks": {
+        "heading_h4GYi8": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text_qijJNf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ product.metafields.custom.product_feature_text | metafield_tag }}</p>",
+            "text_style": "body"
+          }
+        },
+        "button_YEQQiH": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_h4GYi8",
+        "text_qijJNf",
+        "button_YEQQiH"
+      ],
+      "disabled": true,
+      "name": "Product image with text",
+      "settings": {
+        "custommainid": "wrap_food_paring",
+        "customid": "food_pairing",
+        "customclass": "ProductCustom_Class",
+        "heading": "{{ product.metafields.custom.product_feature_heading.value }}",
+        "subtext": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-575c04fd-c80f-4d35-bbf5-4d5cfadf9d7b",
+        "color_scheme": "scheme-575c04fd-c80f-4d35-bbf5-4d5cfadf9d7b",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "reviews_3x7Jjg": {
+      "type": "reviews",
+      "blocks": {
+        "heading_nNcPTh": {
+          "type": "heading",
+          "settings": {
+            "heading": "Reviews",
+            "hcolor": "",
+            "heading_size": "h1"
+          }
+        },
+        "text_rnAiKy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Estate Sauvignon Blanc</p>",
+            "tcolor": ""
+          }
+        },
+        "image_EEErXT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Mission_L_F_2_1.png"
+          }
+        }
+      },
+      "block_order": [
+        "heading_nNcPTh",
+        "text_rnAiKy",
+        "image_EEErXT"
+      ],
+      "disabled": true,
+      "settings": {
+        "customid": "",
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-2da7a709-01d3-4bb8-8ee9-d3d5efac063e",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 0
+      }
+    },
+    "17392523186e3d0e83": {
+      "type": "apps",
+      "blocks": {
+        "rocket_google_reviews_app_block_JthmNj": {
+          "type": "shopify://apps/google-reviews-rocket/blocks/app-block/d11c8893-a181-4aff-a280-7446d42cec3b",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "rocket_google_reviews_app_block_JthmNj"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-2da7a709-01d3-4bb8-8ee9-d3d5efac063e",
+        "include_margins": true
+      }
+    },
+    "awards_DDxgXi": {
+      "type": "awards",
+      "disabled": true,
+      "settings": {
+        "heading": "Awards",
+        "subtext": "Estate Sauvignon Blanc",
+        "section_color_scheme": "scheme-d536de6d-9eba-4ca5-b804-ae369f8ab959",
+        "color_scheme": "scheme-d536de6d-9eba-4ca5-b804-ae369f8ab959",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "multiple_image_with_text_Yyxerh": {
+      "type": "multiple-image-with-text",
+      "blocks": {
+        "text_rrcygW": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "text_rrcygW"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Region",
+        "subtext": "Estate Sauvignon Blanc",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 100,
+        "padding_bottom": 0
+      }
+    },
+    "17391664872c135f7c": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_zFmqNB": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_zFmqNB"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "include_margins": true
+      }
+    },
+    "reviews_Rde3GA": {
+      "type": "reviews",
+      "blocks": {
+        "text_KHRGbY": {
+          "type": "text",
+          "settings": {
+            "text": "<h1>Honoring Legacy,<br/>Embracing the Future</h1>",
+            "tcolor": "#ffa791"
+          }
+        },
+        "image_Kj8kVt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/MISSION_Brand_Evo_1_1_.pdf-image-018.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "text_KHRGbY",
+        "image_Kj8kVt"
+      ],
+      "disabled": true,
+      "name": "Reviews",
+      "settings": {
+        "customid": "",
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-d536de6d-9eba-4ca5-b804-ae369f8ab959",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "1748588210bb7944bc": {
+      "type": "apps",
+      "blocks": {
+        "rocket_google_reviews_app_block_XzGTV6": {
+          "type": "shopify://apps/google-reviews-rocket/blocks/app-block/d11c8893-a181-4aff-a280-7446d42cec3b",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "rocket_google_reviews_app_block_XzGTV6"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-d536de6d-9eba-4ca5-b804-ae369f8ab959",
+        "include_margins": true
+      }
+    },
+    "products_awards_zn8ECp": {
+      "type": "products-awards",
+      "name": "Product Awards",
+      "settings": {
+        "custom_id": "wrap_reviews_awards",
+        "title": "Awards",
+        "sub_text": "Estate Sauvignon Blanc"
+      }
+    },
+    "region_VJEg7G": {
+      "type": "region",
+      "name": "Product Region",
+      "settings": {
+        "customid": "wrap_product_region",
+        "title": "Region"
+      }
+    },
+    "rich_text_idaFBk": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_TRNVzU": {
+          "type": "heading",
+          "settings": {
+            "heading": "Some of our other wines",
+            "heading_size": "h1"
+          }
+        },
+        "button_VTYefa": {
+          "type": "button",
+          "settings": {
+            "button_label": "View the range",
+            "simple_link1": false,
+            "button_link": "/collections/all",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_TRNVzU",
+        "button_VTYefa"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "section_id": "our-people-rich-text",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "columns_mobile": "1",
+        "color_scheme": "scheme-1",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": true,
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product_tab_section_my4bDq",
+    "product_image_icon_text_bfYCKY",
+    "reviews_3x7Jjg",
+    "17392523186e3d0e83",
+    "awards_DDxgXi",
+    "multiple_image_with_text_Yyxerh",
+    "17391664872c135f7c",
+    "reviews_Rde3GA",
+    "1748588210bb7944bc",
+    "products_awards_zn8ECp",
+    "region_VJEg7G",
+    "rich_text_idaFBk",
+    "related-products"
+  ]
+}

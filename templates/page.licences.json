@@ -1,0 +1,33 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "liquor_licences_46QqPy": {
+      "type": "liquor-licences",
+      "name": "Liquor Licences",
+      "settings": {
+        "customid": "wrap_liquid_licences",
+        "main_image": "shopify://shop_images/Off_Licence_Certificate_Cellar_Door_exp_23.12.jpg"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "liquor_licences_46QqPy"
+  ]
+}

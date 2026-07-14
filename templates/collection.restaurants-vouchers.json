@@ -1,0 +1,268 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "scheme-1"
+      }
+    },
+    "slideshow_WdNCgr": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_bbNzBc": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/banner-girl-aromatic-wine.jpg",
+            "video_url": "",
+            "heading": "SHOP OUR WINES",
+            "heading_size": "hxl",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-d536de6d-9eba-4ca5-b804-ae369f8ab959",
+            "text_alignment_mobile": "left"
+          }
+        }
+      },
+      "block_order": [
+        "slide_bbNzBc"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "large",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "image_banner_dMXzzR": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_jbe3dN": {
+          "type": "heading",
+          "settings": {
+            "heading": "SHOP OUR WINES",
+            "heading_size": "hxxl"
+          }
+        },
+        "text_TBaeEJ": {
+          "type": "text",
+          "settings": {
+            "text": "Our wines are characterised by purity of flavour, finesse and delicacy. We preserve the distinctive aromas and flavours of our vineyards and craft delicious wines for all occasions.",
+            "text_style": "body"
+          }
+        },
+        "buttons_zk68dM": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Discover more",
+            "button_link_1": "#",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_jbe3dN",
+        "text_TBaeEJ",
+        "buttons_zk68dM"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/banner-girl-aromatic-wine.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "desktop_content_position": "bottom-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-d536de6d-9eba-4ca5-b804-ae369f8ab959",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "rich_text_P4XdfR": {
+      "type": "rich-text",
+      "blocks": {
+        "text_4EAXh7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Mission Estate wines are crafted and bottled onsite at our historic Taradale winery. Our ranges include approachable entrylevel wines, the sustainability led The Gaia Project range, and premium releases such as Jewelstone and the heritage-led Huchet.</p>",
+            "font_desk": 18,
+            "font_mob": 18
+          }
+        }
+      },
+      "block_order": [
+        "text_4EAXh7"
+      ],
+      "custom_css": [],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "section_id": "",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 16
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 12,
+        "columns_desktop": 3,
+        "color_scheme": "scheme-8cae608c-f229-45e4-afcc-bea7b907ba13",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "show_rating": false,
+        "quick_add": "standard",
+        "enable_filtering": true,
+        "filter_type": "vertical",
+        "enable_sorting": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_text_slideshow_BmG8cr": {
+      "type": "image-text-slideshow",
+      "name": "Image and Text Slideshow",
+      "settings": {
+        "section_id": "wrap_collection_etc",
+        "slider_class": "",
+        "enable_fullwidth": false,
+        "enable_slideshow": true,
+        "slide_speed": 5000,
+        "autoplay": true,
+        "autoplay_speed": 5000,
+        "image_position": "right",
+        "slideshow_image_1": "shopify://shop_images/Artwork30_4623d739-aef3-460b-9034-19262c6a8fe9.png",
+        "heading": "INTERNATIONAL SALES",
+        "heading_url": "#",
+        "heading_color": "#ffffff",
+        "text": "Our wine is packed in boxes sized for 9, 10 or 15 bottles – the cost incurred will be rounded up to the nearest multiple.\n<br><br>\nAt present, our website only accepts orders for shipping within New Zealand. For international enquiries, <b><a href=\"mailto:info@missionestate.co.nz\" class=\"international-link\">please email sales here.</a></b>",
+        "text_color": "#ffffff",
+        "simple_link1": false,
+        "button_1_url": "#",
+        "link_target1": "_self",
+        "button_1_text": "",
+        "button_class": "",
+        "button1_bg_color": "#ff3e51",
+        "button1_color": "#ffffff",
+        "simple_link2": false,
+        "button_2_url": "",
+        "link_target2": "_self",
+        "button_2_text": "Find Out More",
+        "button_class2": "",
+        "button2_bg_color": "rgba(0,0,0,0)",
+        "button2_color": "#ffffff",
+        "secondary": false,
+        "simple_link3": false,
+        "button_3_url": "",
+        "link_target3": "_self",
+        "button_3_text": "",
+        "button_class3": "",
+        "simple_link4": false,
+        "button_4_url": "",
+        "link_target4": "_self",
+        "button_4_text": "",
+        "button_class4": "",
+        "background_color": "#ff3e51",
+        "padding_top_desktop": 70,
+        "padding_bottom_desktop": 70,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "image_text_slideshow_3ePh8m": {
+      "type": "image-text-slideshow",
+      "disabled": true,
+      "name": "Image and Text Slideshow",
+      "settings": {
+        "section_id": "TRADEMEDIA",
+        "slider_class": "wrap_trade_media",
+        "enable_fullwidth": false,
+        "enable_slideshow": true,
+        "slide_speed": 5000,
+        "autoplay": false,
+        "autoplay_speed": 5000,
+        "image_position": "right",
+        "slideshow_image_1": "shopify://shop_images/Shop_Page2-03_1.png",
+        "heading": "TRADE & MEDIA",
+        "heading_url": "",
+        "heading_color": "#002855",
+        "text": "Since its founding in 1851, \nMission Estate Winery has been a \ncornerstone of New Zealand’s \nwine heritage",
+        "text_color": "#002855",
+        "simple_link1": false,
+        "button_1_url": "#",
+        "link_target1": "_self",
+        "button_1_text": "Login or Register",
+        "button_class": "",
+        "button1_bg_color": "#002855",
+        "button1_color": "#ffffff",
+        "simple_link2": false,
+        "button_2_url": "#",
+        "link_target2": "_self",
+        "button_2_text": "Find Out More",
+        "button_class2": "",
+        "button2_bg_color": "rgba(0,0,0,0)",
+        "button2_color": "#002855",
+        "secondary": false,
+        "simple_link3": false,
+        "button_3_url": "",
+        "link_target3": "_self",
+        "button_3_text": "",
+        "button_class3": "",
+        "simple_link4": false,
+        "button_4_url": "",
+        "link_target4": "_self",
+        "button_4_text": "",
+        "button_class4": "",
+        "background_color": "#ffa791",
+        "padding_top_desktop": 100,
+        "padding_bottom_desktop": 100,
+        "padding_top_mobile": 30,
+        "padding_bottom_mobile": 30
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "slideshow_WdNCgr",
+    "image_banner_dMXzzR",
+    "rich_text_P4XdfR",
+    "product-grid",
+    "image_text_slideshow_BmG8cr",
+    "image_text_slideshow_3ePh8m"
+  ]
+}

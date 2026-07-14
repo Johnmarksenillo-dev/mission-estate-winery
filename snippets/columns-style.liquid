@@ -1,0 +1,12 @@
+{%- assign cols_desktop = settings.columns_desktop | default: 4 -%}
+{%- assign cols_tablet = settings.columns_tablet | default: 4 -%}
+{%- assign cols_mobile = settings.columns_mobile | default: 2 -%}
+
+{%- if cols_desktop < 1 -%}{%- assign cols_desktop = 1 -%}{%- endif -%}
+{%- if cols_tablet < 1 -%}{%- assign cols_tablet = 1 -%}{%- endif -%}
+{%- if cols_mobile < 1 -%}{%- assign cols_mobile = 1 -%}{%- endif -%}
+
+--columns-desktop: {{ cols_desktop }}; --columns-tablet: {{ cols_tablet }}; --columns-mobile: {{ cols_mobile }};
+--flex-basis: calc((100% - (var(--columns-desktop) - 1) * var(--gap)) / var(--columns-desktop)); --flex-basis-tablet:
+calc((100% - (var(--columns-tablet) - 1) * var(--gap)) / var(--columns-tablet)); --flex-basis-mobile: calc((100% -
+(var(--columns-mobile) - 1) * var(--gap-mobile, 0px)) / var(--columns-mobile));

@@ -1,0 +1,8882 @@
+/*@font-face {
+    font-family: 'PP Fragment Glare Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('https://cdn.shopify.com/s/files/1/0738/5327/2315/files/PPFragment-GlareRegular.woff?v=1738571549') format('woff');
+    }    
+
+    @font-face {
+    font-family: 'PP Fragment Sans Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('https://cdn.shopify.com/s/files/1/0738/5327/2315/files/PPFragment-SansRegular.woff?v=1738571549') format('woff');
+    }    
+
+    @font-face {
+    font-family: 'PP Fragment Serif Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('https://cdn.shopify.com/s/files/1/0738/5327/2315/files/PPFragment-SerifRegular.woff?v=1738571551') format('woff');
+    }    
+
+    @font-face {
+    font-family: 'PP Fragment Glare Light';
+    font-style: normal;
+    font-weight: normal;
+    src: url('https://cdn.shopify.com/s/files/1/0738/5327/2315/files/PPFragment-GlareLight.woff?v=1738571550') format('woff');
+    }   
+
+    @font-face {
+    font-family: 'PP Fragment Sans Light';
+    font-style: normal;
+    font-weight: normal;
+    src: url('https://cdn.shopify.com/s/files/1/0738/5327/2315/files/PPFragment-SansLight.woff?v=1738571549') format('woff');
+    }   
+
+    @font-face {
+    font-family: 'PP Fragment Serif Light';
+    font-style: normal;
+    font-weight: normal;
+    src: url('https://cdn.shopify.com/s/files/1/0738/5327/2315/files/PPFragment-SerifLight.woff?v=1738571550') format('woff');
+    }  
+
+    @font-face {
+    font-family: 'PP Fragment Glare ExtraBold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('https://cdn.shopify.com/s/files/1/0738/5327/2315/files/PPFragment-GlareExtraBold.woff?v=1738571550') format('woff');
+    }  
+
+    @font-face {
+    font-family: 'PP Fragment Sans ExtraBold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('https://cdn.shopify.com/s/files/1/0738/5327/2315/files/PPFragment-SansExtraBold.woff?v=1738571548') format('woff');
+    }   
+
+    @font-face {
+    font-family: 'PP Fragment Serif ExtraBold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('https://cdn.shopify.com/s/files/1/0738/5327/2315/files/PPFragment-SerifExtraBold.woff?v=1738571549') format('woff');
+    }
+
+ body {
+  font-family: 'PP Fragment Sans Light';
+}
+
+h1, h2, h3,h4,h5,h6,
+.h1,.h2,.h3,.h4,.h5,.h6{
+  font-family: 'PP Fragment Glare Light';
+}
+
+p {
+  font-family: 'PP Fragment Glare Light';
+  margin:0px;
+} */
+@font-face {
+  font-family: 'Literata-light';
+  font-style: normal;
+  font-weight: normal;
+  src: url('https://cdn.shopify.com/s/files/1/0738/5327/2315/files/Literata-Light.woff?v=1749629287')
+    format('woff');
+}
+nav.header__inline-menu ul li {
+  padding: 0px 8px;
+}
+
+.index .booking-menu li a {
+  color: #fff !important;
+}
+
+.index div#about-us .slideshow-wrapper {
+  height: 100%;
+}
+
+.index div#about-us .slick-slider {
+  height: 100%;
+}
+
+.index div#about-us .slick-list {
+  height: 100%;
+}
+
+.index div#about-us .slick-track {
+  height: 100%;
+}
+
+.index div#about-us .slick-slide {
+  height: 100%;
+}
+.index div#about-us .slick-slide img {
+  height: 100%;
+}
+
+h2 {
+  padding-bottom: 30px !important;
+  margin-bottom: 0px !important;
+  text-transform: uppercase;
+  line-height: 1.3em !important;
+}
+
+p.article-slider-text {
+  margin-top: 0px;
+}
+
+div#our-people-rich-text .rich-text__buttons {
+  margin-top: 0px;
+}
+
+.article-card .card__heading a {
+  color: #002855;
+  font-weight: 600;
+}
+
+.quantity:before {
+  background: transparent;
+  display: none;
+}
+
+.quantity__input {
+  color: #fff;
+  opacity: 1;
+}
+
+.quantity:after {
+  display: none;
+}
+
+quantity-input.quantity {
+  border: 1px solid #ffff;
+  border-radius: 30px;
+}
+
+.product-form__quantity span.svg-wrapper svg {
+  color: #fff;
+  opacity: 1;
+}
+/* .article-slider-wrapper p {
+    margin-bottom: 23px;
+    padding-top: 9px;
+} */
+.article-slider-wrapper p {
+  margin-bottom: 0px;
+  padding-top: 0px;
+  font-size: 18px;
+  color: #002855;
+}
+blockquote {
+  font-family: var(--font-heading-family);
+}
+.button,
+.button-label,
+.shopify-challenge__button,
+.customer button {
+  font-size: 18px;
+  font-family: 'Raleway';
+  /* border-bottom-left-radius:8px;
+    border-bottom-right-radius:8px; */
+  border-radius: 40px;
+  padding: 0px 30px;
+}
+.button:after,
+.shopify-challenge__button:after,
+.customer button:after,
+.shopify-payment-button__button--unbranded:after,
+.button:before,
+.shopify-challenge__button:before,
+.customer button:before,
+.shopify-payment-button__button--unbranded:before {
+  content: none;
+}
+.shopify-section-header-sticky .booking-btn {
+  background-color: #fff;
+  color: #002855;
+}
+span.svg-wrapper svg {
+  color: #fff;
+}
+.header__icons {
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.booking-btn {
+  margin-left: 20px;
+}
+.shopify-section-header-sticky .header-wrapper {
+  background-color: #002855;
+}
+.font-size-54 {
+  font-size: 54px;
+}
+.font-size-44 {
+  font-size: 44px;
+}
+.font-size-24 {
+  font-size: 24px;
+}
+.line-height-40 {
+  line-height: 40px;
+}
+.font-glare-light {
+  font-family: var(--font-heading-family);
+}
+.font-size-18 {
+  font-size: 18px;
+}
+.font-size-14 {
+  font-size: 18px;
+}
+.line-height-120 {
+  line-height: 120%;
+}
+.line-height-140 {
+  line-height: 140%;
+}
+.font-sans-light {
+  font-family: Literata-light;
+}
+.m-0 {
+  margin: 0px;
+}
+.mt-0 {
+  margin-top: 0px !important;
+}
+.pb-13 {
+  padding-bottom: 13px;
+}
+.pb-26 {
+  padding-bottom: 26px;
+}
+.pb-46 {
+  padding-bottom: 46px;
+}
+.mt-13 {
+  margin-top: 13px;
+}
+.mt-23 {
+  margin-top: 23px;
+}
+.mb-46 {
+  margin-bottom: 46px;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+.ptb-26 {
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+.mt-30 {
+  margin-top: 30px !important;
+}
+.flex-justify-space-between {
+  justify-content: space-between;
+}
+.color-white {
+  color: #fff;
+}
+.color-gold {
+  color: #d2b186;
+}
+.color-grey {
+  color: #4a4b54;
+}
+.color-blue {
+  color: #002855;
+}
+.color-yellow {
+  color: #f8e08e;
+}
+.header__menu-item.list-menu__item.link.link--text.focus-inset a {
+  color: #c0c7cd;
+  text-decoration: none;
+}
+.header__menu-item.list-menu__item.link.link--text.focus-inset a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+.booking-menu .sub-menu {
+  display: none;
+  position: absolute;
+  top: 72%;
+  right: 2%;
+  list-style: none;
+  min-width: 150px;
+  z-index: 10;
+}
+@media screen and (min-width: 1500px) {
+  .booking-menu .sub-menu {
+    display: none;
+    position: absolute;
+    top: 72%;
+    list-style: none;
+    min-width: 240px;
+    z-index: 10;
+    left: 0px;
+  }
+  .booking-menu li {
+    position: relative;
+  }
+}
+
+.booking-menu .has-dropdown:hover .sub-menu {
+  display: block;
+}
+.shopify-section-header-sticky ul.sub-menu.list-menu.list-menu--inline {
+  background-color: #002855;
+  padding: 20px;
+}
+span.dropdown-arrow {
+  font-size: 12px;
+}
+@media only screen and (min-width: 780px) {
+  .max-width {
+    width: 100%;
+    max-width: 100rem;
+    margin: auto;
+  }
+}
+/************slick slider************************/
+.slick-slide img {
+  width: 100%;
+  object-fit: contain;
+}
+.wrap_mission .slick-slider.slick-initialized.slick-dotted,
+.wrap_mission .slick-list,
+.wrap_mission .slick-track {
+  height: 100%;
+}
+.slick-slider.slick-initialized.slick-dotted .slick-dots {
+  bottom: 5px;
+}
+.slick-slider .slick-dots li button:before,
+.slick-slider .slick-dots li.slick-active button:before {
+  line-height: 0px;
+  top: 5px;
+  opacity: 1;
+  color: #fff;
+}
+.slick-slider .slick-dots li {
+  height: 7px;
+}
+.slick-slider li.slick-active {
+  background-color: #fff;
+  width: 40px;
+  height: 7px;
+  border-radius: 8px;
+}
+.slick-slider.slick-initialized.slick-dotted {
+  margin-bottom: 0px !important;
+}
+/******************header************************/
+sticky-header.header-wrapper.color-scheme-9fdf1d62-e5ef-4d12-92e9-a050087d742e.gradient {
+  position: absolute;
+  display: block;
+  width: 100%;
+}
+.list-menu__item {
+  font-family: 'Raleway';
+  font-size: 18px;
+}
+/*slideshow*/
+@media screen and (min-width: 750px) {
+  h2.banner__heading.inline-richtext.hxl {
+    font-size: 80px;
+    font-family: var(--font-heading-family);
+    line-height: 100%;
+  }
+  .banner__text.rte {
+    line-height: 120%;
+    font-size: 24px;
+    font-family: var(--font-heading-family);
+  }
+}
+.slideshow__controls.slider-buttons.slideshow__controls--border-radius-mobile {
+  position: absolute;
+  border: 0px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  align-items: flex-end;
+}
+.slideshow__controls
+  .slider-counter__link--active.slider-counter__link--dots
+  .dot {
+  background-color: #fff;
+}
+.slideshow__controls .slider-counter--dots {
+  width: 44px;
+  height: 44px;
+}
+.slideshow__controls .slider-counter__link--dots .dot {
+  border: 0.1rem solid rgba(255, 255, 255, 0.5);
+}
+/***********image-text-slideshow***************/
+.custom-slideshow-section .row.col-reverse {
+  flex-direction: row-reverse;
+  align-items: flex-start;
+}
+.custom-slideshow-section .row .col {
+  width: 50%;
+}
+div#cellar-door .slick-slide img {
+  object-fit: cover;
+  height: 100%;
+}
+small.copyright__content a:hover {
+  color: #f8e08e !important;
+}
+div#cellar-door .slideshow-wrapper {
+  width: 90%;
+  height: 100%;
+}
+.custom-slideshow-section .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-col {
+  display: block;
+  width: 100%;
+  padding: 0px;
+  margin: auto;
+  margin-left: 0px;
+  width: 390px;
+}
+
+.text-col .text {
+  padding-right: 45px;
+}
+
+body.page-cellardoor div#wrap_opening_hours .text-col .text {
+  padding-right: 0px;
+}
+
+.wrap_restaurant .text-col .text {
+  padding-right: 0px;
+}
+
+.wrap_restaurant .text-col .text p {
+  padding-right: 40px;
+}
+
+.wrap_restaurant .text-col .secondary-buttons a {
+  padding: 15px 20px;
+  font-size: 14.4px;
+}
+
+.icon-wrapper .icon-col:last-child {
+  margin-left: 10px;
+}
+
+.wrap_restaurant .text-col {
+  width: 430px;
+}
+
+.wrap_restaurant .text-col.text-col-buttons {
+  width: 470px;
+}
+
+.wrap_restaurant .secondary-buttons svg {
+  margin-right: 7px;
+  position: relative;
+  top: -1px;
+}
+
+.wrapper_restaurant .text-col {
+  width: 504px;
+}
+
+.wrapper_restaurant .text-col.text-col-buttons {
+  width: 504px;
+}
+
+.wrapper_restaurant .text-col .text {
+  padding-right: 0px;
+}
+
+.wrapper_restaurant .text-col .text p {
+  padding-right: 4px;
+}
+
+.wrapper_restaurant .icon-wrapper {
+  column-gap: 5px;
+}
+
+.wrapper_restaurant .icon-wrapper .icon-col {
+  column-gap: 5px;
+}
+
+.wrapper_restaurant .text-col .secondary-buttons a {
+  padding: 15px 20px;
+  font-size: 18px;
+}
+
+.wrapper_restaurant .secondary-buttons svg {
+  margin-right: 7px;
+  position: relative;
+  top: -2px;
+}
+
+.custom-slideshow-section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.wrap_mission .slideshow-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+}
+.wrap_mission .slick-slide img {
+  object-fit: cover;
+  height: 100%;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+/* new css */
+#wraps_wedding_package .buttons {
+  flex-direction: column;
+  align-items: flex-start;
+}
+#wraps_wedding_package .button--secondary {
+  background-color: #ffffff !important;
+  color: #002855 !important;
+  border: 1px solid #002855 !important;
+  text-decoration: none !important;
+  padding: 5px 20px;
+}
+#wraps_wedding_package .button--secondary:hover {
+  background-color: #002855 !important;
+  color: #ffffff !important;
+}
+
+#wrap_mission_video .button {
+  background-color: transparent !important;
+  color: #002855 !important;
+  border: 1px solid #002855 !important;
+  text-decoration: none !important;
+  padding: 5px 20px !important;
+  border-radius: 20px !important;
+}
+#wrap_mission_video .button:hover {
+  background-color: #002855 !important;
+  color: #ffffff !important;
+  border-color: none !important;
+}
+
+#wrap_mission_video .wrap_buttons {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-weddings div#wrap_mission_video a.button.button--primary:hover {
+  border-color: #002855 !important;
+}
+/* end new css */
+.secondary-buttons a {
+  padding: 15px 25px;
+}
+.secondary-buttons {
+  display: flex;
+  gap: 20px;
+}
+.text-col-buttons {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+details.facets__disclosure-vertical.js-filter {
+  background-color: #d9d9d6;
+  margin: 10px 0px;
+  padding: 2px 20px;
+  border-radius: 12px;
+  border: 0px;
+}
+@media (min-width: 981px) and (max-width: 1300px) {
+  /* .text-col {
+      padding: 0px 70px;
+  } */
+}
+@media screen and (max-width: 768px) {
+  .text-col {
+    padding: 0px 0px;
+  }
+  ul.booking-menu.list-menu.list-menu--inline {
+    display: none;
+  }
+}
+/*article-slider*/
+.article-slider-wrapper
+  .slick-slider.slick-initialized.slick-dotted
+  .slick-dots {
+  bottom: -10%;
+}
+.article-slider-wrapper .slick-slider li.slick-active {
+  background-color: #002855 !important;
+}
+.article-slider-wrapper .slick-slider .slick-dots li button:before,
+.article-slider-wrapper
+  .slick-slider
+  .slick-dots
+  li.slick-active
+  button:before {
+  color: #002855;
+}
+/*********reviews*************/
+.image-wrapper img {
+  display: block;
+  object-fit: contain;
+}
+/*footer*/
+.logo-image img {
+  object-fit: contain;
+  width: 100%;
+  max-width: 50px;
+}
+.foot__payment ul {
+  padding: 0px;
+  margin: 0px;
+}
+.foot__flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.footer__content-bottom.scroll-trigger.animate--slide-in {
+  padding: 0px 10px 1.5rem;
+  /* background-color: #ecede6; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/***footer newsletter form*/
+.email_form .field__input::focus .email_form .field__input::focus-visible {
+  box-shadow: none !important;
+}
+.email_form .field {
+  display: flex;
+  /* flex-direction: column; */
+  border: none;
+  box-shadow: none;
+  outline: none;
+  position: relative;
+}
+.email_form .field:before,
+.email_form .field:after {
+  content: none;
+}
+.email_form .email-field {
+  display: block;
+  width: 100%;
+}
+.email_form button#Subscribe {
+  position: relative;
+  font-size: 14.4px;
+  /* border: 1px solid #fff; */
+  padding: 12px 32px;
+}
+.email_form .email-field input,
+.email_form .email-field label {
+  /* left: 0px; */
+  text-align: left;
+  font-size: 14px;
+}
+.email_form .email-field {
+  display: block;
+  width: 100%;
+  /* border-bottom: 1px solid rgb(255 255 255 / 50%);
+    margin-bottom: 32px; */
+}
+/*******************restaurant page********************/
+.icon-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.icon-wrapper .icon-col {
+  display: flex;
+  justify-content: flex-start;
+  align-items: end;
+  gap: 5px;
+}
+
+/************************************ home page slider section **********************************/
+.wraps_slider-section .custom-slideshow-section .row .col {
+  width: 60%;
+}
+
+.wraps_slider-section .custom-slideshow-section .col.text-col-wrapper {
+  width: 40%;
+}
+
+.wraps_slider-section .slideshow-wrapper {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 57%;
+  height: 100%;
+}
+
+.wraps_slider-section .slick-slide img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.wraps_slider-section .slick-slide {
+  height: 100%;
+}
+
+.wraps_slider-section .slick-slider {
+  height: 100%;
+}
+
+.wraps_slider-section .slick-list {
+  height: 100%;
+}
+
+.wraps_slider-section .slick-track {
+  height: 100%;
+  margin-right: 0px;
+}
+
+.wraps_slider-section .text-col {
+  margin-left: auto;
+  padding: 0px;
+  width: 100%;
+}
+.custom-slideshow-section .page-width {
+  padding-right: 0px;
+}
+
+.wrap_aboutussec .text-col {
+  margin: 0px auto;
+}
+product-recommendations.related-products .card__media .media img {
+  object-fit: contain;
+}
+
+/******************************* home page slider section end *********************************************/
+/*********************** restaurant page section one ****************************/
+
+.wrap_restaurant .custom-slideshow-section .row .col {
+  width: 60%;
+}
+
+.wrap_restaurant .custom-slideshow-section .col.text-col-wrapper {
+  width: 40%;
+}
+
+.custom-slideshow-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.wrap_restaurant .slideshow-wrapper {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 57%;
+  height: 100%;
+}
+
+.wrap_restaurant .slick-slide img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.wrap_restaurant .slick-slide {
+  height: 100%;
+}
+
+.wrap_restaurant .slick-slider {
+  height: 100%;
+}
+
+.wrap_restaurant .slick-list {
+  height: 100%;
+}
+
+.wrap_restaurant .slick-track {
+  height: 100%;
+}
+/****************************************** wedding section css *******************************************/
+
+.wrap_wedding p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: Literata-light;
+}
+
+.wrap_wedding .text-col .text {
+  padding-right: 0px;
+}
+
+.wrap_wedding .slideshow-wrapper {
+  width: 60%;
+  margin: 0px auto;
+}
+
+.wrap_wedding .secondary-buttons a {
+  color: #fff !important;
+  border-color: #fff !important;
+}
+
+.wrap_wedding .secondary-buttons a:first-child {
+  background: #ffffff !important;
+  border-color: #fff !important;
+  color: #002855 !important;
+}
+
+.wrap_wedding .text-col {
+  margin-left: auto;
+  width: 504px;
+}
+
+.wrap_mission .text-col {
+  margin: 0px auto;
+  width: 550px;
+}
+
+.wrap_mission .text-col .text {
+  padding-right: 0;
+  font-size: 17px;
+  line-height: 22px;
+  font-family: Literata-light;
+}
+
+/****************************************** wedding section css end*******************************************/
+
+/*********************** restaurant menu section css ****************************/
+ul#tabs-nav {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  list-style: none;
+  column-gap: 20px;
+}
+
+ul#tabs-nav li a {
+  text-decoration: none;
+  font-family: Literata-light;
+  color: #002855;
+  border: 1px solid;
+  padding: 12px 32px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.wrapper_flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.wrap_left {
+  width: 55%;
+}
+
+/* .wrap_left img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 14px;
+} */
+
+.wrap_left img {
+  width: 80%;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  display: flex;
+  justify-self: center;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 18px;
+}
+
+.menu p.name {
+  font-size: 18px;
+  line-height: 22px;
+  color: #4a4b54;
+  font-family: 'Raleway';
+  width: 80%;
+}
+
+.wrap_right {
+  width: 40%;
+}
+
+/********************* accordion css ******************************/
+.wrap_right .accordion {
+  overflow: hidden;
+}
+.wrap_right .accordion-item {
+  border-bottom: 0px;
+}
+.wrap_right .accordion-header {
+  padding: 15px;
+  background: #e5e9ee;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #002855;
+}
+.wrap_right .accordion-content {
+  display: none;
+  padding: 10px;
+  background: #fff;
+}
+.wrap_right .active {
+  display: block;
+}
+
+.headingwrapper-title h3 {
+  color: #002855;
+  font-size: 24px;
+  border-bottom: 1px dashed;
+  padding-bottom: 15px;
+  margin-top: 0px;
+}
+
+span.arrow_down {
+  float: right;
+}
+
+a.wraps_reservation {
+  background: #002855;
+  color: #fff;
+  font-size: 18px;
+  font-family: Literata-light;
+  padding: 16px;
+  text-decoration: none;
+  border-radius: 0px 0px 8px 8px;
+  border: 1px solid;
+}
+
+.wraps_link_buttns {
+  display: flex;
+  justify-content: space-between;
+}
+
+a.wraps_link-voucher {
+  background: transparent;
+  color: #002855;
+  font-size: 18px;
+  font-family: Literata-light;
+  padding: 16px;
+  text-decoration: none;
+  border-radius: 0px 0px 8px 8px;
+  border: 1px solid;
+}
+/********************* accordion css end******************************/
+/*********************** restaurant menu section css ****************************/
+
+@media only screen and (min-width: 1000px) and (max-width: 1399px) {
+  .grid-slider-section h3 {
+    font-size: 19px;
+  }
+
+  .grid-slider-section p {
+    font-size: 18px;
+  }
+
+  .grid-slider-section .mt-23 {
+    margin-top: 16px;
+  }
+
+  .grid-slider-section .grid-buttons a {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1500px) {
+  .grid-slider-section h3 {
+    font-size: 20px;
+  }
+
+  .grid-slider-section p {
+    font-size: 17px;
+  }
+}
+
+/************responsiveness*********************/
+@media screen and (max-width: 991px) {
+  /*global*/
+
+  .font-size-54 {
+    font-size: 35px;
+  }
+  .font-size-24 {
+    font-size: 18px;
+  }
+  .mt-23 {
+    margin-top: 13px;
+  }
+  /*home page*/
+  a.button.button--primary.booking-btn {
+    display: none;
+  }
+  body .banner__box {
+    padding: 15rem 1.5rem 10rem;
+  }
+  .custom-slideshow-section .row {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .custom-slideshow-section .row.col-reverse {
+    flex-direction: column-reverse;
+  }
+  .container {
+    padding: 0px 20px;
+  }
+  .custom-slideshow-section .row .col {
+    width: 100%;
+  }
+  .buttons {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  /* .custom-slideshow-section {
+    padding-top: 60px!important;
+    padding-bottom: 60px!important;
+  } */
+  /*grid slider section*/
+
+  body .grid-slider-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .grid-slider-section .columns-wrapper {
+    flex-direction: column;
+    height: 100%;
+    max-height: 100%;
+    gap: 30px;
+  }
+  .grid-slider-section .column {
+    width: 100%;
+    top: 0px !important;
+  }
+  .grid-slider-section .grid-slider {
+    margin: 0px;
+  }
+  .grid-slider-section .content-block {
+    top: 0%;
+    right: 0%;
+  }
+  .grid-slider-section .main-row {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+  body .page-widths {
+    padding: 0px 20px;
+  }
+  body .main-slider-row {
+    margin-left: 0px;
+  }
+  body .article-slide {
+    margin-left: 0px;
+  }
+  body
+    .article-slider-wrapper
+    .slick-slider.slick-initialized.slick-dotted
+    .slick-dots {
+    bottom: -5%;
+  }
+
+  /************************************************ 6-feb-2025 *************************************************/
+  .wraps_slider-section .slideshow-wrapper {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .wraps_slider-section .custom-slideshow-section .row .col {
+    width: 100%;
+  }
+
+  .wraps_slider-section .custom-slideshow-section .col.text-col-wrapper {
+    width: 100%;
+  }
+  .wraps_slider-section .text-col {
+    width: 100%;
+  }
+  .text-col .text {
+    padding-right: 10px;
+  }
+
+  .wrap_aboutussec .custom-slideshow-section {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+
+  .wrap_aboutussec .text-col {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .wrap_restaurant .slideshow-wrapper {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .wrap_restaurant .custom-slideshow-section .row .col {
+    width: 100%;
+  }
+
+  .wrap_restaurant .custom-slideshow-section .col.text-col-wrapper {
+    width: 100%;
+  }
+  .wrap_restaurant .text-col {
+    width: 100%;
+  }
+
+  .wrap_restaurant .text-col.text-col-buttons {
+    width: 100%;
+  }
+
+  .secondary-buttons {
+    /* display: block; */
+    gap: 20px;
+  }
+
+  .wrap_restaurant .text-col .secondary-buttons a {
+    margin-bottom: 20px;
+  }
+
+  .wrap_left {
+    width: 100%;
+  }
+
+  .wrap_right {
+    width: 100%;
+  }
+
+  .tab-links {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0px !important;
+  }
+
+  .tab-links li {
+    width: 100%;
+    margin-bottom: 16px;
+    line-height: 20px !important;
+  }
+
+  .wrapper_restaurant .text-col,
+  .wrapper_restaurant .text-col.text-col-buttons {
+    width: 100%;
+  }
+
+  .wrapper_restaurant .text-col .secondary-buttons a {
+    margin-bottom: 20px;
+  }
+
+  .wrap_wedding .text-col {
+    width: 100%;
+  }
+
+  .wrap_mission .custom-slideshow-section {
+    padding: 46px 0px !important;
+  }
+
+  .wrap_mission .text-col {
+    width: 100%;
+  }
+
+  .wrap_wedding .slideshow-wrapper {
+    width: 100%;
+  }
+
+  .header--has-social .menu-drawer__utility-links {
+    top: -40px;
+  }
+}
+/**********mobile sidebar*************/
+summary.header__icon--menu[aria-expanded='true'] {
+  z-index: 99999;
+  right: 5%;
+  position: absolute;
+  top: 15%;
+  background-color: #000;
+  border-radius: 50%;
+  padding: 15px;
+}
+.header__icon--menu[aria-expanded='true']:before {
+  height: auto !important;
+}
+.menu-drawer {
+  left: 0%;
+  top: 0% !important;
+}
+#menu-drawer span.svg-wrapper svg {
+  color: #000;
+}
+summary.header__icon--menu[aria-expanded='true'] .icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.wrapper_restaurant ul.slick-dots {
+  display: none;
+}
+/**************product page*****************/
+/*******food pairing section**********/
+.food-icon-wrapper img {
+  margin: 0 8px 0 0;
+  width: 25px;
+}
+.food-icon-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 15px !important;
+}
+.food-pairing-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+.image-border img {
+  border-radius: 8px;
+}
+
+.wraps_region_texts p:first-child {
+  margin-top: 0px;
+}
+/************awards section****************/
+.award-icon-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px; /* Adjust spacing as needed */
+}
+
+.award-pairing-icon {
+  flex: 1 1 calc(50% - 20px);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+/**************region section*********/
+.region-text h4 {
+  font-size: 24px;
+  margin: 0px 0px 10px 0px;
+  line-height: 120%;
+  color: #002855;
+  font-family: var(--font-heading-family);
+}
+.region-text p {
+  font-size: 18px;
+  margin-bottom: 46px !important;
+  line-height: 120%;
+  color: #4a4b54;
+  font-family: Literata-light;
+}
+.region-text p:last-child {
+  margin-bottom: 0px;
+}
+.ImageRegion img {
+  object-fit: contain;
+  width: 100%;
+}
+.ImageRegion {
+  width: 100%;
+}
+.multiple-image-with-text .image-with-text__content--top {
+  padding-top: 0px;
+}
+/***********restaurant page responsiveness********/
+@media only screen and (max-width: 768px) {
+  .second-icon-wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 0px;
+  }
+  .second-icon-wrapper .icon-col {
+    margin-bottom: 10px;
+  }
+  .icon-wrapper .icon-col:last-child {
+    margin-left: 0px;
+  }
+  a.wraps_link-voucher,
+  a.wraps_reservation {
+    font-size: 14px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+  }
+  .shopify-section .text-col .secondary-buttons a {
+    padding: 8px;
+    font-size: 12px;
+  }
+  body .button,
+  body .button-label,
+  body .shopify-challenge__button,
+  body .customer button {
+    font-size: 18px;
+    padding: 15px;
+    width: 100%;
+  }
+  .wrap_mission .slideshow-wrapper {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+/***********product page responsiveness***********/
+@media only screen and (max-width: 768px) {
+  body.product .wraps_inner-icons {
+    width: 100%;
+  }
+  .tabs-container.CustomProducts_tab {
+    flex-direction: column;
+  }
+  .tabs-container .tab-content,
+  .tabs-container .tab-content .tab {
+    width: 100%;
+    flex-direction: column;
+  }
+  .tabs-container ul.tab-links {
+    width: 100%;
+  }
+  .tabs-container .Commantab_C {
+    width: 100%;
+  }
+  .tabs-container .tab.custonmainatbs {
+    gap: 30px;
+  }
+  .tabs-container .tab-links {
+    margin: 0px;
+  }
+  .tabs-container .tab-content {
+    padding: 0px;
+  }
+  .tabs-container .BoxDesc,
+  .tabs-container .MainDescreiption {
+    width: 100%;
+  }
+  body.product main product-info.product_wrapsmain {
+    padding: 60px 0px 0px;
+  }
+  /* body.product main div.shopify-section{
+    padding: 50px 0px;
+} */
+  body.product main .shopify-section > div {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  body.product .product-form__quantity {
+    padding-left: 0px !important;
+  }
+  .ImageTab img {
+    width: 100%;
+  }
+  body.product .food-icon-wrapper {
+    flex-direction: column;
+    align-items: baseline;
+  }
+  body.product .image-with-text__content {
+    padding: 4rem calc(0rem) 0rem;
+  }
+}
+.product__media-list {
+  position: relative;
+}
+/* .product__media-list:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://cdn.shopify.com/s/files/1/0738/5327/2315/files/product-bg.png?v=1739340883");
+    background-position: center;
+    background-size: contain;
+    left: 0%;
+} */
+/*new code dev aa*/
+/*global*/
+/*font import*/
+/* @import url('https://fonts.googleapis.com/css2?family=Anta&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap'); */
+body p,
+body,
+body div {
+  font-family: Literata-light;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.6em;
+}
+a.button {
+  border: 1px solid;
+}
+a.button.button--secondary.no-button-border,
+a.no-button-border {
+  border: none;
+  border-bottom: 1px solid;
+  border-radius: 0px;
+  padding: 0px;
+  background-color: transparent;
+}
+/**************************************** header css ***********************************/
+body.index .shopify-section-header-sticky.scrolled-past-header .header-wrapper,
+body.collection
+  .shopify-section-header-sticky.scrolled-past-header
+  .header-wrapper {
+  position: relative;
+  background-color: #002855;
+}
+
+body.index .shopify-section-header-sticky .header-wrapper,
+body.collection .shopify-section-header-sticky .header-wrapper {
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+}
+/*home page*/
+.multicolumn-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+.multicolumn-buttons a:first-child {
+  margin-top: 2rem;
+  line-height: 40px;
+  display: block;
+  text-align: center;
+}
+.article-tag {
+  border: 0px;
+  padding: 0px !important;
+  border-radius: 0px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+ul#product-grid .card__media .media img {
+  object-fit: contain;
+}
+.card-information {
+  text-align: center !important;
+}
+div#grp-entangle--root,
+.grp-entangle-item.grp-entangle-review-clamp {
+  background-color: #002855 !important;
+}
+.grp-entangle-item-body-review.truncated {
+  color: #fff;
+}
+svg.grp-full-star {
+  fill: #ffa791 !important;
+}
+div#grp-entangle--root .grp_custom_heading_continer .grp_custom_heading {
+  font-family: Literata-light;
+  color: #fff !important;
+  text-transform: uppercase;
+}
+div#grp-entangle--root:before,
+.grp-entangle-write {
+  display: none !important;
+}
+.footer-block-image {
+  align-items: flex-end;
+  flex-direction: column;
+}
+.footer-block__details-content .list-menu__item--link,
+.copyright__content a,
+footer,
+footer p {
+  color: rgba(var(--color-foreground), 1) !important;
+}
+.cus-social .list-social__link {
+  padding: 0rem 1rem 0rem 0rem;
+}
+.cus-social .list-social__item .icon {
+  height: 4.2rem;
+  width: 4.2rem;
+  color: #f8e08e;
+}
+.cus-social .svg-wrapper {
+  width: 32px;
+  height: 32px;
+}
+.newsletter-form__field-wrapper .field {
+  border: 1px solid #f8e08e;
+  justify-content: center;
+  align-items: center;
+}
+footer .newsletter-form {
+  max-width: 100%;
+}
+svg.icon.icon--full-color path[fill='#fff'] {
+  fill: #f8e08e;
+}
+svg.icon.icon--full-color path[fill='#003087'],
+svg.icon.icon--full-color path[fill='#3086C8'] {
+  fill: #002855;
+}
+@media screen and (max-width: 749px) {
+  .footer-block-image,
+  .footer-block-image.left,
+  .footer-block-image.center,
+  .footer-block-image.right {
+    align-items: baseline;
+  }
+}
+
+.multicolumn-list__item.center .media--adapt,
+.multicolumn-list__item .media--adapt .multicolumn-card__image {
+  width: 100% !important;
+}
+button.quick-add__submit.button.button--full-width.button--secondary {
+  border: 1px solid rgb(0 40 85);
+  color: rgb(0 40 85);
+  width: 60% !important;
+  min-width: 60% !important;
+  font-family: 'Raleway';
+  line-height: 0px !important;
+  margin-bottom: 15px;
+  background-color: transparent;
+  margin: 0 auto;
+  font-size: 14px;
+}
+.collection .full-unstyled-link {
+  font-size: 18px;
+}
+.collection .caption-with-letter-spacing.light {
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.collection span.price-item.price-item--regular {
+  color: #002855;
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 12px;
+}
+
+.collection li.grid__item.scroll-trigger.animate--slide-in {
+  margin: 30px 0px;
+}
+.card__badge.bottom.left {
+  display: none;
+}
+a.learn-add-cart {
+  text-decoration: none;
+  color: #002855;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  margin-top: 20px;
+  font-size: 14px;
+  display: none;
+}
+
+a.learn-add-cart:hover {
+  color: #ff3e51;
+}
+div#product-grid-collection {
+  background-color: #f1f2ed;
+}
+div#about-us a.button--primary {
+  width: fit-content;
+  border: 1px solid;
+}
+
+div#wrap_library a.button--primary {
+  width: fit-content;
+  border: 1px solid;
+}
+
+div#homepage-rich-text a.button.button--primary {
+  color: #fff;
+}
+img.cart-icon-add-cart {
+  width: 10%;
+}
+ul#product-grid a.full-unstyled-link {
+  color: #002855;
+  text-align: center;
+}
+.caption-with-letter-spacing.light {
+  color: #002855;
+}
+.text-col a {
+  text-decoration: none;
+}
+div#mission-rewards .multicolumn__title {
+  text-align: center !important;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/************************************************* popup code **************************************/
+.custom-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.custom-popup {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+}
+
+.custom-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+/************************************************* popup code **************************************/
+
+div#missionwrap-section .text {
+  font-size: 18px;
+}
+
+div#missionwrap-section .col.text-col-wrapper {
+  padding-right: 30px;
+}
+
+.index
+  .multicolumn-card__info
+  a.button.button--primary.open-custom-popup:hover {
+  background: #002855;
+  color: #fff;
+  border-color: #002855;
+}
+
+.index div#about-us ul.slick-dots {
+  display: none;
+}
+.wrap_trade_media a.button.button--primary {
+  border-color: #002855 !important;
+}
+
+body.index
+  .article-slider-wrapper
+  .main-slider-row
+  a.button.button--primary.article-slider-button:hover {
+  background: #002855 !important;
+  border-color: #002855 !important;
+}
+
+.wrap_trade_media ul.slick-dots {
+  display: none;
+}
+
+@media screen and (min-width: 1300px) {
+  sticky-header.header-wrapper header.header {
+    max-width: 140rem;
+    margin: 0px auto;
+    width: 100%;
+  }
+}
+
+.article button.wrap_button {
+  background: #002855;
+  color: #fff;
+  font-family: 'Raleway';
+  border: 1px solid #002855;
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-size: 14px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.slideshow-wrapper ul.slick-dots {
+  display: none;
+}
+
+body.product
+  .shopify-section-header-sticky
+  .header-wrapper
+  ul.list-menu
+  .header__submenu
+  a {
+  color: #121212bf;
+}
+
+@media (max-width: 767px) and (min-width: 280px) {
+  .blog-section {
+    display: block !important;
+  }
+
+  .section-template--19584830308603__rich_text_PdaqY6-padding {
+    padding-top: 46px !important;
+    padding-bottom: 46px !important;
+  }
+  ul#BlogTagFilter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+  }
+
+  ul#BlogTagFilter li {
+    width: 30%;
+    margin-left: 0px;
+  }
+
+  ul#BlogTagFilter li:first-child {
+    width: 100%;
+  }
+
+  ul#BlogTagFilter a.button {
+    margin: 16px 0px 0px;
+  }
+
+  .blog-filter-section {
+    width: 100% !important;
+  }
+  body.product
+    .shopify-section-header-sticky
+    .header-wrapper
+    ul.list-menu
+    li
+    a {
+    color: #000000 !important;
+  }
+  div#about-us a.button--primary {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  div#wrap_library a.button--primary {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  button.quick-add__submit.button.button--full-width.button--secondary {
+    width: 50% !important;
+    min-width: 50% !important;
+  }
+  .text-col {
+    width: auto;
+  }
+  h2.banner__heading.inline-richtext.hxxl {
+    font-size: 44px;
+  }
+  label.field__label {
+    font-size: 13px;
+    left: 7px;
+    line-height: 22px !important;
+  }
+  .font-size-44 {
+    font-size: 34px;
+  }
+  .email_form button#Subscribe {
+    position: relative;
+    font-size: 13px;
+    /* border: 1px solid #fff; */
+    padding: 12px 0px !important;
+    right: 0px;
+    padding-right: 4px;
+    text-align: end;
+    justify-content: center;
+    width: 90px !important;
+    min-width: 90px !important;
+  }
+  img.header__heading-logo.motion-reduce {
+    margin-left: 10%;
+  }
+  h2.article-slider-heading.font-size-50.font-glare-light.line-height-40.m-0.pb-13 {
+    font-size: 34px;
+  }
+  .product__title h1 {
+    font-size: 30px !important;
+  }
+  .BoxDesc {
+    font-size: 21px !important;
+  }
+  .font-size-18 {
+    font-size: 18px;
+  }
+}
+a.button.button--secondary {
+  line-height: normal !important;
+  font-family: 'Raleway';
+}
+a.button.button--primary {
+  line-height: normal !important;
+  font-family: 'Raleway';
+}
+.article-slide a.button.button-secondary {
+  font-family: 'Raleway';
+  width: fit-content;
+  justify-content: left;
+  line-height: 0px;
+}
+a.international-link {
+  color: #fff;
+}
+.font-size-50 {
+  font-size: 50px;
+}
+.reviews-section h1 {
+  font-weight: 600;
+}
+h2.footer-block__heading.inline-richtext {
+  font-size: 32px;
+  font-family: Literata-light;
+  font-weight: 400;
+}
+a.link.link--text.list-menu__item.list-menu__item--link {
+  font-family: Raleway;
+}
+.email_heading {
+  font-weight: 600 !important;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.footer__blocks-wrapper.grid.grid--1-col.grid--2-col.grid--4-col-tablet.scroll-trigger.animate--slide-in {
+  align-items: center;
+}
+div#TRADEMEDIA .col.text-col-wrapper {
+  padding-top: 52px;
+  padding-bottom: 80px;
+}
+.product__title h1 {
+  font-size: 36px;
+}
+.field__label,
+.customer .field label {
+  color: #cbbd7f;
+}
+.footer__content-top .logo-image img {
+  max-width: 177px;
+  margin-bottom: 20px;
+}
+.header__inline-menu {
+  text-align: center;
+  width: 100%;
+}
+header.header.header--middle-left {
+  grid-template-columns: auto 2fr auto;
+  column-gap: 0px !important;
+}
+.wrapper_innericon.NewWrap_innericon img {
+  width: 29px;
+}
+div#accomodation-section .heading {
+  color: #fff;
+}
+div#accomodation-section .text {
+  color: #fff;
+}
+div#accomodation-section a.button--primary {
+  width: auto;
+}
+div#accomodation-section .slideshow-wrapper {
+  width: 45%;
+}
+div#cellar-door .slideshow-wrapper {
+  width: 90%;
+}
+div#cellar-door a.button.button--primary {
+  width: auto;
+}
+div#accomodation-section a.button.button--primary.no-button-border {
+  text-decoration: underline;
+  border: none;
+}
+.featured_collection .card__inner.color-scheme-2.gradient.ratio {
+  height: 400px !important;
+  background: transparent;
+}
+.featured_collection .card__media img.motion-reduce {
+  height: 400px !important;
+  object-fit: contain;
+}
+.featured_collection a.full-unstyled-link {
+  text-align: center;
+  color: #002855;
+}
+.tabs-buttons a {
+  width: auto;
+  padding: 10px 20px;
+  border: 1px solid;
+  margin-top: 10px !important;
+  border-radius: 30px;
+  color: #002855;
+  background-color: transparent;
+  text-decoration: none;
+  font-family: 'Raleway';
+}
+.rich-text__blocks.left a.button.button--secondary {
+  color: #002855;
+}
+div#sustainability a.button--primary {
+  width: fit-content;
+}
+div#sustainability .slideshow-wrapper {
+  width: 50%;
+}
+div#restaurant-tabs .ImageTab {
+  height: 400px;
+}
+.image-with-text .grid__item a.button.button--primary {
+  background-color: transparent;
+  color: #002855;
+}
+.multicolumn-card__info a.button {
+  background-color: transparent;
+}
+div#our-people a.button.no-button-border {
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+  width: auto;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  color: #002855;
+  margin-top: 8px;
+}
+div#our-people-rich-text a.button.button--secondary {
+  color: #002855;
+  background: transparent;
+}
+div#our-people h3.inline-richtext {
+  font-size: 24px;
+}
+div#our-people .rte p {
+  font-size: 18px;
+}
+a.button.button--primary.no-button-border {
+  border: none;
+  border-bottom: 1px solid;
+}
+div#upcoming-events .slideshow-wrapper {
+  width: 46%;
+}
+div#homepage-rich-text a.button.no-button-border.button--primary {
+  color: #002855 !important;
+  border: none;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-color: #002855;
+}
+div#ImageWithText--template--19548566651131__image_with_text_f4DCQn
+  a.button.button--primary {
+  color: #ffffff;
+}
+div#gaia-project img {
+  height: 500px;
+  object-fit: cover;
+}
+div#gaia-project .image-with-text__grid {
+  align-items: center;
+}
+.multicolumn-card__image-wrapper.multicolumn-card__image-wrapper--full-width {
+  margin: 0px !important;
+}
+.multicolumn-card.content-container {
+  margin: 0px 10px;
+}
+.banner__text.rte p {
+  font-family: 'Literata-light';
+  font-size: 21px;
+}
+.app-section.color-scheme-d536de6d-9eba-4ca5-b804-ae369f8ab959 {
+  margin-top: -2px;
+}
+div#gaia-project a.button.button--primary:after {
+  content: '';
+  background-image: url(https://cdn.shopify.com/s/files/1/0738/5327/2315/files/Untitled_design_-_2025-06-02T155900.704.png?v=1748860281);
+  background-repeat: no-repeat;
+  width: 26px;
+  height: 27px;
+  background-size: cover;
+  border: none !important;
+  box-shadow: none;
+  margin-left: 6px;
+  margin-top: 6px;
+  margin-right: 10px;
+}
+div#gaia-project a.button.button--primary {
+  padding-left: 41px;
+}
+@media (max-width: 2400px) and (min-width: 1900px) {
+}
+
+.reviews-section h1 {
+  font-family: 'Raleway';
+}
+
+.grp-entangle-item-body-review.truncated {
+  font-family: 'Literata-light' !important;
+}
+
+div#grp-entangle--root .grp_custom_heading_continer .grp_custom_heading {
+  font-family: 'Raleway' !important;
+}
+
+h2.facets__heading {
+  font-family: 'Raleway';
+  font-size: 24px;
+  font-weight: 600;
+  color: #002855;
+}
+
+fieldset.facets-wrap.parent-wrap.facets-wrap-vertical
+  span.facet-checkbox__text {
+  color: #002855;
+  font-size: 18px;
+  font-family: 'Raleway';
+  position: relative;
+  top: -3px;
+}
+
+summary.facets__summary span.facets__summary-label {
+  font-size: 18px;
+  font-family: 'Raleway';
+  color: #002855;
+  font-weight: 600;
+}
+
+summary.facets__summary.caption-large.focus-offset span {
+  font-size: 18px;
+  font-family: 'Raleway';
+  color: #002855;
+  font-weight: 600;
+}
+
+h2.banner__heading {
+  font-weight: 600;
+}
+
+h1.banner__heading.inline-richtext {
+  font-weight: 600;
+}
+/******************************** my css ***********************/
+.accomodation .icon-col {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.accomodation p.font-size-14 {
+  color: #002855;
+}
+
+.accomodation a.button.button--secondary.no-button-border {
+  border: 1px solid #002855 !important;
+  color: #002855;
+  text-decoration: none;
+  padding: 20px 30px;
+  border-radius: 30px;
+}
+
+div#wrap_farmhouse {
+  background: #fff;
+  padding: 70px 0px;
+}
+
+div#wrap_farmhouse h2.image-with-text__heading.inline-richtext.h1 {
+  font-weight: 700;
+  color: #002855;
+}
+
+div#wrap_farmhouse .wrap_buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+div#wrap_farmhouse .image-with-text__media {
+  padding-bottom: 0px !important;
+  border: 0px;
+}
+
+.accomodation .text-col .text {
+  padding-right: 5px;
+}
+
+.accomodation .icon-wrapper .icon-col:last-child {
+  margin-left: 0px;
+}
+
+.accomodation .icon-wrapper {
+  display: block;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.wraps_flex-etc {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@media screen and (min-width: 1000px) {
+  .wrap_reserviction {
+    width: 48%;
+  }
+
+  body.product .CustomProducts_tab ul.tab-links li:first-child {
+    margin-top: 2px;
+  }
+
+  body.product .HedingCont_wrap .MainHeading {
+    margin-top: -11px;
+  }
+  .reservition_images {
+    width: 48%;
+  }
+
+  .page-accomodation .reservition_images {
+    width: 49%;
+  }
+
+  img.second_image {
+    width: 62% !important;
+    float: right;
+    margin-top: 50px;
+  }
+
+  div#future_sustainbility img.second_image {
+    float: left;
+  }
+
+  div#tasting_options img.second_image {
+    width: 100% !important;
+    float: right;
+    margin-top: 50px;
+  }
+
+  .wraps_text-texts {
+    padding-right: 30px;
+  }
+
+  body.page-visit-us.page .ImageTab img {
+    width: 100%;
+  }
+
+  body.page-visit-us.page .RightSide {
+    width: 50%;
+  }
+
+  body.page-visit-us.page .tab-content {
+    position: relative;
+  }
+
+  body.page-visit-us.page div#restaurant-tabs .ImageTab {
+    height: 100%;
+    width: 100%;
+  }
+
+  body.page-visit-us.page .LeftSide {
+    width: 50%;
+    padding-top: 0px;
+    margin-left: 0px !important;
+    margin-right: auto;
+  }
+
+  body.page-cellardoor .ImageTab img {
+    width: 100%;
+    height: 100.2% !important;
+  }
+
+  body.page-cellardoor div#restaurant-tabs .ImageTab {
+    height: 100%;
+    width: 100%;
+  }
+
+  body.page-cellardoor .RightSide {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    top: -1px;
+  }
+
+  body.page-cellardoor .LeftSide {
+    width: 50%;
+    padding-top: 0px;
+    margin-left: 0 !important;
+    margin-right: auto;
+  }
+
+  body.page-cellardoor .LeftSide .MainDescreiption p:first-child {
+    margin-top: 0px !important;
+  }
+
+  body.page-cellardoor .tab-content {
+    position: relative;
+  }
+}
+
+div#cellar-door .text {
+  font-weight: 400 !important;
+  font-family: 'Literata-light';
+}
+
+div#accomodation-section .text {
+  font-weight: 400 !important;
+  font-family: 'Literata-light';
+}
+
+div#celebration-functions .image-with-text__text.rte.body p {
+  font-weight: 400 !important;
+  font-family: 'Literata-light';
+  font-size: 18px;
+  color: #002855;
+}
+
+section#Sustainability-Mission .wrap_link a {
+  padding-bottom: 0;
+  font-family: 'Raleway';
+}
+
+div#wrap_opening_hours .custom-slideshow-section {
+  background: #005151 !important;
+}
+
+div#cellar-door a.button.button--secondary.open-custom-popup {
+  color: #002855;
+}
+
+.reservition_images img {
+  width: 100%;
+}
+
+div#wraps_accomdations {
+  background: #ecede6;
+  padding: 20px 0px 70px 0px;
+}
+
+.wrap_reserviction h2 {
+  padding: 20px;
+  color: #002855;
+  font-size: 35px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: Literata-light;
+  background-color: #fff;
+}
+
+div#tasting_options .wrap_reserviction h2 {
+  padding-left: 0px;
+}
+
+.wraps_text-texts p {
+  color: #002855;
+  line-height: 1.6em;
+}
+
+.wraopper_richtexts {
+  color: #002855;
+}
+
+.wraopper_richtexts p {
+  color: #002855;
+  line-height: 1.6em;
+}
+
+.wraopper_richtexts p:first-child strong {
+  font-family: 'Raleway';
+  font-size: 18px;
+}
+
+body.gradient.page-accomodation.page
+  .wraps_reservation_buttons
+  a.button.button--secondary.no-button-border {
+  color: #fff !important;
+  border: 1px solid #fff !important;
+}
+
+.wraps_reservation_buttons {
+  display: flex;
+  gap: 40px;
+  padding: 25px 0px 35px;
+}
+
+div#tasting_options {
+  background: #f0f0ed;
+  padding: 60px 0px;
+}
+
+div#tasting_options .wrap_reserviction h2 {
+  color: #002855;
+  font-weight: 600;
+  background: transparent;
+  font-family: 'Raleway';
+}
+
+h2.rich-text__heading {
+  font-weight: 600;
+}
+
+h2.main-heading {
+  font-weight: 600;
+}
+
+h2.box-heading {
+  font-weight: 600;
+}
+
+div#tasting_options .wraps_text-texts p {
+  color: #002855;
+  line-height: 1.6em;
+}
+
+div#tasting_options .wraopper_richtexts {
+  color: #002855;
+}
+
+div#tasting_options .wraopper_richtexts p {
+  color: #002855;
+  line-height: 1.6em;
+}
+
+div#tasting_options a.button.button--secondary.no-button-border {
+  border: 1px solid #002855 !important;
+  padding: 20px 30px;
+  border-radius: 30px;
+  color: #002855;
+  text-decoration: none;
+}
+
+div#tasting_options h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #002855;
+  line-height: 1.8em;
+}
+
+.wraopper_richtexts_third p svg {
+  position: relative;
+  top: 5px;
+}
+
+.wraopper_richtexts_third p svg path {
+  fill: #002855;
+}
+
+.wraopper_richtexts_third p span {
+  padding-left: 5px;
+}
+.wraopper_richtexts_third p {
+  color: #002855;
+}
+
+div#wrap_opening_hours .text-col {
+  width: 550px;
+  margin-left: 0px;
+  padding-left: 7rem;
+}
+
+div#wrap_opening_hours .text-col.text-col-buttons {
+  padding-left: 0px !important;
+}
+
+div#wrap_opening_hours p {
+  font-size: 18px;
+  color: #fff;
+}
+
+div#wrap_opening_hours .custom-slideshow-section .row .col {
+  width: 50%;
+}
+
+div#wrap_opening_hours .custom-slideshow-section .row .col.text-col-wrapper {
+  width: 50%;
+}
+
+div#wrap_upcoming_events .custom-slideshow-section {
+  background: #ffa791;
+}
+
+div#wrap_upcoming_events .custom-slideshow-section .row.col-reverse {
+  align-items: center;
+}
+
+div#wrap_upcoming_events .text-col-buttons {
+  width: 390px;
+}
+
+div#wrap_upcoming_events .text-col-buttons a.button.button--primary {
+  background: transparent;
+  padding: 0px;
+  border: 0px;
+  border-bottom: 1px solid #002855;
+  border-radius: 0px;
+  color: #002855;
+  font-weight: 600;
+}
+
+div#wrap_upcoming_events
+  .text.font-size-18.line-height-120.font-sans-light.pb-26 {
+  padding-bottom: 0px;
+}
+
+body.gradient.page-cellardoor.page div#wrap_farmhouse {
+  padding: 0px 0px;
+  background: #f0f0ed;
+}
+
+p.wraps_texts_cellerdoors svg {
+  position: relative;
+  top: 5px;
+  width: 17px;
+  margin-right: 6px;
+}
+
+.wraps_icons_textstesting_options {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.wraps_icons_textstesting_options p svg path {
+  fill: #002855;
+}
+
+.wraps_icons_textstesting_options p svg {
+  position: relative;
+}
+
+.wraps_icons_textstesting_options p svg {
+  position: relative;
+  top: 4px;
+  width: 18px;
+  margin-right: 5px;
+}
+
+.wraps_icons_textstesting_options p {
+  margin: 0px !important;
+}
+
+p.wrap_souvenir_icn_text svg {
+  position: relative;
+  top: 6px;
+  margin-right: 5px;
+}
+
+p.wrap_souvenir_icn_text svg path {
+  fill: #002855;
+}
+
+#wrapper_restrurants .icon-wrapper {
+  display: block;
+  margin-bottom: 0px;
+}
+
+#wrapper_restrurants .icon-wrapper .icon-col:last-child {
+  margin-left: 0px;
+}
+
+#wrapper_restrurants .icon-wrapper .icon-col {
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+#wrapper_restrurants .second-icon-wrapper {
+  padding-top: 6px;
+}
+
+#wrapper_restrurants .icon-wrapper svg {
+  width: 18px;
+  position: relative;
+  top: 7px;
+}
+
+#wrapper_restrurants .text-col .secondary-buttons a {
+  padding: 10px 20px;
+  font-size: 17px;
+  color: #002855;
+  border: 1px solid;
+  text-decoration: none;
+}
+
+body.page-restaurant .app-section {
+  background: #002855;
+}
+
+body.page-restaurant .reviews-section .rich-text.content-container {
+  background: #002855;
+}
+
+body.page-restaurant .reviews-section .rich-text__blocks.left h2 {
+  color: #fff;
+}
+
+body.page-restaurant .reviews-section .rich-text__blocks.left p {
+  color: #fff;
+}
+
+body.page-restaurant #wrapper_wedding .custom-slideshow-section {
+  background: #ffa791;
+}
+
+body.page-restaurant .wrap_wedding p {
+  color: #002855;
+}
+
+.wrap_wedding .secondary-buttons a:first-child {
+  background: transparent !important;
+  border-color: #002855 !important;
+  color: #002855 !important;
+  text-decoration: none;
+  border: 1px solid #002855;
+  padding: 10px 20px;
+}
+
+.wrap_wedding .secondary-buttons a {
+  background: transparent !important;
+  border-color: #002855 !important;
+  color: #002855 !important;
+  text-decoration: none !important;
+  border: 1px solid #002855 !important;
+  padding: 10px 20px !important;
+}
+
+.wrap_wedding p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 25px;
+  font-family: Literata-light;
+  font-weight: 400 !important;
+}
+
+.wrap_wedding .text-col .text {
+  padding-right: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.wrapper_restaurant .secondary-buttons a {
+  border: 1px solid #002855 !important;
+  color: #002855 !important;
+  text-decoration: none !important;
+}
+
+body.page-restaurant .wrap_mission .slideshow-wrapper {
+  position: absolute;
+  top: 0;
+  left: auto;
+  width: 50%;
+  height: 100%;
+  right: 0px;
+}
+
+body.page-restaurant .wrap_wedding .slideshow-wrapper {
+  position: absolute;
+  top: 0;
+  left: auto;
+  width: 50%;
+  height: 100%;
+  left: 0;
+}
+
+body.page-restaurant .wrap_wedding .slick-slider.slick-initialized.slick-dotted,
+body.page-restaurant .wrap_wedding .slick-list,
+body.page-restaurant .wrap_wedding .slick-track {
+  height: 100%;
+}
+
+body.page-restaurant .wrap_wedding .slick-slider img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.wraps_restrurent_menus .custom-slideshow-section {
+  background: #002855;
+}
+
+.wraps_restrurent_menus .tab-links li {
+  padding: 12px 32px;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 30px;
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 18px;
+  font-family: 'Raleway';
+  text-transform: capitalize;
+}
+
+h1.banner__heading.inline-richtext {
+  text-transform: uppercase;
+}
+
+.wraps_restrurent_menus .tab-links li.active {
+  background: #fff;
+  color: #002855;
+  border: 1px solid #fff;
+}
+
+.wraps_restrurent_menus .tab-links {
+  margin-bottom: 75px;
+}
+
+.wraps_restrurent_menus .headingwrapper-title h3 {
+  color: #fff;
+  font-size: 24px;
+  border-bottom: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  text-transform: uppercase;
+}
+
+.wraps_restrurent_menus .wrap_right .accordion-header {
+  padding: 15px;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-bottom: 0px;
+  font-size: 18px;
+  color: #fff;
+  padding-left: 7px;
+  text-transform: uppercase;
+  font-family: 'Raleway';
+}
+p.font-size-28 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.wraps_restrurent_menus .accordion-header span.arrow_down svg {
+  fill: #fff;
+}
+
+.wraps_restrurent_menus .wrap_right .accordion-content {
+  background: transparent;
+}
+
+.wraps_restrurent_menus .menu p.name {
+  font-size: 18px;
+  margin: 0px !important;
+  color: #fff;
+}
+
+.wraps_restrurent_menus p.price_quantity {
+  color: #fff;
+  font-size: 18px;
+  margin: 0px;
+}
+
+.wraps_restrurent_menus a.wraps_reservation {
+  background: #002855;
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Raleway';
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 30px;
+  border: 1px solid;
+}
+
+.wraps_restrurent_menus a.wraps_link-voucher {
+  background: transparent;
+  color: #fff;
+  font-size: 18px;
+  font-family: Literata-light;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 30px;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.wraps_restrurent_menus .wraps_link_buttns {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+body.gradient.page-restaurant.page
+  div#wrapper_reservation_menu
+  .icon-wrapper
+  .icon-col {
+  font-size: 14px;
+}
+
+body.gradient.page-restaurant.page
+  div#wrapper_reservation_menu
+  .icon-wrapper
+  .icon-col
+  svg {
+  width: 20px;
+  position: relative;
+  top: 3px;
+}
+
+body.page-restaurant .wrap_mission .text-col h2 {
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 40px;
+}
+
+body.page-restaurant .wrap_mission a.button.button--primary {
+  background: transparent;
+  color: #fff;
+  padding: 0px;
+  border-bottom: 1px solid #fff;
+  border-radius: 0px;
+}
+
+.wrapper_menu_serflex {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.wrapper_menu_serflex .wraps_menussets {
+  width: 31%;
+}
+
+.wrapper_menu_serflex .wraps_menussets img {
+  width: 100%;
+}
+
+.wraps_menussets .accordion-content {
+  display: none;
+  padding: 10px;
+}
+
+.wraps_menussets .accordion-item:first-child .accordion-content {
+  display: block !important;
+  padding: 10px;
+}
+
+.wrapper_menu_serflex .wraps_menussets .accordion-header {
+  padding: 15px;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-bottom: 0px;
+  font-size: 18px;
+  color: #fff;
+  padding-left: 7px;
+}
+
+.wraps_heading_according h3 {
+  color: #fff;
+  margin: 0px;
+  font-size: 20px;
+}
+
+p.wraps_entree_main {
+  font-size: 18px;
+  margin: 0px;
+  padding-top: 8px;
+  color: #fff;
+}
+
+p.wraps_shared_bread {
+  color: #fff;
+  font-size: 14px;
+  padding-bottom: 12px;
+  font-family: 'Raleway';
+}
+
+.wrapper_menu_serflex .wraps_menussets .accordion-header {
+  font-family: 'Raleway';
+}
+
+.wrapper_setmenu_etc p {
+  color: #fff;
+  font-size: 14px;
+  width: 70%;
+  line-height: 1.8em;
+}
+
+p.icon_textwtx svg path {
+  fill: #fff;
+}
+
+p.icon_textwtx svg {
+  position: relative;
+  top: 6px;
+  margin-right: 8px;
+}
+
+.wraps_restrurent_menus a.wraps_link-voucher svg path {
+  fill: #fff;
+}
+
+body.page-restaurant .slideshow__slide .slideshow__text h2.banner__heading {
+  text-transform: uppercase;
+}
+
+body.index .article-tag.News {
+  border: 0px;
+  padding: 0px !important;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 767px) {
+  div#restaurant-tabs {
+    padding-bottom: 15px !important;
+  }
+
+  div#wrapper_restrurants .secondary-buttons {
+    display: block !important;
+    gap: 20px;
+  }
+  body.page-restaurant .wrap_mission .slideshow-wrapper {
+    position: relative !important;
+    top: 0;
+    left: auto;
+    width: 100%;
+    height: 100%;
+    right: 0px;
+  }
+
+  .wrapper_menu_serflex .wraps_menussets {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .wrapper_setmenu_etc p {
+    width: 100%;
+  }
+
+  .wraps_restrurent_menus .wraps_link_buttns {
+    display: block;
+  }
+
+  .wraps_restrurent_menus a.wraps_reservation {
+    margin-bottom: 20px;
+  }
+
+  .wraps_restrurent_menus a.wraps_link-voucher,
+  .wraps_restrurent_menus a.wraps_reservation {
+    justify-content: flex-start !important;
+  }
+
+  .wraps_icons_textstesting_options {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  div#wrap_farmhouse .wrap_buttons {
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  div#wrap_farmhouse .wrap_buttons a.button.button--primary {
+    height: fit-content;
+  }
+
+  .image-with-text .grid__item a.button.button--primary:first-child {
+    background-color: transparent;
+    color: #002855;
+    margin-bottom: 20px;
+  }
+
+  div#restaurant-tabs .LeftSide {
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  div#restaurant-tabs ul.tab-links {
+    padding-left: 22px;
+  }
+
+  div#wrap_opening_hours .text-col {
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  div#wrap_farmhouse img {
+    width: 100%;
+    position: relative;
+  }
+
+  div#wrap_farmhouse .image-with-text__content {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  div#wrap_opening_hours .custom-slideshow-section .row .col {
+    width: 100%;
+  }
+
+  div#wrap_opening_hours .custom-slideshow-section .row .col.text-col-wrapper {
+    width: 100%;
+  }
+
+  div#our-history .image-with-text__content {
+    padding-left: 0;
+    padding-right: 0rem;
+    padding-bottom: 0px;
+  }
+
+  div#vineyardss .image-with-text__content {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  div#sustainability .slideshow-wrapper {
+    width: 100%;
+  }
+
+  .mission-box {
+    display: block !important;
+  }
+  .left-side {
+    width: 100% !important;
+  }
+  .right-side {
+    width: 100% !important;
+  }
+
+  h2.main-heading {
+    font-size: 30px !important;
+    color: #002855;
+  }
+
+  section.sustainability-mission {
+    padding: 4rem 2rem 7rem;
+    background-color: #77c19a;
+  }
+
+  img.main-image {
+    height: initial !important;
+  }
+}
+
+.collection .card__inner {
+  background: transparent !important;
+}
+@media only screen and (min-width: 280px) and (max-width: 380px) {
+  .custonmainatbs .tabs-buttons a {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .reviews-section {
+    padding-bottom: 1px;
+    background: #002855;
+  }
+  .wrapper_menu_serflex .wraps_menussets {
+    width: 100%;
+  }
+
+  div#about-us .container {
+    padding: 0px 8rem;
+  }
+
+  div#wrap_library .container {
+    padding: 0px 8rem;
+  }
+
+  div#vineyardss .image-with-text__content {
+    padding-left: 0px;
+    padding-right: 20px;
+  }
+
+  div#sustainability .slideshow-wrapper {
+    width: 100%;
+  }
+
+  div#about-us a.button--primary {
+    width: 41%;
+    margin-left: 0%;
+    border: 1px solid;
+  }
+
+  div#wrap_library a.button--primary {
+    width: 41%;
+    margin-left: 0%;
+    border: 1px solid;
+  }
+
+  div#our-history .image-with-text__content {
+    padding-left: 0;
+    padding-right: 0rem;
+  }
+
+  div#restaurant-tabs {
+    padding-right: 2rem !important;
+    padding-left: 2rem !important;
+  }
+
+  div#accomodation-section .slideshow-wrapper {
+    width: 100%;
+  }
+
+  div#cellar-door a.button.button--primary {
+    width: auto;
+    margin-left: 0%;
+  }
+
+  body.page-restaurant .wrap_mission .text-col h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 35px;
+  }
+
+  div#wrap_farmhouse .image-with-text__media-item {
+    width: 100% !important;
+  }
+
+  div#wrap_farmhouse img {
+    width: 100%;
+    position: relative;
+  }
+
+  div#wrap_farmhouse .image-with-text__text-item {
+    width: 100% !important;
+  }
+
+  div#wrap_opening_hours .custom-slideshow-section .row .col {
+    width: 100%;
+  }
+
+  div#wrap_opening_hours .custom-slideshow-section .row .col.text-col-wrapper {
+    width: 100%;
+  }
+
+  div#wrap_opening_hours .text-col {
+    width: 85%;
+  }
+
+  div#wrap_upcoming_events .text-col-buttons {
+    width: 100%;
+  }
+}
+h1.banner__heading.inline-richtext.hxxl {
+  font-size: 78.5px;
+  font-weight: 600;
+}
+.multicolumn-card__info h3.inline-richtext {
+  font-size: 24px;
+  font-weight: 600;
+}
+.multicolumn-card__info .rte p {
+  font-size: 18px;
+}
+.multicolumn-card__info a.button.no-button-border {
+  font-family: 'Raleway';
+  font-weight: 600;
+  font-size: 18px;
+}
+.multicolumn-card__info a.button.button--primary {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Raleway';
+}
+.rich-text__buttons a.button.no-button-border.button--primary {
+  font-size: 19px;
+  font-weight: 600;
+  font-family: 'Raleway';
+}
+
+div#wrap_library .text {
+  font-size: 18px;
+}
+p.article-description.ptb-26.font-size-24.line-height-120 {
+  font-size: 16px;
+}
+
+/*************************************** 6 june css *************************************/
+
+.contact_flex_left {
+  width: 50%;
+}
+
+.wrp_flex-right {
+  width: 45%;
+}
+
+.flex_icon_texts {
+  display: flex;
+  gap: 15px;
+}
+
+.wraps_box_contact {
+  background: #ecebe8;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.wraps_box_contact p span.wrap_callus svg path {
+  stroke: #002855;
+  fill: transparent;
+}
+
+.icon_wraps_textcontct span.icon_wraps svg {
+  position: relative;
+  top: 4px;
+  width: 18px;
+  margin-right: 4px;
+}
+
+.opening_wraps_hours span.icon_wraps svg {
+  position: relative;
+  top: 4px;
+  width: 18px;
+  margin-right: 4px;
+}
+
+span.wrap_icon_closed svg {
+  position: relative;
+  top: 4px;
+  width: 18px;
+  margin-right: 4px;
+}
+
+p.wrap_call_contact svg {
+  position: relative;
+  top: 7px;
+  width: 20px;
+  margin-right: 4px;
+}
+
+a.button_contact_wraps_primary {
+  border: 1px solid #002855;
+  color: #002855;
+  text-decoration: none;
+  border-radius: 30px;
+  padding: 5px 25px 6px;
+  font-family: 'Raleway';
+  font-size: 14px;
+}
+
+.wraps_buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+a.button_contact_wraps_learn_more {
+  border-bottom: 1px solid #002855;
+  color: #002855;
+  text-decoration: none;
+  border-radius: 0px;
+  padding: 0px;
+  margin-left: 15px;
+  font-family: 'Raleway';
+  font-size: 14px;
+}
+
+.wraps_box_contact p {
+  font-size: 18px;
+  color: #002855;
+}
+
+.wraps_box_contact p svg path {
+  fill: #002855;
+}
+
+.wraps_box_contact h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0px;
+  color: #002855;
+  text-transform: uppercase;
+}
+
+.wraps_box_contact p {
+  font-size: 18px;
+  color: #002855;
+  margin: 0px;
+  padding-bottom: 13px;
+}
+
+.wraps_box_contact h5 {
+  font-size: 18px;
+  color: #002855;
+  margin: 0px;
+  font-weight: 600;
+  padding: 10px 0px 15px;
+}
+
+.wraps_flex_contact_colums {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.wraps_column-inner {
+  width: 30%;
+  background: #ececec;
+  border: 10px;
+  padding: 30px;
+}
+
+.wraps_column-inner h3 {
+  color: #002855;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0px;
+  text-transform: uppercase;
+}
+
+.wraps_column-inner p {
+  color: #002855;
+  font-size: 18px;
+}
+
+.wraps_column-inner button.wrap_contact_link {
+  background: transparent;
+  color: #002855;
+  border: 1px solid #002855;
+  padding: 8px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-family: 'Raleway';
+  font-size: 14px;
+}
+
+.wraps_column-inner p.contacts_column_icon svg path {
+  fill: transparent;
+  stroke: #002855;
+}
+
+.wraps_column-inner p.contacts_column_icon svg {
+  position: relative;
+  top: 6.3px;
+  margin-right: 5px;
+}
+
+.wraps_column-inner p.contacts_column_icon {
+  padding-bottom: 5px;
+}
+
+.wraps_flex_contact_location {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.wraps_flex_contact_location .location_map {
+  width: 48%;
+}
+
+.wraps_flex_contact_location .wraps_location-inner {
+  width: 45%;
+}
+
+.map iframe {
+  width: 100%;
+}
+
+.location_wraps_content {
+  padding: 60px 0px;
+}
+
+.wraps_location-inner h3 {
+  color: #002855;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0px;
+  text-transform: uppercase;
+}
+
+.wraps_locations-conts p {
+  color: #002855;
+  font-size: 18px;
+  line-height: 1.8em;
+}
+
+.wraps_locations-conts p {
+  color: #002855;
+  font-size: 18px;
+  line-height: 1.8em;
+}
+
+.wraps_location-inner button.wrap_contact_link {
+  background: transparent;
+  color: #002855;
+  border: 1px solid #002855;
+  padding: 8px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-family: 'Raleway';
+  font-size: 14px;
+}
+
+.contact_flex_left h2 {
+  font-size: 38px;
+  font-weight: 600;
+  color: #002855;
+}
+
+.contact_flex_left .description p {
+  font-size: 18px;
+  line-height: 1.6em;
+  padding-bottom: 20px;
+  color: #002855;
+}
+
+.field.request-type label {
+  display: none;
+  border: 0px;
+}
+
+.field.request-type {
+  border: 0px;
+}
+
+.field.request-type:before {
+  display: none;
+}
+
+.field.request-type:after {
+  display: none;
+}
+
+.field.request-type select {
+  padding: 1.5rem;
+  width: 100%;
+  background: transparent;
+  border: 1px solid #002855;
+  border-radius: 4px;
+  font-size: 18px;
+  font-family: Literata-light;
+  color: #002855;
+}
+
+.field:after {
+  border: 1px solid #002855;
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+.field input {
+  width: 100%;
+  background: transparent;
+  font-size: 18px;
+  font-family: Literata-light;
+  color: #002855;
+  border: 0px;
+}
+
+.field label {
+  display: none;
+}
+.field input::placeholder {
+  font-size: 18px;
+  font-family: Literata-light;
+  color: #002855;
+  opacity: 1 !important;
+  z-index: 9 !important;
+}
+
+input#last-name {
+  padding: 20px;
+}
+
+.contact__button button.button {
+  background: transparent;
+  border: 1px solid #002855;
+  color: #002855;
+  font-family: 'Raleway';
+  font-size: 14px;
+}
+
+.field__input:focus {
+  padding: 20px;
+}
+
+.wraps_icons_text_tabs span svg path {
+  fill: #002855;
+}
+
+.wraps_icons_text_tabs p svg {
+  position: relative;
+  top: 7px;
+  width: 20px;
+}
+
+.wraps_icons_text_tabs {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.wraps_icons_text_tabs p {
+  margin: 0px;
+}
+
+.wrap_tabs_title_heading h2 {
+  padding-left: 8.6rem;
+  margin: 0px;
+  padding-top: 20px;
+  position: relative;
+  top: 25px;
+  color: #002855;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: 'Raleway';
+}
+
+body.gradient.page-celebrations-functions.page .MainDescreiption {
+  margin-top: 0px !important;
+}
+
+body.gradient.page-celebrations-functions.page .MainDescreiption p:first-child {
+  margin-top: 0px !important;
+}
+
+form#blogSortForm label {
+  display: block;
+  font-size: 24px;
+  font-weight: 600;
+  color: #002855;
+  font-family: 'Raleway';
+  text-transform: uppercase;
+}
+
+select#sort_by {
+  display: block;
+  width: 99%;
+  padding: 10px 12px;
+  margin-top: 10px;
+  border-radius: 10px;
+  color: #002855;
+  border-color: transparent;
+  font-size: 18px;
+  font-family: 'Raleway';
+  cursor: pointer;
+}
+
+select#sort_by:focus-visible {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+ul.tab-links a {
+  font-family: 'Literata-light';
+}
+
+.MainHeading {
+  font-family: 'Raleway';
+  font-weight: 600;
+}
+
+.MainDescreiption {
+  font-family: 'Literata-light';
+}
+.image-with-text__heading {
+  font-weight: 600;
+}
+
+#our-people-rich-text h2.rich-text__heading {
+  font-weight: 600;
+  color: #002855 !important;
+}
+
+.wraps_restrurent_menus h2.heading {
+  font-weight: 600;
+}
+
+div#wrapper_restrurants h4 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #002855;
+  margin: 0px;
+  font-family: 'Raleway';
+}
+
+div#wrapper_reservation_menu h4 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #002855;
+  margin: 0px;
+  font-family: 'Raleway';
+  text-transform: uppercase;
+}
+
+#wrap_farmhouse h2.image-with-text__heading {
+  font-weight: 600 !important;
+  font-family: 'Raleway';
+}
+
+div#wrap_farmhouse .image-with-text__text p {
+  color: #002855 !important;
+}
+
+.tasting_menu p {
+  color: #fff;
+  font-size: 18px;
+  margin: 0px;
+  padding-bottom: 7px;
+}
+
+.tasting_menu {
+  padding-bottom: 18px;
+}
+
+.tasting_menu h4 {
+  margin: 0px;
+  color: #fff;
+  font-size: 25px;
+  padding-bottom: 15px;
+}
+
+.note_wraps p {
+  color: #fff;
+  margin: 0px;
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+
+.wrap_avialbility p {
+  color: #fff;
+  font-size: 18px;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 767px) {
+  .wraps_flex_contact_location .location_map {
+    width: 100%;
+  }
+
+  body.page-contact .flex_icon_texts {
+    display: block;
+    gap: 15px;
+  }
+
+  span.mobile-facets__open-label.button-label.medium-hide.large-up-hide {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  span#ProductCount {
+    color: #002855;
+    font-weight: 600 !important;
+  }
+
+  h1.banner__heading.inline-richtext.hxxl {
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  body .banner__box {
+    padding: 23rem 1.5rem 4rem !important;
+  }
+
+  .wraps_flex_contact_location .wraps_location-inner {
+    width: 100%;
+  }
+
+  .contact_flex_left {
+    width: 100%;
+  }
+
+  .wrp_flex-right {
+    width: 100%;
+  }
+
+  .wraps_column-inner {
+    width: 100%;
+  }
+
+  .wrap_tabs_title_heading h2 {
+    padding-left: 3.3rem;
+  }
+
+  body.gradient.products.collection .custom-slideshow-section h2.heading {
+    font-size: 24px;
+  }
+
+  body.product .wrapper_addtiwrapscrt button.product-form__submit {
+    font-size: 18px;
+    width: 155px !important;
+    margin-left: 0px !important;
+  }
+
+  body.product .wrapper_addtiwrapscrt {
+    width: 170px;
+  }
+
+  body.product .BoxDesc {
+    background: transparent;
+    padding: 20px 0px;
+    border-radius: 10px;
+    margin-top: 0px;
+  }
+  .wraps_buttons {
+    display: block;
+  }
+
+  .wraps_buttons a {
+    display: block;
+    width: fit-content;
+    margin-bottom: 20px;
+  }
+  .wraps_location-inner {
+    padding-top: 50px;
+  }
+}
+
+.wraps_texts_menus_restrurents h3 {
+  color: #fff;
+}
+
+.wraps_texts_menus_restrurents p {
+  color: #fff;
+}
+div#vineyardss a.button.button--primary {
+  color: #fff;
+}
+
+.newsletter-form__field-wrapper input::placeholder {
+  color: #f8e08ebf;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  div#wrap_farmhouse .image-with-text__content {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .page-weddings div#wraps_wedding_package .custom-slideshow-section {
+    padding-top: 46px !important;
+  }
+  .page-weddings div#wraps_wedding_package .custom-slideshow-section .text-col {
+    padding-bottom: 30px !important;
+  }
+  .wrap_tabs_title_heading h2 {
+    padding-left: 5.4rem;
+  }
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1100px) {
+  button.quick-add__submit.button.button--full-width.button--secondary {
+    width: 75% !important;
+    min-width: 75% !important;
+  }
+
+  .related-products button.quick-add__submit {
+    padding: 0 15px;
+  }
+}
+
+/******************************************* wedding page css *******************************/
+div#wedding_elopments {
+  background: #fff;
+}
+
+div#wraps_wedding_package .text-col {
+  width: 435px;
+  margin: 0px auto;
+}
+
+div#versatile_venue .text-col {
+  width: 435px;
+  margin: 0px auto;
+}
+
+div#versatile_venue .custom-slideshow-section .row.col-reverse {
+  align-items: center;
+}
+
+div#wedding_elopments h2.image-with-text__heading {
+  color: #002855;
+}
+
+div#wedding_elopments h2.image-with-text__heading {
+  color: #002855;
+  font-weight: 600 !important;
+  text-transform: uppercase;
+  font-size: 38px;
+}
+
+div#wedding_elopments .image-with-text__text p {
+  color: #002855;
+}
+
+div#wraps_wedding_package p {
+  color: #002855;
+}
+
+div#wraps_wedding_package h2 {
+  text-transform: uppercase;
+  line-height: 1.3em;
+  font-size: 38px;
+  padding-bottom: 0px;
+}
+
+div#versatile_venue p {
+  color: #002855;
+}
+
+div#versatile_venue h2 {
+  text-transform: uppercase;
+  line-height: 1.3em;
+  padding-top: 50px;
+  padding-bottom: 5px;
+  font-size: 38px;
+}
+
+div#wrap_seasonal_menu {
+  background: #fff;
+}
+
+div#wrap_seasonal_menu .image-with-text__text p {
+  color: #002855;
+}
+
+div#wrap_seasonal_menu h2.image-with-text__heading {
+  color: #002855;
+  font-weight: 600 !important;
+  text-transform: uppercase;
+}
+
+div#wrap_start_planing {
+  background: #d9d9d6;
+}
+
+div#wrap_start_planing h2.image-with-text__heading {
+  color: #002855;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 38px;
+}
+
+div#wrap_start_planing .image-with-text__text p {
+  color: #002855;
+}
+
+div#wrap_seasonal_menu .image-with-text__media.image-with-text__media--adapt {
+  padding-bottom: 0px !important;
+  border: 0px;
+}
+
+div#wrap_seasonal_menu
+  .image-with-text__media.image-with-text__media--adapt
+  img {
+  position: relative;
+  width: 65%;
+  border: 0px;
+}
+
+.page-functions-special-events
+  div#wrap_seasonal_menu
+  .image-with-text__media.image-with-text__media--adapt
+  img {
+  position: relative;
+  width: 100%;
+  border: 0px;
+  padding-right: 65px;
+}
+
+.page-functions-special-events
+  div#wrap_seasonal_menu
+  .image-with-text__content {
+  padding-top: 0px;
+}
+
+#wedding_elopments .image-with-text__content {
+  padding-left: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+div#wrap_seasonal_menu .image-with-text__content {
+  padding-left: 0px;
+}
+
+div#missionwrap-section .heading,
+div#missionwrap-section .text {
+  color: #fff;
+}
+
+.custonmainatbs {
+  padding-bottom: 30px;
+}
+
+body.gradient.page-cellardoor.page .ImageTab img:first-child {
+  height: 447px;
+}
+
+body.page-sustainability .ImageTab img:first-child {
+  height: 430px;
+}
+/*********************************************** video with text section **************************************************/
+
+.wrap_flex_video {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.wrap_video_text {
+  width: 42%;
+}
+
+.wrap_video-right {
+  width: 56%;
+}
+
+div#wrap_mission_video {
+  background: #d9d9d6;
+}
+
+.wrap_video_text .description_etc {
+  padding-right: 50px;
+}
+
+.wrap_flex_video h2 {
+  color: #002855;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 38px;
+  margin-bottom: 7px;
+}
+
+.wrap_video_text .title-wrapper {
+  margin-bottom: 0px;
+}
+.wrap_flex_video .description_etc p {
+  color: #002855;
+  margin-top: 0px;
+}
+
+div#wrap_seasonal_menu .image-with-text__text.rte.body {
+  margin-top: 0px;
+}
+
+div#wrap_start_planing .image-with-text__text.rte.body {
+  margin-top: 0px;
+}
+
+.wrap_flex_video a.button.button--primary {
+  background: transparent;
+  color: #002855;
+  border: 1px solid #002855;
+}
+
+#wrapper_restrurants .second-icon-wrapper .icon-col svg {
+  width: 16px;
+  position: relative;
+  top: 4px;
+}
+
+#wrapper_restrurants .second-icon-wrapper .icon-col:last-child svg {
+  top: 3px;
+}
+
+div#wrapper_restrurants .icon-wrapper:last-child {
+  position: relative;
+  top: -6px;
+}
+
+div#wrapper_restrurants .icon-wrapper:last-child svg {
+  position: relative;
+  top: 7px;
+}
+
+div#wrapper_reservation_menu h4 {
+  padding-bottom: 20px;
+  padding-top: 6px;
+}
+
+.icon-wrapper {
+  flex-wrap: wrap;
+}
+
+body.gradient.page-restaurant.page
+  div#wrapper_reservation_menu
+  .second-icon-wrapper
+  .icon-col:first-child {
+  margin-right: 10px;
+}
+
+body.gradient.page-restaurant.page .icon-wrapper .icon-col:last-child {
+  margin-left: 0px;
+}
+
+body.gradient.page-restaurant.page div#wrapper_reservation_menu .icon-col {
+  padding-bottom: 7.8px;
+}
+
+body.gradient.page-restaurant.page
+  div#wrapper_reservation_menu
+  .icon-wrapper
+  svg {
+  width: 20px;
+}
+
+body.gradient.page-restaurant.page div#wrapper_reservation_menu .icon-col svg {
+  width: 18px !important;
+  top: 4px !important;
+}
+
+body.gradient.page-restaurant.page div#wrapper_reservation_menu .icon-wrapper {
+  margin-bottom: 5px;
+}
+
+body.gradient.page-restaurant.page
+  div#wrapper_reservation_menu
+  .icon-col:last-child {
+  padding-bottom: 8px;
+}
+
+/* .wrap_imgs .second_image img {
+    width: 60%;
+    float: right;
+} */
+
+div#wrapper_restrurants .col.text-col-wrapper .text-col .text p:first-child {
+  margin-top: 0px;
+}
+
+div#wrapper_restrurants .col.text-col-wrapper .text-col .text {
+  padding-bottom: 20px;
+}
+
+div#wrapper_reservation_menu .col.text-col-wrapper .text-col .text {
+  padding-bottom: 20px;
+}
+
+div#wrapper_wedding h2 {
+  padding-bottom: 10px;
+}
+
+div#wrapper_wedding .text-col p {
+  margin-bottom: 5px;
+  margin-top: 8px;
+}
+
+div#sustainability .text {
+  font-size: 18px !important;
+  line-height: 1.4em;
+}
+
+div#about-us .text {
+  font-size: 18px !important;
+  line-height: 1.4em;
+}
+
+body.page-accomodation .wraps_slider-section .text {
+  font-size: 18px !important;
+}
+
+body.gradient.page-sustainability.page .MainDescreiption {
+  margin-top: 0px !important;
+}
+
+body.page-sustainability .ImageTab img:first-child {
+  height: initial;
+}
+
+body.page-sustainability .Commantab_C.RightSide {
+  padding-top: 50px;
+}
+
+.sustainability-mission h2.main-heading {
+  text-align: center;
+}
+
+.wrap_link {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 60px;
+}
+
+.wrap_link a {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 60px;
+}
+
+.wrap_link a {
+  color: #002855;
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1.5px solid;
+  font-size: 18px;
+}
+
+div#Certifiably-sustainable h2.rich-text__heading {
+  text-align: center;
+  color: #77c19a;
+}
+
+div#Certifiably-sustainable .rich-text__wrapper {
+  display: block;
+}
+
+div#Certifiably-sustainable .rich-text__blocks.left {
+  width: 100%;
+  max-width: 100%;
+}
+
+div#Certifiably-sustainable .rich-text__blocks.left p {
+  text-align: center;
+  width: 70%;
+  margin: 0px auto;
+  color: #77c19a;
+}
+
+div#certifiably-sustainable .multicolumn-card__info h3 {
+  color: #77c19a;
+  padding-right: 20px;
+}
+
+div#certifiably-sustainable .multicolumn-buttons a {
+  color: #77c19a;
+  border-color: #77c19a;
+}
+
+div#wrap_galia_section .text-col {
+  margin: auto 0px 0px auto;
+  width: 500px;
+  padding-right: 30px;
+}
+
+div#wrap_galia_section .text-col .text {
+  padding-right: 0px;
+}
+
+div#wrap_galia_section .custom-slideshow-section {
+  padding: 100px 0px;
+}
+
+.page-sustainability div#wrap_galia_section .custom-slideshow-section {
+  padding: 0px 0px;
+}
+
+div#wrap_galia_section .col.text-col-wrapper {
+  width: 40%;
+}
+
+div#wrap_galia_section .col {
+  width: 57%;
+}
+
+div#wrap_galia_section .slideshow-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 57%;
+  height: 100%;
+}
+
+/* div#wrap_galia_section ul.slick-dots{
+  display: none;
+} */
+
+div#wrap_galia_section .slideshow-wrapper .slick-slider {
+  height: 100%;
+}
+div#wrap_galia_section .slideshow-wrapper img {
+  height: 100%;
+  object-fit: cover;
+}
+
+div#wrap_galia_section .slick-list.draggable {
+  height: 100%;
+}
+
+div#wrap_galia_section .slick-track {
+  height: 100%;
+}
+
+div#future_sustainbility {
+  background: #77c19a;
+  padding: 80px 0px;
+}
+
+div#future_sustainbility .wrap_reserviction h2 {
+  padding: 0px;
+  color: #002855;
+  font-size: 38px;
+  font-weight: 600;
+  font-style: normal;
+  background-color: transparent;
+  font-family: 'Raleway';
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.wraps_pdf {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.inner_pdf_texts {
+  width: 48%;
+}
+
+.inner_pdf_texts a {
+  color: #002855;
+  font-size: 15px;
+  font-family: Literata-light;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.wraps_text-texts h4 {
+  color: #002855;
+  font-weight: 600;
+  padding-top: 40px;
+  padding-bottom: 1px;
+  font-size: 20px;
+}
+
+.sustainability-mission h2.main-heading {
+  font-family: 'Literata-light';
+}
+@media screen and (min-width: 1100px) {
+  body.page-sustainability div#restaurant-tabs {
+    max-width: 140rem;
+    padding: 0 8rem;
+    margin: 0px auto;
+  }
+  .sustainability-mission h2.main-heading {
+    text-align: center;
+    font-size: 35px;
+    width: 78%;
+    margin: 0px auto;
+    padding-bottom: 20px;
+  }
+}
+
+form#FacetFiltersForm .facets__header-vertical {
+  display: none;
+}
+
+.product-grid-container .collection--empty {
+  padding-left: 0px;
+  position: relative;
+  left: -100px;
+}
+
+.page-history .wraps_flex-etc {
+  align-items: flex-start;
+}
+
+div#home_history_wraps .slideshow-wrapper {
+  right: auto;
+  width: 57%;
+  height: 100%;
+  left: 0px;
+}
+
+div#home_honouring_wraps .slideshow-wrapper {
+  right: auto;
+  width: 57%;
+  height: 100%;
+  left: 0px;
+}
+
+body.page-history .wrap_reserviction .wraps_text-texts h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  padding: 0px;
+  background: transparent;
+}
+
+.main-wrap_imgs img {
+  width: 100%;
+}
+
+section#wrap_liquid_licences {
+  background: transparent;
+}
+
+.main-wrap_imgs {
+  width: 70%;
+  margin: 0px auto;
+}
+
+body.page-accomodation .rich-text__wrapper .text_7WBfUV-text.rich-text__text {
+  margin-top: 0px;
+}
+@media screen and (min-width: 1700px) {
+  body.page-accomodation .wraps_slider-section .text {
+    padding-right: 60px;
+  }
+}
+
+body.page-restaurant div#wrapper_restrurants h4 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+div#wrapper_reservation_menu h2 {
+  padding-bottom: 40px;
+}
+
+div#wrapper_reservation_menu .text p:first-child {
+  margin-top: 0px !important;
+}
+
+div#wrapper_wedding h2 {
+  padding-bottom: 30px;
+}
+
+div#wrapper_wedding .text p:first-child {
+  margin-top: 0px !important;
+}
+
+div#our-people-rich-text .rich-text.content-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #ecebe8;
+}
+
+.featured_collection li {
+  margin-top: 0px !important;
+}
+
+.featured_collection ul {
+  margin-top: 0px !important;
+}
+
+.featured_collection .collection {
+  padding-top: 0px;
+}
+h2.related-products__heading.inline-richtext.h2 {
+  display: none;
+}
+
+product-recommendations.related-products {
+  padding-top: 0px;
+}
+
+ul.tab-links a {
+  font-family: 'Raleway';
+}
+
+#food_pairing .main-heading {
+  font-weight: 600;
+  font-size: 38px;
+  padding-bottom: 30px;
+}
+
+section#Sustainability-Mission h2 {
+  color: #002855;
+  font-weight: 600;
+  margin-top: 0px;
+  padding-top: 30px;
+}
+
+section#Sustainability-Mission h2.box-heading {
+  padding-top: 0px;
+}
+@media screen and (min-width: 1000px) {
+  /* .Commantab_C.LeftSide {
+    padding-top: 130px !important;
+    padding-bottom: 130px !important;
+} */
+
+  body.product .Commantab_C.LeftSide {
+    padding-top: 0px !important;
+  }
+
+  .CustomProducts_tab ul.tab-links {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    /* padding-top: 130px;
+    padding-bottom: 130px; */
+  }
+
+  body.product .CustomProducts_tab ul.tab-links {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    padding-top: 0px;
+    padding-bottom: 10px;
+  }
+
+  .CustomProducts_tab ul.tab-links li {
+    margin-top: 15px;
+  }
+
+  .col.text-col-wrapper {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+
+  .custom-slideshow-section .row {
+    align-items: initial;
+    position: relative;
+  }
+
+  div#cellar-door .slideshow-wrapper {
+    position: absolute;
+    left: 0px;
+    height: 100%;
+    width: 50%;
+  }
+
+  div#cellar-door .col .slick-slider {
+    height: 100%;
+  }
+
+  div#cellar-door .slick-list {
+    height: 100%;
+  }
+
+  div#cellar-door .slick-track {
+    height: 100%;
+  }
+
+  div#accomodation-section .custom-slideshow-section {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  div#accomodation-section .page-width {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0px;
+  }
+
+  div#accomodation-section .custom-slideshow-section .row .col {
+    width: 50%;
+  }
+
+  div#accomodation-section .custom-slideshow-section .col.text-col-wrapper {
+    width: 50%;
+    width: 450px;
+  }
+
+  div#celebration-functions .image-with-text__grid {
+    align-items: center;
+  }
+
+  div#celebration-functions .image-with-text__content {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+  div#missionwrap-section .custom-slideshow-section {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  div#missionwrap-section .page-width {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0px;
+  }
+
+  div#missionwrap-section .custom-slideshow-section .col.text-col-wrapper {
+    width: 350px;
+    padding-right: 0px;
+  }
+
+  div#wrapper_restrurants .custom-slideshow-section {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  div#wrapper_restrurants .page-width {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0px;
+  }
+
+  div#wrapper_restrurants .custom-slideshow-section .col.text-col-wrapper {
+    width: 420px;
+    padding-right: 0px;
+    margin: 0px auto;
+  }
+
+  div#wrapper_reservation_menu .custom-slideshow-section {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  div#wrapper_reservation_menu .custom-slideshow-section .row.col-reverse {
+    align-items: center;
+  }
+
+  div#wrapper_wedding .custom-slideshow-section {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  div#wrapper_wedding .custom-slideshow-section .row {
+    align-items: center;
+    position: relative;
+  }
+
+  .wrap_mission .custom-slideshow-section {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .custonmainatbs {
+    padding: 0px;
+  }
+
+  .page-cellardoor .CustomProducts_tab {
+    background: #ffa791;
+  }
+
+  div#restaurant-tabs .tabs-buttons {
+    padding-bottom: 0px;
+  }
+
+  div#wrap_farmhouse .image-with-text__content {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    width: 650px;
+    padding-right: 0px;
+  }
+
+  p.wraps_texts_cellerdoors {
+    font-family: 'Raleway';
+  }
+
+  div#wrap_opening_hours p strong {
+    font-family: 'Raleway';
+  }
+
+  div#wrap_opening_hours .slideshow-wrapper {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 50%;
+  }
+
+  div#wrap_opening_hours .slick-slider {
+    height: 100%;
+  }
+
+  div#wrap_opening_hours .slick-list {
+    height: 100%;
+  }
+
+  div#wrap_opening_hours .slick-track {
+    height: 100%;
+  }
+
+  div#wrap_opening_hours img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  div#wrap_upcoming_events img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  div#wrap_upcoming_events .slideshow-wrapper {
+    position: absolute;
+    left: auto;
+    height: 100%;
+    width: 50%;
+    right: 0px;
+    top: 0px;
+  }
+
+  div#wrap_upcoming_events .slick-slider {
+    height: 100%;
+  }
+
+  div#wrap_upcoming_events .slick-list {
+    height: 100%;
+  }
+
+  div#wrap_upcoming_events .slick-track {
+    height: 100%;
+  }
+
+  div#wrap_upcoming_events .custom-slideshow-section .row.col-reverse {
+    align-items: flex-start !important;
+  }
+
+  .page-sustainability .CustomProducts_tab .Commantab_C.RightSide {
+    padding-top: 0px;
+  }
+  .page-sustainability .tab.active.custonmainatbs {
+    display: flex !important;
+    width: 100%;
+  }
+
+  body.gradient.page-sustainability.page .MainDescreiption {
+    margin-top: 0 !important;
+    margin-bottom: 0px;
+  }
+
+  body.gradient.page-sustainability.page ul.tab-links {
+    padding-bottom: 0px !important;
+  }
+
+  body.gradient.page-sustainability.page ul.tab-links {
+    width: 21%;
+  }
+
+  body.gradient.page-sustainability.page .Commantab_C.LeftSide {
+    padding-left: 20px;
+  }
+
+  .index .wraps_slider-section .custom-slideshow-section {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .index .wraps_slider-section .page-width {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0px;
+  }
+
+  .index .wraps_slider-section .col.text-col-wrapper .text {
+    padding-right: 0px;
+  }
+
+  .index .wraps_slider-section .text-col {
+    width: 380px;
+    margin-left: auto;
+    margin-right: 65px;
+  }
+
+  div#about-us img {
+    object-fit: cover;
+  }
+
+  div#wrap_collection_etc .custom-slideshow-section {
+    padding: 0px;
+  }
+
+  div#wrap_collection_etc .custom-slideshow-section .row.col-reverse {
+    align-items: center;
+  }
+
+  div#about-us .custom-slideshow-section {
+    padding: 0px;
+  }
+
+  .page-cellardoor div#wrap_farmhouse .page-width {
+    width: 100%;
+    max-width: 100%;
+    padding: 0px;
+  }
+
+  .page-about-us div#about-us .custom-slideshow-section .row {
+    position: relative;
+  }
+
+  .page-about-us div#about-us .custom-slideshow-section .slideshow-wrapper {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    top: 0px;
+    left: 0px;
+  }
+
+  .page-about-us div#sustainability .custom-slideshow-section {
+    padding: 0px;
+  }
+
+  .page-about-us div#about-us .custom-slideshow-section .slick-slider {
+    height: 100%;
+  }
+
+  .page-about-us div#about-us .custom-slideshow-section .slick-list {
+    height: 100%;
+  }
+
+  .page-about-us div#about-us .custom-slideshow-section .slick-track {
+    height: 100%;
+  }
+
+  .page-about-us div#about-us .custom-slideshow-section img {
+    object-fit: cover;
+    height: 100%;
+  }
+
+  div#tasting_options .wrap_reserviction h2 {
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+
+  div#tasting_options h4 {
+    padding-top: 0px;
+  }
+
+  div#tasting_options {
+    padding: 130px 0;
+  }
+
+  div#tasting_options .wraopper_richtexts_third p:last-child {
+    margin-bottom: 0px;
+  }
+
+  div#blog-articles {
+    padding-left: 30px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .index .article-slider-wrapper {
+    margin-left: 8% !important;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .index .wraps_slider-section .text-col {
+    width: 380px;
+    margin-left: auto;
+    margin-right: 15px;
+  }
+
+  .index .article-slider-wrapper {
+    margin-left: 13% !important;
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  .index .article-slider-wrapper {
+    margin-left: 23% !important;
+  }
+}
+
+div#restaurant_menus_wraps .tasting_menu p {
+  font-family: 'Raleway';
+}
+
+div#restaurant_menus_wraps .wrap_local_lunch {
+  font-family: 'Raleway';
+}
+
+div#celebration-functions .image-with-text__text.rte.body {
+  margin-top: 0px;
+}
+
+div#wraps_three-bedrooms .slideshow-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.custom-slideshow-section .page-width {
+  padding-right: 8rem;
+}
+
+div#wraps_three-bedrooms .custom-slideshow-section .row.col-reverse {
+  align-items: center;
+  width: 100%;
+}
+
+.woocommerce-product-details__short-description {
+  border-top: 1px solid #333e484d;
+  padding-top: 16px;
+  margin-top: 15px;
+}
+
+div#wraps_three-bedrooms .col.text-col-wrapper {
+  padding-right: 40px;
+}
+
+div#wraps_three-bedrooms .text h2 {
+  padding-top: 23px;
+  margin-top: 0px;
+  padding-bottom: 23px !important;
+}
+
+div#wraps_three-bedrooms .col.text-col-wrapper {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+div#wraps_accomdations .wrap_reserviction h2 {
+  background: transparent;
+  padding: 0px;
+  font-style: normal;
+  font-family: 'Raleway';
+  font-weight: 600;
+  padding-bottom: 20px !important;
+  margin-top: 0px;
+}
+
+.wrap_reserviction .wraps_text-texts p:first-child {
+  margin-top: 0px;
+}
+
+.page-accomodation div#wraps_accomdations {
+  background: #005151;
+  padding: 130px 0 130px;
+}
+
+div#wraps_accomdations .wrap_reserviction h2 {
+  background: transparent;
+  padding: 0;
+  font-style: normal;
+  font-family: Raleway;
+  font-weight: 600;
+  padding-bottom: 30px !important;
+  color: #fff;
+}
+
+div#wraps_accomdations .wrap_reserviction .wraps_text-texts p {
+  color: #fff;
+}
+
+div#wraps_accomdations .wraopper_richtexts p {
+  color: #fff;
+}
+
+div#wraps_accomdations .wraopper_richtexts p:last-child {
+  margin-bottom: 0px;
+}
+
+div#wraps_accomdationshistory h2 {
+  background: transparent;
+  padding: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-family: Raleway;
+  margin-top: 0px;
+}
+
+div#wraps_accomdationshistory .wraps_text-texts p {
+  margin-bottom: 0px;
+}
+
+.page-history div#wraps_accomdationshistory .wraps_flex-etc {
+  align-items: center;
+}
+
+div#wrap_start_accomdation h2 {
+  color: #002855;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+div#wrap_start_accomdation p {
+  color: #002855;
+}
+
+div#wrap_start_accomdation .image-with-text__text {
+  margin-top: 0px;
+}
+
+.page-width.media-hub__layout {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: #fff;
+}
+
+@media screen and (min-width: 1000px) {
+  div#wraps_accomdationshistory {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+  div#wrap_winemaking_lagacy {
+    padding-top: 0px;
+    padding-bottom: 130px;
+  }
+  div#wrap_start_accomdation {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+  div#wrapper_farmhouse .slideshow-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 57%;
+    height: 100%;
+    right: auto;
+  }
+
+  div#wrapper_farmhouse .custom-slideshow-section .col.text-col-wrapper {
+    width: 37%;
+  }
+
+  div#wrapper_farmhouse .custom-slideshow-section .text-col {
+    width: 420px;
+  }
+
+  div#wrapper_farmhouse .page-width {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0px !important;
+  }
+
+  .page-accomodation
+    div#wraps_three-bedrooms
+    .custom-slideshow-section
+    .row
+    .col.text-col-wrapper {
+    width: 45%;
+  }
+
+  .page-accomodation
+    div#wraps_three-bedrooms
+    .custom-slideshow-section
+    .row
+    .col {
+    width: 55%;
+  }
+}
+
+div#wrapper_farmhouse .custom-slideshow-section {
+  background: #005151;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+div#wrapper_farmhouse h2 {
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+
+div#wraps_accomdations .wraps_text-texts p {
+  font-size: 18px;
+}
+
+div#wraps_accomdations .wraopper_richtexts p {
+  font-size: 18px;
+}
+div#wrapper_farmhouse .text p {
+  color: #fff;
+  font-size: 18px;
+}
+
+div#wrapper_farmhouse .text p:first-child {
+  margin-top: 0px;
+}
+
+.page-accomodation a.button.button--secondary.no-button-border {
+  border: 1px solid #fff !important;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px 30px;
+  border-radius: 30px;
+}
+
+.page-accomodation a.button.button--primary {
+  border: 1px solid #fff !important;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px 30px;
+  border-radius: 30px;
+  background: transparent;
+}
+
+.page-accomodation div#wraps_three-bedrooms a.button.button--primary {
+  border: 1px solid #002855 !important;
+  color: #002855;
+  text-decoration: none;
+  padding: 20px 30px;
+  border-radius: 30px;
+  background: transparent;
+}
+
+.page-accomodation
+  div#wraps_three-bedrooms
+  a.button.button--secondary.no-button-border {
+  border: 1px solid #002855 !important;
+  color: #002855;
+  text-decoration: none;
+  padding: 20px 30px;
+  border-radius: 30px;
+  background: transparent;
+}
+
+.page-accomodation .wraps_icons_textstesting_options p span {
+  font-size: 14px;
+}
+
+.page-accomodation .wraps_icons_textstesting_options p svg {
+  position: relative;
+  top: 7px;
+  width: 18px;
+  margin-right: 0px;
+}
+
+.page-accomodation .wraps_icons_textstesting_options {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+body.page-accomodation .wraps_slider-section .text p {
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+body.page-accomodation .wraps_slider-section .text p:first-child {
+  margin-top: 0px;
+}
+
+body.cellar-door-gift-card .wrapper_addtiwrapscrt .customer {
+  position: relative;
+  width: 430px !important;
+  left: -165px;
+  margin-top: 10px;
+  padding-bottom: 7px;
+}
+
+body.restaurant-voucher .wrapper_addtiwrapscrt .customer {
+  position: relative;
+  width: 430px !important;
+  left: -165px;
+  margin-top: 10px;
+  padding-bottom: 7px;
+}
+
+.page-history div#wraps_accomdations .wraps_text-texts p {
+  color: #002855;
+}
+
+.page-history div#wraps_accomdations .wraps_text-texts h2 {
+  color: #002855;
+}
+
+.page-history div#wraps_accomdations {
+  padding-top: 0px;
+  padding-bottom: 130px;
+}
+
+div#wraps_history_headings .rich-text {
+  padding-top: 130px;
+}
+
+/**************************************** wedding page new css ******************************/
+
+@media screen and (min-width: 1000px) {
+  div#wraps_wedding_package .slideshow-wrapper {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 50%;
+  }
+
+  div#wraps_wedding_package .slideshow-wrapper .slick-slider {
+    height: 100%;
+  }
+
+  div#wraps_wedding_package .slideshow-wrapper .slick-list {
+    height: 100%;
+  }
+
+  div#wraps_wedding_package .slideshow-wrapper .slick-track {
+    height: 100%;
+  }
+
+  div#wraps_wedding_package .slideshow-wrapper .slick-slider {
+    height: 100%;
+  }
+
+  div#wraps_wedding_package .slideshow-wrapper .slick-list {
+    height: 100%;
+  }
+
+  div#wraps_wedding_package .slideshow-wrapper .slick-track img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  div#versatile_venue .slideshow-wrapper {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    left: auto;
+  }
+
+  div#versatile_venue .slideshow-wrapper .slick-slider {
+    height: 100%;
+  }
+
+  div#versatile_venue .slideshow-wrapper .slick-list {
+    height: 100%;
+  }
+
+  div#versatile_venue .slideshow-wrapper .slick-track {
+    height: 100%;
+  }
+
+  div#versatile_venue .slideshow-wrapper .slick-slider {
+    height: 100%;
+  }
+
+  div#versatile_venue .slideshow-wrapper .slick-list {
+    height: 100%;
+  }
+
+  div#versatile_venue .slideshow-wrapper .slick-track img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  div#versatile_venue .custom-slideshow-section .row.col-reverse {
+    align-items: initial;
+  }
+
+  body.product .Commantab_C.LeftSide {
+    padding-bottom: 0px !important;
+  }
+
+  .page-restaurant .wrap_mission .custom-slideshow-section {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  div#sustainability .page-width {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0px;
+  }
+
+  div#sustainability .custom-slideshow-section .col.text-col-wrapper {
+    width: 50%;
+  }
+
+  div#sustainability .text-col {
+    margin-left: auto;
+    width: 500px !important;
+    margin-right: 0px !important;
+  }
+
+  .page-our-vineyards div#sustainability .text-col {
+    margin-left: auto;
+    width: 500px !important;
+    margin-right: 40px !important;
+  }
+
+  div#sustainability .slick-slide img {
+    object-fit: cover;
+    height: 101%;
+  }
+
+  body.page-our-vineyards div#sustainability .custom-slideshow-section {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  body.page-our-vineyards div#about-us .text {
+    padding-bottom: 0px !important;
+  }
+  body.page-our-vineyards div#about-us .slideshow-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+  }
+
+  body.page-our-vineyards div#about-us .slick-slide,
+  body.page-our-vineyards div#about-us .slick-slider,
+  body.page-our-vineyards div#about-us .slick-list,
+  body.page-our-vineyards div#about-us .slick-track,
+  body.page-our-vineyards div#about-us img {
+    height: 100%;
+  }
+
+  body.page-our-vineyards div#vineyardss .image-with-text__text.rte.body {
+    margin-top: 0px;
+  }
+
+  body.page-our-vineyards div#vineyardss .image-with-text__content {
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+
+  body.page-our-vineyards div#vineyardss {
+    padding-bottom: 130px;
+    padding-top: 130px;
+  }
+
+  body.page-our-vineyards div#our-history .image-with-text__content {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  body.page-our-vineyards div#our-history {
+    padding-bottom: 130px;
+    padding-top: 130px;
+  }
+}
+
+body.page-our-vineyards div#our-history p {
+  color: #002855;
+  line-height: 1.6em;
+}
+
+body.page-our-vineyards div#our-history ul li {
+  color: #002855;
+  line-height: 1.5em;
+  padding-bottom: 10px;
+}
+div#Certifiably-sustainable {
+  background: #005151;
+}
+
+div#Certifiably-sustainable:after {
+  display: none;
+}
+
+.content-container--full-width:after {
+  display: none;
+}
+
+@media screen and (min-width: 1800px) {
+  div#Certifiably-sustainable {
+    background: #005151;
+    position: relative;
+    bottom: -1px;
+  }
+}
+
+/* div#versatile_venue .col.text-col-wrapper {
+    padding-top: 0px;
+    padding-bottom: 0px;
+} */
+
+/* div#wraps_wedding_package .custom-slideshow-section .row {
+    align-items: center;
+} */
+
+div#sustainability h2.heading {
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+div#versatile_venue h2 {
+  padding-top: 0px;
+}
+
+div#versatile_venue .text p:first-child {
+  margin-top: 0px;
+}
+
+div#wedding_elopments .image-with-text__text.rte.body {
+  margin-top: 0px;
+}
+
+div#wedding_elopments {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+div#wraps_wedding_package .custom-slideshow-section {
+  padding-top: 0px;
+}
+
+div#wrap_seasonal_menu {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+div#wrap_start_planing {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+div#wrap_mission_video .video-section {
+  padding-top: 0px;
+  padding-bottom: 130px;
+}
+
+div#wraps_wedding_package .text-col p:first-child {
+  margin-top: 0px;
+}
+.footer__list-social li a svg g {
+  fill: #f8e08e;
+  stroke: #f8e08e;
+}
+.footer__list-social li a svg path {
+  stroke: #f8e08e;
+  fill: #f8e08e;
+}
+
+.video_nonwwraps {
+  display: none;
+}
+
+body.account h2.form__message {
+  color: #fff;
+  font-weight: 600;
+}
+
+body.account .errors li {
+  color: #fff;
+}
+
+body.account ul {
+  margin-top: 0px;
+}
+
+body.account h2.form__message:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+body.create-account h2.form__message {
+  color: #fff;
+  font-weight: 600;
+}
+
+body.create-account ul {
+  margin-top: 0px;
+}
+
+body.create-account .form__message {
+  color: #fff;
+}
+
+body.create-account .wraps_form_login ul li {
+  color: #fff;
+}
+
+body.create-account h2.form__message:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+.related-products .card__inner.color-scheme-2.gradient.ratio {
+  background: transparent;
+}
+
+.newsletter-form__field-wrapper input {
+  color: #f0f0ed;
+  padding: 14px !important;
+}
+
+.newsletter-form__field-wrapper label {
+  color: #f0f0ed;
+}
+/****************************** wedding page css end  *************************/
+
+input#ContactForm-email {
+  padding: 18px;
+}
+
+input#ContactForm-firstname {
+  padding-top: 29px;
+  padding-bottom: 29px;
+}
+
+.field.request-type select:focus {
+  padding: 1.5rem;
+  width: 100%;
+  background: transparent;
+  border: 1px solid #002855;
+  border-radius: 4px;
+  font-family: Literata-light;
+  color: #002855;
+  outline: none;
+  box-shadow: none;
+}
+
+textarea#ContactForm-body {
+  color: #002855;
+  font-size: 18px;
+}
+
+.field:hover.field:after {
+  box-shadow: none;
+}
+
+.field:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+a.international-link {
+  text-decoration: underline;
+}
+
+.field input:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.field:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.field__input:focus {
+  /* padding: 20px; */
+  border: 0px;
+  box-shadow: none;
+}
+
+.slideshow__slide .metafield-rich_text_field p {
+  margin-top: 0px;
+}
+
+nav.header__inline-menu ul.list-menu.list-menu--inline li:nth-last-child(2) {
+  display: none;
+}
+
+nav.header__inline-menu
+  ul.list-menu.list-menu--inline
+  li
+  .header__submenu
+  li:nth-last-child(2) {
+  display: block;
+}
+
+.product .image-border img {
+  border-radius: 8px;
+}
+
+@media screen and (min-width: 1700px) {
+  body p,
+  body,
+  body div {
+    line-height: 1.75em !important;
+  }
+}
+
+div#wrap_winemaking_lagacy h2 {
+  color: #002855;
+}
+
+div#wrap_winemaking_lagacy .image-with-text__text {
+  margin-top: 0px;
+  color: #002855;
+}
+/***************************************************** button style css **********************************/
+
+.page-about-us .wrap_buttons a.button.button--primary {
+  border: 0px;
+  border-bottom: 1px solid;
+  border-radius: 0px;
+  padding: 0px;
+}
+
+.page-about-us .buttons a.button.button--primary {
+  border: 0px !important;
+  border-bottom: 1px solid !important;
+  border-radius: 0px;
+  padding: 0px;
+}
+
+.page-visit-us .tabs-buttons a:first-child {
+  border: 0px;
+  border-bottom: 1px solid;
+  border-radius: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  order: 2;
+  margin-left: 25px;
+}
+
+.page-visit-us .tabs-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.page-visit-us .tabs-buttons a:last-child {
+  margin-left: 0px !important;
+  padding-left: 24px;
+  padding-right: 24px;
+  line-height: 18px;
+}
+
+.page-visit-us .tabs-buttons a {
+  margin-top: 0px !important;
+  font-size: 14px !important;
+}
+
+.page-visit-us div#cellar-door .buttons {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.page-visit-us div#accomodation-section .buttons {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.page-visit-us div#cellar-door a.button {
+  border: 0px;
+  border-radius: 0px;
+  border-bottom: 1px solid;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.page-visit-us div#cellar-door a.button--secondary {
+  background-color: rgba(0, 0, 0, 0);
+  color: #ffffff;
+  border: 1px solid;
+  text-decoration: none;
+  text-underline-offset: 0px;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 30px;
+}
+
+.page-visit-us div#accomodation-section a.button {
+  border: 0px;
+  border-radius: 0px;
+  border-bottom: 1px solid;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.page-visit-us div#accomodation-section a.button--secondary {
+  background-color: rgba(0, 0, 0, 0);
+  color: #ffffff;
+  border: 1px solid;
+  text-decoration: none;
+  text-underline-offset: 0px;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 30px;
+}
+
+div#celebration-functions .wrap_buttons a.button.button--primary {
+  border: 0px;
+  border-bottom: 1px solid;
+  border-radius: 0px;
+  padding: 0px;
+}
+
+div#wrap_start_accomdation a.button.button--primary {
+  border: 0px;
+  border-bottom: 1px solid;
+  padding: 0px;
+  border-radius: 0px;
+}
+
+.page-weddings div#wrap_mission_video a.button.button--primary {
+  padding: 0px;
+  border: 0px;
+  border-bottom: 1px solid;
+  border-radius: 0px;
+}
+/*************************************************** button style css end **********************************************/
+.right-side span {
+  line-height: 1.7em;
+}
+div#about-us .text ul li {
+  padding-bottom: 10px;
+}
+
+div#about-us .text p:first-child {
+  margin-top: 0px;
+}
+
+/********************************** select field *********************/
+
+.field.request-type {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.field.request-type select {
+  appearance: none; /* hide native arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  padding-left: 2.5rem; /* room for the image */
+  background-color: transparent; /* keep the field transparent */
+}
+
+/* add your custom arrow with a pseudo‑element */
+.field.request-type:before {
+  display: block;
+  content: '';
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+  background: url(https://cdn.shopify.com/s/files/1/0738/5327/2315/files/Vector_2.png?v=1751363828)
+    no-repeat center center / contain;
+  pointer-events: none;
+  left: auto;
+}
+
+/*********************select field ***********************************************/
+@media screen and (min-width: 1000px) {
+  div#wrap_unforgetable {
+    padding-top: 130px !important;
+    padding-bottom: 130px !important;
+  }
+  div#upcoming-events .page-width {
+    width: 100%;
+    max-width: 100%;
+    padding: 0px;
+  }
+
+  .footer-block:last-child {
+    padding-bottom: 57px;
+  }
+  div#upcoming-events .text-col {
+    width: 460px;
+    margin-left: auto;
+    margin-right: 0px;
+  }
+  div#upcoming-events .text-col .text {
+    padding-right: 0px;
+  }
+
+  .quick-add.no-js-hidden modal-opener {
+    position: absolute;
+    width: 100%;
+    /* top: -41px; */
+  }
+
+  body.gradient.page-.cellar-door-gift-card-perfect-for-wine-lovers.collection
+    .quick-add.no-js-hidden
+    modal-opener {
+    position: relative;
+    width: 100%;
+    top: 0px;
+  }
+
+  body.gifts.collection .quick-add.no-js-hidden modal-opener {
+    position: relative;
+    width: 100%;
+    top: 0px;
+  }
+
+  body.gifts.collection .wraps_products_texts {
+    display: none;
+  }
+
+  body.gradient.page-.restaurant-voucher.collection
+    .quick-add.no-js-hidden
+    modal-opener {
+    position: relative;
+    width: 100%;
+    top: 0px;
+  }
+
+  /* div#wrap_event_pink_ribben .page-width {
+    padding: 0px;
+    width: 100%;
+    max-width: 100%;
+} */
+
+  div#wrap_event_pink_ribben .text-col {
+    width: 480px;
+    margin-left: 0px;
+    margin-right: auto;
+  }
+
+  div#wrap_event_pink_ribben .text-col .text {
+    padding-right: 0px;
+  }
+
+  .page-the-mission-concert div#upcoming-events .slideshow-wrapper {
+    width: 55%;
+  }
+}
+
+@media screen and (min-width: 1850px) {
+  div#upcoming-events .text-col {
+    width: 430px;
+  }
+}
+
+div#wrap_seasonal_menu .wrap_buttons {
+  margin-top: 25px;
+}
+
+div#wrap_start_planing .wrap_buttons {
+  margin-top: 25px;
+}
+
+.wrap_flex_video .description_etc p {
+  margin-bottom: 25px;
+}
+
+.featured_collection .color-scheme-1.isolate.gradient {
+  background: #ecebe8;
+}
+.wrapper_image-texts .image_region img:last-child {
+  margin-top: 30px;
+}
+
+product-recommendations.related-products {
+  background: #ecebe8;
+}
+
+product-recommendations.related-products ul.grid {
+  margin-top: 0px;
+}
+
+.wraps_option_tasting h2 {
+  display: none;
+}
+
+.page-cellardoor .wraps_option_tasting h2 {
+  text-align: center;
+  color: #002855;
+  font-weight: 600;
+  font-size: 38px;
+  margin-top: 0px;
+  display: block;
+}
+
+.page-cellardoor div#tasting_options .wrap_reserviction h2 {
+  display: none;
+}
+
+.wraopper_richtexts h4 {
+  margin-top: 0px;
+}
+
+p.wrap_leftside_texts {
+  margin-top: 0px;
+  color: #002855;
+}
+
+.featured_collection .gradient {
+  background: #ecebe8;
+}
+
+.wrap_relatedproduct {
+  background: #ecebe8;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body.product main product-info.product_wrapsmain {
+    padding: 0px 0 0;
+  }
+
+  ul.wraps_custom_fields li {
+    padding-bottom: 10px;
+    width: 100%;
+  }
+
+  ul.wraps_custom_fields {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .wrapper_addtiwrapscrt button.product-form__submit {
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+
+  body.product main div.shopify-section {
+    padding: 0px;
+  }
+
+  body.product .wraps_inner-icons {
+    width: 48%;
+  }
+
+  .ImageTab img {
+    height: initial !important;
+  }
+
+  .product .page-width {
+    padding: 0 4rem;
+  }
+  .tabs-container.CustomProducts_tab {
+    flex-direction: column;
+  }
+  .tabs-container .tab-content,
+  .tabs-container .tab-content .tab {
+    width: 100%;
+    flex-direction: column;
+  }
+  .tabs-container ul.tab-links {
+    width: 100%;
+  }
+  .tabs-container .Commantab_C {
+    width: 100%;
+  }
+  .tabs-container .tab.custonmainatbs {
+    gap: 30px;
+  }
+  .tabs-container .tab-links {
+    margin: 0px;
+  }
+  .tabs-container .tab-content {
+    padding: 0px;
+  }
+  .tabs-container .BoxDesc,
+  .tabs-container .MainDescreiption {
+    width: 100%;
+  }
+
+  .wrapper_wraps_products {
+    width: 100% !important;
+    margin: 0 auto;
+  }
+
+  body.product .customProduct_tabs {
+    padding-bottom: 80px !important;
+    padding-top: 80px !important;
+  }
+
+  body.product div#wrap_food_paring .food-icon-wrapper {
+    flex-direction: inherit;
+    align-items: baseline;
+  }
+
+  body.product main .shopify-section > div {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  body.product .product-form__quantity {
+    padding-left: 0px !important;
+  }
+  .ImageTab img {
+    width: 100%;
+  }
+  body.product .food-icon-wrapper {
+    align-items: baseline;
+  }
+  body.product .image-with-text__content {
+    padding: 4rem calc(0rem) 0rem;
+  }
+  div#wrap_food_paring .image-with-text__text-item.grid__item {
+    padding-left: 30px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1150px) {
+  p.textpercent {
+    line-height: 1.4em;
+    margin: 0px;
+  }
+
+  ul.wraps_custom_fields {
+    flex-wrap: wrap;
+  }
+
+  ul.wraps_custom_fields li {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  .wrapper_innericon {
+    width: 23%;
+    position: relative;
+    top: 2px;
+  }
+  .inner_wrapper-texts {
+    align-items: flex-start;
+  }
+  .wrapper_wraps_products {
+    width: 95% !important;
+    margin: 0 auto;
+  }
+
+  body.product
+    product-recommendations.related-products
+    button.quick-add__submit.button.button--full-width.button--secondary {
+    width: 80% !important;
+    min-width: 80% !important;
+  }
+}
+
+.index .multicolumn-buttons {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.index div#about-us a.button.button--primary {
+  border-bottom: 1px solid !important;
+  text-decoration: none;
+  text-underline-offset: 0px;
+}
+
+.facets-wrapper .facets-container span.svg-wrapper svg {
+  color: #002855;
+}
+
+.wrap_vendr_none {
+  display: none;
+}
+
+.page-visit-us div#cellar-door a.button--secondary {
+  color: #002855;
+  border-color: #002855;
+}
+/************************************** hover css start ********************************************/
+.multicolumn-card__info a.button.no-button-border:hover {
+  border-color: #ff3e51;
+  color: #ff3e51;
+}
+
+.index
+  .multicolumn-card__info
+  a.button.button--primary.open-enquiry-popup:hover {
+  color: #fff !important;
+  background: #002855 !important;
+  border-color: #002855 !important;
+}
+
+div#index-shop-wines a.button.button--primary:hover {
+  background: #fff;
+  border-color: #fff;
+  color: #ff3e51;
+}
+
+div#index-shop-wines a.button.button--secondary:hover {
+  color: #002855;
+  border-color: #002855;
+}
+
+div#homepage-rich-text a.button.no-button-border.button--primary:hover {
+  color: #ff3e51 !important;
+  text-decoration-color: #ff3e51;
+}
+
+div#about-us a.button.button--primary:hover {
+  background: #ff3e51;
+  color: #fff;
+  border-color: #ff3e51;
+}
+
+.page-accomodation div#wraps_three-bedrooms a.button.button--primary:hover {
+  background: #002855;
+  color: #fff;
+  border-color: #002855;
+}
+
+.page-accomodation
+  div#wraps_three-bedrooms
+  a.button.button--secondary.no-button-border:hover {
+  background: #002855;
+  color: #fff;
+  border-color: #002855;
+}
+
+.article-details a.button.button-secondary:hover {
+  background: #002855 !important;
+  color: #fff !important;
+  border-color: #002855 !important;
+}
+
+button.quick-add__submit.button.button--full-width.button--secondary:hover {
+  background: #002855;
+  color: #fff;
+  border-color: #002855;
+}
+
+button.quick-add__submit.button.button--full-width.button--secondary:hover
+  svg
+  path {
+  fill: #fff;
+}
+
+button.quick-add__submit.button.button--full-width.button--secondary svg {
+  position: relative;
+  top: 1px;
+}
+
+.article-slider-wrapper
+  .main-slider-row
+  a.button.button--primary.article-slider-button:hover {
+  background: #ff3e51 !important;
+  color: #fff !important;
+  border-color: #ff3e51 !important;
+}
+
+.page-history div#home_history_wraps a.button.button--primary:hover {
+  background: #ff3e51 !important;
+  color: #fff !important;
+  border-color: #ff3e51 !important;
+}
+
+.page-history div#wrap_innovation_etc a.button.button--primary:hover {
+  background: #ff3e51 !important;
+  color: #fff !important;
+  border-color: #ff3e51 !important;
+}
+
+.page-celebrations-functions
+  div#wraps_wedding_package
+  a.button.button--primary:hover {
+  background: #ff3e51 !important;
+  color: #fff !important;
+  border-color: #ff3e51 !important;
+}
+
+.tabs-buttons a.open-custom-popup:hover {
+  background: #002855;
+  color: #fff;
+  border-color: #002855;
+}
+
+.tabs-buttons a.open-custom-popup:hover {
+  background: #002855;
+  color: #fff;
+  border-color: #002855;
+}
+
+.main-slider-row a.button.button--primary.article-slider-button:hover {
+  background: #002855 !important;
+  color: #fff !important;
+  border-color: #002855 !important;
+}
+
+div#TRADEMEDIA a.button.button--secondary:hover {
+  color: #002855;
+}
+
+.tabs-buttons a:hover {
+  color: #ff3e51;
+  border-color: #ff3e51;
+}
+
+.page-visit-us div#cellar-door a.button:hover {
+  color: #ff3e51;
+  border-color: #ff3e51;
+}
+
+.page-visit-us a.button.button--secondary:hover {
+  background: #002855 !important;
+  color: #fff !important;
+  border-color: #002855 !important;
+}
+
+.page-visit-us a.button.button--primary:hover {
+  color: #ff3e51;
+  border-color: #ff3e51;
+}
+
+div#wrapper_restrurants a.button.button--primary:hover {
+  background: #ff3e51;
+  color: #fff;
+  border-color: #ff3e51;
+}
+
+div#wrapper_restrurants .secondary-buttons a.button.button--secondary:hover {
+  color: #fff;
+  border-color: #002855;
+  background: #002855;
+}
+
+div#wrapper_restrurants
+  .secondary-buttons
+  a.button.button--secondary:hover
+  svg
+  path {
+  fill: #fff;
+}
+
+.wraps_restrurent_menus .tab-links li:hover {
+  background: #fff;
+  color: #002855;
+  border: 1px solid #fff;
+}
+
+.wraps_restrurent_menus a.wraps_reservation:hover {
+  background: #ff3e51;
+  color: #fff;
+  border-color: #ff3e51;
+}
+
+.wraps_restrurent_menus a.wraps_link-voucher:hover {
+  background: #ff3e51;
+  color: #fff;
+  border-color: #ff3e51;
+}
+
+.wraps_restrurent_menus a.wraps_link-voucher:hover svg path {
+  fill: #fff;
+}
+
+div#wrapper_reservation_menu a.button.button--primary:hover {
+  background: #ff3e51;
+  color: #fff;
+  border-color: #ff3e51;
+}
+
+div#wrapper_reservation_menu
+  .secondary-buttons
+  a.button.button--secondary:hover {
+  color: #fff !important;
+  border-color: #002855 !important;
+  background: #002855;
+}
+
+div#wrapper_wedding .secondary-buttons a.button.button--secondary:hover {
+  color: #fff !important;
+  border-color: #002855 !important;
+  background: #002855 !important;
+}
+
+div#wrapper_reservation_menu
+  .secondary-buttons
+  a.button.button--secondary:hover
+  svg
+  path {
+  fill: #fff;
+}
+
+.wrap_mission a.button.button--primary:hover {
+  color: #ff3e51 !important;
+  border-bottom: 1px solid #ff3e51 !important;
+}
+
+div#our-people-rich-text a.button.button--secondary:hover {
+  background: #002855;
+  color: #fff;
+  border-color: #002855;
+}
+
+div#restaurant-tabs .tabs-buttons a:hover {
+  background: #002855;
+  color: #fff;
+  border-color: #002855;
+}
+
+div#wrap_farmhouse a.button.button--primary:hover {
+  background: #002855;
+  color: #fff;
+  border-color: #002855;
+}
+
+div#tasting_options a.button.button--secondary.no-button-border:hover {
+  background: #002855;
+  color: #fff;
+  border-color: #002855 !important;
+}
+
+div#wrap_opening_hours a.button.button--primary:hover {
+  background: #002855;
+  color: #fff;
+  border-color: #002855 !important;
+}
+
+.page-cellardoor div#wrap_opening_hours a.button.button--primary:hover {
+  background: #ff3e51;
+  color: #fff;
+  border-color: #ff3e51;
+}
+
+div#wrap_upcoming_events a.button.button--primary:hover {
+  color: #ff3e51;
+  border-color: #ff3e51 !important;
+}
+
+.banner__buttons a.button.button--primary:hover {
+  background: #002855;
+  color: #fff;
+  border-color: #002855 !important;
+}
+
+div#wraps_three-bedrooms .buttons a:hover {
+  background: #002855;
+  color: #fff;
+  border-color: #002855 !important;
+}
+
+div#wrapper_farmhouse a.button.button--primary:hover {
+  background: #002855;
+  color: #fff;
+  border-color: #002855 !important;
+}
+
+body.gradient.page-accomodation.page
+  .wraps_reservation_buttons
+  a.button.button--secondary.no-button-border:hover {
+  background: #002855;
+  color: #fff;
+  border-color: #002855 !important;
+}
+
+div#wedding_elopments .wrap_buttons a.button.button--primary:hover {
+  background: #002855;
+  color: #fff;
+  border-color: #002855 !important;
+}
+
+div#wraps_wedding_package a.button.button--primary:hover {
+  background: #002855;
+  color: #fff;
+  border-color: #002855 !important;
+}
+
+div#shopify-section-template--20726439805179__image_text_slideshow_6nxgzT a.button.button--primary:hover {
+  background: #002855;
+  color: #fff;
+  border-color: #002855 !important;
+}
+
+.page-celebrations-functions div#restaurant-tabs .tabs-buttons a:hover {
+  background: #002855;
+  color: #fff;
+  border-color: #002855 !important;
+}
+
+div#wrap_seasonal_menu a.button.button--primary:hover {
+  background: #002855;
+  color: #fff;
+  border-color: #002855 !important;
+}
+
+div#wrap_start_planing a.button.button--primary:hover {
+  background: #002855;
+  color: #fff;
+  border-color: #002855 !important;
+}
+
+div#wrap_mission_video a.button.button--primary:hover {
+  background: #002855;
+  color: #fff;
+  border-color: #002855 !important;
+}
+
+div#wrap_start_accomdation a.button.button--primary:hover {
+  border-color: #ff3e51;
+  color: #ff3e51;
+}
+
+.page-weddings div#wrap_mission_video a.button.button--primary:hover {
+  /* background: transparent;
+    color: #ff3e51;
+    border-color: #ff3e51 !important; */
+}
+
+div#our-history a.button.button--primary:hover {
+  color: #ff3e51;
+  border-color: #ff3e51 !important;
+}
+
+div#sustainability a.button.button--primary:hover {
+  color: #ff3e51;
+  border-color: #ff3e51 !important;
+}
+
+.page-about-us div#about-us .buttons a.button.button--primary:hover {
+  background: transparent;
+  color: #ff3e51;
+  border-color: #ff3e51 !important;
+}
+
+div#vineyardss a.button.button--primary:hover {
+  background: transparent;
+  color: #ff3e51;
+  border-color: #ff3e51 !important;
+}
+div#home_history_wraps a.button.button--primary:hover {
+  background: #002855;
+  color: #fff;
+  border-color: #002855;
+}
+
+div#wrap_innovation_etc a.button.button--primary:hover {
+  background: #002855;
+  color: #fff;
+  border-color: #002855;
+}
+
+div#our-people a.button.no-button-border:hover {
+  color: #ff3e51;
+  border-color: #ff3e51;
+}
+
+section#Sustainability-Mission a:hover {
+  color: #ff3e51;
+  border-color: #ff3e51;
+}
+
+section#Sustainability-Mission a.button.button--primary:hover {
+  background: #002855;
+  color: #fff;
+  border-color: #002855;
+}
+
+div#wrap_galia_section a.button.button--primary:hover {
+  background: #002855;
+  color: #fff;
+  border-color: #002855;
+}
+
+div#certifiably-sustainable a.button:hover {
+  background: #002855;
+  color: #fff;
+  border-color: #002855;
+}
+
+.inner_pdf_texts a:hover span {
+  color: #ff3e51;
+}
+
+.inner_pdf_texts a:hover {
+  color: #ff3e51;
+}
+
+div#blog-articles h3.card__heading.h2 a:hover {
+  color: #ff3e51;
+}
+
+div#wrap_event_pink_ribben a.button.button--primary.no-button-border:hover {
+  color: #ff3e51;
+  border-color: #ff3e51;
+}
+
+.page-the-mission-concert
+  div#cellar-door
+  a.button.button--primary.no-button-border:hover {
+  color: #002855;
+  border-color: #002855;
+}
+
+.page-the-mission-concert
+  div#upcoming-events
+  a.button.button--primary.no-button-border:hover {
+  color: #ff3e51;
+  border-color: #ff3e51;
+}
+
+.page-visit-us div#restaurant-tabs .tabs-buttons a:hover {
+  background: transparent;
+  color: #ff3e51;
+  border-color: #ff3e51;
+}
+
+.page-visit-us div#restaurant-tabs .tabs-buttons a:last-child:hover {
+  background: #002855 !important;
+  color: #fff !important;
+  border-color: #002855 !important;
+}
+
+.contact__button button.button:hover {
+  background: #002855;
+  color: #fff;
+  border-color: #002855;
+}
+
+a.button_contact_wraps_primary:hover {
+  background: #002855;
+  color: #fff;
+  border-color: #002855;
+}
+
+a.button_contact_wraps_learn_more:hover {
+  color: #ff3e51;
+  border-color: #ff3e51;
+}
+.wraps_column-inner a:hover button {
+  background: #002855;
+  color: #fff;
+  border-color: #002855;
+}
+
+div#locaton_wraps a:hover button {
+  background: #002855;
+  color: #fff;
+  border-color: #002855;
+}
+
+body.product
+  product-recommendations.related-products
+  button.quick-add__submit.button.button--full-width.button--secondary:hover {
+  background: #002855 !important;
+  color: #fff !important;
+  border-color: #002855 !important;
+}
+
+.wrap_trade_media a.button.button--primary:hover {
+  background: #fff !important;
+  border-color: #fff !important;
+  color: #ff3e51 !important;
+}
+
+a.learn-add-cart:hover {
+  color: #ff3e51 !important;
+}
+
+.wrap_trade_media a.button.button--secondary:hover {
+  color: #ff3e51 !important;
+}
+
+.page-cellardoor div#restaurant-tabs .tabs-buttons a:hover {
+  color: #ff3e51;
+  background: #fff;
+  border-color: #fff;
+}
+
+body.collection a.learn-add-cart:hover {
+  color: #ff3e51;
+}
+
+div#about-us a.button.button--primary:hover {
+  background: #fff;
+  color: #002855;
+  border-color: #fff;
+}
+
+.page-mission-reward a.button.button--primary {
+  border-color: #002855;
+}
+
+.page-mission-reward a.button.button--primary:hover {
+  border-color: #fff;
+  color: #002855;
+  background: #fff;
+}
+.page-mission-reward
+  .wraps_slider-section
+  .buttons
+  a.button.button--primary:hover {
+  border-color: #002855;
+  color: #fff;
+  background: #002855;
+}
+
+.page-restaurant .wrap_mission .buttons a.button.button--primary {
+  border: 0px;
+}
+/*********************************** hover css end ************************************/
+
+h3.wraos_foodparing_headings {
+  color: #002855;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+p.eraps_productfeature_texts {
+  font-size: 16px;
+  line-height: 1.9em;
+  margin-top: 0px !important;
+  color: #002855;
+  font-family: 'Literata-light';
+  width: 90%;
+}
+
+.wraps_value-icon_texts p {
+  margin: 0px;
+  font-size: 16px;
+  color: #002855;
+}
+
+.wraps_icons_textsblock.NewFleicon_dvs {
+  display: block;
+  justify-content: flex-start !important;
+}
+
+.tabs-container.CustomProducts_tab {
+  padding-bottom: 0px !important;
+}
+
+.wraps_icons_textsblock.NewFleicon_dvs .inner_wrapper-texts {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-bottom: 10px;
+}
+body.product
+  product-recommendations.related-products
+  button.quick-add__submit.button.button--full-width.button--secondary {
+  position: relative;
+  z-index: 999999;
+}
+div#locaton_wraps a button {
+  cursor: pointer;
+}
+
+.wraps_column-inner a button {
+  cursor: pointer;
+}
+
+.wrap_none_image_image {
+  display: none;
+}
+
+a.button {
+  font-size: 14px !important;
+}
+
+div#our-people ul li.grid__item {
+  background: #fff;
+  margin-bottom: 15px;
+}
+
+div#our-people ul li.grid__item .multicolumn-card.content-container {
+  margin: 0px;
+}
+
+.page-cellardoor main#MainContent a {
+  font-size: 14px;
+}
+
+.tabs-buttons a {
+  font-size: 14px;
+}
+
+div#restaurant_menus_wraps a {
+  font-size: 14px;
+}
+
+.page-mission-rewards-faqs h2.collapsible-content__heading {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.page-mission-rewards-faqs h2.collapsible-content__heading {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.page-mission-rewards-faqs .accordion h3.accordion__title.inline-richtext.h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  div#index-multi-column .multicolumn-buttons a.button.no-button-border {
+    margin-left: 20px;
+  }
+
+  div#index-multi-column .multicolumn-buttons {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+}
+
+body.cart h1.title.title--primary {
+  color: #002855;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+body.cart div#main-cart-items th {
+  color: #002855;
+  font-size: 16px;
+  opacity: 1;
+}
+
+body.cart div#main-cart-items td.cart-item__details a {
+  color: #002855;
+  font-size: 16px;
+}
+
+body.cart quantity-input.quantity.cart-quantity {
+  border-color: #002855;
+}
+
+body.cart quantity-input.quantity.cart-quantity button {
+  color: #002855;
+}
+
+body.cart quantity-input.quantity.cart-quantity input {
+  color: #002855;
+}
+
+body.cart div#main-cart-items span.svg-wrapper svg {
+  color: #002855;
+}
+
+body.cart div#main-cart-items cart-remove-button a {
+  border-color: #002855;
+  border: 0px;
+}
+
+body.cart .cart-item__price-wrapper span {
+  color: #002855;
+}
+
+body.cart .product-option {
+  color: #002855;
+}
+
+body.cart button#checkout {
+  background: #002855;
+}
+@media screen and (min-width: 768px) {
+  body.cart .totals {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  body.cart .totals h2.totals__total {
+    padding-bottom: 0px !important;
+    color: #002855;
+  }
+
+  body.cart .totals p.totals__total-value {
+    color: #002855;
+  }
+}
+
+body.cart .totals h2.totals__total {
+  color: #002855;
+}
+
+body.cart .totals p.totals__total-value {
+  color: #002855;
+}
+
+body.cart .title-wrapper-with-link a.underlined-link {
+  color: #002855;
+}
+
+body.cart h1.cart__empty-text {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #002855;
+}
+body.cart .cart__warnings a.button {
+  background: #002855;
+}
+
+body.cart h2.cart__login-title {
+  color: #002855;
+}
+
+body.cart p.cart__login-paragraph {
+  color: #002855;
+}
+
+body.cart p.cart__login-paragraph a.link.underlined-link {
+  color: #002855;
+}
+
+/***************************************** button border css **********************************************************/
+
+a.no-button-border {
+  border-bottom: 0px !important;
+  text-decoration: underline;
+  text-underline-offset: 9px;
+}
+
+.page-visit-us .tabs-buttons a:first-child {
+  border-bottom: 0px !important;
+  text-decoration: underline;
+  text-underline-offset: 9px;
+}
+
+.page-visit-us div#cellar-door a.button:first-child {
+  border-bottom: 0px !important;
+  text-decoration: underline;
+  text-underline-offset: 9px;
+}
+
+.page-visit-us div#accomodation-section a.button:first-child {
+  border-bottom: 0px !important;
+  text-decoration: underline;
+  text-underline-offset: 9px;
+}
+
+div#celebration-functions .wrap_buttons a.button.button--primary {
+  border-bottom: 0px !important;
+  text-decoration: underline;
+  text-underline-offset: 9px;
+}
+
+body.page-restaurant .wrap_mission a.button.button--primary {
+  border-bottom: 0px !important;
+  text-decoration: underline;
+  text-underline-offset: 9px;
+}
+
+div#wrap_upcoming_events .text-col-buttons a.button.button--primary {
+  border-bottom: 0px !important;
+  text-decoration: underline;
+  text-underline-offset: 9px;
+}
+
+div#wrap_start_accomdation a.button.button--primary {
+  border-bottom: 0px !important;
+  text-decoration: underline;
+  text-underline-offset: 9px;
+}
+
+.page-weddings div#wrap_mission_video a.button.button--primary {
+  /* border-bottom: 0px !important; */
+  text-decoration: underline;
+  text-underline-offset: 9px;
+}
+
+div#our-history a.button.button--primary,
+div#sustainability a.button.button--primary {
+  border-bottom: 0px !important;
+  text-decoration: underline;
+  text-underline-offset: 9px;
+}
+
+div#about-us a.button--primary,
+div#wrap_library a.button--primary {
+  border-bottom: 0px !important;
+  text-decoration: underline;
+  text-underline-offset: 9px;
+}
+
+div#vineyardss a.button.button--primary {
+  border-bottom: 0px !important;
+  text-decoration: underline;
+  text-underline-offset: 9px;
+}
+
+nav.header__inline-menu ul li a.parent_menu {
+  color: #fff;
+  text-decoration: none;
+}
+.slideshow__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.wrap_none_tag {
+  display: none !important;
+}
+
+.wrap_artilce_title a.full-unstyled-link {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+h3.card__heading.wrap_artilce_title {
+  padding-top: 24px;
+  padding-bottom: 3px;
+}
+
+.foot__payment ul.foot-list-payment {
+  display: flex;
+}
+
+.foot__payment ul.foot-list-payment .list-payment__item {
+  align-items: center;
+  list-style: none;
+}
+
+.foot__payment ul.foot-list-payment .list-payment__item svg {
+  width: 30px;
+}
+
+.slideshow__media.banner__media.media:after {
+  background: linear-gradient(
+    to top,
+    rgba(18, 4, 1, 0.8) 0%,
+    rgba(18, 4, 1, 0) 80%
+  ) !important;
+  opacity: 1 !important;
+
+  background: transparent !important;
+}
+/******************************************* button border css end *********************************************/
+
+/**************************************************** custom form popup css *************************************************/
+
+.enquiry-popup-wrapper {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: auto; /* Allow scrolling for overflow content */
+}
+
+.enquiry-popup-content {
+  background: white;
+  padding: 40px;
+  width: 90%;
+  max-width: 650px;
+  margin: 5% auto;
+  border-radius: 10px;
+  position: relative;
+  font-family: sans-serif;
+
+  /* Make content scrollable if needed */
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.enquiry-popup-content h2 {
+  margin-top: 0;
+  font-weight: 600;
+}
+
+.enquiry-popup-content label {
+  display: block;
+  margin-top: 14px;
+  font-weight: 400;
+  font-family: 'Raleway';
+  text-transform: uppercase;
+  color: #002855;
+  font-size: 14px;
+}
+
+.enquiry-popup-content input {
+  width: 100%;
+  padding: 5px 0px;
+  margin-top: 5px;
+  border: 0px;
+  border-bottom: 1px solid #002855;
+  border-radius: 0px;
+  font-family: 'Literata-light';
+  color: #002855;
+}
+
+.enquiry-popup-content select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #002855;
+  border-radius: 10px;
+  font-family: 'Literata-light';
+  color: #002855;
+}
+
+.enquiry-popup-content button[type='submit'] {
+  margin-top: 20px;
+  padding: 10px 32px;
+  color: #002855;
+  cursor: pointer;
+  font-family: 'Raleway';
+  font-size: 17px;
+  background: transparent;
+  border: 1px solid #002855;
+  border-radius: 30px;
+}
+
+textarea#ContactForm-body::placeholder {
+  color: #002855;
+  opacity: 1;
+  font-weight: 400 !important;
+  font-size: 16px;
+  font-family: 'Literata-light';
+}
+.enquiry-popup-content button[type='submit']:hover {
+  border: 1px solid #002855;
+  background: #002855;
+  color: #fff;
+}
+
+.close-popup {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+div#cart-notification .product-option {
+  color: #002855;
+}
+
+div#cart-notification .cart-notification__close span.svg-wrapper svg path {
+  fill: #002855;
+}
+
+.enquiry-popup-content label.first_label {
+  margin-top: 0px;
+}
+
+.enquiry-popup-content input:focus-visible,
+.enquiry-popup-content select:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.enquiry-popup-content input:focus,
+.enquiry-popup-content select:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/********************************************************* custom form popup end ***************************************/
+div#wrap_food_paring .image-with-text__media img {
+  width: 100%;
+}
+
+div#index-review .rich-text__wrapper .rich-text__blocks {
+  max-width: 100% !important;
+}
+@media only screen and (min-width: 280px) and (max-width: 360px) {
+  a.button {
+    font-size: 11px !important;
+  }
+}
+
+@media only screen and (min-width: 361px) and (max-width: 480px) {
+  a.button {
+    font-size: 12px !important;
+  }
+}
+
+body.page-our-vineyards div#our-history .image-with-text__grid {
+  align-items: flex-start;
+}
+
+a.mobile_wrap_respovsive_parent_menu {
+  color: #002855;
+  text-decoration: none;
+}
+.banner__media:after {
+  background: linear-gradient(
+    to top,
+    rgba(18, 4, 1, 0.8) 0%,
+    rgba(18, 4, 1, 0) 80%
+  ) !important;
+  opacity: 1 !important;
+}
+
+div#gaia-project .wrap_buttons a.button.button--secondary {
+  border-color: #002855 !important;
+  color: #002855 !important;
+}
+
+div#gaia-project .wrap_buttons a.button.button--secondary:hover {
+  border-color: #002855 !important;
+  color: #fff !important;
+  background: #002855 !important;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  div#restaurant-tabs .ImageTab {
+    height: inherit !important;
+  }
+}
+
+body.page-restaurant .wrap_wedding a.button.button--primary.no-button-border {
+  justify-content: left;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .featured_collection {
+    background: #ecebe8;
+    position: relative;
+    top: -3px;
+  }
+
+  .featured_collection .grid--1-col-tablet-down.grid--peek .grid__item {
+    width: calc(37% - var(--grid-desktop-horizontal-spacing) - 3rem);
+  }
+
+  body.page-restaurant
+    .wrap_wedding
+    .custom-slideshow-section
+    .col.text-col-wrapper {
+    width: 50%;
+  }
+  body.page-restaurant .wrap_wedding .custom-slideshow-section .col {
+    width: 50%;
+  }
+
+  body.page-restaurant .wrap_wedding .custom-slideshow-section .row {
+    flex-direction: initial;
+    gap: 30px;
+  }
+
+  body.page-restaurant
+    .wrap_mission
+    .custom-slideshow-section
+    .col.text-col-wrapper {
+    width: 50%;
+  }
+  body.page-restaurant .wrap_mission .custom-slideshow-section .col {
+    width: 50%;
+  }
+}
+
+.wrap_link_back {
+  display: none;
+}
+
+body.article .wrap_link_back {
+  display: block;
+}
+
+.wrap_link_back a {
+  color: #002855;
+  text-decoration: none;
+  font-family: 'Raleway';
+  font-size: 16px;
+}
+
+.wrap_link_back span.icon-wrap svg.icon.icon-arrow {
+  transform: rotate(180deg);
+}
+
+.wrap_link_back span.icon-wrap {
+  position: relative;
+  top: 5px;
+}
+
+.wrap_link_back span.svg-wrapper svg path {
+  fill: #002855;
+}
+
+.page-privacy-policy h2 {
+  font-weight: 600;
+}
+
+.page-privacy-policy h2 + p {
+  margin-top: 0px !important;
+}
+
+.page-privacy-policy h2 {
+  padding-top: 30px;
+}
+
+.page-privacy-policy ul li {
+  font-size: 16px;
+}
+
+.page-privacy-policy h2:first-child {
+  padding-top: 0px;
+}
+
+div#cart-notification {
+  background: #d9d9d6;
+}
+
+div#cart-notification button.link.button-label {
+  font-size: 15px;
+}
+div#cart-notification h2.cart-notification__heading.caption-large.text-body {
+  color: #002855;
+}
+
+.food-pairing-icon {
+  color: #002855;
+  font-size: 16px;
+  line-height: 1.9em;
+}
+
+div#cart-notification .cart-notification__heading .icon-checkmark {
+  color: #002855;
+}
+
+div#cart-notification h3.cart-notification-product__name.h4 {
+  color: #002855;
+}
+
+div#cart-notification .cart-notification-product__image.global-media-settings {
+  background: transparent;
+}
+
+div#cart-notification
+  form#cart-notification-form
+  button.button.button--primary.button--full-width {
+  border: 1px solid #002855 !important;
+  background: transparent;
+  font-size: 14px;
+}
+
+div#cart-notification a#cart-notification-button:hover {
+  background: #ff3e51 !important;
+  color: #fff !important;
+  border-color: #ff3e51 !important;
+}
+
+div#cart-notification
+  form#cart-notification-form
+  button.button.button--primary:hover {
+  background: #002855;
+  color: #fff;
+}
+
+button.link.button-label {
+  color: #002855;
+}
+
+.page-cellar-door div#wrap_farmhouse {
+  background: #ffa791;
+}
+
+div#about-us .text-col {
+  margin-left: 0px;
+  padding-left: 7rem;
+}
+
+div#about-us .text-col .text-col.text-col-buttons {
+  padding-left: 0px !important;
+}
+
+.page-sustainability .wraps_sustainbility_section {
+  background: #005151;
+}
+
+.inner_pdf_texts a:hover span.file_text {
+  color: #021c3b !important;
+}
+.inner_pdf_texts a:hover {
+  color: #021c3b !important;
+}
+
+.restaurant-voucher ul.wraps_custom_fields {
+  display: none;
+}
+
+.cellar-door-gift-card ul.wraps_custom_fields {
+  display: none;
+}
+
+.recipient-fields__field .field input {
+  padding: 12px !important;
+  font-weight: 400 !important;
+  font-family: 'Raleway';
+}
+
+.recipient-fields__field .field input::placeholder {
+  color: #969693 !important;
+  font-size: 16px;
+}
+
+.recipient-fields__field .field textarea {
+  padding: 12px !important;
+  font-weight: 400 !important;
+  font-family: 'Raleway';
+}
+
+div#tasting_options h3 {
+  margin-top: 0px;
+}
+
+div#wrap_farmhouse .image-with-text__text.rte.body {
+  margin-top: 0px;
+}
+
+.wraps_flex-etc .contact_flex_left h2.form-status.caption-large.text-body {
+  font-size: 18px;
+  color: #ef3e51;
+}
+
+.wraps_flex-etc
+  .contact_flex_left
+  h2.form-status.form-status-list.form__message {
+  font-size: 18px;
+}
+
+.wraps_flex-etc .contact_flex_left span.form__message {
+  color: #ef3e51;
+}
+
+.wraps_flex-etc .contact_flex_left ul.form-status-list.caption-large li {
+  color: #ef3e51;
+}
+
+.wraps_flex-etc .contact_flex_left ul.form-status-list.caption-large li a {
+  color: #ef3e51;
+}
+@media only screen and (min-width: 750px) and (max-width: 991px) {
+  .mobile-facets__wrapper {
+    display: flex !important;
+  }
+
+  form#FacetFiltersForm {
+    display: none;
+  }
+  .facets-vertical.page-width {
+    display: block;
+  }
+
+  .product-count.light.medium-hide.large-up-hide {
+    display: flex !important;
+  }
+
+  .product-count h2.product-count__text.text-body {
+    padding-bottom: 0px !important;
+    font-family: 'Raleway';
+  }
+
+  h1.banner__heading.inline-richtext.hxxl {
+    font-size: 42px !important;
+  }
+
+  h2.banner__heading {
+    font-size: 42px !important;
+  }
+
+  .banner__text.rte p {
+    font-size: 18px !important;
+  }
+  .banner__text.rte.body {
+    margin-top: 0px !important;
+  }
+  .email_heading {
+    font-size: 22px !important;
+  }
+  .foot__payment ul.foot-list-payment .list-payment__item svg {
+    width: 25px;
+  }
+  span.we-accept {
+    font-size: 16px;
+  }
+
+  summary.header__icon--menu[aria-expanded='true'] {
+    right: 51% !important;
+    top: 10% !important;
+  }
+  div#menu-drawer ul.list.list-social.list-unstyled {
+    display: none;
+  }
+}
+
+.product-media-container.media-type-image.media-fit-contain.global-media-settings.gradient.constrain-height {
+  background: transparent !important;
+}
+
+h3.form__message.wrap_sucess_message {
+  color: #79c09d;
+}
+
+h3.form__message.wrap_sucess_message:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+
+p.wraps_rest_password {
+  color: #fff;
+  margin: 0px;
+}
+
+h3.form__message.wrap_sucess_message
+  span.svg-wrapper
+  svg.icon.icon-success
+  path {
+  fill: #79c09d;
+}
+
+.cart-notification__links a#cart-notification-button {
+  border-color: #002855;
+}
+
+.gifts.collection .wrapper_addtiwrapscrt .customer {
+  position: relative;
+  width: 300px !important;
+  left: -168px;
+  margin-top: 10px;
+  padding-bottom: 7px;
+}
+@media only screen and (min-width: 280px) and (max-width: 380px) {
+  .gifts.collection .wrapper_addtiwrapscrt .customer {
+    position: relative;
+    width: 260px !important;
+    left: -15px !important;
+    margin-top: 10px;
+    padding-bottom: 7px;
+  }
+}
+
+.recipient-fields__field .field textarea::placeholder {
+  opacity: 1 !important;
+  font-family: 'Literata-light' !important;
+}
+
+form#ContactForm h2.form-status.form-status-list.form__message {
+  color: #006400;
+}
+
+.wraps_flex-etc
+  .contact_flex_left
+  h2.form-status.form-status-list.form__message:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .gifts.collection .wrapper_addtiwrapscrt .customer {
+    position: relative;
+    width: 240px !important;
+    left: 0px;
+    margin-top: 10px;
+    padding-bottom: 7px;
+  }
+}
+@media only screen and (min-width: 381px) and (max-width: 767px) {
+  .gifts.collection .wrapper_addtiwrapscrt .customer {
+    position: relative;
+    width: 280px !important;
+    left: -15px !important;
+    margin-top: 10px;
+    padding-bottom: 7px;
+  }
+}
+
+.page-functions-special-events
+  div#wedding_elopments
+  .image-with-text__media.image-with-text__media--adapt
+  img {
+  position: relative;
+  width: 100%;
+  border: 0px;
+  padding-right: 65px;
+}
+
+.page-functions-special-events div#wedding_elopments .image-with-text__content {
+  padding-top: 0px;
+}
+
+.page-functions-special-events
+  div#wedding_elopments
+  .image-with-text__media.image-with-text__media--adapt {
+  padding-bottom: 0 !important;
+  border: 0px;
+}
+
+.page-functions-special-events div#wrap_seasonal_menu {
+  padding-top: 0px !important;
+}
+
+.reset-password .wrap_customer_left h1 {
+  text-transform: uppercase;
+  font-size: 55px;
+}
+
+div#wrap_seasonal_menu .image-with-text__text ul {
+  list-style: disc;
+  padding-left: 21px;
+}
+
+form#blogSortForm {
+  display: none;
+}
+
+.banner__text.rte {
+  display: none;
+}
+
+.slideshow__text-wrapper.banner__content {
+  padding-bottom: 10px !important;
+}
+
+.slideshow__text.banner__box {
+  padding-bottom: 15px !important;
+  margin-bottom: 50px;
+}
+
+div#wrap_event_pink_ribben .slideshow-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+div#wrap_event_pink_ribben .custom-slideshow-section .row .col {
+  width: 50%;
+}
+
+div#wrap_event_pink_ribben .col.text-col-wrapper {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+div#wrap_event_pink_ribben .page-width {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+div#wrap_event_pink_ribben .row.col-reverse {
+  flex-direction: row-reverse;
+  align-items: flex-start;
+}
+
+.footer-block__details-content.footer-block-image.right {
+  gap: 100px;
+}
+
+.foot__payment.foot__flex.mt-13 {
+  position: relative;
+  top: 50px;
+}
+
+.enquiry-popup-content select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 2.5rem;
+  background: url('https://cdn.shopify.com/s/files/1/0738/5327/2315/files/arrowdown.png?v=1754020865')
+    no-repeat right 1.5rem center;
+  background-color: white;
+  background-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.facets__form-vertical h2.facets__heading {
+  padding-bottom: 0px !important;
+}
+
+body.article .wrap_booknowetc a {
+  text-decoration: none;
+  border: 1px solid #002855;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-family: 'Raleway';
+}
+
+p.wrap_booknowetc {
+  padding-top: 10px;
+}
+
+div#wrap_seasonal_menu .image-with-text__text ul li {
+  margin-bottom: 10px;
+  opacity: 1 !important;
+  color: #002855 !important;
+}
+
+.page-the-mission-concert div#upcoming-events .buttons a {
+  border: 1px solid !important;
+  text-decoration: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+
+.page-the-mission-concert
+  div#upcoming-events
+  .buttons
+  a.button.button--primary.no-button-border:hover {
+  color: #fff;
+  border: 1px solid #002855 !important;
+  background: #002855;
+}
+
+div#wrap_unforgetable .wrap_buttons a:hover {
+  background: #002855;
+  border-color: #002855;
+}
+
+div#wrap_unforgetable .image-with-text__media {
+  position: relative !important;
+  padding: 0px !important;
+  border: 0px;
+}
+
+div#wrap_unforgetable .image-with-text__content {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+div#wrap_unforgetable .image-with-text__media img {
+  position: relative !important;
+  height: 100%;
+  width: 100%;
+}
+
+div#wrap_start_planing .image-with-text__text ul li {
+  opacity: 1 !important;
+  color: #002855 !important;
+}
+
+.img_texts .image-with-text__text ul {
+  list-style: disc;
+}
+
+.img_texts .image-with-text__text ul li {
+  opacity: 1 !important;
+  color: #002855;
+}
+
+.img_texts .image-with-text__text p {
+  opacity: 1 !important;
+  color: #002855;
+}
+
+.img_texts .wrap_buttons {
+  display: flex;
+  gap: 35px;
+  padding-top: 15px;
+}
+
+.img_texts .second_button {
+  border-radius: 0px;
+  border: 0px !important;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  justify-content: flex-start;
+}
+
+.img_texts
+  .image-with-text__grid.image-with-text__grid--reverse
+  .image-with-text__text-item.grid__item
+  .image-with-text__content {
+  padding-left: 0px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  padding-right: 7rem !important;
+}
+
+.img_texts
+  .image-with-text__grid
+  .image-with-text__text-item.grid__item
+  .image-with-text__content {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  padding-right: 0px !important;
+}
+
+.img_texts .button_first:hover {
+  background: #002855 !important;
+  border-color: #002855 !important;
+  color: #fff !important;
+}
+
+.img_texts .image-with-text__media {
+  position: relative !important;
+  padding: 0px !important;
+  border: 0px !important;
+}
+
+.img_texts .image-with-text__media img {
+  position: relative !important;
+  width: 100% !important;
+}
+
+.img_texts .image-with-text__text {
+  margin-top: 0px !important;
+}
+
+div#new_mission_rewards a.button.button--primary {
+  border-color: #002855;
+}
+
+div#new_mission_rewards a.button.button--primary:hover {
+  color: #002855;
+  background: #fff;
+  border-color: #fff;
+}
+
+section.section.wraps_sustainbility_section ul {
+  list-style: disc;
+}
+
+section.section.wraps_sustainbility_section ul li {
+  margin-bottom: 10px;
+}
+
+section.section.wraps_sustainbility_section
+  a.button.button--primary.second_wraps_button {
+  border-radius: 0;
+  border: 0px !important;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  justify-content: flex-start;
+  background: transparent;
+  color: #002855;
+}
+
+.section.section.wraps_sustainbility_section .first-button {
+  max-width: fit-content !important;
+  min-width: fit-content !important;
+  width: fit-content !important;
+}
+
+section.section.wraps_sustainbility_section .rich-text__buttons {
+  gap: 25px;
+  width: 100% !important;
+  min-width: 100% !important;
+}
+
+.wraps_sustainbility_section ul li strong {
+  font-weight: 700 !important;
+  font-family: 'Literata-light' !important;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 767px) {
+  .wrap_padding_mobile {
+    padding-top: 46px !important;
+    padding-bottom: 46px !important;
+  }
+
+  .img_texts .image-with-text__text {
+    margin-top: 0px !important;
+  }
+
+  .img_texts
+    .image-with-text__grid
+    .image-with-text__text-item.grid__item
+    .image-with-text__content {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-top: 40px !important;
+  }
+
+  .img_texts
+    .image-with-text__grid.image-with-text__grid--reverse
+    .image-with-text__text-item.grid__item
+    .image-with-text__content {
+    padding-left: 0px !important;
+    padding-top: 40px !important;
+    padding-bottom: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .product-form__recipient-error-message-wrapper
+    h2.form__message
+    span.error-message {
+    font-size: 16px;
+  }
+
+  .slideshow__text.banner__box {
+    margin-bottom: 30px !important;
+  }
+
+  .footer-block__details-content.footer-block-image.right {
+    gap: 0px;
+  }
+
+  .foot__payment.foot__flex.mt-13 {
+    position: relative;
+    top: 0px;
+  }
+
+  div#wrap_event_pink_ribben .page-width {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .page-functions-special-events
+    div#wrap_seasonal_menu
+    .image-with-text__media.image-with-text__media--adapt
+    img {
+    position: relative;
+    width: 100%;
+    border: 0px;
+    padding-right: 0px;
+  }
+
+  .page-functions-special-events
+    div#wrap_seasonal_menu
+    .image-with-text__content {
+    padding-top: 30px;
+  }
+
+  .page-terms-conditions div#restaurant-tabs li.active {
+    padding-left: 17px;
+  }
+
+  .index .buttons {
+    flex-direction: initial !important;
+  }
+
+  .grid--1-col-mobile .grid__item {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .enquiry-popup-content input {
+    padding: 2px 0px 0px;
+    margin-top: 1px;
+  }
+
+  .newsletter-form__field-wrapper input {
+    padding-right: 7px !important;
+  }
+
+  .page-weddings div#wraps_wedding_package .custom-slideshow-section {
+    padding-top: 46px !important;
+  }
+
+  .page-weddings div#wraps_wedding_package .custom-slideshow-section .text-col {
+    padding-bottom: 30px !important;
+  }
+
+  div#restaurant-tabs .tab.active.custonmainatbs {
+    padding-bottom: 0px;
+  }
+
+  div#wrap_start_planing ul {
+    list-style: disc;
+  }
+
+  body.cellar-door-gift-card .wrapper_addtiwrapscrt .customer,
+  body.restaurant-voucher .wrapper_addtiwrapscrt .customer {
+    width: 300px !important;
+  }
+  .totals {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .tax-note {
+    display: block;
+  }
+  .product .ImageTab {
+    text-align: center;
+  }
+
+  .product .ImageTab img {
+    height: initial;
+    width: 50%;
+    margin: 0px auto !important;
+  }
+
+  .product .ImageTab img:last-child {
+    margin-top: 20px !important;
+  }
+
+  .InnerSectionrange span {
+    width: 113px !important;
+  }
+
+  div#about-us .text-col {
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+
+  body.page-restaurant .wrap_wedding .slideshow-wrapper {
+    position: relative !important;
+    top: 0;
+    left: auto;
+    width: 100%;
+    height: 100%;
+    right: 0;
+  }
+
+  body.page-restaurant .wrap_wedding .custom-slideshow-section .row {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  .menu-opening .mobile-facets__inner {
+    z-index: 9999999999999999 !important;
+    position: relative;
+  }
+
+  .mobile-facets__footer {
+    z-index: 999999999999999999999999 !important;
+    background-color: rgb(var(--color-background));
+  }
+
+  .mobile-facets {
+    z-index: 99999999999999999 !important;
+  }
+
+  div#smile-ui-lite-container {
+    z-index: 9 !important;
+  }
+
+  .mobile-facets__main {
+    z-index: 9999999 !important;
+    position: relative;
+  }
+  body.collection .banner__text.rte p {
+    font-family: Literata-light;
+    font-size: 16px;
+  }
+
+  span.mobile-facets__open-label.button-label.medium-hide.large-up-hide {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+  }
+
+  h2.product-count__text.text-body {
+    font-size: 16px !important;
+    padding-bottom: 0px !important;
+  }
+
+  span#ProductCount {
+    color: #002855;
+    font-size: 16px !important;
+  }
+
+  body.collection .banner__text.rte.body {
+    margin-top: 0px !important;
+  }
+  body.cart .totals h2.totals__total {
+    padding-bottom: 0px !important;
+    font-size: 19px !important;
+    font-weight: 600;
+    margin-top: 0px;
+    padding-top: 3px;
+  }
+
+  .totals {
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
+
+  body.cart .totals p.totals__total-value {
+    margin-left: 0px;
+    padding-top: 0px;
+    font-size: 19px;
+    font-weight: 600;
+  }
+
+  div#our-people .multicolumn-card__info {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .page-history div#wraps_accomdationshistory {
+    padding-top: 50px;
+  }
+
+  h2 {
+    font-size: 30px !important;
+  }
+  .product__title {
+    margin-top: 0px !important;
+  }
+
+  div#restaurant-tabs {
+    padding-top: 46px !important;
+  }
+
+  .customProduct_tabs {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+  }
+
+  div#food_pairing {
+    padding: 0px !important;
+  }
+
+  div#food_pairing .ProductCustom_Class {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .product div#wrap_reviews_awards h1 {
+    margin-top: 0px;
+  }
+
+  .CustomProducts_tab ul.tab-links li:first-child {
+    margin-top: 0px;
+  }
+
+  .product__info-wrapper.grid__item {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+  }
+
+  .product .app-section {
+    padding-bottom: 50px !important;
+  }
+
+  .product section.products_awards {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .product section.wraps_region {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  nav.header__inline-menu
+    ul.list-menu.list-menu--inline
+    li
+    .header__submenu
+    li:nth-last-child(2) {
+    display: block;
+  }
+  .article h2.banner__heading.inline-richtext.h0 {
+    text-align: left;
+  }
+
+  .article .banner__text.rte {
+    text-align: left;
+  }
+  header.header ul.list.list-social.list-unstyled {
+    display: none;
+  }
+
+  button.media-hub__toggle {
+    display: none;
+  }
+
+  .page-width.media-hub__layout {
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+
+  .media-hub__sidebar {
+    top: 0rem !important;
+    max-height: initial !important;
+  }
+
+  div#wrap_collection_etc .custom-slideshow-section {
+    padding-top: 46px !important;
+    padding-bottom: 46px !important;
+  }
+
+  div#index-shop-wines .custom-slideshow-section {
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+  div#wrap_event_pink_ribben .custom-slideshow-section {
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+
+  .page-celebrations-functions
+    div#our-historywrap
+    .image-with-text__text.rte.body {
+    margin-top: 0px;
+  }
+
+  .page-celebrations-functions div#our-historywrap .image-with-text__content {
+    padding-bottom: 0px;
+  }
+
+  .page-celebrations-functions div#our-historywrap a.button.button--primary {
+    margin-bottom: 0px;
+  }
+
+  .page-celebrations-functions .wrap_tabs_title_heading {
+    background: #fff;
+  }
+
+  .page-celebrations-functions div#our-historywrap {
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+
+  .page-contact .contact.page-width {
+    padding-top: 46px;
+    padding-bottom: 0px;
+  }
+
+  .location_wraps_content {
+    padding: 46px 0;
+  }
+
+  div#upcoming-events .custom-slideshow-section {
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+  body.index .article-slider-wrapper {
+    padding-top: 46px !important;
+  }
+
+  body.index .review-card:last-child {
+    margin-bottom: 0px !important;
+  }
+
+  section.review-section {
+    padding-bottom: 46px !important;
+  }
+
+  body.index .review-card:last-child p {
+    margin-bottom: 0px !important;
+  }
+
+  div#index-multi-column .page-width {
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+
+  body.page-history div#upcoming-events .custom-slideshow-section {
+    padding-top: 46px !important;
+    padding-bottom: 46px !important;
+  }
+
+  .contact_flex_left .description p {
+    margin-top: 0px;
+  }
+
+  .main-blog {
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+
+  div#home_history_wraps .row {
+    flex-direction: column-reverse;
+  }
+  div#our-people .page-width {
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+
+  div#wraps_history_headings .rich-text {
+    padding-top: 46px !important;
+  }
+
+  div#wraps_accomdations .reservition_images {
+    padding-top: 0px;
+  }
+
+  div#wraps_accomdations .wrap_reserviction .wraps_text-texts p:last-child {
+    margin-bottom: 0px;
+  }
+
+  .wraps_text-texts p {
+    margin-top: 0px;
+  }
+  .page-visit-us div#celebration-functions {
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+
+  div#sustainability .custom-slideshow-section {
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+
+  div#vineyardss .image-with-text__text.rte.body {
+    margin-top: 0px !important;
+  }
+
+  div#vineyardss {
+    padding-top: 46px !important;
+    padding-bottom: 46px !important;
+  }
+  body.gradient.page-celebrations-functions.page
+    div#sustainability
+    .custom-slideshow-section {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  div#our-history .image-with-text__text.rte.body {
+    margin-top: 0px;
+  }
+
+  .wrapper_reviews .rich-text {
+    padding-top: 46px !important;
+  }
+
+  body.cellar-door-gift-card .wrapper_addtiwrapscrt .customer {
+    left: -127px;
+  }
+
+  div#our-people-rich-text .rich-text.content-container {
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+
+  div#future_sustainbility {
+    background: #77c19a;
+    padding: 46px 0;
+  }
+
+  .wraps_text-texts h4 {
+    font-size: 20px;
+  }
+
+  .page-sustainability section.sustainability-mission {
+    padding: 46px 2rem 46px;
+    background-color: #77c19a;
+  }
+
+  .page-sustainability section#Sustainability-Mission h2.main-heading {
+    margin-top: 0px;
+  }
+
+  div#wrap_galia_section .text p:first-child {
+    margin-top: 0px;
+  }
+
+  div#certifiably-sustainable .page-width {
+    padding-top: 20px;
+    padding-bottom: 46px;
+  }
+
+  .featured_collection .collection {
+    padding-top: 0px !important;
+  }
+
+  div#wrap_galia_section .custom-slideshow-section {
+    padding: 46px 0;
+  }
+  div#about-us .text-col {
+    width: 100%;
+  }
+
+  .page-our-vineyards div#about-us .text {
+    padding-bottom: 0px;
+  }
+
+  .page-our-vineyards div#sustainability .custom-slideshow-section {
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+
+  .custonmainatbs {
+    padding-bottom: 46px;
+  }
+
+  .wrap_link {
+    padding-bottom: 40px;
+  }
+
+  .reservition_images {
+    padding-top: 45px;
+  }
+
+  .page-our-vineyards div#vineyardss {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  body.restaurant-voucher .wrapper_addtiwrapscrt .customer {
+    left: -127px;
+  }
+  .custom-slideshow-section .page-width {
+    padding-right: 1.5rem;
+  }
+
+  div#wraps_three-bedrooms .col.text-col-wrapper {
+    padding-right: 0px;
+  }
+
+  div#wrapper_farmhouse .custom-slideshow-section {
+    padding-top: 100px;
+  }
+
+  .page-accomodation div#wraps_accomdations {
+    padding: 100px 0;
+  }
+
+  body.page-restaurant .wrapper_reviews.isolate {
+    top: -1px;
+  }
+
+  body.page-restaurant .app-section {
+    position: relative;
+    top: -1px;
+  }
+
+  div#homepage-rich-text .text_QrYbay-text.rich-text__text {
+    margin-top: 0px;
+  }
+
+  .wrapper_reviews h2 {
+    margin-top: 0px;
+  }
+
+  div#home_history_wraps .slideshow-wrapper {
+    width: 100%;
+  }
+
+  .main-wrap_imgs {
+    width: 100%;
+    margin: 0px auto;
+  }
+
+  body.page-history .rich-text__wrapper {
+    padding: 0;
+    padding-top: 12px;
+  }
+
+  body.page-history div#wraps_accomdations {
+    padding-top: 8px;
+  }
+
+  div#home_honouring_wraps .slideshow-wrapper {
+    width: 100%;
+  }
+
+  div#our-history a.button.button--primary {
+    margin-bottom: 0px;
+  }
+
+  body.product .custonmainatbs {
+    padding-bottom: 0px;
+  }
+
+  .tabs-container .tab-content {
+    padding: 0;
+    width: 99% !important;
+    margin: 0px auto;
+  }
+
+  div#cellar-door .custom-slideshow-section {
+    padding-top: 46px !important;
+  }
+
+  main#MainContent {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .shopify-section-header-sticky .header-wrapper {
+    width: 100%;
+  }
+
+  div#about-us a.button--primary {
+    width: 50%;
+    text-align: center;
+  }
+
+  body.index div#about-us .text {
+    font-size: 18px !important;
+  }
+
+  .product-grid-container .collection--empty {
+    padding-left: 0px;
+    position: relative;
+    left: 0px;
+    padding-right: 0px;
+  }
+
+  div#certifiably-sustainable .multicolumn-card__info h3 {
+    padding-right: 0px;
+  }
+  div#restaurant-tabs .ImageTab {
+    height: inherit;
+  }
+
+  body.page-sustainability .Commantab_C.RightSide {
+    padding-top: 0px;
+  }
+  div#wrap_galia_section .col.text-col-wrapper {
+    width: 100%;
+  }
+
+  div#wrap_galia_section .col {
+    width: 100%;
+  }
+
+  div#wrap_galia_section .slideshow-wrapper {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  div#future_sustainbility img.second_image {
+    margin-top: 30px;
+  }
+
+  div#Certifiably-sustainable .rich-text__blocks.left p {
+    width: 100%;
+  }
+
+  div#wrap_galia_section .text-col {
+    margin: auto 0 0 auto;
+    width: 100%;
+    padding-right: 0px;
+  }
+
+  div#about-us a.button--primary {
+    width: 40%;
+    margin-left: 0;
+    display: block;
+    line-height: 15.5px !important;
+  }
+
+  .wrap_aboutussec .custom-slideshow-section {
+    padding-top: 46px !important;
+    padding-bottom: 46px !important;
+  }
+
+  body.index .article-slider-wrapper .main-slider-row a.button {
+    width: 36%;
+  }
+
+  .multicolumn-card__info a.button.button--primary {
+    width: 46%;
+  }
+
+  body.collection span.mobile-facets__close span.svg-wrapper svg {
+    color: #000;
+  }
+
+  .multicolumn-card__info a.button.no-button-border {
+    width: 46%;
+  }
+
+  .multicolumn-card__info a.button.no-button-border:first-child {
+    line-height: 28px !important;
+  }
+
+  div#TRADEMEDIA .col.text-col-wrapper {
+    padding-top: 52px;
+    padding-bottom: 0px;
+  }
+
+  div#TRADEMEDIA .row.col-reverse {
+    padding-bottom: 60px;
+  }
+
+  header.header {
+    padding: 22px 25px;
+  }
+
+  .menu-drawer__navigation {
+    padding: 6rem 0 3rem !important;
+  }
+
+  .wrap_imgs .second_image img {
+    width: 100%;
+    float: none;
+  }
+
+  div#wraps_wedding_package .text-col,
+  div#versatile_venue .text-col {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  div#wrap_seasonal_menu
+    .image-with-text__media.image-with-text__media--adapt
+    img {
+    position: relative;
+    width: 100%;
+    border: 0px;
+    padding: 0px 5px;
+  }
+
+  .wrap_video_text {
+    width: 100%;
+  }
+
+  .wrap_video-right {
+    width: 100%;
+  }
+
+  div#versatile_venue .custom-slideshow-section .row.col-reverse {
+    flex-direction: column;
+  }
+
+  div#wrap_start_planing .image-with-text__content {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 20px;
+  }
+  .wrap_video_text {
+    margin-bottom: 40px;
+  }
+
+  div#wrap_start_planing {
+    padding-bottom: 0px;
+  }
+
+  body.mission-estate-winery-weddings-historic-hawke-s-bay-vineyard-venue.page
+    h2 {
+    font-size: 30px !important;
+  }
+
+  div#versatile_venue h2 {
+    padding-bottom: 12px;
+    padding-top: 10px;
+  }
+
+  div#wraps_wedding_package h2 {
+    padding-bottom: 12px;
+    padding-top: 10px;
+  }
+
+  #wedding_elopments .image-with-text__content {
+    padding-right: 0px;
+  }
+
+  div#wedding_elopments h2.image-with-text__heading {
+    padding-bottom: 12px;
+    padding-top: 14px;
+  }
+
+  div#wrap_seasonal_menu h2.image-with-text__heading {
+    padding-top: 4px;
+    padding-bottom: 12px;
+  }
+  div#wrap_start_planing .image-with-text__text.rte.body {
+    padding-top: 10px;
+  }
+  div#wrap_mission_video .video-section {
+    padding-top: 10px;
+  }
+  div#our-people-rich-text {
+    padding-top: 0px;
+  }
+
+  div#our-historywrap .image-with-text__content {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  #wrapper_restrurants .icon-wrapper .icon-col {
+    padding-bottom: 1px;
+  }
+  div#wrapper_wedding h2 {
+    padding-bottom: 8px;
+  }
+  body.gradient.page-restaurant.page
+    div#wrapper_reservation_menu
+    .icon-wrapper {
+    margin-bottom: 10px;
+  }
+
+  body.gradient.page-cellardoor.page div#wrap_farmhouse {
+    padding: 46px 0px !important;
+  }
+
+  body.gradient.page-cellardoor.page
+    div#wrap_farmhouse
+    .image-with-text__text.rte.body {
+    margin-top: 0px;
+  }
+
+  body.gradient.page-cellardoor.page
+    div#wrap_farmhouse
+    .image-with-text__content {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  body.gradient.page-restaurant.page
+    div#wrapper_reservation_menu
+    .icon-col:last-child {
+    padding-bottom: 0px;
+  }
+  body.gradient.page-restaurant.page div#wrapper_reservation_menu .icon-col {
+    padding-bottom: 6px;
+  }
+
+  div#tasting_options {
+    padding-top: 46px !important;
+    padding-bottom: 46px !important;
+  }
+
+  div#tasting_options h4 {
+    padding-top: 0px;
+  }
+
+  div#wrap_upcoming_events .text p:first-child {
+    margin-top: 0px;
+  }
+
+  div#wraps_three-bedrooms .custom-slideshow-section {
+    padding-bottom: 46px;
+  }
+
+  div#wrapper_farmhouse .custom-slideshow-section {
+    padding-top: 46px !important;
+    padding-bottom: 46px !important;
+  }
+
+  div#wraps_accomdations {
+    padding-top: 0px !important;
+    padding-bottom: 46px !important;
+  }
+
+  body.gradient.page-restaurant.page .tabs-container .tab-links li {
+    width: 100%;
+    margin-bottom: 16px;
+    line-height: 20px !important;
+    min-width: 150px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    text-align: center;
+  }
+
+  body.gradient.page-restaurant.page .tabs-container .tab-links {
+    flex-wrap: inherit;
+    justify-content: space-between;
+    gap: 20px !important;
+    overflow-x: scroll;
+  }
+
+  div#TRADEMEDIA h2.heading {
+    padding-bottom: 15px;
+  }
+
+  .wraps_restrurent_menus a.wraps_reservation {
+    width: fit-content;
+    text-align: center;
+  }
+
+  .page-accomodation a.button.button--secondary.no-button-border {
+    padding: 20px 10px;
+  }
+
+  .wraps_reservation_buttons {
+    gap: 13px;
+  }
+
+  div#restaurant-tabs a {
+    width: fit-content !important;
+    display: block;
+    margin-left: 0px !important;
+  }
+
+  h1.banner__heading.inline-richtext.h0 {
+    font-size: 38px !important;
+  }
+
+  div#restaurant-tabs li.active a {
+    margin-left: 17px !important;
+  }
+
+  div#restaurant-tabs li.active:before {
+    position: absolute;
+    left: -3px;
+  }
+
+  div#wrap_galia_section .custom-slideshow-section {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+
+  .tabs-buttons {
+    padding-bottom: 20px !important;
+  }
+
+  .wraps_restrurent_menus a.wraps_link-voucher {
+    width: fit-content;
+    text-align: center;
+  }
+
+  div#missionwrap-section .custom-slideshow-section {
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+
+  div#accomodation-section .custom-slideshow-section {
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+
+  div#wrapper_restrurants .custom-slideshow-section {
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+
+  div#restaurant_menus_wraps .custom-slideshow-section {
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+
+  div#wrapper_wedding .custom-slideshow-section {
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+
+  div#wrapper_reservation_menu .custom-slideshow-section {
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+
+  div#wrapper_reservation_menu .text-col .secondary-buttons a {
+    margin-bottom: 0px;
+  }
+  div#celebration-functions .image-with-text__content {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  div#celebration-functions .image-with-text__content {
+    padding-bottom: 0px;
+  }
+
+  div#celebration-functions
+    .image-with-text
+    .grid__item
+    a.button.button--primary:first-child {
+    background-color: transparent;
+    color: #002855;
+    margin-bottom: 0px;
+  }
+
+  body.page-restaurant .reviews-section .rich-text {
+    padding-top: 50px;
+  }
+
+  .cellardoor div#restaurant-tabs ul.tab-links li:last-child {
+    margin-bottom: 0px;
+  }
+
+  div#wrap_farmhouse .image-with-text__content {
+    padding-bottom: 0px;
+  }
+
+  body.gradient.page-cellardoor.page div#wrap_farmhouse {
+    padding: 70px 0 65px;
+  }
+
+  div#tasting_options .wrap_reserviction h2 {
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  div#tasting_options h4 {
+    margin-top: 0px;
+  }
+  div#wrap_upcoming_events h2 {
+    padding-bottom: 5px;
+  }
+
+  .wraps_icons_textstesting_options {
+    column-gap: 30px;
+    row-gap: 20px;
+  }
+
+  div#wrap_farmhouse .wrap_buttons {
+    width: 100%;
+  }
+
+  div#wrap_farmhouse .wrap_buttons a.button.button--primary {
+    width: 52%;
+    display: block;
+    line-height: 16px !important;
+    text-align: center;
+  }
+
+  div#our-people-rich-text a.button.button--secondary {
+    width: 60%;
+  }
+
+  body.page-accomodation div#wrap_farmhouse .image-with-text__grid {
+    flex-direction: column-reverse;
+  }
+  body.page-accomodation div#wrap_farmhouse .image-with-text__content {
+    padding-top: 0px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 71px;
+  }
+
+  body.page-accomodation div#wrap_farmhouse {
+    background: #fff;
+    padding: 32px 0 45px;
+  }
+
+  .template--19584830406907__image_text_slideshow_4QQfE8.wraps_slider-section
+    .text {
+    padding-bottom: 0px;
+  }
+
+  #vineyardss .image-with-text__content {
+    padding-bottom: 0px;
+  }
+
+  body.page-sustainability ul.tab-links li {
+    margin-bottom: 0px;
+  }
+  body.page-sustainability .MainDescreiption {
+    margin-bottom: 25px;
+  }
+  section.sustainability-mission {
+    padding: 4rem 1rem 5rem;
+    background-color: #77c19a;
+  }
+  div#Certifiably-sustainable h2 {
+    font-size: 32px;
+  }
+  div#restaurant-tabs ul.tab-links li:last-child {
+    margin-bottom: 0px;
+  }
+
+  body.gradient.page-celebrations-functions.page div#sustainability {
+    padding-top: 46px;
+    padding-bottom: 46px;
+    background: #fff;
+  }
+
+  div#our-history {
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+
+  div#about-uswrap .row {
+    flex-direction: column-reverse;
+  }
+  div#about-uswrap .custom-slideshow-section {
+    padding-top: 0px !important;
+  }
+
+  div#wraps_accomdations .wrap_reserviction {
+    padding-bottom: 20px;
+  }
+
+  body.page-history div#upcoming-events .custom-slideshow-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  div#restaurant-tabs {
+    background: #fff !important;
+    padding-bottom: 0px !important;
+  }
+
+  .page-visit-us div#restaurant-tabs .tabs-buttons a:first-child {
+    margin-left: 20px !important;
+  }
+
+  .page-sustainability h1.banner__heading.inline-richtext {
+    text-transform: uppercase;
+    font-size: 38px;
+  }
+
+  div#wedding_elopments {
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+
+  div#wedding_elopments
+    .image-with-text
+    .grid__item
+    a.button.button--primary:first-child {
+    background-color: transparent;
+    color: #002855;
+    margin-bottom: 0px;
+  }
+
+  #wedding_elopments .image-with-text__content {
+    padding-bottom: 0px !important;
+  }
+
+  div#wrap_seasonal_menu {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  div#wrap_seasonal_menu a.button.button--primary {
+    margin-bottom: 0px;
+  }
+
+  div#wrap_start_planing {
+    padding-top: 46px !important;
+  }
+
+  div#wrap_mission_video .video-section {
+    padding-bottom: 46px;
+  }
+
+  div#wrap_start_accomdation .wrap_buttons a.button.button--primary {
+    margin-bottom: 0px;
+  }
+
+  div#wrap_start_accomdation .image-with-text__content {
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .page-celebrations-functions div#restaurant-tabs .tabs-buttons a:last-child {
+    display: none !important;
+  }
+
+  .page-celebrations-functions div#restaurant-tabs .tabs-buttons {
+    padding-bottom: 0px !important;
+  }
+  .page-celebrations-functions
+    div#restaurant-tabs
+    .tabs-container
+    .tab.custonmainatbs {
+    gap: 0px;
+  }
+  .page-celebrations-functions div#restaurant-tabs div#tab-1 {
+    gap: 0px;
+  }
+  .page-weddings div#wraps_wedding_package .custom-slideshow-section {
+    padding-bottom: 0px !important;
+  }
+
+  .page-weddings div#wraps_wedding_package .text {
+    padding-bottom: 0px !important;
+  }
+
+  .page-weddings div#versatile_venue .custom-slideshow-section {
+    padding-bottom: 0px !important;
+  }
+
+  .page-weddings div#versatile_venue .text {
+    padding-bottom: 0px !important;
+  }
+
+  .page-weddings div#wrap_mission_video a.button.button--primary {
+    width: fit-content;
+  }
+
+  section#Sustainability-Mission .page-width {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  div#gaia-project .image-with-text__content {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  .page-terms-condition ul.tab-links li.active {
+    padding-left: 15px;
+  }
+
+  .enquiry-popup-content h2 {
+    font-size: 20px !important;
+    padding-bottom: 15px !important;
+  }
+  .enquiry-popup-content button[type='submit'] {
+    margin-top: 10px;
+    color: #fff;
+    font-size: 16px;
+    border: 1px solid #002855;
+    background: #002855;
+  }
+
+  .enquiry-popup-content {
+    padding: 40px 30px;
+  }
+
+  .product-count {
+    opacity: 1;
+  }
+
+  span#ProductCount {
+    color: #002855 !important;
+    font-weight: 600 !important;
+    position: relative;
+    top: 2px;
+    opacity: 0.8;
+    font-family: 'Raleway';
+    font-size: 15px !important;
+  }
+
+  h2.product-count__text.text-body {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+  }
+  .index .multicolumn-buttons {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: baseline;
+  }
+
+  .page-cellar-door .CustomProducts_tab .tabs-buttons {
+    display: flex;
+    gap: 20px;
+  }
+  .page-accomodation .buttons {
+    flex-direction: initial;
+  }
+
+  div#our-history .wrap_buttons a.button.button--primary {
+    justify-content: flex-start;
+  }
+
+  div#sustainability a.button.button--primary {
+    justify-content: flex-start;
+  }
+
+  .page-about-us .page-accomodation div#wraps_accomdations {
+    position: relative;
+    top: 2px;
+  }
+
+  .page-about-us .page-accomodation div#wraps_accomdations {
+    position: relative;
+    top: 2px;
+  }
+  .page-about-us div#about-us a.button--primary {
+    text-align: left;
+  }
+
+  div#vineyardss a.button.button--primary {
+    justify-content: flex-start;
+  }
+}
+
+/************************************** 23-09-25 css ********************************/
+
+.wrap_aboutussec .col {
+  position: relative;
+}
+
+.page-richard-james-jeweller-mission-promo
+  div#about-us
+  a.button.button--primary {
+  border-bottom: 1px solid #fff !important;
+  text-decoration: none;
+}
+@media screen and (min-width: 1000px) {
+  .page-richard-james-jeweller-mission-promo div#about-us .slick-slider img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .page-richard-james-jeweller-mission-promo div#about-us .slideshow-wrapper {
+    position: absolute;
+    left: 0px;
+    height: 100%;
+    z-index: 1;
+    width: 100%;
+  }
+
+  .page-richard-james-jeweller-mission-promo div#about-us .slick-slider {
+    height: 100%;
+  }
+
+  .page-richard-james-jeweller-mission-promo div#about-us .slick-list {
+    height: 100%;
+  }
+
+  .page-richard-james-jeweller-mission-promo div#about-us .slick-track {
+    height: 100%;
+  }
+}
+
+.page-richard-james-jeweller-mission-promo .banner__text.rte {
+  display: block;
+}
+
+.page-richard-james-jeweller-mission-promo .banner__buttons a {
+  background: transparent;
+  color: #fff;
+}
+
+.page-richard-james-jeweller-mission-promo
+  .banner__buttons
+  a.button.button--primary:hover {
+  background: #fff !important;
+  color: #002855 !important;
+  border-color: #fff !important;
+}
+
+.wedding-call-us {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+#wrap_mission_video a.wedding-call-us {
+  padding-left: 90px !important;
+  padding-right: 90px !important;
+}
+
+.lets-talk-wrapper {
+  margin-top: 10px !important;
+}
+.d-none {
+  display: none;
+}
+.custom-slideshow-section .buttons {
+  gap: 10px !important;
+}
+/*************************** css end **********************************/

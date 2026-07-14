@@ -1,0 +1,361 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "slideshow_JXCAB8": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_KNLa3V": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Banner-Vineyards.jpg",
+            "video_url": "",
+            "heading": "<strong>Our Hawke’s Bay & Marlborough Vineyards</strong>",
+            "heading_size": "h0",
+            "subheading": "Mission Estate introduced the first vines to Hawke’s Bay in the 1850s, beginning a legacy that makes us New Zealand’s oldest winery. Today, we grow in two of the country’s most celebrated wine regions.",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-d536de6d-9eba-4ca5-b804-ae369f8ab959",
+            "text_alignment_mobile": "left"
+          }
+        }
+      },
+      "block_order": [
+        "slide_KNLa3V"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "large",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "image_with_text_DBAbqN": {
+      "type": "image-with-text",
+      "blocks": {
+        "text_APMTFq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We’ve been making wine under the same management since 1851 – a legacy of continuity that shapes everything we do. With few exceptions, most of our wines are expertly crafted and bottled on-site at our historic Taradale estate, where generations of winemaking knowledge meet exceptional vineyard sites and distinctive regional climates.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "text_APMTFq"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "section_id": "our-history",
+        "image": "shopify://shop_images/Picture-141-650.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-ccdf85bc-5e76-4e49-b1d5-b858928d4956",
+        "color_scheme": "scheme-ccdf85bc-5e76-4e49-b1d5-b858928d4956",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 24,
+        "padding_bottom": 72
+      }
+    },
+    "image_text_slideshow_dejV9b": {
+      "type": "image-text-slideshow",
+      "name": "Image and Text Slideshow",
+      "settings": {
+        "section_id": "about-us",
+        "slider_class": "wrap_aboutussec",
+        "enable_fullwidth": true,
+        "enable_slideshow": true,
+        "slide_speed": 5000,
+        "autoplay": true,
+        "autoplay_speed": 5000,
+        "image_position": "left",
+        "slideshow_image_1": "shopify://shop_images/looktohouse-940.jpg",
+        "heading": "New Zealand Winegrowing: Climate &Terroir",
+        "heading_url": "",
+        "heading_color": "#002855",
+        "text": "<p><strong>New Zealand’s global reputation for premium wine comes from its temperate maritime climate, free-draining soils, and long growing season.</strong></p>\n<ul>\n<li>Warm days and cool nights enhance ripening while preserving natural acidity</li>\n<li>Alluvial and gravelly soils offer excellent drainage and root penetration</li>\n<li>A long harvest window encourages full flavour and varietal expression</li>\n</ul>\nThese conditions help us produce wines with vibrant aromatics, purity of fruit, and distinctive regional character.",
+        "text_color": "#002855",
+        "simple_link1": false,
+        "button_1_url": "",
+        "button_1_text": "",
+        "button_class": "",
+        "button1_bg_color": "#002855",
+        "button1_color": "#ffffff",
+        "simple_link2": false,
+        "button_2_url": "",
+        "button_2_text": "",
+        "button_class2": "",
+        "button2_bg_color": "rgba(0,0,0,0)",
+        "button2_color": "#002855",
+        "secondary": false,
+        "simple_link3": false,
+        "button_3_url": "",
+        "button_3_text": "",
+        "button_class3": "",
+        "simple_link4": false,
+        "button_4_url": "",
+        "button_4_text": "",
+        "button_class4": "",
+        "background_color": "#ffa791",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 30,
+        "padding_bottom_mobile": 30
+      }
+    },
+    "image_with_text_CJ6UHg": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_GzRDFU": {
+          "type": "heading",
+          "settings": {
+            "heading": "Gimblett Gravels vineyards",
+            "heading_size": "h1"
+          }
+        },
+        "text_MCMwXz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Hawke’s Bay is New Zealand’s oldest wine region – and officially recognised as one of the world’s 12 Great Wine Capitals, alongside elite wine tourism destinations such as Bordeaux and Napa Valley. Located on the east coast of the North Island, the region is known for its long, warm growing season and varied soils that support a diverse range of wine styles.</p><p>Mission Estate was the first to plant vines in Hawke’s Bay in the 1850s, and we continue to lead with vineyards in two of its most exceptional sub-regions:</p><ul><li>Taradale, home to our historic estate and flagship Chardonnay vineyards off Church Road</li><li>Gimblett Gravels, a renowned gravelly terroir producing structured reds with depth and finesse</li></ul><p>Our focus includes Chardonnay, Syrah, Merlot, and Cabernet Sauvignon, alongside small plantings of Semillon and Cabernet Franc. We also partner with select local growers who share our commitment to premium, sustainable viticulture.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_GzRDFU",
+        "text_MCMwXz"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "section_id": "our-history",
+        "image": "shopify://shop_images/Gimblett-gravels-1000x1000.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-ccdf85bc-5e76-4e49-b1d5-b858928d4956",
+        "color_scheme": "scheme-ccdf85bc-5e76-4e49-b1d5-b858928d4956",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 72,
+        "padding_bottom": 72
+      }
+    },
+    "image_text_slideshow_MRz8rm": {
+      "type": "image-text-slideshow",
+      "disabled": true,
+      "name": "Image and Text Slideshow",
+      "settings": {
+        "section_id": "sustainability",
+        "slider_class": "wraps_slider-section",
+        "enable_fullwidth": false,
+        "enable_slideshow": true,
+        "slide_speed": 5000,
+        "autoplay": true,
+        "autoplay_speed": 5000,
+        "image_position": "right",
+        "slideshow_image_1": "shopify://shop_images/Gimblett-gravels-1000x1000.jpg",
+        "heading": "Gimblett Gravels vineyard",
+        "heading_url": "",
+        "heading_color": "#002855",
+        "text": "Hawke’s Bay is New Zealand’s oldest wine region – and officially recognised as one of the world’s 12 Great Wine Capitals, alongside elite wine tourism destinations such as Bordeaux and Napa Valley. Located on the east coast of the North Island, the region is known for its long, warm growing season and varied soils that support a diverse range of wine styles.<br>\nMission Estate was the first to plant vines in Hawke’s Bay in the 1850s, and we continue to lead with vineyards in two of its most exceptional sub-regions:\n<ul>\n<li>Taradale, home to our historic estate and flagship Chardonnay vineyards off Church Road</li>\n<li>Gimblett Gravels, a renowned gravelly terroir producing structured reds with depth and finesse</li>\n</ul>\nOur focus includes Chardonnay, Syrah, Merlot, and Cabernet Sauvignon, alongside small plantings of Semillon and Cabernet Franc. We also partner with select local growers who share our commitment to premium, sustainable viticulture.",
+        "text_color": "#002855",
+        "simple_link1": false,
+        "button_1_url": "",
+        "button_1_text": "",
+        "button_class": "",
+        "button1_bg_color": "#002855",
+        "button1_color": "#ffffff",
+        "simple_link2": false,
+        "button_2_url": "",
+        "button_2_text": "",
+        "button_class2": "",
+        "button2_bg_color": "rgba(0,0,0,0)",
+        "button2_color": "#002855",
+        "secondary": false,
+        "simple_link3": false,
+        "button_3_url": "",
+        "button_3_text": "",
+        "button_class3": "",
+        "simple_link4": false,
+        "button_4_url": "",
+        "button_4_text": "",
+        "button_class4": "",
+        "background_color": "#f0f0ed",
+        "padding_top_desktop": 80,
+        "padding_bottom_desktop": 80,
+        "padding_top_mobile": 30,
+        "padding_bottom_mobile": 30
+      }
+    },
+    "image_with_text_hgBT4g": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_4mbydn": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Marlborough Vineyard – Awatere Valley",
+            "heading_size": "h1"
+          }
+        },
+        "text_waLyqC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At the top of the South Island, Marlborough is internationally recognised for its crisp, aromatic wines – especially Sauvignon Blanc. It’s one of the sunniest, driest areas in New Zealand, with strong diurnal temperature swings that intensify flavour.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_4mbydn",
+        "text_waLyqC"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "section_id": "vineyardss",
+        "image": "shopify://shop_images/Awatere-Valley-with-sea-view-500.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-5962b243-e7a7-4798-ac90-08968b8dc7eb",
+        "color_scheme": "scheme-5962b243-e7a7-4798-ac90-08968b8dc7eb",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_Djr8Ld": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_GFpAxd": {
+          "type": "heading",
+          "settings": {
+            "heading": "Cable Station Vineyard, Blind River",
+            "heading_size": "h1"
+          }
+        },
+        "text_mwhRBY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our Cable Station Vineyard sits in Blind River, a small, coastal sub-region south of the Awatere Valley – one of Marlborough’s three key winegrowing areas. <br/>Blind River’s strong coastal influence, free-draining soils, and dry climate shape wines with clarity, finesse, and a distinctive mineral edge. A large on-site pond supports sustainable practices by reducing irrigation and frost risk.<br/>We grow three cool-climate varietals here:<br/></p><ul><li>Sauvignon Blanc – Bright and herbaceous, with citrus and saline minerality </li><li>Pinot Noir – Elegant and savoury, with red fruit and spice</li><li>Pinot Gris – Aromatic and fresh, with stone fruit and floral lift </li></ul><p><br/>Crafted with care and character, they represent Mission’s vision for exceptional Marlborough wines.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_GFpAxd",
+        "text_mwhRBY"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "section_id": "our-history",
+        "image": "shopify://shop_images/Marlborough.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-ccdf85bc-5e76-4e49-b1d5-b858928d4956",
+        "color_scheme": "scheme-ccdf85bc-5e76-4e49-b1d5-b858928d4956",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 72,
+        "padding_bottom": 72
+      }
+    },
+    "image_text_slideshow_e7RQCC": {
+      "type": "image-text-slideshow",
+      "name": "Image and Text Slideshow",
+      "settings": {
+        "section_id": "about-us",
+        "slider_class": "wrap_aboutussec",
+        "enable_fullwidth": true,
+        "enable_slideshow": true,
+        "slide_speed": 5000,
+        "autoplay": true,
+        "autoplay_speed": 5000,
+        "image_position": "left",
+        "slideshow_image_1": "shopify://shop_images/17173EE6-7594-4F7E-86C2-622AF7B325D7_1_100_o.jpg",
+        "heading": "Crafted and bottled at Mission Estate",
+        "heading_url": "",
+        "heading_color": "#002855",
+        "text": "Most Mission Estate wines are crafted and bottled on-site at our historic Taradale winery in Hawke’s Bay – the exception being our Fête Brut Cuvée,  which is bottled off-site. Under the guidance of our Head Winemaker and Head Viticulturist, we oversee every step from vine to bottle, ensuring quality, consistency, and a strong connection to place. <br><br>\nMission Estate is committed to sustainable viticulture. Alongside our own estate blocks, we work in close partnership with long-term growers in both Hawke’s Bay and Marlborough – upholding standards that protect the land, encourage biodiversity, and support future generations of New Zealand winegrowing.",
+        "text_color": "#002855",
+        "simple_link1": false,
+        "button_1_url": "",
+        "button_1_text": "",
+        "button_class": "",
+        "button1_bg_color": "#002855",
+        "button1_color": "#ffffff",
+        "simple_link2": false,
+        "button_2_url": "",
+        "button_2_text": "",
+        "button_class2": "",
+        "button2_bg_color": "rgba(0,0,0,0)",
+        "button2_color": "#002855",
+        "secondary": false,
+        "simple_link3": false,
+        "button_3_url": "",
+        "button_3_text": "",
+        "button_class3": "",
+        "simple_link4": false,
+        "button_4_url": "",
+        "button_4_text": "",
+        "button_class4": "",
+        "background_color": "#ffa791",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 30,
+        "padding_bottom_mobile": 30
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_JXCAB8",
+    "image_with_text_DBAbqN",
+    "image_text_slideshow_dejV9b",
+    "image_with_text_CJ6UHg",
+    "image_text_slideshow_MRz8rm",
+    "image_with_text_hgBT4g",
+    "image_with_text_Djr8Ld",
+    "image_text_slideshow_e7RQCC"
+  ]
+}

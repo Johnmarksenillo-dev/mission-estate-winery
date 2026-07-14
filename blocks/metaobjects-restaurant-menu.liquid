@@ -1,0 +1,494 @@
+{% liquid
+  if block.settings.metaobject_list != blank
+    assign block_metaobjects = block.settings.metaobject_list
+    assign max_items = block.settings.metaobject_list.count
+  endif
+%}
+
+{% liquid
+  assign media_width_desktop = '100vw'
+  assign media_width_mobile = '100vw'
+  assign sizes = 'auto, (min-width: 750px) ' | append: media_width_desktop | append: ', ' | append: media_width_mobile
+  assign widths = '240, 352, 832, 1200, 1600, 1920, 2560, 3840'
+%}
+
+{% capture slides %}
+  {% for metaobject in block_metaobjects limit: max_items %}
+      {%- assign hid = metaobject.heading | handle | append: '-' | append: forloop.index -%}
+    <slideshow-slide>
+      <input
+        id='tab-{{ hid }}'
+        class='tab-input tw:sr-only'
+        type='radio'
+        name='tabs-{{ block.id }}'
+        {% if forloop.first %}
+          checked
+        {% endif %}
+      >
+      <label
+        for='tab-{{ hid }}'
+        class='tw:inline-block tw:px-3 tw:py-2 tw:text-sm tw:cursor-pointer tw:border-b-2 tw:border-transparent tw:data-[active=true]:border-current tw:font-medium'
+        data-tab-label
+      >
+        {{ metaobject.heading }}
+      </label>
+    </slideshow-slide>
+  {% endfor %}
+{% endcapture %}
+
+{% capture carousel_attribute %}
+ {% if block.settings.disable_mobile_carousel %}
+   desktop-carousel
+ {% endif %}
+{% endcapture %}
+
+<div
+  class='carousel-block carousel-block--width-{{ block.settings.width }} spacing-style'
+  {{ block.shopify_attributes }}
+  style='
+      {% render 'spacing-style', settings: block.settings %}
+      {% render 'carousel-style', settings: block.settings %}
+    --gap-mobile: {{ block.settings.gap_mobile }}px;
+  '
+>
+  <tabs-menu class='metaobjects-restaurant-menu'>
+    {% render 'carousel', class: '', settings: block.settings, slides: slides, attribute: carousel_attribute %}
+    <div class='restaurant-menu-contents'>
+      {% for metaobject in block_metaobjects limit: max_items %}
+        <div
+          id='{{ metaobject.heading | handle | append: '-' | append: forloop.index }}'
+          class='tab-panel tw:pt-10 tw:space-y-6 tw:data-[active=true]:block tw:hidden'
+          {% if forloop.first %}
+            data-active='true'
+          {% endif %}
+        >
+          {% if metaobject.paragraph != blank %}
+            <div class='menu__description'>
+              {{ metaobject.paragraph | metafield_tag }}
+            </div>
+          {% endif %}
+          <div class='tw:grid tw:grid-cols-1 tw:sm:grid-cols-12 tw:items-center tw:gap-10 tw:md:gap-20'>
+            <div class='tw:sm:col-span-7 tw:grid tw:grid-cols-2 tw:gap-4'>
+              {% for item in metaobject.images.value %}
+                {{
+                  item.image
+                  | image_url: width: 3840
+                  | image_tag:
+                    width: item.image.width,
+                    widths: widths,
+                    height: item.image.height,
+                    class: 'image-block__image border-style',
+                    sizes: sizes
+                }}
+              {% endfor %}
+            </div>
+            <div class='tw:sm:col-span-5 tw:flex tw:flex-col tw:gap-4'>
+              {% for item in metaobject.pdf_link.value %}
+                <a
+                  target='_blank'
+                  href='{{ item.url }}'
+                  rel='noopener noreferrer'
+                >
+                  {{ item.text }}
+                  <span class='icon-wrap'>
+                    {{- 'icon-arrow.svg' | inline_asset_content -}}
+                  </span>
+                </a>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </tabs-menu>
+</div>
+
+{% style %}
+  /* Hide all panels by default */
+  tabs-menu {
+    display: block;
+  }
+  .metaobjects-restaurant-menu .tab-panel * {
+    font-family: var(--font-heading-family);
+    color: #fff;
+  }
+  .metaobjects-restaurant-menu label[data-tab-label] {
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    padding: 8px 20px;
+    font-family: var(--font-heading-family);
+    font-size: 18px;
+    @media (min-width: 750px) {
+      padding: 12px 32px;
+      font-size: 20px;
+    }
+  }
+  .metaobjects-restaurant-menu .tab-input:checked + label[data-tab-label] {
+    color: #002855;
+    background: #fff;
+    border-radius: 50px;
+  }
+  .restaurant-menu-contents img {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    height: 100%;
+  }
+  .restaurant-menu-contents a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0.8rem 0;
+    width: fit-content;
+    line-height: 1;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+  }
+{% endstyle %}
+
+{% schema %}
+{
+  "name": "Restaurant Menu",
+  "tag": null,
+  "settings": [
+    {
+      "type": "metaobject_list",
+      "id": "metaobject_list",
+      "label": "Source",
+      "metaobject_type": "restaurant_menus"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "scroll",
+      "label": "Scroll",
+      "options": [
+        {
+          "value": "normal",
+          "label": "Normal"
+        },
+        {
+          "value": "autoplay",
+          "label": "Auto play"
+        },
+        {
+          "value": "autoscroll",
+          "label": "Auto scroll"
+        }
+      ],
+      "default": "normal"
+    },
+    {
+      "type": "checkbox",
+      "id": "fade",
+      "label": "Fade",
+      "default": false,
+      "visible_if": "{{ block.settings.scroll != 'autoscroll' }}"
+    },
+    {
+      "type": "checkbox",
+      "id": "reverse_direction",
+      "label": "Reverse direction",
+      "default": false,
+      "visible_if": "{{ block.settings.scroll == 'autoscroll' }}"
+    },
+    {
+      "type": "checkbox",
+      "id": "loop",
+      "label": "Loop",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "align_center",
+      "label": "Align Center",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "disable_drag_events",
+      "label": "Disable drag events",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "drag_free",
+      "label": "Drag Free",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "disable_mobile_carousel",
+      "label": "Disable mobile carousel",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "gap",
+      "label": "Gap",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "gap_mobile",
+      "label": "Mobile gap",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "header",
+      "content": "Carousel navigation",
+      "visible_if": "{{ block.settings.scroll != 'autoscroll'}}"
+    },
+    {
+      "type": "select",
+      "id": "control",
+      "label": "Control",
+      "options": [
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "nav",
+          "label": "Nav"
+        },
+        {
+          "value": "dots",
+          "label": "Dots"
+        },
+        {
+          "value": "both",
+          "label": "Both"
+        }
+      ],
+      "default": "nav",
+      "visible_if": "{{ block.settings.scroll != 'autoscroll' }}"
+    },
+    {
+      "type": "select",
+      "id": "horizontal_alignment",
+      "label": "Alignment",
+      "options": [
+        {
+          "value": "start",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "end",
+          "label": "Right"
+        }
+      ],
+      "default": "start",
+      "visible_if": "{{ block.settings.control != 'none' and block.settings.control != 'both'}}"
+    },
+    {
+      "type": "color",
+      "id": "control_background",
+      "label": "Color",
+      "default": "#214123",
+      "visible_if": "{{ block.settings.control != 'none' }}"
+    },
+    {
+      "type": "color",
+      "id": "icon_color",
+      "label": "Icon color",
+      "default": "#fff",
+      "visible_if": "{{ block.settings.control != 'none' }}"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_counter",
+      "label": "Counter",
+      "default": false,
+      "visible_if": "{{ block.settings.control != 'none' }}"
+    },
+    {
+      "type": "header",
+      "content": "Size",
+      "info": "Applies to all slides."
+    },
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Width",
+      "options": [
+        {
+          "value": "fit-content",
+          "label": "Fit"
+        },
+        {
+          "value": "custom",
+          "label": "Custom"
+        }
+      ],
+      "default": "custom"
+    },
+    {
+      "type": "select",
+      "id": "custom_width",
+      "label": "Custom width",
+      "options": [
+        { "value": "16.66", "label": "16.66%" },
+        { "value": "20", "label": "20%" },
+        { "value": "25", "label": "25%" },
+        { "value": "33.33", "label": "33.33%" },
+        { "value": "50", "label": "50%" },
+        { "value": "56.66", "label": "56.66%" },
+        { "value": "66.66", "label": "66.66%" },
+        { "value": "75", "label": "75%" },
+        { "value": "100", "label": "100%" }
+      ],
+      "default": "33.33",
+      "visible_if": "{{ block.settings.width == 'custom' }}"
+    },
+    {
+      "type": "select",
+      "id": "width_tablet",
+      "label": "Tablet width",
+      "options": [
+        { "value": "25", "label": "25%" },
+        { "value": "33.33", "label": "33.33%" },
+        { "value": "50", "label": "50%" },
+        { "value": "66.66", "label": "66.66%" },
+        { "value": "75", "label": "75%" },
+        { "value": "100", "label": "100%" }
+      ],
+      "default": "33.33",
+      "visible_if": "{{ block.settings.width == 'custom' }}"
+    },
+    {
+      "type": "select",
+      "id": "width_mobile",
+      "label": "Mobile width",
+      "options": [
+        { "value": "50", "label": "50%" },
+        { "value": "66.66", "label": "66.66%" },
+        { "value": "75", "label": "75%" },
+        { "value": "100", "label": "100%" }
+      ],
+      "default": "50",
+      "visible_if": "{{ block.settings.width == 'custom' }}"
+    },
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start",
+      "label": "Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end",
+      "label": "Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-inline-start",
+      "label": "Left",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-inline-end",
+      "label": "Right",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "checkbox",
+      "id": "padding_on_mobile",
+      "label": "Mobile padding"
+    },
+    {
+      "type": "header",
+      "content": "Mobile padding",
+      "visible_if": "{{ block.settings.padding_on_mobile }}"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start-mobile",
+      "label": "Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0,
+      "visible_if": "{{ block.settings.padding_on_mobile }}"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end-mobile",
+      "label": "Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0,
+      "visible_if": "{{ block.settings.padding_on_mobile }}"
+    },
+    {
+      "type": "range",
+      "id": "padding-inline-start-mobile",
+      "label": "Left",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0,
+      "visible_if": "{{ block.settings.padding_on_mobile }}"
+    },
+    {
+      "type": "range",
+      "id": "padding-inline-end-mobile",
+      "label": "Right",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0,
+      "visible_if": "{{ block.settings.padding_on_mobile }}"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Restaurant Menu",
+      "category": "Metaobjects"
+    }
+  ]
+}
+{% endschema %}

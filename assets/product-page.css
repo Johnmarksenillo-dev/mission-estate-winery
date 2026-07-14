@@ -1,0 +1,701 @@
+/**************************************** product page css ******************************************/
+@import url('https://fonts.cdnfonts.com/css/literata');
+
+html.no-native-scroll {
+  scroll-behavior: auto !important;
+}
+
+.wrap_compare_link {           /* give your headings this class */
+  scroll-margin-top: 130px;
+}
+
+body.product ul.list-menu li a {
+    color: #002855;
+}
+
+body.product .header__icons svg.icon.icon-phone path {
+    fill: #002855;
+}
+
+.product__title h1 {
+    color: #002855;
+}
+
+.price__container span {
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Raleway';
+}
+
+body.product .header__heading-logo-wrapper img {
+    content: url('https://cdn.shopify.com/s/files/1/0738/5327/2315/files/Mission_Logo_5f853604-b31f-4c3b-a037-7cbf9643e96c.png?v=1738921297');
+}
+
+body.product .header__icon span.svg-wrapper svg {
+    color: #002855;
+}
+
+body.product .header__icons a.button.button--primary.booking-btn {
+    background: #002855;
+    color: #fff;
+}
+
+product-info.product_wrapsmain{
+      background: #FCEFB8;
+}
+product-info.product_wrapsmain {
+    background: #d9d9d6;
+    padding-top: 0;
+    padding-bottom: 0px;
+}
+
+.wraps_flex-fields {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.wraps_inner-fields p {
+    font-size: 14px;
+    color: #4A4B54;
+    font-family: 'PP Fragment Sans Light';
+}
+
+.product__description p {
+    font-size: 16px;
+    font-family: 'Literata-light';
+    color: #fff;
+    line-height: 1.8em;
+    font-weight: 400 !important;
+}
+
+.product-form__quantity {
+    padding-left: 0px !important;
+}
+
+.wrapper_addtiwrapscrt {
+    width: 197px;
+    display: inline-block;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.wrapper_addtiwrapscrt product-form.product-form {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.product-form__quantity {
+    width: 125px;
+    display: inline-block;
+         padding-left: 0px !important;
+}
+
+.wrapper_addtiwrapscrt button.product-form__submit {
+    background: #FF3E51;
+    border-radius: 30px;
+    font-size: 18px;
+    position: relative;
+    top: -4px;
+    margin-bottom: 0!important;
+    height: 53px;
+    padding: 0px;
+    color: #fff;
+    font-family: 'Raleway';
+    width: 190px !important;
+  margin-left: 10px;
+}
+quantity-input.quantity {
+    width: 160px;
+}
+.product-form__quantity label.quantity__label.form__label {
+    display: none;
+}
+
+.product-form__quantity span.svg-wrapper svg {
+    color: #fff;
+}
+
+.wraps_inner-icons {
+        background: transparent;
+    padding: 0;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.wraps_fleicon-dvs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.inner_wrapper-texts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* .wrapper_textdes {
+    width: 83%;
+}
+
+.wrapper_innericon {
+    width: 15%;
+} */
+.wrapper_textdes.NewWrapper_Textdes {
+    padding-left: 14px;
+}
+p.textpercent {
+    font-size: 16px;
+    font-family: 'Raleway';
+    font-weight: 400 !important;
+  line-height: 20px;
+  margin: 0px;
+  padding-bottom: 0px;
+}
+
+.NewWrapper_Textdes h4 p {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Raleway';
+  margin: 0px;
+}
+
+.wrapper_textdes h4 {
+    margin: 0px;
+    color: #4A4B54;
+    font-size: 17px;
+}
+
+.wraps_fleicon-dvs {
+    margin-bottom: 0px;
+}
+
+.product__info-wrapper.grid__item {
+    background: #002855;
+    padding: 60px;
+    border-radius: 0px;
+}
+
+.product__title h1 {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.product-form__quantity {
+    width: 125px;
+    display: inline-block;
+    margin: 0px !important;
+}
+
+body.product .product__media.media.media--transparent {
+    background: transparent;
+    border: 0px !important;
+}
+
+body.product .product-media-container {
+    background: transparent;
+    border: 0px !important;
+}
+
+.wraps_inner-icons:last-child .wrapper_textdes h4 {
+    font-size: 16px;
+}
+
+body.product .shopify-section-header-sticky .header-wrapper ul.list-menu li a {
+    color: #fff;
+}
+
+body.product .shopify-section-header-sticky .header__heading-logo-wrapper img {
+    content: none;
+}
+
+body.product .shopify-section-header-sticky .header__icon span.svg-wrapper svg {
+    color: #fff;
+}
+
+body.product .shopify-section-header-sticky .header__icons svg.icon.icon-phone path {
+    fill: #fff;
+}
+
+body.product .shopify-section-header-sticky .header__icons a.button.button--primary.booking-btn {
+    color: #002855;
+    background: #fff;
+}
+
+.quantity:after{
+  border-radius: 0px 0px 8px 8px;
+}
+quantity-input.quantity{
+  height: 52px;
+}
+
+.ImageTab img:first-child {
+    width: 100%;
+    height: 416px;
+    object-fit: cover;
+}
+
+.ImageTab img {
+    height: 200px;
+}
+
+.ProductCustom_Class  .main-heading {
+    color: #002855;
+}
+
+.ProductCustom_Class .main-text{
+  color: #002855;
+}
+
+.ProductCustom_Class .food-pairing-icon{
+  color: #002855;
+  font-family: 'Liter';
+}
+
+.grid__item.product__media-wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.ProductCustom_Class 
+ a.button.button--secondary {
+    color: #002855;
+    border: 0px;
+    border-bottom: 1px solid;
+    border-radius: 0px;
+    padding: 0px;
+    font-family: 'Raleway';
+}
+.ProductCustom_Class  p {
+    font-size: 18px;
+    color: #002855;
+    line-height: 1.6em;
+    font-family: 'Literata';
+}
+
+@media screen and (min-width: 990px) {
+   .ProductCustom_Class .image-with-text__content {
+        padding: 6rem 0rem 7rem 7rem;
+    }
+}
+
+ul.wraps_custom_fields {
+    list-style: none;
+    padding: 0px;
+    display: block;
+    justify-content: space-between;
+}
+
+ul.wraps_custom_fields li {
+    color: #fff;
+    padding-bottom: 7px;
+}
+
+.InnerSectionrange label {
+    color: #fff;
+    font-family: 'Liter';
+    font-size: 16px;
+    width: 85px;
+}
+
+.InnerSectionrange span {
+    color: #fff;
+    font-family: 'Liter';
+    font-size: 16px;
+}
+
+.FirstRange {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.SecondRange{
+  width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.thirdRange{
+  width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.rangeSection {
+    width: 90%;
+    padding-top: 20px;
+}
+
+.InnerSectionrange input[type=range] {
+  -webkit-appearance: none; /* Removes default styling in Chrome/Safari */
+  width: 100%;
+  height: 3px;
+  background: transparent; /* Transparent to show the custom track */
+  position: relative;
+  top: 11px;
+}
+
+/* WebKit (Chrome, Safari) */
+.InnerSectionrange input[type=range]::-webkit-slider-runnable-track {
+  height: 3px;
+  background: #fff; /* Change this to your desired track color */
+  border-radius: 4px;
+}
+
+/* Firefox */
+.InnerSectionrange input[type=range]::-moz-range-track {
+  height: 3px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+/* Edge / IE */
+.InnerSectionrange input[type=range]::-ms-track {
+  height: 3px;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.InnerSectionrange input[type=range]::-ms-fill-lower {
+  background: #fff;
+}
+.InnerSectionrange input[type=range]::-ms-fill-upper {
+  background: #fff;
+}
+
+.InnerSectionrange input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 14px;
+  width: 14px;
+  background: #fff;
+  border-radius: 50%;
+  margin-top: -5px; /* adjust to center it on the track */
+  cursor: pointer;
+}
+
+.InnerSectionrange span {
+    color: #fff;
+    font-family: Liter;
+    font-size: 16px;
+    width: 95px;
+    padding-left: 7px;
+}
+
+.wrapper_wraps_products {
+    width: 80%;
+    margin: 0px auto;
+}
+/*************************************************** awards section css ***********************************/
+
+section.products_awards {
+    background: #D9D9D6;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.wraps_awards h2 {
+    font-family: 'Raleway';
+    font-size: 35px;
+    margin: 0px;
+    padding-bottom: 10px;
+  font-weight: 600;
+}
+  .wraps_awards p {
+    color: #002855;
+    font-family: 'Literata-light';
+    font-size: 16px;
+    margin: 0px;
+    display: none;
+}
+
+.wraps_awards_columns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.inner_column_awards {
+    width: 100%;
+}
+
+.wrapper_column_inner {
+    display: flex;
+    align-items: center;
+}
+
+.inner_column_img img {
+    width: 100px;
+}
+
+.inner_column_text p {
+    color: #002855;
+    margin: 0px;
+    font-family: 'Literata-light';
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.inner_column_text h5 {
+    color: #002855;
+    margin: 0;
+    font-family: 'Literata-light';
+    padding: 7px 0;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.inner_column_text {
+    padding-left: 35px;
+}
+
+.wraps_awards {
+    padding-bottom: 40px;
+}
+
+.inner_column_awards {
+    width: 100%;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #002855;
+    margin-bottom: 30px;
+}
+
+.inner_column_awards:last-child {
+    border-bottom: 0px;
+}
+
+.inner_column_img img {
+    border-radius: 50% !important;
+    width: 100px !important;
+    height: 100px !important;
+}
+
+.wrapper_image-texts {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+  padding-top: 0px;
+}
+
+.image_region {
+    width: 48%;
+}
+
+.wraps_region_texts {
+    width: 48%;
+}
+
+.wraps_region_texts p strong {
+    font-family: 'Raleway';
+    line-height: 1.7em;
+  color: #fff;
+  font-size: 20px;
+}
+
+.wraps_region_texts p  {
+    font-family: 'Literata-light';
+    line-height: 1.7em;
+  color: #fff;
+  font-size: 16px;
+}
+
+.wraps_region_texts .metafield-rich_text_field h2, .wraps_region_texts .metafield-rich_text_field h3, .wraps_region_texts .metafield-rich_text_field h4{
+    color: #fff;
+}
+
+.wraps_region_texts .metafield-rich_text_field h5, .wraps_region_texts .metafield-rich_text_field h6, .wraps_region_texts .metafield-rich_text_field span{
+  color: #fff;
+}
+
+.wraps_region_texts .metafield-rich_text_field a{
+  color: #fff;
+}
+
+.wraps_heading_regions h2 {
+    font-family: Raleway;
+    font-size: 35px;
+    margin: 0;
+    padding-bottom: 10px;
+  color: #fff;
+}
+
+span.wrap_scores {
+    padding-left: 0px;
+}
+
+.wraps_heading_regions p {
+    font-family: Literata-light;
+    font-size: 16px;
+    margin: 0;
+    color: #fff;
+}
+
+section.wraps_region {
+    background: #005151;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  
+}
+
+.image_region img {
+    width: 100%;
+  border-radius: 0px;
+}
+
+.card-information {
+    text-align: center;
+}
+
+/* body.product .card-information {
+    text-align: center;
+}
+
+body.product product-recommendations.related-products h3{
+  text-align: center;
+} */
+
+body.product product-recommendations.related-products h3 .full-unstyled-link {
+    color: #002855;
+    font-size: 18px;
+  text-align: center;
+}
+
+body.product product-recommendations.related-products .price span {
+    color: #002855;
+}
+
+.wraps_add_tocart_raltedproducts {
+    display: none;
+}
+
+body.product product-recommendations.related-products .wraps_add_tocart_raltedproducts {
+    display: block;
+    margin-top: 20px;
+}
+
+body.product product-recommendations.related-products button.quick-add__submit.button.button--full-width.button--secondary {
+
+    width: 70% !important;
+    min-width: 70% !important;
+}
+
+body.product .NewFleicon_dvs {
+    padding-top: 25px;
+}
+/***************************************** awards section css end ***************************************************/
+@media only screen and (min-width: 992px) and (max-width: 1150px) {
+body.product product-recommendations.related-products button.quick-add__submit.button.button--full-width.button--secondary {
+
+    width: 80% !important;
+    min-width: 80% !important;
+}
+
+  body.product product-recommendations.related-products button.quick-add__submit.button.button--full-width.button--secondary span{
+
+    font-size: 16px !important;
+}
+  .price__container span {
+    color: #fff;
+    font-size: 20px;
+    font-family: Raleway;
+}
+}
+
+.product-form__input--pill input[type=radio]+label {
+    background: transparent !important;
+    font-family: 'Raleway';
+}
+
+.product-form__input--pill input[type=radio]:checked+label {
+    background-color: #f8e08e !important;
+    color: rgb(var(--color-background));
+}
+
+.product__description {
+    font-size: 16px;
+    font-family: 'Literata-light';
+    font-weight: 300 !important;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 767px) {
+
+.inner_column_img {
+    padding-bottom: 12px;
+}
+  .wrapper_column_inner {
+    display: block;
+    align-items: center;
+}
+
+  .inner_column_text {
+    padding-left: 0px;
+}
+
+  .wraps_awards {
+    padding-bottom: 0px;
+}
+.wrapper_addtiwrapscrt button.product-form__submit {
+    margin-left: 0px;
+    margin-top: 30px;
+}
+  .product__info-wrapper.grid__item {
+    padding: 60px 30px;
+}
+  .NewFleicon_dvs {
+    justify-content: space-between !important;
+    flex-wrap: wrap !important;
+}
+
+  body.product .wraps_inner-icons {
+    margin-bottom: 30px;
+}
+
+  .inner_wrapper-texts {
+    justify-content: flex-start;
+}
+  .ProductCustom_Class {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+  .wrapper_addtiwrapscrt {
+    width: 147px;
+}
+  quantity-input.quantity {
+    width: 122px;
+}
+  .image-with-text__text.rte.body p br {
+    display: none;
+}
+
+  ul.wraps_custom_fields {
+    display: block;
+}
+  ul.wraps_custom_fields li {
+    padding-bottom: 10px;
+}
+
+  .inner_column_awards {
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+  .wrapper_wraps_products {
+    width: 100%;
+    margin: 0 auto;
+}
+  .image_region, .wraps_region_texts {
+    width: 100%;
+}
+}
+
+/*************************************** product page css end *********************************************/

@@ -1,0 +1,418 @@
+{% comment %}
+  Dawn – Media Resource Hub (filters, sort, pagination)
+{% endcomment %}
+{% if customer and customer.tags contains "media" %}
+<section class="media-hub section-{{ section.id }}" data-section-id="{{ section.id }}">
+  <div class="page-width media-hub__layout">
+    
+    <!-- ========== SIDEBAR ========== -->
+    <aside class="media-hub__sidebar" id="mediaSidebar">
+      <button class="media-hub__toggle" aria-controls="mediaSidebar" aria-expanded="true">▲</button>
+
+      <!-- Sort -->
+      <div class="media-hub__group">
+        <label for="mediaSort" class="media-hub__label">Sort by</label>
+        <select id="mediaSort" class="select">
+          <option value="latest" selected>Latest</option>
+          <option value="az">A – Z</option>
+          <option value="za">Z – A</option>
+        </select>
+      </div>
+
+      <!-- Filters -->
+      <div class="media-hub__group">
+        <p class="media-hub__label">Filter by</p>
+        <ul class="media-hub__filters">
+          {%- assign cat_set = '' -%}
+          {%- for r in shop.metaobjects.media_resource.values -%}
+            {%- assign cat = r.category.value | strip -%}
+            {%- unless cat_set contains cat -%}
+              {%- assign cat_set = cat_set | append: cat | append: '|' -%}
+            {%- endunless -%}
+          {%- endfor -%}
+          {%- assign cat_array = cat_set | split: '|' -%}
+          {%- for cat in cat_array -%}
+            {%- unless cat == '' -%}
+              <li>
+                <label>
+                  <input type="checkbox" name="media_filter" value="{{ cat | handleize }}">
+                  {{ cat }}
+                </label>
+              </li>
+            {%- endunless -%}
+          {%- endfor -%}
+        </ul>
+        <button id="clearFilters" class="media-hub__clear button button--secondary small">Clear filters</button>
+      </div>
+    </aside>
+
+    <!-- ========== GRID + PAGINATION ========== -->
+    <div id="mediaPaginationWrapper">
+      <div class="media-hub__grid" id="mediaGrid">
+        {%- for r in shop.metaobjects.media_resource.values -%}
+          <article
+            class="media-card"
+            data-category="{{ r.category.value | handleize }}"
+            data-title="{{ r.title.value | escape }}"
+            data-date="{{ r.publish_date.value | date: '%Y-%m-%d' }}"
+          >
+            <figure class="media-card__thumb">
+              <img
+                src="{{ r.thumbnail | image_url: width: 600 }}"
+                alt="{{ r.title.value | escape }}"
+                loading="lazy">
+            </figure>
+
+            
+            <h3 class="media-card__title">{{ r.title.value }}</h3>
+            <div class="wraps_description">
+                  {{ r.description.value }}
+            </div>
+
+            <a href="{{ r.download_file | file_url }}" class="media-card__btn button button--secondary" download>
+              Download
+            </a>
+
+            <p class="media-card__category">{{ r.category.value }}</p>
+            <p class="media-card__date">
+  Publish Date: {{ r.publish_date.value | date: "%d/%m/%Y" }}
+</p>
+          </article>
+        {%- endfor -%}
+      </div>
+
+      <!-- Pagination controls -->
+      <div id="mediaPaginationControls" class="media-pagination-controls"></div>
+    </div>
+  </div>
+
+  <!-- ========== JS ========== -->
+
+<script>
+  (() => {
+    /* ---------- CONFIG ---------- */
+    const ITEMS_PER_PAGE = 9;                        // change page size here
+
+    /* ---------- ELEMENTS ---------- */
+    const grid            = document.getElementById('mediaGrid');
+    const sortSelect      = document.getElementById('mediaSort');
+    const checkboxes      = document.querySelectorAll('input[name="media_filter"]');
+    const clearBtn        = document.getElementById('clearFilters');
+    const paginationCtrls = document.getElementById('mediaPaginationControls');
+    const toggleBtn       = document.querySelector('.media-hub__toggle');
+    const sidebar         = document.getElementById('mediaSidebar');
+
+    /* ---------- GLOBAL STATE ---------- */
+    window.currentPage = 1;
+
+    /* ---------- PAGINATION ---------- */
+    window.paginateCards = () => {
+      const visibleCards = Array.from(grid.children).filter(c => c.dataset.visible === 'true');
+      const totalPages   = Math.ceil(visibleCards.length / ITEMS_PER_PAGE);
+
+      /* show / hide by page */
+      visibleCards.forEach((card, i) => {
+        const show = i >= (window.currentPage - 1) * ITEMS_PER_PAGE &&
+                     i <  window.currentPage      * ITEMS_PER_PAGE;
+        card.style.display = show ? '' : 'none';
+      });
+
+      /* build controls */
+      let html = '';
+      if (totalPages > 1) {
+        html += `<button ${window.currentPage === 1 ? 'disabled' : ''} data-page="${window.currentPage - 1}" class="page-btn">previous</button>`;
+        for (let i = 1; i <= totalPages; i++) {
+          html += `<button ${i === window.currentPage ? 'class="active page-btn"' : 'class="page-btn"'} data-page="${i}">${i}</button>`;
+        }
+        html += `<button ${window.currentPage === totalPages ? 'disabled' : ''} data-page="${window.currentPage + 1}" class="page-btn">next</button>`;
+      }
+      paginationCtrls.innerHTML = html;
+
+      /* click handlers */
+      paginationCtrls.querySelectorAll('.page-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          window.currentPage = parseInt(btn.dataset.page, 10);
+          window.paginateCards();
+        });
+      });
+    };
+
+    /* ---------- FILTER + SORT ---------- */
+    window.updateGrid = () => {
+      const selectedCats = Array.from(checkboxes).filter(cb => cb.checked).map(cb => cb.value);
+      const cards        = Array.from(grid.children);
+
+      /* 1. FILTER – mark & hide immediately */
+      cards.forEach(card => {
+        const visible = selectedCats.length === 0 || selectedCats.includes(card.dataset.category);
+        card.dataset.visible = visible;
+        card.style.display   = visible ? '' : 'none';   // hide straight away
+      });
+
+      /* 2. SORT only the visible cards */
+      const visibleCards = cards.filter(c => c.dataset.visible === 'true');
+      visibleCards.sort((a, b) => {
+        switch (sortSelect.value) {
+          case 'az':
+            return a.dataset.title.localeCompare(b.dataset.title);
+          case 'za':
+            return b.dataset.title.localeCompare(a.dataset.title);
+          case 'latest':
+          default:
+            const dA = new Date(a.dataset.date || 0);
+            const dB = new Date(b.dataset.date || 0);
+            console.log(a.dataset.title, a.dataset.date, dA); // for testing
+            return dB - dA;
+        }
+      });
+      visibleCards.forEach(card => grid.appendChild(card));
+
+      /* 3. Reset to page 1 & paginate */
+      window.currentPage = 1;
+      window.paginateCards();
+    };
+
+    /* ---------- EVENT WIRING ---------- */
+    sortSelect.addEventListener('change',  window.updateGrid);
+    checkboxes.forEach(cb => cb.addEventListener('change', window.updateGrid));
+    clearBtn.addEventListener('click', () => {
+      checkboxes.forEach(cb => (cb.checked = false));
+      window.updateGrid();
+    });
+    toggleBtn.addEventListener('click', () => {
+      const open = toggleBtn.getAttribute('aria-expanded') === 'true';
+      sidebar.classList.toggle('is-collapsed', open);
+      toggleBtn.setAttribute('aria-expanded', String(!open));
+      toggleBtn.textContent = open ? '▼' : '▲';
+    });
+
+    /* ---------- INIT ---------- */
+    document.addEventListener('DOMContentLoaded', window.updateGrid);
+  })();
+</script>
+
+</section>
+  {% else %}
+  <div class="page-width" style="padding:4rem 0;text-align:center;">
+    <div class="wraps_access_login">
+    <!-- <h2>Please log in to access our Trade & Media resources</h2>
+    <a class="button" href="{{ routes.account_login_url }}?return_url={{ request.path }}">
+      Log in 
+    </a> -->  
+      <h2>Access our Trade & Media resources</h2>
+      <p><a href="/pages/contact">Contact us</a> to get access to the media section to download resources.</br>
+      If you already have access please login.</p>
+    <p><a class="button" href="{{ routes.account_login_url }}?return_url={{ request.path }}">
+      Log in 
+    </a></p><p>&nbsp;<p>
+    </div>
+  </div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Trade and Media",
+  "tag": "section",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Trade and Media",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+/* ========== Layout ========== */
+
+p.media-card__date {
+    font-size: 14px;
+}
+
+.wraps_description {
+    font-size: 16px;
+    padding-bottom: 16px;
+    margin-top: 0px;
+}
+
+  .wraps_access_login h2 {
+    color: #002855;
+    font-weight: 600;
+    font-family: 'Raleway';
+}
+
+  select#mediaSort:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+  .wraps_access_login a {
+    background: transparent;
+    color: #002855;
+}
+  
+.media-hub__layout{
+  display:grid;
+  grid-template-columns:220px 1fr;
+  gap:2.5rem;
+}
+@media(max-width:990px){
+  .media-hub__layout{grid-template-columns:1fr;}
+}
+
+/* ========== Sidebar ========== */
+.media-hub__sidebar{
+    position: sticky;
+    top: 6rem;
+    max-height: 90vh;
+    overflow: auto;
+    transition: max-height .3s ease;
+    background-color: #F0F0ED;
+    margin: 0px 0;
+    padding: 15px 20px;
+    border-radius: 12px;
+    border: 0px;;
+}
+.media-hub__toggle{
+  display:none;position:absolute;left:calc(50% - 16px);top:-18px;
+  width:32px;height:32px;border:1px solid #ccc;border-radius:50%;
+  background:#fff;justify-content:center;align-items:center;cursor:pointer;
+}
+@media(max-width:990px){
+  .media-hub__sidebar{position:relative;max-height:400px;}
+  .media-hub__sidebar.is-collapsed{max-height:0;padding:0;border:none;}
+  .media-hub__toggle{display:flex;}
+}
+
+.media-hub__label{
+    margin-bottom: .5rem;
+    display: block;
+    font-size: 24px;
+    font-weight: 600;
+    color: #002855;
+    font-family: Raleway;
+}
+
+  select#mediaSort {
+    padding: 8px 6px;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: #002855;
+    border-color: #002855;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ddd9d996;
+    font-family: 'Raleway';
+}
+.media-hub__filters li {
+    background-color: #D9D9D6 !important;
+    font-size: 16px;
+    font-family: Raleway;
+    color: #002855;
+    border: none;
+    text-align: left;
+    display: block;
+    margin: 18px 0px 0px;
+    padding: 11px 15px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+  .media-hub__filters li label{
+    cursor: pointer;
+  }
+.media-hub__filters input{margin-right:.4rem}
+.media-hub__clear{margin-top:.75rem;    background: #ddd9d9 !important;
+    font-size: 16px;
+    font-family: 'Raleway';
+     color: #002855;
+  }
+
+/* ========== Grid ========== */
+.media-hub__grid{
+  display:grid;gap:2rem;
+  grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+}
+
+/* ========== Card ========== */
+.media-card{position:relative;padding-bottom:1rem}
+.media-card__tag{
+  position:absolute;top:.75rem;left:.75rem;
+  background:#f4f4f4;font-size:.75rem;padding:.25rem .6rem;border-radius:12px
+}
+.media-card__thumb{
+  aspect-ratio:355 / 361;
+  border:1px solid #e5e5e5;border-radius:8px;overflow:hidden;
+  margin-bottom:.75rem
+}
+
+.media-card__thumb img {
+    width: 100%;
+    object-fit: contain !important;
+    height: 100%;
+}
+  
+h3.media-card__title {
+    font-size: 18px;
+    font-family: 'Raleway';
+    font-weight: 600;
+    color: #002855;
+}
+
+p.media-card__category {
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px 16px 6px;
+    width: fit-content;
+    color: #002855;
+    background: #F0F0ED;
+    font-size: 14px;
+}
+  
+.media-card__btn {
+    color: #002855;
+    font-size: 16px;
+    background: transparent;
+}
+
+ .media-hub figure.media-card__thumb {
+    margin: 0px;
+}
+
+  ul.media-hub__filters {
+    padding-left: 0px;
+    list-style: none;
+}
+
+/*************** pagination css ***************************/
+  .media-pagination-controls {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+.page-btn {
+    background: transparent;
+    border: 1px solid transparent;
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Raleway';
+  color: #002855;
+}
+.page-btn.active {
+    background: transparent;
+    color: #002855;
+    border-color: transparent;
+    font-size: 16px;
+    font-family: 'Raleway';
+}
+.page-btn[disabled] {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+/*************** pagination css end***************************/
+</style>

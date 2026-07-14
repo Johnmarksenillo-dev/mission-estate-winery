@@ -1,0 +1,395 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "slideshow_R3R7Xx": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_LE7rEr": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Asset_19.png",
+            "video_url": "",
+            "heading": "About us",
+            "heading_size": "hxl",
+            "subheading": "New Zealand’s oldest winery, Mission has been crafting Hawke’s Bay wines of character and quality since 1851. Mission Estate Winery has a fascinating past, surviving everything from floods to earthquakes, cutting the building into 11 parts and transporting it to its current site in Taradale using traction engines, all the while planting and growing grapes in Hawke’s Bay. ",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-d536de6d-9eba-4ca5-b804-ae369f8ab959",
+            "text_alignment_mobile": "left"
+          }
+        }
+      },
+      "block_order": [
+        "slide_LE7rEr"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "large",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "image_with_text_eydP7W": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_aEEwGB": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our History",
+            "heading_size": "h1"
+          }
+        },
+        "text_9hiCTP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>From the first vines in 1851 to modern sustainability, explore how Mission Estate helped shape New Zealand’s wine industry.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_L6R3zg": {
+          "type": "button",
+          "settings": {
+            "button_label": "Discover more",
+            "link_target": "_self",
+            "button_class": "",
+            "button_link": "shopify://pages/history",
+            "button_label1": "",
+            "button_link1": "",
+            "link_target1": "_self",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_aEEwGB",
+        "text_9hiCTP",
+        "button_L6R3zg"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "section_id": "our-history",
+        "image": "shopify://shop_images/Asset_6-100_eb3c0dfe-8e37-4b13-bc1a-2e3a56e4aba4.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-ccdf85bc-5e76-4e49-b1d5-b858928d4956",
+        "color_scheme": "scheme-ccdf85bc-5e76-4e49-b1d5-b858928d4956",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 72,
+        "padding_bottom": 72
+      }
+    },
+    "image_text_slideshow_zYt6pz": {
+      "type": "image-text-slideshow",
+      "name": "Image and Text Slideshow",
+      "settings": {
+        "section_id": "about-us",
+        "slider_class": "wrap_aboutussec",
+        "enable_fullwidth": true,
+        "enable_slideshow": true,
+        "slide_speed": 5000,
+        "autoplay": true,
+        "autoplay_speed": 5000,
+        "image_position": "left",
+        "slideshow_image_1": "shopify://shop_images/Asset_3-100_5f63756e-563b-4450-aa27-22076ddfa4f7.jpg",
+        "heading": "Our People",
+        "heading_url": "",
+        "heading_color": "#002855",
+        "text": "Our people are our foundation and our future.\nOur values are rooted deeply in our culture and everything we do nurtures an environment for support and success.",
+        "text_color": "#002853",
+        "simple_link1": false,
+        "button_1_url": "shopify://pages/our-people",
+        "link_target1": "_self",
+        "button_1_text": "Discover more",
+        "button_class": "",
+        "button1_bg_color": "rgba(0,0,0,0)",
+        "button1_color": "#002855",
+        "simple_link2": false,
+        "button_2_url": "",
+        "link_target2": "_self",
+        "button_2_text": "",
+        "button_class2": "",
+        "button2_bg_color": "rgba(0,0,0,0)",
+        "button2_color": "#002855",
+        "secondary": false,
+        "simple_link3": false,
+        "button_3_url": "",
+        "link_target3": "_self",
+        "button_3_text": "",
+        "button_class3": "",
+        "simple_link4": false,
+        "button_4_url": "",
+        "link_target4": "_self",
+        "button_4_text": "",
+        "button_class4": "",
+        "background_color": "#ffa791",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 30,
+        "padding_bottom_mobile": 30
+      }
+    },
+    "image_text_slideshow_MqVzUk": {
+      "type": "image-text-slideshow",
+      "name": "Image and Text Slideshow",
+      "settings": {
+        "section_id": "sustainability",
+        "slider_class": "wraps_slider-section",
+        "enable_fullwidth": false,
+        "enable_slideshow": true,
+        "slide_speed": 5000,
+        "autoplay": true,
+        "autoplay_speed": 5000,
+        "image_position": "right",
+        "slideshow_image_1": "shopify://shop_images/Asset_4-100_77e0d177-75a6-4bca-a4b7-fd0f30565cc6.jpg",
+        "heading": "Our wines",
+        "heading_url": "",
+        "heading_color": "#002855",
+        "text": "Most Mission Estate wines are crafted and bottled on‑site at our historic Taradale winery. Our ranges include approachable entry‑level wines, the sustainability‑led The Gaia Project range, and premium releases such as Jewelstone and Huchet.",
+        "text_color": "#002853",
+        "simple_link1": false,
+        "button_1_url": "/collections/all",
+        "link_target1": "_self",
+        "button_1_text": "Discover more",
+        "button_class": "",
+        "button1_bg_color": "rgba(0,0,0,0)",
+        "button1_color": "#002855",
+        "simple_link2": false,
+        "button_2_url": "",
+        "link_target2": "_self",
+        "button_2_text": "",
+        "button_class2": "",
+        "button2_bg_color": "rgba(0,0,0,0)",
+        "button2_color": "#002855",
+        "secondary": false,
+        "simple_link3": false,
+        "button_3_url": "",
+        "link_target3": "_self",
+        "button_3_text": "",
+        "button_class3": "",
+        "simple_link4": false,
+        "button_4_url": "",
+        "link_target4": "_self",
+        "button_4_text": "",
+        "button_class4": "",
+        "background_color": "#f3f3f3",
+        "padding_top_desktop": 80,
+        "padding_bottom_desktop": 80,
+        "padding_top_mobile": 30,
+        "padding_bottom_mobile": 30
+      }
+    },
+    "image_with_text_f4DCQn": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_UGhRFa": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Vineyards",
+            "heading_size": "h1"
+          }
+        },
+        "text_UYJ3mw": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Hawke’s Bay is New Zealand’s oldest wine region and one of the world’s 12 Great Wine Capitals. With a warm, dry climate and varied soils, it’s ideal for premium wine. Mission Estate planted vines here in the 1850s and now grows Chardonnay, Syrah, Merlot, and Cabernet Sauvignon in Taradale and the Gimblett Gravels. <br/><br/>In Marlborough’s Awatere Valley, our Cable Station Vineyard produces vibrant Sauvignon Blanc, Pinot Noir, and Pinot Gris. Coastal breezes, stony soils, and cool nights create fresh, mineral-driven wines. We also work with local growers who share our pproach to vineyard management.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_HcCxy6": {
+          "type": "button",
+          "settings": {
+            "button_label": "Discover more",
+            "link_target": "_self",
+            "button_class": "",
+            "button_link": "shopify://pages/our-vineyards",
+            "button_label1": "",
+            "button_link1": "",
+            "link_target1": "_self",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_UGhRFa",
+        "text_UYJ3mw",
+        "button_HcCxy6"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "section_id": "vineyardss",
+        "image": "shopify://shop_images/Mission_Fountaom_About_Us_Page.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-5962b243-e7a7-4798-ac90-08968b8dc7eb",
+        "color_scheme": "scheme-5962b243-e7a7-4798-ac90-08968b8dc7eb",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 72,
+        "padding_bottom": 72
+      }
+    },
+    "image_text_slideshow_UPn4Mr": {
+      "type": "image-text-slideshow",
+      "name": "Image and Text Slideshow",
+      "settings": {
+        "section_id": "sustainability",
+        "slider_class": "wraps_slider-section",
+        "enable_fullwidth": false,
+        "enable_slideshow": true,
+        "slide_speed": 5000,
+        "autoplay": true,
+        "autoplay_speed": 5000,
+        "image_position": "right",
+        "slideshow_image_1": "shopify://shop_images/Mission-Estate-Cellar-Door-event.jpg",
+        "heading": "New Zealand wine scene",
+        "heading_url": "",
+        "heading_color": "#002855",
+        "text": "New Zealand’s global reputation for premium wine stems from its temperate maritime climate, free-draining soils, and long growing season. Warm days and cool nights enhance ripening while preserving natural acidity, and a long harvest window allows for full flavour development and varietal expression.\n\nAcross all our sites, we’re committed to sustainable winegrowing practices that protect the land for future generations while producing wines of character and integrity.",
+        "text_color": "#002853",
+        "simple_link1": false,
+        "button_1_url": "shopify://pages/sustainability",
+        "link_target1": "_self",
+        "button_1_text": "Discover more",
+        "button_class": "",
+        "button1_bg_color": "rgba(0,0,0,0)",
+        "button1_color": "#002855",
+        "simple_link2": false,
+        "button_2_url": "",
+        "link_target2": "_self",
+        "button_2_text": "",
+        "button_class2": "",
+        "button2_bg_color": "rgba(0,0,0,0)",
+        "button2_color": "#002855",
+        "secondary": false,
+        "simple_link3": false,
+        "button_3_url": "",
+        "link_target3": "_self",
+        "button_3_text": "",
+        "button_class3": "",
+        "simple_link4": false,
+        "button_4_url": "",
+        "link_target4": "_self",
+        "button_4_text": "",
+        "button_class4": "",
+        "background_color": "#77c19a",
+        "padding_top_desktop": 80,
+        "padding_bottom_desktop": 80,
+        "padding_top_mobile": 30,
+        "padding_bottom_mobile": 30
+      }
+    },
+    "rich_text_pXRVxG": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_ppAweN": {
+          "type": "heading",
+          "settings": {
+            "heading": "Explore our wines",
+            "heading_size": "h1"
+          }
+        },
+        "button_HppjjP": {
+          "type": "button",
+          "settings": {
+            "button_label": "View the range",
+            "simple_link1": false,
+            "button_link": "/collections/all",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_ppAweN",
+        "button_HppjjP"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "section_id": "our-people-rich-text",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-ccdf85bc-5e76-4e49-b1d5-b858928d4956",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 24
+      }
+    },
+    "featured_collection_inmrba": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "frontpage",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "show_rating": true,
+        "quick_add": "standard",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_R3R7Xx",
+    "image_with_text_eydP7W",
+    "image_text_slideshow_zYt6pz",
+    "image_text_slideshow_MqVzUk",
+    "image_with_text_f4DCQn",
+    "image_text_slideshow_UPn4Mr",
+    "rich_text_pXRVxG",
+    "featured_collection_inmrba"
+  ]
+}

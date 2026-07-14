@@ -1,0 +1,393 @@
+{{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="color-{{ section.settings.color_scheme }} gradient">
+  <div class="contact page-width section-{{ section.id }}-padding">
+    <div class="wraps_flex-etc">
+      <div class="contact_flex_left">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="title title-wrapper--no-top-margin inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+        {{ section.settings.heading }}
+      </h2>
+    {%- else -%}
+      <h2 class="visually-hidden">{{ 'templates.contact.form.title' | t }}</h2>
+    {%- endif -%}
+
+    {%- if section.settings.text != blank -%}
+          <div class="description">
+         {{ section.settings.text }}
+          </div>
+    {% endif %}
+    {%- liquid
+      assign contact_form_class = 'isolate'
+      if settings.animations_reveal_on_scroll
+        assign contact_form_class = 'isolate scroll-trigger animate--slide-in'
+      endif
+    -%}
+    {%- form 'contact', id: 'ContactForm', class: contact_form_class -%}
+      {%- if form.posted_successfully? -%}
+        <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>
+          {{- 'icon-success.svg' | inline_asset_content -}}
+          {{ 'templates.contact.form.post_success' | t }}
+        </h2>
+      {%- elsif form.errors -%}
+        <div class="form__message">
+          <h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus>
+            {{- 'icon-error.svg' | inline_asset_content -}}
+            {{ 'templates.contact.form.error_heading' | t }}
+          </h2>
+          
+        </div>
+        <ul class="form-status-list caption-large" role="list">
+          <li>
+            <a href="#ContactForm-email" class="link">
+              {{ form.errors.translated_fields.email | capitalize }}
+              {{ form.errors.messages.email }}
+            </a>
+          </li>
+        </ul>
+      {%- endif -%}
+
+        <div class="field request-type">
+          <label for="subject">What is this regarding?</label>
+          <select id="subject" name="contact[subject]" placeholder="Please select a subject" required>
+            <option value="" disabled selected hidden>Please select a subject</option>
+            <option>General Inquiry</option>
+            <option>Cellar Door</option>
+            <option>Restaurant</option>
+            <option>Other</option>
+          </select>
+        </div>
+      <div class="contact__fields">
+        <div class="field">
+          <input
+            class="field__input"
+            autocomplete="name"
+            type="text"
+            id="ContactForm-firstname"
+            name="contact[{{ 'templates.contact.form.name' | t }}]"
+            value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
+            placeholder="First name" required
+          >
+          <label class="field__label" for="ContactForm-firstname">{{ 'templates.contact.form.name' | t }}</label>
+        </div>
+
+        <div class="field">
+          <input type="text" name="contact[last_name]" id="last-name" placeholder="Last name" required> 
+          <label class="field__label" for="last-name">Last name</label>
+          
+        </div>
+      </div>
+
+      <div class="field field--with-error">
+          <input
+            autocomplete="email"
+            type="email"
+            id="ContactForm-email"
+            class="field__input"
+            name="contact[email]"
+            spellcheck="false"
+            autocapitalize="off"
+            value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+            aria-required="true"
+            {% if form.errors contains 'email' %}
+              aria-invalid="true"
+              aria-describedby="ContactForm-email-error"
+            {% endif %}
+            placeholder="{{ 'templates.contact.form.email' | t }}"
+          >
+          <label class="field__label" for="ContactForm-email">
+            {{- 'templates.contact.form.email' | t }}
+            <span aria-hidden="true">*</span></label
+          >
+          {%- if form.errors contains 'email' -%}
+            <small class="contact__field-error" id="ContactForm-email-error">
+              <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
+              <span class="form__message">
+                <span class="svg-wrapper">
+                  {{- 'icon-error.svg' | inline_asset_content -}}
+                </span>
+                {{- form.errors.translated_fields.email | capitalize }}
+                {{ form.errors.messages.email -}}
+              </span>
+            </small>
+          {%- endif -%}
+        </div>
+        
+      
+      <div class="field">
+        <textarea required
+          rows="10"
+          id="ContactForm-body"
+          class="text-area field__input"
+          name="contact[{{ 'templates.contact.form.comment' | t }}]"
+          placeholder="Please leave us a message"
+        >
+          {{- form.body -}}
+        </textarea>
+        <label class="form__label field__label" for="ContactForm-body">
+          {{- 'templates.contact.form.comment' | t -}}
+        </label>
+      </div>
+      <div class="contact__button">
+        <button type="submit" class="button">
+          {{ 'templates.contact.form.send' | t }}
+        </button>
+      </div>
+    {%- endform -%}
+  </div>
+
+      <div class="wrp_flex-right">
+         {% for block in section.blocks %}
+        <div class="wraps_box_contact">
+          {%- if block.settings.title != blank -%}
+          <h3>{{ block.settings.title }}</h3>
+          {% endif %}
+           {%- if block.settings.ohours != blank -%}
+              <h5>{{ block.settings.ohours }}</h5>
+            {% endif %}
+           {%- if block.settings.open_hours != blank -%}
+              <p class="opening_wraps_hours">{{ block.settings.open_hours }}</p>
+           {% endif %}
+           
+  <div class="flex_icon_texts">
+   {%- if block.settings.lunch != blank -%}        
+    <div class="icon_wraps_textcontct">
+      <p>{{ block.settings.lunch }}</p>
+    </div>
+    {% endif %}
+
+  {%- if block.settings.dinner != blank -%}        
+    <div class="icon_wraps_textcontct">
+      <p>{{ block.settings.dinner }}</p>
+    </div>
+    {% endif %}
+</div>
+  
+  <div class="flex_icon_texts">
+    {%- if block.settings.lunch1 != blank -%}        
+    <div class="icon_wraps_textcontct">
+      <p>{{ block.settings.lunch1 }}</p>
+    </div>
+    {% endif %}
+
+  {%- if block.settings.dinner1 != blank -%}        
+    <div class="icon_wraps_textcontct">
+      <p>{{ block.settings.dinner1 }}</p>
+    </div>
+    {% endif %}
+</div>
+
+
+{%- if block.settings.closed != blank -%}  
+  <p>{{ block.settings.closed }}</p>
+{% endif %}
+
+{%- if block.settings.call != blank -%}             
+  <p class="wrap_call_contact">{{ block.settings.call }}</p>
+{% endif %}
+           
+  <div class="wraps_buttons">
+ {%- if block.settings.button1 != blank -%}
+    <a href="{{ block.settings.buttonlink1 }}" class="button_contact_wraps_primary {% if block.settings.button_class != blank %} {{ block.settings.button_class }} {% endif %}">{{ block.settings.button1 }}</a>
+  {% endif %}
+
+    {%- if block.settings.button2 != blank -%}
+        <a href="{{ block.settings.buttonlink2 }}" class="button_contact_wraps_learn_more {% if block.settings.button_class1 != blank %} {{ block.settings.button_class1 }} {% endif %}">{{ block.settings.button2 }}</a>
+    {% endif %}
+  </div>
+    </div>
+ {% endfor %}
+  </div>
+      </div>
+  
+    </div>
+  
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.contact-form.name",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "default": "t:sections.contact-form.settings.title.default",
+      "label": "t:sections.contact-form.settings.title.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h0",
+          "label": "t:sections.all.heading_size.options__3.label"
+        },
+        {
+          "value": "hxl",
+          "label": "t:sections.all.heading_size.options__4.label"
+        },
+        {
+          "value": "hxxl",
+          "label": "t:sections.all.heading_size.options__5.label"
+        }
+      ],
+      "default": "h1",
+      "label": "t:sections.all.heading_size.label"
+    },
+
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text"
+    },
+    
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+
+  "blocks": [
+    {
+      "type": "hero",
+      "name": "Block",
+      "settings": [
+          {
+             "id": "title",
+             "type": "text",
+             "label": "Title"
+           },
+          {
+             "id": "ohours",
+             "type": "text",
+             "label": "Text"
+           },
+          {
+             "id": "open_hours",
+             "type": "textarea",
+             "label": "Text"
+           },
+          {
+             "id": "lunch",
+             "type": "textarea",
+             "label": "Timing"
+           },
+            {
+             "id": "dinner",
+             "type": "textarea",
+             "label": "Timing"
+           },
+          {
+           "id": "lunch1",
+           "type": "textarea",
+           "label": "Timing"
+          },
+          {
+           "id": "dinner1",
+           "type": "textarea",
+           "label": "Timing"
+          },
+          {
+             "id": "closed",
+             "type": "textarea",
+             "label": "Text"
+           },
+          {
+             "id": "call",
+             "type": "textarea",
+             "label": "Text"
+           },
+        {
+          "type": "text",
+          "label": "Button Popup class",
+          "id": "button_class"
+        },
+          {
+             "id": "button1",
+             "type": "textarea",
+             "label": "Button text"
+           },
+        {
+             "id": "buttonlink1",
+             "type": "url",
+             "label": "Button URL"
+           },
+        {
+             "id": "button2",
+             "type": "textarea",
+             "label": "Button text"
+           },
+        {
+          "type": "text",
+          "label": "Button Popup class",
+          "id": "button_class1"
+        },
+        {
+             "id": "buttonlink2",
+             "type": "url",
+             "label": "Button URL"
+           }
+       ]
+    }
+],
+  
+  "presets": [
+    {
+      "name": "t:sections.contact-form.presets.name"
+    }
+  ]
+}
+{% endschema %}

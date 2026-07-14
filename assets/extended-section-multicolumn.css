@@ -1,0 +1,6 @@
+@media screen and (min-width: 767px) {
+  .extended-multicolumn .grid--5-col-desktop .multicolumn-card__info p{
+    font-size: 14px;
+  }
+}
+

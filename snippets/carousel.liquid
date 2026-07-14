@@ -1,0 +1,80 @@
+{% capture carousel_config %}
+{
+  "align": "{% if settings.align_center and settings.loop %}center{% else %}start{% endif %}",
+  "loop": {{ settings.loop }},
+  "duration": 30,
+  "stopOnFocusIn": true,
+  "dragFree": {{ settings.drag_free }}
+  {% if settings.disable_drag_events %}
+  ,"watchDrag": false
+  {% endif %}
+}
+{% endcapture %}
+
+{% capture autoplay_config %}
+  {
+    "stopOnInteraction": true
+  }
+{% endcapture %}
+
+<embla-carousel
+  {{ attribute | default: '' }}
+  slides-count='{{ slide_count }}'
+  config='{{ carousel_config | escape }}'
+  {% if settings.scroll == 'autoplay' %}
+    autoplay='{{ autoplay_config | escape }}'
+  {% endif %}
+  {% if settings.fade and settings.scroll != 'autoscroll' %}
+    fade='true'
+  {% endif %}
+  {% if settings.scroll == 'autoscroll' %}
+    autoscroll
+    {% if settings.reverse_direction %}
+      scroll-direction='reverse'
+    {% endif %}
+  {% endif %}
+>
+  <div class='embla'>
+    <div class='embla__viewport'>
+      <div
+        class='embla__container'
+      >
+        {{ slides }}
+      </div>
+    </div>
+
+    {%- if settings.control != 'none' -%}
+      <div class='embla__controls'>
+        {%- if settings.control == 'nav' or settings.control == 'both' -%}
+          <div class='embla__nav'>
+            <button
+              class='embla__button embla__button--prev'
+              type='button'
+            >
+              {{ 'icon-caret-left.svg' | inline_asset_content }}
+            </button>
+            {%- if settings.control == 'dots' or settings.control == 'both' -%}
+              <div class='embla__dots'></div>
+            {%- endif -%}
+            {%- if settings.show_counter -%}
+              <div
+                class='embla__selected-snap-display tw:block tw:text-lg'
+              >
+                -
+              </div>
+            {%- endif -%}
+            <button
+              class='embla__button embla__button--next'
+              type='button'
+            >
+              {{ 'icon-caret-right.svg' | inline_asset_content }}
+            </button>
+          </div>
+        {%- endif -%}
+        {%- if settings.control == 'dots' -%}
+          <div class='embla__dots'></div>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+  </div>
+</embla-carousel>

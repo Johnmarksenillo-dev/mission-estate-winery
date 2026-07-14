@@ -1,0 +1,541 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_wxEQrY": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_KxqpmG": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Asset_19.png",
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/cbd08e49d57e4374aaf1e24c179be918.mp4",
+            "heading": "CELEBRATING 175 YEARS",
+            "heading_size": "hxxl",
+            "subheading": "Crafted since 1851, poured for tomorrow. Mission Estate wine turns 175 years of French-rooted Hawke’s Bay mastery into your next unforgettable moment.",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": true,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 20,
+            "color_scheme": "scheme-d536de6d-9eba-4ca5-b804-ae369f8ab959",
+            "text_alignment_mobile": "left"
+          }
+        }
+      },
+      "block_order": [
+        "slide_KxqpmG"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "image_text_slideshow_TmrhBc": {
+      "type": "image-text-slideshow",
+      "settings": {
+        "section_id": "index-shop-wines",
+        "slider_class": "wraps_slider-section",
+        "enable_fullwidth": false,
+        "enable_slideshow": true,
+        "slide_speed": 5000,
+        "autoplay": false,
+        "autoplay_speed": 5000,
+        "image_position": "right",
+        "slideshow_image_1": "shopify://shop_images/Product-Hero-Home.jpg",
+        "heading": "SHOP OUR WINES",
+        "heading_url": "",
+        "heading_color": "#ffffff",
+        "text": "Since its founding in 1851, \nMission Estate Winery has \nbeen a cornerstone of New \nZealand’s wine heritage.",
+        "text_color": "#ffffff",
+        "simple_link1": false,
+        "button_1_url": "/collections/all",
+        "link_target1": "_self",
+        "button_1_text": "Shop the range",
+        "button_class": "",
+        "button1_bg_color": "rgba(0,0,0,0)",
+        "button1_color": "#ffffff",
+        "simple_link2": false,
+        "button_2_url": "shopify://pages/mission-rewards",
+        "link_target2": "_self",
+        "button_2_text": "Join Mission Rewards",
+        "button_class2": "",
+        "button2_bg_color": "rgba(0,0,0,0)",
+        "button2_color": "#ffffff",
+        "secondary": false,
+        "simple_link3": false,
+        "button_3_url": "",
+        "link_target3": "_self",
+        "button_3_text": "",
+        "button_class3": "",
+        "simple_link4": false,
+        "button_4_url": "",
+        "link_target4": "_self",
+        "button_4_text": "",
+        "button_class4": "",
+        "background_color": "#ff3e51",
+        "padding_top_desktop": 180,
+        "padding_bottom_desktop": 200,
+        "padding_top_mobile": 60,
+        "padding_bottom_mobile": 60
+      }
+    },
+    "grid_slider_JMzNxy": {
+      "type": "grid-slider",
+      "disabled": true,
+      "settings": {
+        "background_image": "shopify://shop_images/bg_sustainability-map_1.png",
+        "background_overlay_color": "#b7b695",
+        "background_overlay_opacity": 0.7,
+        "slider_heading_color": "#ffffff",
+        "slider_text_color": "#ffffff",
+        "button1_bg_color": "#002855",
+        "button1_color": "#ffffff",
+        "button2_bg_color": "#ffffff",
+        "button2_color": "#002855",
+        "slider_image_1": "shopify://shop_images/Cellar_Door_experience.png",
+        "slider_image_2": "shopify://shop_images/Visit_our_restaurant.png",
+        "slider_image_3": "shopify://shop_images/Our_accommodation.png",
+        "content_heading_1": "Cellar Door experience",
+        "content_text_1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit mauris quis commodo nibh, vitae etiam non dolor ante.",
+        "button_1_1_url": "#",
+        "button_1_1_text": "Book now",
+        "button_1_2_url": "#",
+        "button_1_2_text": "Discover more",
+        "offset_1": 0,
+        "slider_image_4": "shopify://shop_images/Visit_our_restaurant.png",
+        "slider_image_5": "shopify://shop_images/Our_accommodation.png",
+        "slider_image_6": "shopify://shop_images/Cellar_Door_experience.png",
+        "content_heading_2": "Visit our restaurant",
+        "content_text_2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit mauris quis commodo nibh, vitae etiam non dolor ante.",
+        "button_2_1_url": "#",
+        "button_2_1_text": "Book now",
+        "button_2_2_url": "#",
+        "button_2_2_text": "Discover more",
+        "offset_2": 100,
+        "slider_image_7": "shopify://shop_images/Our_accommodation.png",
+        "slider_image_8": "shopify://shop_images/Cellar_Door_experience.png",
+        "slider_image_9": "shopify://shop_images/Visit_our_restaurant.png",
+        "content_heading_3": "Our accommodation",
+        "content_text_3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit mauris quis commodo nibh, vitae etiam non dolor ante.",
+        "button_3_1_url": "#",
+        "button_3_1_text": "Book now",
+        "button_3_2_url": "#",
+        "button_3_2_text": "Discover more",
+        "offset_3": 200,
+        "main_heading": "Visit us",
+        "main_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit mauris quis commodo nibh, vitae etiam non dolor ante.",
+        "main_button_text": "Visit us",
+        "main_button_url": "shopify://pages/contact",
+        "main_heading_color": "#ffffff",
+        "main_text_color": "#ffffff",
+        "main_button_bg_color": "#ffffff",
+        "main_button_text_color": "#002855",
+        "main_row_position": "bottom",
+        "padding_top_desktop": 120,
+        "padding_bottom_desktop": 120,
+        "padding_top_mobile": 60,
+        "padding_bottom_mobile": 60
+      }
+    },
+    "image_with_text_8wCLC7": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_MUkMfz": {
+          "type": "heading",
+          "settings": {
+            "heading": "Fireside Pinot Noir Mixed case",
+            "heading_size": "h1"
+          }
+        },
+        "button_MaUHac": {
+          "type": "button",
+          "settings": {
+            "wrap_button_class": "",
+            "button_label": "Limited Time Only!",
+            "link_target": "_blank",
+            "button_class": "",
+            "button_link": "shopify://products/fireside-pinot-noir-1",
+            "button_label1": "",
+            "button_link1": "shopify://products/curated-mixed-case",
+            "link_target1": "_blank",
+            "button_style_secondary": false
+          }
+        },
+        "text_gmFdd6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A special winter Pinot Noir 6-pack featuring two bottles each of Mission Estate Pinot Noir, The Project Pinot Noir and Reserve Pinot Noir. </p><p>Perfect with Chef Ricky’s Beef Bolognese recipe or your favourite cosy winter meal.<br/><br/>Normally $126, now $100 for a limited time.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_MUkMfz",
+        "button_MaUHac",
+        "text_gmFdd6"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "section_id": "Curated Mixed Case 6-pack",
+        "image": "shopify://shop_images/Fireside_Pinot_Noir_Promo.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_link": "shopify://products/fireside-pinot-noir-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_UrtAq6": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_HjmjTU": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Asset_2-100.jpg",
+            "title": "CELLAR DOOR EXPERIENCE",
+            "subtitle": "",
+            "text": "<p>The Cellar Door sits in the Grande Maison, a restored seminary in the Taradale hills with vineyard and coastal views.</p>",
+            "simple_link1": true,
+            "secondary_link1": false,
+            "button_1_url": "shopify://pages/cellar-door",
+            "button_1_text": "Discover more",
+            "button1_bg_color": "rgba(0,0,0,0)",
+            "button1_color": "#002855",
+            "primary_link2": true,
+            "button_2_url": "#",
+            "button_class": "open-enquiry-popup",
+            "button_2_text": "Book now",
+            "button2_bg_color": "rgba(0,0,0,0)",
+            "button2_color": "#002855"
+          }
+        },
+        "column_Eypgi7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Home_Page-04.png",
+            "title": "VISIT OUR RESTAURANT",
+            "subtitle": "",
+            "text": "<p>Discover one of the best Napier restaurants at Mission Estate.<br/>Enjoy fine dining, award-winning wines, and panoramic views at Hawke’s Bay’s iconic winery.</p>",
+            "simple_link1": true,
+            "secondary_link1": false,
+            "button_1_url": "shopify://pages/restaurant",
+            "button_1_text": "Discover more",
+            "button1_bg_color": "rgba(0,0,0,0)",
+            "button1_color": "#002855",
+            "primary_link2": true,
+            "button_2_url": "#",
+            "button_class": "open-custom-popup",
+            "button_2_text": "Book now",
+            "button2_bg_color": "rgba(0,0,0,0)",
+            "button2_color": "#002855"
+          }
+        },
+        "column_3tYNXT": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Home_Page-05.png",
+            "title": "OUR ACCOMMODATION",
+            "subtitle": "",
+            "text": "<p>Nestled in the vines and just 10 minutes from Napier and the airport, this elegant retreat blends French country charm with modern comfort.</p>",
+            "simple_link1": true,
+            "secondary_link1": false,
+            "button_1_url": "shopify://pages/accommodation",
+            "button_1_text": "Discover more",
+            "button1_bg_color": "rgba(0,0,0,0)",
+            "button1_color": "#002855",
+            "primary_link2": true,
+            "button_2_url": "https://book.resonline.com.au/make-booking?ap=373629",
+            "button_class": "open-custom-popup",
+            "button_2_text": "Book now",
+            "button2_bg_color": "rgba(0,0,0,0)",
+            "button2_color": "#002855"
+          }
+        }
+      },
+      "block_order": [
+        "column_HjmjTU",
+        "column_Eypgi7",
+        "column_3tYNXT"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "section_id": "index-multi-column",
+        "title": "",
+        "heading_size": "h1",
+        "title_alignment": "left",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-ccdf85bc-5e76-4e49-b1d5-b858928d4956",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 100,
+        "padding_bottom": 80
+      }
+    },
+    "rich_text_PdaqY6": {
+      "type": "rich-text",
+      "blocks": {
+        "text_QrYbay": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Since its founding in 1851, Mission Estate Winery has been a cornerstone of New Zealand’s wine heritage.</p>",
+            "font_desk": 37,
+            "font_mob": 16
+          }
+        },
+        "button_8868Y7": {
+          "type": "button",
+          "settings": {
+            "button_label": "Visit us",
+            "button_new_tab": false,
+            "simple_link1": true,
+            "button_link": "shopify://pages/visit-us",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "text_QrYbay",
+        "button_8868Y7"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "section_id": "homepage-rich-text",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-575c04fd-c80f-4d35-bbf5-4d5cfadf9d7b",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "image_text_slideshow_BqEtyn": {
+      "type": "image-text-slideshow",
+      "settings": {
+        "section_id": "about-us",
+        "slider_class": "wrap_aboutussec",
+        "enable_fullwidth": true,
+        "enable_slideshow": true,
+        "slide_speed": 5000,
+        "autoplay": false,
+        "autoplay_speed": 5000,
+        "image_position": "left",
+        "slideshow_image_1": "shopify://shop_images/Asset_1-100_015d57c7-f3b1-4f70-b820-e80d09772548.jpg",
+        "heading": "ABOUT US",
+        "heading_url": "",
+        "heading_color": "#ffa791",
+        "text": "Since its founding in 1851, \nMission Estate Winery has \nbeen a cornerstone of New \nZealand’s wine heritage.",
+        "text_color": "#ffa791",
+        "simple_link1": false,
+        "button_1_url": "shopify://pages/about-us",
+        "link_target1": "_self",
+        "button_1_text": "Find out more",
+        "button_class": "",
+        "button1_bg_color": "rgba(0,0,0,0)",
+        "button1_color": "#ffa791",
+        "simple_link2": false,
+        "button_2_url": "",
+        "link_target2": "_self",
+        "button_2_text": "",
+        "button_class2": "",
+        "button2_bg_color": "rgba(0,0,0,0)",
+        "button2_color": "#002855",
+        "secondary": false,
+        "simple_link3": false,
+        "button_3_url": "",
+        "link_target3": "_self",
+        "button_3_text": "",
+        "button_class3": "",
+        "simple_link4": false,
+        "button_4_url": "",
+        "link_target4": "_self",
+        "button_4_text": "",
+        "button_class4": "",
+        "background_color": "#002855",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "article_slider_GUxAXk": {
+      "type": "article-slider",
+      "settings": {
+        "main_heading": "NEWS & EVENTS",
+        "main_text": "Since its founding in 1851, Mission Estate Winery has been a cornerstone <br> of New Zealand’s wine heritage.",
+        "main_button_text": "View all",
+        "main_button_url": "shopify://blogs/news",
+        "main_heading_color": "#002855",
+        "main_text_color": "#002855",
+        "main_button_bg_color": "#002855",
+        "main_button_text_color": "#ffffff",
+        "show_article_image": true,
+        "show_article_description": true,
+        "show_read_more_button": true,
+        "slider_item_count": 5,
+        "article_blog": "news",
+        "autoplay": true,
+        "autoplay_speed": 5000,
+        "slide_speed": 500,
+        "padding_top_desktop": 120,
+        "padding_bottom_desktop": 120,
+        "padding_top_mobile": 60,
+        "padding_bottom_mobile": 60
+      }
+    },
+    "reviews_Qjgh4V": {
+      "type": "reviews",
+      "blocks": {
+        "text_XqxcKD": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Honoring Legacy,<br/>Embracing the Future</h2>",
+            "tcolor": "#ffa791"
+          }
+        },
+        "image_Y7R4NP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Band-MIssion-Estate-1500jpg.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "text_XqxcKD",
+        "image_Y7R4NP"
+      ],
+      "settings": {
+        "customid": "index-review",
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-d536de6d-9eba-4ca5-b804-ae369f8ab959",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 0
+      }
+    },
+    "review_grid_x86wbY": {
+      "type": "review-grid",
+      "blocks": {
+        "review_ayXExp": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "review_text": "The most beautiful winery we’ve visited in Hawke’s Bay. We had 2 wine tastings, the white and the aromatic flights. $15/per person which was a steal because we spent nearly 2 hours there (and they over pour). I highly recommend the “2023 Mission Estate Hawke’s Bay Riesling” which is part of the aromatic flights. It’s a nice place to take your time to write down what you think of each wine and talk over some tipsy day drinking. The tastings themselves were all hitters. I personally would have bought a bottle myself because they were delicious and reasonably priced at around $18/ bottle. But I’m no wine snob, I just thought the views were pretty nice. The drive in features old well maintained trees and a beautiful landscape to drink in front of. Go on a nice sunny day and get yourself pretty because you will want to take lots of pictures. Well done"
+          }
+        },
+        "review_cEKqUg": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "review_text": "I wanted to take a moment to express my heartfelt appreciation for the exceptional dining experience at Mission Winery Restaurant. From the moment I stepped in, I was captivated by the ambiance and warmth of the place. However, what truly stole the show was the extraordinary culinary journey orchestrated by the talented chef.The steaks, in particular, were a revelation. Cooked to a perfect medium rare, each bite was a symphony of flavors and textures, a testament to the chef's mastery in the kitchen. It's not an exaggeration to say that it was one of the best steak experiences I've ever had.The attention to detail and dedication to quality were evident in every dish served. Beyond the remarkable food, the service was impeccable, adding to the overall charm of the evening.I am genuinely grateful for the memorable dining experience at Mission Winery Restaurant and eagerly look forward to returning to savor more of the culinary delights crafted with such care and passion."
+          }
+        },
+        "review_FEKmLn": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "review_text": "Magic place with incredibly tasty wine, we loved our stop at Mission Estate. Our server was very nice. We went for the aromatic self guided tasting and what a blast ! We ended up by buying four bottles. You should really include Mission Estate in your winery tour !"
+          }
+        },
+        "review_TmWGdJ": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "review_text": "Amazing place with views to die for, great wine and food. They accommodated a last minute wine tasting and a walk in for lunch which was much appreciated. Kids menu available as well."
+          }
+        },
+        "review_mM3QaL": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "review_text": "The consistently awesome food , with a variety to choose from on the menu. Service was fabulous and wine matches suggested excellent …..Can’t wait to go back 😊."
+          }
+        },
+        "review_dcgck7": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "review_text": "Beautiful setting and an excellent selection of wines. I’d recommend having a tasting, which was expertly led and great value."
+          }
+        }
+      },
+      "block_order": [
+        "review_ayXExp",
+        "review_cEKqUg",
+        "review_FEKmLn",
+        "review_TmWGdJ",
+        "review_mM3QaL",
+        "review_dcgck7"
+      ],
+      "name": "Review Grid",
+      "settings": {
+        "section_title": "REVIEWS"
+      }
+    },
+    "1739171431d079d6cd": {
+      "type": "apps",
+      "blocks": {
+        "rocket_google_reviews_app_block_NP7DiE": {
+          "type": "shopify://apps/google-reviews-rocket/blocks/app-block/d11c8893-a181-4aff-a280-7446d42cec3b",
+          "settings": {
+            "widget_layout": "default"
+          }
+        }
+      },
+      "block_order": [
+        "rocket_google_reviews_app_block_NP7DiE"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-d536de6d-9eba-4ca5-b804-ae369f8ab959",
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "slideshow_wxEQrY",
+    "image_text_slideshow_TmrhBc",
+    "grid_slider_JMzNxy",
+    "image_with_text_8wCLC7",
+    "multicolumn_UrtAq6",
+    "rich_text_PdaqY6",
+    "image_text_slideshow_BqEtyn",
+    "article_slider_GUxAXk",
+    "reviews_Qjgh4V",
+    "review_grid_x86wbY",
+    "1739171431d079d6cd"
+  ]
+}

@@ -1,0 +1,969 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "slideshow_fYQC66": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_yxXY78": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/banner-girl-aromatic-wine.jpg",
+            "video_url": "",
+            "heading": "TRADE & MEDIA",
+            "heading_size": "h0",
+            "subheading": "Mission Estate introduced the first vines to Hawke’s Bay in the 1850s, beginning a legacy that makes us New Zealand’s oldest winery. Today, we grow in two of the country’s most celebrated wine regions.",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 10,
+            "color_scheme": "scheme-d536de6d-9eba-4ca5-b804-ae369f8ab959",
+            "text_alignment_mobile": "left"
+          }
+        }
+      },
+      "block_order": [
+        "slide_yxXY78"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "rich_text_GaeDYm": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_kd8Bna": {
+          "type": "heading",
+          "settings": {
+            "heading": "TRADE PORTAL",
+            "heading_size": "h1"
+          }
+        },
+        "text_d7DPVd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>To support our trade partners, we’ve developed a comprehensive range of Mission Estate brand assets and sales materials.For access, please email: <a href=\"mailto:info@missionestate.co.nz\"><span style=\"text-decoration:underline\">info@missionestate.co.nz</span></a></p>",
+            "font_desk": 18,
+            "font_mob": 16
+          }
+        },
+        "button_YQ8NWr": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_new_tab": false,
+            "simple_link1": false,
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_kd8Bna",
+        "text_d7DPVd",
+        "button_YQ8NWr"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "section_id": "",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2da7a709-01d3-4bb8-8ee9-d3d5efac063e",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "rich_text_BJyEDF": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_XGq9Ti": {
+          "type": "heading",
+          "settings": {
+            "heading": "MEDIA ASSETS",
+            "heading_size": "h1"
+          }
+        },
+        "text_68WBK4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For all media enquiries, high resolution photography or logo requests, please contact our marketing team.</p>",
+            "font_desk": 18,
+            "font_mob": 16
+          }
+        },
+        "button_X4hbBM": {
+          "type": "button",
+          "settings": {
+            "button_label": "CONTACT US",
+            "button_new_tab": false,
+            "simple_link1": false,
+            "button_link": "mailto:info@missionestate.co.nz",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_XGq9Ti",
+        "text_68WBK4",
+        "button_X4hbBM"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "section_id": "",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2da7a709-01d3-4bb8-8ee9-d3d5efac063e",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "multicolumn_EWCWid": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_dAg9Cb": {
+          "type": "column",
+          "settings": {
+            "title": "Estate",
+            "subtitle": "",
+            "text": "<ul><li><a href=\"https://cdn.shopify.com/s/files/1/0738/5327/2315/files/2025_Mission_Estate_Rose.pdf?v=1776783936\" target=\"_blank\" title=\"https://cdn.shopify.com/s/files/1/0738/5327/2315/files/2025_Mission_Estate_Rose.pdf?v=1776783936\">2025 Mission Estate Rose</a></li><li><a href=\"https://cdn.shopify.com/s/files/1/0738/5327/2315/files/2025_Mission_Estate_Pinot_Gris.pdf?v=1776783937\" target=\"_blank\" title=\"https://cdn.shopify.com/s/files/1/0738/5327/2315/files/2025_Mission_Estate_Pinot_Gris.pdf?v=1776783937\">2025 Mission Estate Pinot Gris</a></li></ul>",
+            "simple_link1": false,
+            "secondary_link1": false,
+            "button_1_url": "",
+            "button_1_text": "",
+            "button1_bg_color": "#002855",
+            "button1_color": "#ffffff",
+            "primary_link2": false,
+            "button_2_url": "",
+            "button_class": "",
+            "button_2_text": "",
+            "button2_bg_color": "rgba(0,0,0,0)",
+            "button2_color": "#002855"
+          }
+        },
+        "column_DTm74U": {
+          "type": "column",
+          "settings": {
+            "title": "Reserve",
+            "subtitle": "",
+            "text": "",
+            "simple_link1": false,
+            "secondary_link1": false,
+            "button_1_url": "",
+            "button_1_text": "",
+            "button1_bg_color": "#002855",
+            "button1_color": "#ffffff",
+            "primary_link2": false,
+            "button_2_url": "",
+            "button_class": "",
+            "button_2_text": "",
+            "button2_bg_color": "rgba(0,0,0,0)",
+            "button2_color": "#002855"
+          }
+        },
+        "column_gQTMRb": {
+          "type": "column",
+          "settings": {
+            "title": "The Project",
+            "subtitle": "",
+            "text": "<ul><li><a href=\"https://cdn.shopify.com/s/files/1/0738/5327/2315/files/2025_Mission_The_Project_Rose.pdf?v=1776784134\" target=\"_blank\" title=\"https://cdn.shopify.com/s/files/1/0738/5327/2315/files/2025_Mission_The_Project_Rose.pdf?v=1776784134\">2025 Mission The Project Rose</a></li><li><a href=\"https://cdn.shopify.com/s/files/1/0738/5327/2315/files/2025_Mission_The_Project_Pinot_Gris.pdf?v=1776784148\" target=\"_blank\" title=\"https://cdn.shopify.com/s/files/1/0738/5327/2315/files/2025_Mission_The_Project_Pinot_Gris.pdf?v=1776784148\">2025 Mission The Project Pinot Gris</a></li></ul>",
+            "simple_link1": false,
+            "secondary_link1": false,
+            "button_1_url": "",
+            "button_1_text": "",
+            "button1_bg_color": "#002855",
+            "button1_color": "#ffffff",
+            "primary_link2": false,
+            "button_2_url": "",
+            "button_class": "",
+            "button_2_text": "",
+            "button2_bg_color": "rgba(0,0,0,0)",
+            "button2_color": "#002855"
+          }
+        }
+      },
+      "block_order": [
+        "column_dAg9Cb",
+        "column_DTm74U",
+        "column_gQTMRb"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "section_id": "",
+        "title": "Tasting Notes",
+        "heading_size": "h1",
+        "title_alignment": "center",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_ePyhbW": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_hJ6TUj": {
+          "type": "heading",
+          "settings": {
+            "heading": "SALES TEAM",
+            "heading_size": "h1"
+          }
+        },
+        "text_6BRc3P": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our people are our most important asset.</p>",
+            "font_desk": 18,
+            "font_mob": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_hJ6TUj",
+        "text_6BRc3P"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "section_id": "",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2da7a709-01d3-4bb8-8ee9-d3d5efac063e",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 20
+      }
+    },
+    "image_banner_NaXeFH": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/team.jpg",
+        "image_2": "shopify://shop_images/Mission_Sales_Team.png",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "rich_text_7pcLeA": {
+      "type": "rich-text",
+      "blocks": {
+        "button_cH6W8X": {
+          "type": "button",
+          "settings": {
+            "button_label": "MISSION ESTATE WINERY EXPORT TRADE PRESENTER",
+            "button_new_tab": true,
+            "simple_link1": false,
+            "button_link": "https://cdn.shopify.com/s/files/1/0738/5327/2315/files/Export_Trade_Presenter_2026.pdf?v=1774513181",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "button_cH6W8X"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "section_id": "",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2da7a709-01d3-4bb8-8ee9-d3d5efac063e",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 20
+      }
+    },
+    "multicolumn_MJDbt8": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_qLakDW": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/people_kris-love.jpg",
+            "title": "Kris",
+            "subtitle": "Export Manager",
+            "text": "<p>Kris holds a WSET Diploma in Wine, completed during 10 years based in the UK wine market, and has held senior roles on both the import and export sides of the business, supplying leading on-trade accounts and importers. Kris is committed to building long-term, mutually beneficial partnerships.</p><p></p><p><strong>Email:</strong> <a href=\"mailto:kris.love@missionestate.co.nz\" title=\"mailto:kris.love@missionestate.co.nz\">kris.love@missionestate.co.nz</a></p><p><strong>Mobile:</strong> <a href=\"tel:+64 27 450 5149\" title=\"tel:+64 27 450 5149\">+64 27 450 5149</a></p><p><strong>WeChat:</strong> krislove_wine</p><p><strong>WhatsApp:</strong> kris love</p><p><strong>LINE:</strong> kris.love</p>",
+            "simple_link1": false,
+            "secondary_link1": false,
+            "button_1_url": "",
+            "button_1_text": "",
+            "button1_bg_color": "#002855",
+            "button1_color": "#ffffff",
+            "primary_link2": false,
+            "button_2_url": "",
+            "button_class": "",
+            "button_2_text": "",
+            "button2_bg_color": "rgba(0,0,0,0)",
+            "button2_color": "#002855"
+          }
+        },
+        "column_iY4ibr": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Tony_Stanford_Cropped_head_shot.jpg",
+            "title": "Tony",
+            "subtitle": "National Sales Manager",
+            "text": "<p>As National Sales Manager, Tony leads our domestic sales team while overseeing Mission Estate’s national key accounts. With a strong focus on strategic growth and long-term partnerships, he works closely with customers across the country to drive performance and ensure our brands are represented with integrity and impact.</p><p><strong>Email:</strong> <a href=\"mailto:tony.stanford@missionestate.co.nz\" title=\"mailto:tony.stanford@missionestate.co.nz\">t<span style=\"text-decoration:underline\">ony.stanford@missionestate.co.nz</span></a></p><p><strong>Mobile:</strong> <a href=\"tel:021 844 128\" title=\"tel:021 844 128\">021 844 128</a></p>",
+            "simple_link1": false,
+            "secondary_link1": false,
+            "button_1_url": "",
+            "button_1_text": "",
+            "button1_bg_color": "#002855",
+            "button1_color": "#ffffff",
+            "primary_link2": false,
+            "button_2_url": "",
+            "button_class": "",
+            "button_2_text": "",
+            "button2_bg_color": "rgba(0,0,0,0)",
+            "button2_color": "#002855"
+          }
+        },
+        "column_7PzTVh": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/florence-charvin-MISSION-Headshots-Emma-DSCF3670__2.jpg",
+            "title": "<strong>Emma Stark</strong>",
+            "subtitle": "Sales & Marketing Coordinator",
+            "text": "<p>Emma's background in digital marketing, eCommerce and sales has given her a passion for both creative storytelling and data-driven decision making. She enjoys using sales insights to understand customer behaviour while developing marketing initiatives that build meaningful connections with brands.<br/><br/><strong>Email:</strong> <a href=\"mailto:emma.stark@missionestate.co.nz\" title=\"mailto:emma.stark@missionestate.co.nz\">emma.stark@missionestate.co.nz</a></p><p><strong>Mobile: </strong><a href=\"tel:0273639044\" title=\"tel:0273639044\">0273639044</a></p>",
+            "simple_link1": false,
+            "secondary_link1": false,
+            "button_1_url": "",
+            "button_1_text": "",
+            "button1_bg_color": "#002855",
+            "button1_color": "#ffffff",
+            "primary_link2": false,
+            "button_2_url": "",
+            "button_class": "",
+            "button_2_text": "",
+            "button2_bg_color": "rgba(0,0,0,0)",
+            "button2_color": "#002855"
+          }
+        }
+      },
+      "block_order": [
+        "column_qLakDW",
+        "column_iY4ibr",
+        "column_7PzTVh"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "section_id": "",
+        "title": "Export",
+        "heading_size": "h1",
+        "title_alignment": "left",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_pTAHNA": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_L4dRnM": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Tony_Stanford_Cropped_head_shot.jpg",
+            "title": "",
+            "subtitle": "<strong>TONY STANFORD, NATIONAL SALES MANAGER</strong>",
+            "text": "<p><a href=\"mailto:Tony.stanford@missionestate.co.nz\"><span style=\"text-decoration:underline\">Tony.stanford@missionestate.co.nz</span></a> | 021 844 128</p><p>As National Sales Manager, Tony leads our domestic sales team while overseeing Mission Estate’s national key accounts. With a strong focus on strategic growth and long-term partnerships, he works closely with customers across the country to drive performance and ensure our brands are represented with integrity and impact.</p>",
+            "simple_link1": false,
+            "secondary_link1": false,
+            "button_1_url": "",
+            "button_1_text": "",
+            "button1_bg_color": "#002855",
+            "button1_color": "#ffffff",
+            "primary_link2": false,
+            "button_2_url": "",
+            "button_class": "",
+            "button_2_text": "",
+            "button2_bg_color": "rgba(0,0,0,0)",
+            "button2_color": "#002855"
+          }
+        },
+        "column_nzBb9L": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/florence-charvin-MISSION-Headshots-Emma-DSCF3670__2.jpg",
+            "title": "",
+            "subtitle": "<strong> EMMA STARK - AUCLAND</strong>",
+            "text": "<p><strong>Sales & Marketing Coordinator</strong></p>",
+            "simple_link1": false,
+            "secondary_link1": false,
+            "button_1_url": "",
+            "button_1_text": "",
+            "button1_bg_color": "#002855",
+            "button1_color": "#ffffff",
+            "primary_link2": false,
+            "button_2_url": "",
+            "button_class": "",
+            "button_2_text": "",
+            "button2_bg_color": "rgba(0,0,0,0)",
+            "button2_color": "#002855"
+          }
+        },
+        "column_e3cCJH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Angela_Ward_Holmes_head_shot_0226.jpg",
+            "title": "",
+            "subtitle": "<strong>ANGELA WARD-HOLMES – AUCKLAND</strong>",
+            "text": "<p><a href=\"mailto:Angela.ward-holmes@missionestate.co.nz\"><span style=\"text-decoration:underline\">Angela.ward-holmes@missionestate.co.nz</span></a> | 021 540 610<br/><br/></p>",
+            "simple_link1": false,
+            "secondary_link1": false,
+            "button_1_url": "",
+            "button_1_text": "",
+            "button1_bg_color": "#002855",
+            "button1_color": "#ffffff",
+            "primary_link2": false,
+            "button_2_url": "",
+            "button_class": "",
+            "button_2_text": "",
+            "button2_bg_color": "rgba(0,0,0,0)",
+            "button2_color": "#002855"
+          }
+        },
+        "column_jKKGkC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/florence-charvin-MISSION-Headshots-Fleur-DSCF3689__2_1.jpg",
+            "title": "",
+            "subtitle": "<strong>FLEUR FULLERTON – AUCKLAND</strong>",
+            "text": "<p><a href=\"mailto:Fleur.fullerton@missionestate.co.nz\" title=\"mailto:Fleur.fullerton@missionestate.co.nz\">Fleur.fullerton@missionestate.co.nz</a> | 021 744 714<br/><br/>WSET-trained wine sales professional with experience in New Zealand and the UK. Starting in restaurant management before progressing into retail management and wine sales,  Fleur now looks after Auckland and Northland, combining wine expertise, strong relationships, and a commitment to exceptional customer service.</p>",
+            "simple_link1": false,
+            "secondary_link1": false,
+            "button_1_url": "",
+            "button_1_text": "",
+            "button1_bg_color": "#002855",
+            "button1_color": "#ffffff",
+            "primary_link2": false,
+            "button_2_url": "",
+            "button_class": "",
+            "button_2_text": "",
+            "button2_bg_color": "rgba(0,0,0,0)",
+            "button2_color": "#002855"
+          }
+        },
+        "column_6XJRrG": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Tammy_Edwards_head_shot_2026.jpg",
+            "title": "",
+            "subtitle": "<strong>TAMMY EDWARDS – WELLINGTON AND HAWKE’S BAY</strong>",
+            "text": "<p><a href=\"mailto:Tammy.edwards@missionestate.co.nz\"><span style=\"text-decoration:underline\">Tammy.edwards@missionestate.co.nz</span></a> | 021 540 608<br/><br/>Tammy represents Mission Estate across the Hawkes Bay and Wellington region, drawing on 12 years in hospitality and 10 years in wine distribution. With a strong passion for the NZ wine industry, she focus's on growing partnerships, supporting clients, and delivering a high level of service that reflects the quality of the brand</p>",
+            "simple_link1": false,
+            "secondary_link1": false,
+            "button_1_url": "",
+            "button_1_text": "",
+            "button1_bg_color": "#002855",
+            "button1_color": "#ffffff",
+            "primary_link2": false,
+            "button_2_url": "",
+            "button_class": "",
+            "button_2_text": "",
+            "button2_bg_color": "rgba(0,0,0,0)",
+            "button2_color": "#002855"
+          }
+        },
+        "column_WAh6n7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/florence-charvin-MISSION-portraits-DSCF2975_copy2.jpg",
+            "title": "",
+            "subtitle": "<strong>RACHEL DENNIS – BAY OF PLENTY AND WAIKATO</strong>",
+            "text": "<p><a href=\"mailto:Rachel.dennis@missionestate.co.nz\"><span style=\"text-decoration:underline\">Rachel.dennis@missionestate.co.nz</span></a> | 021 540 679</p><p><br/>Rachel's longevity with Mission reflects her strong passion for the company and its wines. Her dedication and focus  on customer relationships have driven significant success,  both within her existing customer base and in generating new business.<br/></p>",
+            "simple_link1": false,
+            "secondary_link1": false,
+            "button_1_url": "",
+            "button_1_text": "",
+            "button1_bg_color": "#002855",
+            "button1_color": "#ffffff",
+            "primary_link2": false,
+            "button_2_url": "",
+            "button_class": "",
+            "button_2_text": "",
+            "button2_bg_color": "rgba(0,0,0,0)",
+            "button2_color": "#002855"
+          }
+        },
+        "column_UxYEpK": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/39c5277c-4b70-454b-8736-8dcbac583703.jpg",
+            "title": "",
+            "subtitle": "<strong>JOANNA DEMETRIOU - TARANAKI</strong>",
+            "text": "<p><a href=\"mailto:Joanna.demetriou@missionestate.co.nz\"><span style=\"text-decoration:underline\">Joanna.demetriou@missionestate.co.nz</span></a> | 021 492 204<br/><br/>From the home of the winery on the East Coast Joanna enjoys spreading the joy of our large variety of wines to the West Coast of Taranaki. Being with the company over a decade she enjoys sharing knowledge, award success & new exciting products</p>",
+            "simple_link1": false,
+            "secondary_link1": false,
+            "button_1_url": "",
+            "button_1_text": "",
+            "button1_bg_color": "#002855",
+            "button1_color": "#ffffff",
+            "primary_link2": false,
+            "button_2_url": "",
+            "button_class": "",
+            "button_2_text": "",
+            "button2_bg_color": "rgba(0,0,0,0)",
+            "button2_color": "#002855"
+          }
+        }
+      },
+      "block_order": [
+        "column_L4dRnM",
+        "column_nzBb9L",
+        "column_e3cCJH",
+        "column_jKKGkC",
+        "column_6XJRrG",
+        "column_WAh6n7",
+        "column_UxYEpK"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "section_id": "",
+        "title": "Domestic",
+        "heading_size": "h0",
+        "title_alignment": "left",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 5,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "scheme-2da7a709-01d3-4bb8-8ee9-d3d5efac063e",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_text_slideshow_GBz8BB": {
+      "type": "image-text-slideshow",
+      "name": "Image and Text Slideshow",
+      "settings": {
+        "section_id": "wrap_collection_etc",
+        "slider_class": "",
+        "enable_fullwidth": false,
+        "enable_slideshow": true,
+        "slide_speed": 5000,
+        "autoplay": true,
+        "autoplay_speed": 5000,
+        "image_position": "right",
+        "slideshow_image_1": "shopify://shop_images/Artwork30_4623d739-aef3-460b-9034-19262c6a8fe9.png",
+        "heading": "INTERNATIONAL SALES",
+        "heading_url": "#",
+        "heading_color": "#ffffff",
+        "text": "Our wine is packed in boxes sized for 9, 10 or 15 bottles – the cost incurred will be rounded up to the nearest multiple.\n<br><br>\nAt present, our website only accepts orders for shipping within New Zealand. For international enquiries, <b><a href=\"mailto:info@missionestate.co.nz\" class=\"international-link\">please email sales here.</a></b>",
+        "text_color": "#ffffff",
+        "simple_link1": false,
+        "button_1_url": "#",
+        "link_target1": "_self",
+        "button_1_text": "",
+        "button_class": "",
+        "button1_bg_color": "#ff3e51",
+        "button1_color": "#ffffff",
+        "simple_link2": false,
+        "button_2_url": "",
+        "link_target2": "_self",
+        "button_2_text": "Find Out More",
+        "button_class2": "",
+        "button2_bg_color": "rgba(0,0,0,0)",
+        "button2_color": "#ffffff",
+        "secondary": false,
+        "simple_link3": false,
+        "button_3_url": "",
+        "link_target3": "_self",
+        "button_3_text": "",
+        "button_class3": "",
+        "simple_link4": false,
+        "button_4_url": "",
+        "link_target4": "_self",
+        "button_4_text": "",
+        "button_class4": "",
+        "background_color": "#ff3e51",
+        "padding_top_desktop": 70,
+        "padding_bottom_desktop": 70,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "image_text_slideshow_3fA3RC": {
+      "type": "image-text-slideshow",
+      "disabled": true,
+      "name": "Image and Text Slideshow",
+      "settings": {
+        "section_id": "sustainability",
+        "slider_class": "wraps_slider-section",
+        "enable_fullwidth": false,
+        "enable_slideshow": true,
+        "slide_speed": 5000,
+        "autoplay": true,
+        "autoplay_speed": 5000,
+        "image_position": "right",
+        "slideshow_image_1": "shopify://shop_images/Gimblett-gravels-1000x1000.jpg",
+        "heading": "Gimblett Gravels vineyard",
+        "heading_url": "",
+        "heading_color": "#002855",
+        "text": "Hawke’s Bay is New Zealand’s oldest wine region – and officially recognised as one of the world’s 12 Great Wine Capitals, alongside elite wine tourism destinations such as Bordeaux and Napa Valley. Located on the east coast of the North Island, the region is known for its long, warm growing season and varied soils that support a diverse range of wine styles.<br>\nMission Estate was the first to plant vines in Hawke’s Bay in the 1850s, and we continue to lead with vineyards in two of its most exceptional sub-regions:\n<li>Taradale, home to our historic estate and flagship Chardonnay vineyards off Church Road</li>\n<li>Gimblett Gravels, a renowned gravelly terroir producing structured reds with depth and finesse</li>\nOur focus includes Chardonnay, Syrah, Merlot, and Cabernet Sauvignon, alongside small plantings of Semillon and Cabernet Franc. We also partner with select local growers who share our commitment to premium, sustainable viticulture.",
+        "text_color": "#002855",
+        "simple_link1": false,
+        "button_1_url": "",
+        "link_target1": "_self",
+        "button_1_text": "",
+        "button_class": "",
+        "button1_bg_color": "#002855",
+        "button1_color": "#ffffff",
+        "simple_link2": false,
+        "button_2_url": "",
+        "link_target2": "_self",
+        "button_2_text": "",
+        "button_class2": "",
+        "button2_bg_color": "rgba(0,0,0,0)",
+        "button2_color": "#002855",
+        "secondary": false,
+        "simple_link3": false,
+        "button_3_url": "",
+        "link_target3": "_self",
+        "button_3_text": "",
+        "button_class3": "",
+        "simple_link4": false,
+        "button_4_url": "",
+        "link_target4": "_self",
+        "button_4_text": "",
+        "button_class4": "",
+        "background_color": "#f0f0ed",
+        "padding_top_desktop": 80,
+        "padding_bottom_desktop": 80,
+        "padding_top_mobile": 30,
+        "padding_bottom_mobile": 30
+      }
+    },
+    "image_with_text_DBJcPD": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_ENNpGV": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image RIGHT with text sch 13",
+            "heading_size": "h1"
+          }
+        },
+        "text_jGnzU8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We’ve been making wine under the same management since 1851 – a legacy of continuity that shapes everything we do. With few exceptions, most of our wines are expertly crafted and bottled on-site at our historic Taradale estate, where generations of winemaking knowledge meet exceptional vineyard sites and distinctive regional climates.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ENNpGV",
+        "text_jGnzU8"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "section_id": "our-history",
+        "image": "shopify://shop_images/B222CA2E-A75B-49B1-BEDC-0AF89C5D2084_1_100_o.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-ccdf85bc-5e76-4e49-b1d5-b858928d4956",
+        "color_scheme": "scheme-ccdf85bc-5e76-4e49-b1d5-b858928d4956",
+        "image_link": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 24,
+        "padding_bottom": 72
+      }
+    },
+    "image_with_text_yErAQx": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_M3iNUr": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image RIGHT with text sch 13",
+            "heading_size": "h1"
+          }
+        },
+        "text_hmQEDA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We’ve been making wine under the same management since 1851 – a legacy of continuity that shapes everything we do. With few exceptions, most of our wines are expertly crafted and bottled on-site at our historic Taradale estate, where generations of winemaking knowledge meet exceptional vineyard sites and distinctive regional climates.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_M3iNUr",
+        "text_hmQEDA"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "section_id": "our-history",
+        "image": "shopify://shop_images/B222CA2E-A75B-49B1-BEDC-0AF89C5D2084_1_100_o.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-ccdf85bc-5e76-4e49-b1d5-b858928d4956",
+        "color_scheme": "scheme-ccdf85bc-5e76-4e49-b1d5-b858928d4956",
+        "image_link": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 24,
+        "padding_bottom": 72
+      }
+    },
+    "image_text_slideshow_4zPUrd": {
+      "type": "image-text-slideshow",
+      "disabled": true,
+      "settings": {
+        "section_id": "wrapper_reservation_menu",
+        "slider_class": "wrapper_restaurant",
+        "enable_fullwidth": false,
+        "enable_slideshow": true,
+        "slide_speed": 5000,
+        "autoplay": false,
+        "autoplay_speed": 5000,
+        "image_position": "right",
+        "slideshow_image_1": "shopify://shop_images/5_2312fa11-fde8-483e-97ab-309f3bd84f72.png",
+        "heading": "",
+        "heading_url": "",
+        "heading_color": "#002855",
+        "text": "<p class=\"font-size-14 line-height-140 font-sans-light\">From sunlit terrace lunches to intimate evening dinners, Mission Estate Restaurant is one of Napier’s premier dining destinations. Enjoy inspired seasonal menus, award-winning wines, and warm hospitality – all set within the timeless charm of New Zealand’s oldest winery. With only the freshest local produce used, the style of cuisine is contemporary fine dining with a European influence.<br><br></p>\n\n<h4 class=\"font-size-28 line-height-140 font-sans-bold\">Opening hours</h4>\n\n<div class=\"icon-wrapper font-size-12 line-height-120 font-sans-light\">\n<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\"><path fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M16.5 5V3m-9 2V3M3.25 8h17.5M3 10.044c0-2.115 0-3.173.436-3.981a3.9 3.9 0 0 1 1.748-1.651C6.04 4 7.16 4 9.4 4h5.2c2.24 0 3.36 0 4.216.412c.753.362 1.364.94 1.748 1.65c.436.81.436 1.868.436 3.983v4.912c0 2.115 0 3.173-.436 3.981a3.9 3.9 0 0 1-1.748 1.651C17.96 21 16.84 21 14.6 21H9.4c-2.24 0-3.36 0-4.216-.412a3.9 3.9 0 0 1-1.748-1.65C3 18.128 3 17.07 3 14.955z\"></path></svg> We're open 7 days for lunch and dinner\n</div>\n<div class=\"second-icon-wrapper icon-wrapper font-size-14 line-height-140 font-sans-light\">\n<div class=\"icon-col\">\n<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\"><g fill=\"none\"><path d=\"m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z\"></path><path fill=\"currentColor\" d=\"M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2m0 2a8 8 0 1 0 0 16a8 8 0 0 0 0-16m0 2a1 1 0 0 1 .993.883L13 7v4.586l2.707 2.707a1 1 0 0 1-1.32 1.497l-.094-.083l-3-3a1 1 0 0 1-.284-.576L11 12V7a1 1 0 0 1 1-1\"></path></g></svg> Lunch: <b>11:30am– 2:15pm</b>\n</div>\n<div class=\"icon-col\">\n<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\"><g fill=\"none\"><path d=\"m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z\"></path><path fill=\"currentColor\" d=\"M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2m0 2a8 8 0 1 0 0 16a8 8 0 0 0 0-16m0 2a1 1 0 0 1 .993.883L13 7v4.586l2.707 2.707a1 1 0 0 1-1.32 1.497l-.094-.083l-3-3a1 1 0 0 1-.284-.576L11 12V7a1 1 0 0 1 1-1\"></path></g></svg> Dinner: <b>5:30pm–late</b>\n</div>\n</div>\n<div class=\"icon-wrapper font-size-14 line-height-140 font-sans-light\">\n<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\"><path fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M16.5 5V3m-9 2V3M3.25 8h17.5M3 10.044c0-2.115 0-3.173.436-3.981a3.9 3.9 0 0 1 1.748-1.651C6.04 4 7.16 4 9.4 4h5.2c2.24 0 3.36 0 4.216.412c.753.362 1.364.94 1.748 1.65c.436.81.436 1.868.436 3.983v4.912c0 2.115 0 3.173-.436 3.981a3.9 3.9 0 0 1-1.748 1.651C17.96 21 16.84 21 14.6 21H9.4c-2.24 0-3.36 0-4.216-.412a3.9 3.9 0 0 1-1.748-1.65C3 18.128 3 17.07 3 14.955z\"></path></svg> We are closed: Good Friday & Christmas Day\n</div>",
+        "text_color": "#002855",
+        "simple_link1": false,
+        "button_1_url": "#",
+        "link_target1": "_self",
+        "button_1_text": "Make a reservation",
+        "button_class": "open-custom-popup",
+        "button1_bg_color": "#002855",
+        "button1_color": "#ffffff",
+        "simple_link2": true,
+        "button_2_url": "shopify://pages/history",
+        "link_target2": "_self",
+        "button_2_text": "",
+        "button_class2": "",
+        "button2_bg_color": "rgba(0,0,0,0)",
+        "button2_color": "#002855",
+        "secondary": true,
+        "simple_link3": false,
+        "button_3_url": "#",
+        "link_target3": "_self",
+        "button_3_text": "Book a special event",
+        "button_class3": "Open-enquiry-popup",
+        "simple_link4": false,
+        "button_4_url": "shopify://products/restaurant-gift-card-old",
+        "link_target4": "_self",
+        "button_4_text": "<svg width=\"14\" height=\"15\" viewbox=\"0 0 14 15\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M11.2 11.7C11.5713 11.7 11.9274 11.8475 12.1899 12.1101C12.4525 12.3726 12.6 12.7287 12.6 13.1C12.6 13.4713 12.4525 13.8274 12.1899 14.0899C11.9274 14.3525 11.5713 14.5 11.2 14.5C10.8287 14.5 10.4726 14.3525 10.2101 14.0899C9.9475 13.8274 9.8 13.4713 9.8 13.1C9.8 12.323 10.423 11.7 11.2 11.7ZM0 0.85C0 0.6567 0.1567 0.5 0.35 0.5H2.06677C2.20241 0.5 2.32583 0.578368 2.38353 0.701124L2.85247 1.69888C2.91017 1.82163 3.03359 1.9 3.16923 1.9H13.3C13.4857 1.9 13.6637 1.97375 13.795 2.10503C13.9263 2.2363 14 2.41435 14 2.6C14 2.719 13.965 2.838 13.916 2.95L11.41 7.479C11.172 7.906 10.71 8.2 10.185 8.2H5.17656C5.04912 8.2 4.93176 8.26926 4.87016 8.38082L4.36154 9.302C4.34724 9.32789 4.33637 9.35553 4.32919 9.38422C4.32242 9.41131 4.31738 9.43952 4.32402 9.46663C4.33157 9.49746 4.34744 9.52593 4.37026 9.54874C4.40308 9.58156 4.44759 9.6 4.494 9.6H12.25C12.4433 9.6 12.6 9.7567 12.6 9.95V10.65C12.6 10.8433 12.4433 11 12.25 11H4.2C3.8287 11 3.4726 10.8525 3.21005 10.5899C2.9475 10.3274 2.8 9.9713 2.8 9.6C2.8 9.355 2.863 9.124 2.968 8.928L3.83268 7.3703C3.88748 7.27157 3.89129 7.15247 3.8429 7.05044L1.49487 2.10001C1.43693 1.97786 1.31383 1.9 1.17863 1.9H0.35C0.1567 1.9 0 1.7433 0 1.55V0.85ZM4.2 11.7C4.5713 11.7 4.9274 11.8475 5.18995 12.1101C5.4525 12.3726 5.6 12.7287 5.6 13.1C5.6 13.4713 5.4525 13.8274 5.18995 14.0899C4.9274 14.3525 4.5713 14.5 4.2 14.5C3.8287 14.5 3.4726 14.3525 3.21005 14.0899C2.9475 13.8274 2.8 13.4713 2.8 13.1C2.8 12.323 3.423 11.7 4.2 11.7ZM10.2941 6.8C10.4212 6.8 10.5383 6.73113 10.6 6.62008L12.1568 3.82008C12.2865 3.58679 12.1179 3.3 11.8509 3.3H4.15023C3.8935 3.3 3.72413 3.56723 3.83371 3.79939L5.15531 6.59939C5.21312 6.72187 5.3364 6.8 5.47183 6.8H10.2941Z\" fill=\"#002855\"></path>\n</svg>\n Buy a gift card",
+        "button_class4": "",
+        "background_color": "#ecede6",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 100,
+        "padding_top_mobile": 60,
+        "padding_bottom_mobile": 60
+      }
+    },
+    "image_text_slideshow_ikpw8U": {
+      "type": "image-text-slideshow",
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "slider_class": "wrap_mission",
+        "enable_fullwidth": true,
+        "enable_slideshow": true,
+        "slide_speed": 5000,
+        "autoplay": false,
+        "autoplay_speed": 5000,
+        "image_position": "right",
+        "slideshow_image_1": "shopify://shop_images/7_3feb8f77-5781-4c9e-a2f3-abf1c28501ef.png",
+        "heading": "Special Events",
+        "heading_url": "",
+        "heading_color": "#d2b186",
+        "text": "<p>Celebrate in style at Mission Estate. </p>From milestone birthdays to corporate dinners, Mission Estate offers elegant spaces, curated menus, and warm hospitality to make your next event truly unforgettable.",
+        "text_color": "#ffffff",
+        "simple_link1": false,
+        "button_1_url": "shopify://pages/functions-events",
+        "link_target1": "_self",
+        "button_1_text": "Discover more",
+        "button_class": "",
+        "button1_bg_color": "#ffffff",
+        "button1_color": "#002855",
+        "simple_link2": false,
+        "button_2_url": "",
+        "link_target2": "_self",
+        "button_2_text": "",
+        "button_class2": "",
+        "button2_bg_color": "rgba(0,0,0,0)",
+        "button2_color": "#002855",
+        "secondary": false,
+        "simple_link3": false,
+        "button_3_url": "",
+        "link_target3": "_self",
+        "button_3_text": "",
+        "button_class3": "",
+        "simple_link4": false,
+        "button_4_url": "",
+        "link_target4": "_self",
+        "button_4_text": "",
+        "button_class4": "",
+        "background_color": "#021c3b",
+        "padding_top_desktop": 100,
+        "padding_bottom_desktop": 100,
+        "padding_top_mobile": 60,
+        "padding_bottom_mobile": 60
+      }
+    },
+    "collapsible_content_qYyQQA": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_y4DWna": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I join Mission Rewards?",
+            "icon": "none",
+            "row_content": "<p>Simply create an account on our website – you'll receive 500 points just for signing up.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_73YWUn": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do I need to sign up again to keep earning rewards?",
+            "icon": "none",
+            "row_content": "<p><em>No — if you already have a Mission account, you’re automatically part of the new rewards programme. Just log in to start earning.</em></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_x8RPTJ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": " How do I see my current wallet balance and points?",
+            "icon": "none",
+            "row_content": "<p><em>Log into your account and click the ‘Rewards’ button on the site. You’ll see both your points and any remaining wallet credit there.</em></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_xFTDcN": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_y4DWna",
+        "collapsible_row_73YWUn",
+        "collapsible_row_x8RPTJ",
+        "collapsible_row_xFTDcN"
+      ],
+      "disabled": true,
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "Getting started",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "layout": "section",
+        "color_scheme": "scheme-1",
+        "container_color_scheme": "scheme-1",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_fYQC66",
+    "rich_text_GaeDYm",
+    "rich_text_BJyEDF",
+    "multicolumn_EWCWid",
+    "rich_text_ePyhbW",
+    "image_banner_NaXeFH",
+    "rich_text_7pcLeA",
+    "multicolumn_MJDbt8",
+    "multicolumn_pTAHNA",
+    "image_text_slideshow_GBz8BB",
+    "image_text_slideshow_3fA3RC",
+    "image_with_text_DBJcPD",
+    "image_with_text_yErAQx",
+    "image_text_slideshow_4zPUrd",
+    "image_text_slideshow_ikpw8U",
+    "collapsible_content_qYyQQA"
+  ]
+}

@@ -1,0 +1,223 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "rich_text_etXtdQ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_JQkC39": {
+          "type": "heading",
+          "settings": {
+            "heading": "Privacy Policy",
+            "heading_size": "h0"
+          }
+        },
+        "text_CqDPmV": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Discover how Mission Estate leads the way in sustainable winemaking. Mission Estate’s commitment to sustainability ensures a greener future while producing exceptional wines.</p>",
+            "font_desk": 16,
+            "font_mob": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_JQkC39",
+        "text_CqDPmV"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "section_id": "",
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "scheme-5962b243-e7a7-4798-ac90-08968b8dc7eb",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 4
+      }
+    },
+    "slideshow_prxkKH": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_Jrgkbd": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/banner-mission-front.jpg",
+            "video_url": "",
+            "heading": "Terms and Conditions",
+            "heading_size": "hxl",
+            "subheading": "The following outlines the terms and conditions well as frequently asked questions regarding the Mission Estate Winery online store:",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 30,
+            "color_scheme": "scheme-d536de6d-9eba-4ca5-b804-ae369f8ab959",
+            "text_alignment_mobile": "left"
+          }
+        }
+      },
+      "block_order": [
+        "slide_Jrgkbd"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "large",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "terms_conditions_tabs_z3VeyH": {
+      "type": "terms-conditions-tabs",
+      "blocks": {
+        "tab_iYg3Dt": {
+          "type": "tab",
+          "settings": {
+            "tab_name": "Returns & refunds",
+            "tab_url": "",
+            "heading": "Returns & refunds",
+            "sub_heading": "",
+            "box_description": "",
+            "main_description": "Mission Estate Winery guarantees the quality of all of our products. If for any reason a product is found to be faulty or defective, Mission Estate will arrange for collection of the product and the cost will be fully refunded.\n\nAll returns must be lodged with Mission Estate Winery within 30 days of purchase.",
+            "image": "shopify://shop_images/dummy-image-square.jpg"
+          }
+        },
+        "tab_8Vx3yF": {
+          "type": "tab",
+          "settings": {
+            "tab_name": "Currency",
+            "tab_url": "",
+            "heading": "Currency",
+            "sub_heading": "",
+            "box_description": "",
+            "main_description": "All prices are in New Zealand dollars.",
+            "image": "shopify://shop_images/dummy-image-square.jpg"
+          }
+        },
+        "tab_qnL4bB": {
+          "type": "tab",
+          "settings": {
+            "tab_name": "Your credit card details",
+            "tab_url": "",
+            "heading": "Your credit card details",
+            "sub_heading": "",
+            "box_description": "",
+            "main_description": "The Mission Estate Winery online store processes all credit card transactions using the Westpac Internet Payment Solution Plus secure online credit card payment solution.\n\nYour credit card details are not stored for future use and are processed in a secure environment.",
+            "image": "shopify://shop_images/dummy-image-square.jpg"
+          }
+        },
+        "tab_64R8FV": {
+          "type": "tab",
+          "settings": {
+            "tab_name": "Shipping",
+            "tab_url": "",
+            "heading": "Shipping",
+            "sub_heading": "",
+            "box_description": "",
+            "main_description": "New Zealand shipping is usually completed within 2-3 working days via courier, and we guarantee delivery within 10 working days of your order. International shipping is available to Australia, Europe, UK, Hong Kong, Japan, Singapore, and the USA, please click here for the current rates.",
+            "image": "shopify://shop_images/dummy-image-square.jpg"
+          }
+        },
+        "tab_Rdbxgg": {
+          "type": "tab",
+          "settings": {
+            "tab_name": "The sale of alcohol online",
+            "tab_url": "",
+            "heading": "The sale of alcohol online",
+            "sub_heading": "",
+            "box_description": "",
+            "main_description": "In New Zealand it is illegal for us to sell liquor to anyone under the age of 18, and it is illegal to buy liquor when under the age of 18. It is also illegal to make a false declaration of age in order to purchase liquor.In New Zealand, if you are under the age of 18, please do not attempt to use this site to purchase liquor. By clicking on “Checkout” and completing an order online, you are confirming you are over the age of 18 and legally eligible to purchase liquor.\n\nIf you are purchasing from a country overseas, by clicking on “Checkout” and completing an order online, you are confirming you are of, or over, the age required in your country to be legally eligible to purchase liquor.",
+            "image": "shopify://shop_images/dummy-image-square.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "tab_iYg3Dt",
+        "tab_8Vx3yF",
+        "tab_qnL4bB",
+        "tab_64R8FV",
+        "tab_Rdbxgg"
+      ],
+      "name": "Terms & Condition Tab",
+      "settings": {}
+    },
+    "rich_text_kyqrmG": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_MAR8Fa": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Have a question not addressed above?</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_98bFi9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Please feel free to contact the Mission Estate team.</p>",
+            "font_desk": 24,
+            "font_mob": 14
+          }
+        },
+        "button_8MJHdd": {
+          "type": "button",
+          "settings": {
+            "button_label": "Contact Us",
+            "simple_link1": false,
+            "button_link": "shopify://pages/contact",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_MAR8Fa",
+        "text_98bFi9",
+        "button_8MJHdd"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "section_id": "",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-5962b243-e7a7-4798-ac90-08968b8dc7eb",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_etXtdQ",
+    "slideshow_prxkKH",
+    "terms_conditions_tabs_z3VeyH",
+    "rich_text_kyqrmG"
+  ]
+}
