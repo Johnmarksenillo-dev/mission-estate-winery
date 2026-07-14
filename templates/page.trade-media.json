@@ -214,12 +214,96 @@
             "button2_bg_color": "rgba(0,0,0,0)",
             "button2_color": "#002855"
           }
+        },
+        "column_dxm4QL": {
+          "type": "column",
+          "settings": {
+            "title": "Huchet",
+            "subtitle": "",
+            "text": "",
+            "simple_link1": false,
+            "secondary_link1": false,
+            "button_1_url": "",
+            "button_1_text": "",
+            "button1_bg_color": "#002855",
+            "button1_color": "#ffffff",
+            "primary_link2": false,
+            "button_2_url": "",
+            "button_class": "",
+            "button_2_text": "",
+            "button2_bg_color": "rgba(0,0,0,0)",
+            "button2_color": "#002855"
+          }
+        },
+        "column_4J8EaY": {
+          "type": "column",
+          "settings": {
+            "title": "Jewelstone",
+            "subtitle": "",
+            "text": "",
+            "simple_link1": false,
+            "secondary_link1": false,
+            "button_1_url": "",
+            "button_1_text": "",
+            "button1_bg_color": "#002855",
+            "button1_color": "#ffffff",
+            "primary_link2": false,
+            "button_2_url": "",
+            "button_class": "",
+            "button_2_text": "",
+            "button2_bg_color": "rgba(0,0,0,0)",
+            "button2_color": "#002855"
+          }
+        },
+        "column_rmkKY7": {
+          "type": "column",
+          "settings": {
+            "title": "Reserve",
+            "subtitle": "",
+            "text": "",
+            "simple_link1": false,
+            "secondary_link1": false,
+            "button_1_url": "",
+            "button_1_text": "",
+            "button1_bg_color": "#002855",
+            "button1_color": "#ffffff",
+            "primary_link2": false,
+            "button_2_url": "",
+            "button_class": "",
+            "button_2_text": "",
+            "button2_bg_color": "rgba(0,0,0,0)",
+            "button2_color": "#002855"
+          }
+        },
+        "column_Yk7ewU": {
+          "type": "column",
+          "settings": {
+            "title": "The Project and Estate",
+            "subtitle": "",
+            "text": "",
+            "simple_link1": false,
+            "secondary_link1": false,
+            "button_1_url": "",
+            "button_1_text": "",
+            "button1_bg_color": "#002855",
+            "button1_color": "#ffffff",
+            "primary_link2": false,
+            "button_2_url": "",
+            "button_class": "",
+            "button_2_text": "",
+            "button2_bg_color": "rgba(0,0,0,0)",
+            "button2_color": "#002855"
+          }
         }
       },
       "block_order": [
         "column_dAg9Cb",
         "column_DTm74U",
-        "column_gQTMRb"
+        "column_gQTMRb",
+        "column_dxm4QL",
+        "column_4J8EaY",
+        "column_rmkKY7",
+        "column_Yk7ewU"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
@@ -230,6 +314,10 @@
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
+        "desktop_layout": "slider",
+        "slider_controls_position": "middle_arrows_only",
+        "slider_arrow_color": "#002855",
+        "slider_arrow_background": "rgba(0,0,0,0)",
         "column_alignment": "center",
         "background_style": "primary",
         "button_label": "Button label",
@@ -405,6 +493,10 @@
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
+        "desktop_layout": "grid",
+        "slider_controls_position": "bottom_with_pagination",
+        "slider_arrow_color": "#002855",
+        "slider_arrow_background": "rgba(0,0,0,0)",
         "column_alignment": "left",
         "background_style": "primary",
         "button_label": "Button label",
@@ -587,6 +679,10 @@
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 5,
+        "desktop_layout": "grid",
+        "slider_controls_position": "bottom_with_pagination",
+        "slider_arrow_color": "#002855",
+        "slider_arrow_background": "rgba(0,0,0,0)",
         "column_alignment": "center",
         "background_style": "primary",
         "button_label": "Button label",
