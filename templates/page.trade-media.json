@@ -25,8 +25,10 @@
           "settings": {
             "image": "shopify://shop_images/banner-girl-aromatic-wine.jpg",
             "video_url": "",
+            "mobile_video_url": "",
             "heading": "TRADE & MEDIA",
             "heading_size": "h0",
+            "mobile_heading_size": "inherit",
             "subheading": "Mission Estate introduced the first vines to Hawke’s Bay in the 1850s, beginning a legacy that makes us New Zealand’s oldest winery. Today, we grow in two of the country’s most celebrated wine regions.",
             "button_label": "",
             "link": "",
@@ -47,6 +49,7 @@
       "settings": {
         "layout": "full_bleed",
         "slide_height": "medium",
+        "mobile_slide_height": "inherit",
         "slider_visual": "dots",
         "auto_rotate": false,
         "change_slides_speed": 5,
@@ -329,6 +332,61 @@
         "padding_bottom": 36
       }
     },
+    "image_with_text_backup_b6bbjg": {
+      "type": "image-with-text-backup",
+      "blocks": {
+        "heading_Aqgtfx": {
+          "type": "heading",
+          "settings": {
+            "heading": "SALES TEAM",
+            "heading_size": "h1"
+          }
+        },
+        "text_wX8nbF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our people are our most important asset.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_3Fyy3L": {
+          "type": "button",
+          "settings": {
+            "button_label": "MISSION ESTATE WINERY EXPORT TRADE PRESENTER",
+            "link_target": "_self",
+            "button_class": "",
+            "button_link": "https://cdn.shopify.com/s/files/1/0738/5327/2315/files/Export_Trade_Presenter_2026.pdf?v=1774513181",
+            "button_label1": "",
+            "button_link1": "",
+            "link_target1": "_self",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Aqgtfx",
+        "text_wX8nbF",
+        "button_3Fyy3L"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "section_id": "",
+        "image": "shopify://shop_images/Mission_Sales_Team_Bigger_Size.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-2da7a709-01d3-4bb8-8ee9-d3d5efac063e",
+        "color_scheme": "scheme-2da7a709-01d3-4bb8-8ee9-d3d5efac063e",
+        "image_link": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
     "rich_text_ePyhbW": {
       "type": "rich-text",
       "blocks": {
@@ -352,6 +410,7 @@
         "heading_hJ6TUj",
         "text_6BRc3P"
       ],
+      "disabled": true,
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "section_id": "",
@@ -365,6 +424,7 @@
     },
     "image_banner_NaXeFH": {
       "type": "image-banner",
+      "disabled": true,
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/team.jpg",
@@ -401,6 +461,7 @@
       "block_order": [
         "button_cH6W8X"
       ],
+      "disabled": true,
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "section_id": "",
@@ -408,8 +469,8 @@
         "content_alignment": "center",
         "color_scheme": "scheme-2da7a709-01d3-4bb8-8ee9-d3d5efac063e",
         "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 20
+        "padding_top": 20,
+        "padding_bottom": 80
       }
     },
     "multicolumn_MJDbt8": {
@@ -1049,6 +1110,7 @@
     "rich_text_GaeDYm",
     "rich_text_BJyEDF",
     "multicolumn_EWCWid",
+    "image_with_text_backup_b6bbjg",
     "rich_text_ePyhbW",
     "image_banner_NaXeFH",
     "rich_text_7pcLeA",
