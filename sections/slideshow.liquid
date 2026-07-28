@@ -1,6 +1,9 @@
 {{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 {{ 'component-slideshow.css' | asset_url | stylesheet_tag }}
+{{ 'slideshow-mobile-media.css' | asset_url | stylesheet_tag }}
+
+<script src="{{ 'slideshow-mobile-media.js' | asset_url }}" defer="defer"></script>
 
 {%- if section.settings.slide_height == 'adapt_image' and section.blocks.first.settings.image != blank -%}
   {%- style -%}
@@ -106,6 +109,58 @@
     data-speed="{{ section.settings.change_slides_speed }}"
   >
     {%- for block in section.blocks -%}
+      {%- liquid
+        assign desktop_image = block.settings.image
+        assign desktop_video_url = block.settings.video_url
+        assign mobile_image = block.settings.mobile_image
+        assign mobile_video_url = block.settings.mobile_video_url
+
+        assign has_desktop_media = false
+        if desktop_image != blank or desktop_video_url != blank
+          assign has_desktop_media = true
+        endif
+
+        assign has_mobile_override = false
+        if mobile_image != blank or mobile_video_url != blank
+          assign has_mobile_override = true
+        endif
+
+        if has_desktop_media == false and has_mobile_override
+          assign desktop_image = mobile_image
+          assign desktop_video_url = mobile_video_url
+          assign has_desktop_media = true
+          assign has_mobile_override = false
+        endif
+
+        assign use_responsive_picture = false
+        if desktop_video_url == blank and mobile_video_url == blank and desktop_image != blank and mobile_image != blank and has_mobile_override
+          assign use_responsive_picture = true
+        endif
+
+        assign desktop_height = blank
+        if desktop_image != blank
+          assign desktop_height = desktop_image.width | divided_by: desktop_image.aspect_ratio | round
+        endif
+
+        assign mobile_height = blank
+        if mobile_image != blank
+          assign mobile_height = mobile_image.width | divided_by: mobile_image.aspect_ratio | round
+        endif
+
+        if section.settings.image_behavior == 'ambient'
+          assign desktop_sizes = '120vw'
+          assign desktop_widths = '450, 660, 900, 1320, 1800, 2136, 2400, 3600, 7680'
+        else
+          assign desktop_sizes = '100vw'
+          assign desktop_widths = '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+        endif
+
+        assign mobile_sizes = '100vw'
+        assign fetch_priority = 'auto'
+        if section.index == 1
+          assign fetch_priority = 'high'
+        endif
+      -%}
       <style>
         #Slide-{{ section.id }}-{{ forloop.index }} .banner__media::after {
           opacity: {{ block.settings.image_overlay_opacity | divided_by: 100.0 }};
@@ -120,56 +175,171 @@
         aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
         tabindex="-1"
       >
-        <div class="slideshow__media banner__media media{% if block.settings.image == blank and block.settings.video_url == blank %} placeholder{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}">
-  {% if block.settings.video_url != blank %}
-    <video
-      autoplay
-      muted
-      loop
-      playsinline
-      class="slideshow__video"
-      {% if section.index == 1 %}fetchpriority="high"{% endif %}
-    >
-      <source src="{{ block.settings.video_url }}" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  {% elsif block.settings.image %}
-    {%- liquid
-      assign height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio | round
-      if section.settings.image_behavior == 'ambient'
-        assign sizes = '120vw'
-        assign widths = '450, 660, 900, 1320, 1800, 2136, 2400, 3600, 7680'
-      else
-        assign sizes = '100vw'
-        assign widths = '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
-      endif
-      assign fetch_priority = 'auto'
-      if section.index == 1
-        assign fetch_priority = 'high'
-      endif
-    -%}
-    {%- if forloop.first -%}
-      {{
-        block.settings.image
-        | image_url: width: 3840
-        | image_tag: height: height, sizes: sizes, widths: widths, fetchpriority: fetch_priority
-      }}
-    {%- else -%}
-      {{
-        block.settings.image
-        | image_url: width: 3840
-        | image_tag: loading: 'lazy', height: height, sizes: sizes, widths: widths
-      }}
-    {%- endif -%}
-  {% else %}
-    {%- assign placeholder_slide = forloop.index | modulo: 2 -%}
-    {%- if placeholder_slide == 1 -%}
-      {{ 'hero-apparel-2' | placeholder_svg_tag: 'placeholder-svg' }}
-    {%- else -%}
-      {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
-    {%- endif -%}
-  {% endif %}
-</div>
+        <div
+          class="slideshow__media banner__media media{% if has_desktop_media == false and has_mobile_override == false %} placeholder{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}"
+          data-slideshow-responsive-media
+          data-has-mobile-media="{{ has_mobile_override }}"
+        >
+          {%- if use_responsive_picture -%}
+            <picture class="slideshow-mobile-media__picture">
+              <source
+                media="(max-width: 749px)"
+                sizes="{{ mobile_sizes }}"
+                srcset="
+                  {{ mobile_image | image_url: width: 375 }} 375w,
+                  {{ mobile_image | image_url: width: 550 }} 550w,
+                  {{ mobile_image | image_url: width: 750 }} 750w,
+                  {{ mobile_image | image_url: width: 1100 }} 1100w,
+                  {{ mobile_image | image_url: width: 1500 }} 1500w,
+                  {{ mobile_image | image_url: width: 2000 }} 2000w
+                "
+              >
+              {%- if forloop.first -%}
+                {{
+                  desktop_image
+                  | image_url: width: 3840
+                  | image_tag:
+                    class: 'slideshow-mobile-media__image',
+                    height: desktop_height,
+                    sizes: desktop_sizes,
+                    widths: desktop_widths,
+                    fetchpriority: fetch_priority
+                }}
+              {%- else -%}
+                {{
+                  desktop_image
+                  | image_url: width: 3840
+                  | image_tag:
+                    class: 'slideshow-mobile-media__image',
+                    loading: 'lazy',
+                    height: desktop_height,
+                    sizes: desktop_sizes,
+                    widths: desktop_widths
+                }}
+              {%- endif -%}
+            </picture>
+          {%- else -%}
+            {%- if desktop_video_url != blank -%}
+              <video
+                muted
+                loop
+                playsinline
+                preload="none"
+                aria-hidden="true"
+                class="slideshow__video slideshow-mobile-media__video slideshow-mobile-media__desktop"
+                data-slideshow-video
+                data-slideshow-media-viewport="desktop"
+                {% if desktop_image != blank %}
+                  data-poster="{{ desktop_image | image_url: width: 2000 }}"
+                {% endif %}
+              >
+                <source data-src="{{ desktop_video_url | escape }}" type="video/mp4">
+              </video>
+            {%- elsif desktop_image != blank -%}
+              {%- if has_mobile_override -%}
+                <picture class="slideshow-mobile-media__picture slideshow-mobile-media__desktop">
+                  <source
+                    media="(min-width: 750px)"
+                    sizes="{{ desktop_sizes }}"
+                    srcset="
+                      {{ desktop_image | image_url: width: 750 }} 750w,
+                      {{ desktop_image | image_url: width: 1100 }} 1100w,
+                      {{ desktop_image | image_url: width: 1500 }} 1500w,
+                      {{ desktop_image | image_url: width: 1780 }} 1780w,
+                      {{ desktop_image | image_url: width: 2000 }} 2000w,
+                      {{ desktop_image | image_url: width: 3000 }} 3000w,
+                      {{ desktop_image | image_url: width: 3840 }} 3840w
+                    "
+                  >
+                  <img
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+                    class="slideshow-mobile-media__image"
+                    width="{{ desktop_image.width }}"
+                    height="{{ desktop_height }}"
+                    alt="{{ desktop_image.alt | escape }}"
+                    {% unless forloop.first %}loading="lazy"{% endunless %}
+                    fetchpriority="{{ fetch_priority }}"
+                  >
+                </picture>
+              {%- elsif forloop.first -%}
+                {{
+                  desktop_image
+                  | image_url: width: 3840
+                  | image_tag:
+                    class: 'slideshow-mobile-media__image slideshow-mobile-media__desktop',
+                    height: desktop_height,
+                    sizes: desktop_sizes,
+                    widths: desktop_widths,
+                    fetchpriority: fetch_priority
+                }}
+              {%- else -%}
+                {{
+                  desktop_image
+                  | image_url: width: 3840
+                  | image_tag:
+                    class: 'slideshow-mobile-media__image slideshow-mobile-media__desktop',
+                    loading: 'lazy',
+                    height: desktop_height,
+                    sizes: desktop_sizes,
+                    widths: desktop_widths
+                }}
+              {%- endif -%}
+            {%- else -%}
+              {%- assign placeholder_slide = forloop.index | modulo: 2 -%}
+              {%- if placeholder_slide == 1 -%}
+                {{ 'hero-apparel-2' | placeholder_svg_tag: 'placeholder-svg slideshow-mobile-media__desktop' }}
+              {%- else -%}
+                {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg slideshow-mobile-media__desktop' }}
+              {%- endif -%}
+            {%- endif -%}
+
+            {%- if has_mobile_override -%}
+              {%- if mobile_video_url != blank -%}
+                <video
+                  muted
+                  loop
+                  playsinline
+                  preload="none"
+                  aria-hidden="true"
+                  class="slideshow__video slideshow-mobile-media__video slideshow-mobile-media__mobile"
+                  data-slideshow-video
+                  data-slideshow-media-viewport="mobile"
+                  {% if mobile_image != blank %}
+                    data-poster="{{ mobile_image | image_url: width: 1500 }}"
+                  {% elsif desktop_image != blank %}
+                    data-poster="{{ desktop_image | image_url: width: 1500 }}"
+                  {% endif %}
+                >
+                  <source data-src="{{ mobile_video_url | escape }}" type="video/mp4">
+                </video>
+              {%- elsif mobile_image != blank -%}
+                <picture class="slideshow-mobile-media__picture slideshow-mobile-media__mobile">
+                  <source
+                    media="(max-width: 749px)"
+                    sizes="{{ mobile_sizes }}"
+                    srcset="
+                      {{ mobile_image | image_url: width: 375 }} 375w,
+                      {{ mobile_image | image_url: width: 550 }} 550w,
+                      {{ mobile_image | image_url: width: 750 }} 750w,
+                      {{ mobile_image | image_url: width: 1100 }} 1100w,
+                      {{ mobile_image | image_url: width: 1500 }} 1500w,
+                      {{ mobile_image | image_url: width: 2000 }} 2000w
+                    "
+                  >
+                  <img
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+                    class="slideshow-mobile-media__image"
+                    width="{{ mobile_image.width }}"
+                    height="{{ mobile_height }}"
+                    alt="{{ mobile_image.alt | escape }}"
+                    {% unless forloop.first %}loading="lazy"{% endunless %}
+                    fetchpriority="{{ fetch_priority }}"
+                  >
+                </picture>
+              {%- endif -%}
+            {%- endif -%}
+          {%- endif -%}
+        </div>
         <div class="slideshow__text-wrapper banner__content banner__content--{{ block.settings.box_align }} page-width{% if block.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if settings.animations_reveal_on_scroll and forloop.index == 1 %} scroll-trigger animate--slide-in{% endif %}">
           <div class="slideshow__text banner__box content-container content-container--full-width-mobile color-{{ block.settings.color_scheme }} gradient slideshow__text--{{ block.settings.text_alignment }} slideshow__text-mobile--{{ block.settings.text_alignment_mobile }}">
             {%- if block.settings.heading != blank -%}
@@ -407,14 +577,35 @@
       "limit": 5,
       "settings": [
         {
+          "type": "header",
+          "content": "Desktop media"
+        },
+        {
           "type": "image_picker",
           "id": "image",
-          "label": "t:sections.slideshow.blocks.slide.settings.image.label"
+          "label": "Desktop image"
         },
         {
           "type": "url",
           "id": "video_url",
-          "label": "Video URL (MP4 or YouTube/Vimeo)"
+          "label": "Desktop video URL",
+          "info": "Use a direct MP4 URL."
+        },
+        {
+          "type": "header",
+          "content": "Mobile media"
+        },
+        {
+          "type": "image_picker",
+          "id": "mobile_image",
+          "label": "Mobile image",
+          "info": "Overrides the desktop media below 750px. Also acts as the mobile video poster."
+        },
+        {
+          "type": "url",
+          "id": "mobile_video_url",
+          "label": "Mobile video URL",
+          "info": "Use a direct MP4 URL. Overrides the mobile image when both are provided."
         },
         {
           "type": "inline_richtext",
