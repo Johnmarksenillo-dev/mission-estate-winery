@@ -1961,6 +1961,11 @@ div#restaurant-tabs .ImageTab {
   height: 400px;
 }
 
+.image-with-text .grid__item a.button.button--primary {
+  background-color: transparent;
+  color: #002855;
+}
+
 .multicolumn-card__info a.button {
   background-color: transparent;
 }
