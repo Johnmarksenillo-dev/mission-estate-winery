@@ -25,11 +25,14 @@
           "settings": {
             "image": "shopify://shop_images/Winter_Trading_Hours.png",
             "video_url": "",
+            "mobile_image": "shopify://shop_images/Restaurant_mobile_banner.png",
+            "mobile_video_url": "",
             "heading": "",
             "heading_size": "hxl",
+            "mobile_heading_size": "inherit",
             "subheading": "",
             "button_label": "",
-            "link": "#",
+            "link": "",
             "button_style_secondary": false,
             "box_align": "middle-center",
             "show_text_box": false,
@@ -44,8 +47,10 @@
           "settings": {
             "image": "shopify://shop_images/banner-restaurant-view.jpg",
             "video_url": "",
+            "mobile_video_url": "",
             "heading": "MISSION RESTAURANT",
             "heading_size": "hxl",
+            "mobile_heading_size": "h0",
             "subheading": "",
             "button_label": "",
             "link": "",
@@ -66,6 +71,7 @@
       "settings": {
         "layout": "full_bleed",
         "slide_height": "large",
+        "mobile_slide_height": "adapt_image",
         "slider_visual": "dots",
         "auto_rotate": false,
         "change_slides_speed": 5,
@@ -986,8 +992,10 @@
           "settings": {
             "image": "shopify://shop_images/slide.png",
             "video_url": "",
+            "mobile_video_url": "",
             "heading": "Welcome to Mission Estate",
             "heading_size": "hxl",
+            "mobile_heading_size": "inherit",
             "subheading": "Proposition which includes History in the making lorem ipsum dolor sit amet adipscing dolor amet.",
             "button_label": "Discover more",
             "link": "#",
@@ -1008,6 +1016,7 @@
       "settings": {
         "layout": "full_bleed",
         "slide_height": "adapt_image",
+        "mobile_slide_height": "inherit",
         "slider_visual": "dots",
         "auto_rotate": false,
         "change_slides_speed": 5,
