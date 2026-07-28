@@ -5,26 +5,53 @@
 
 <script src="{{ 'slideshow-mobile-media.js' | asset_url }}" defer="defer"></script>
 
-{%- if section.settings.slide_height == 'adapt_image' and section.blocks.first.settings.image != blank -%}
-  {%- style -%}
-    @media screen and (max-width: 749px) {
-      #Slider-{{ section.id }}::before,
-      #Slider-{{ section.id }} .media::before,
-      #Slider-{{ section.id }}:not(.banner--mobile-bottom) .banner__content::before {
-        padding-bottom: {{ 1 | divided_by: section.blocks.first.settings.image.aspect_ratio | times: 100 }}%;
-        content: '';
-        display: block;
-      }
-    }
+{%- liquid
+  assign mobile_slide_height = section.settings.mobile_slide_height | default: 'inherit'
+  assign desktop_adapt_image = section.blocks.first.settings.image
+  assign mobile_adapt_image = section.blocks.first.settings.mobile_image | default: desktop_adapt_image
 
-    @media screen and (min-width: 750px) {
-      #Slider-{{ section.id }}::before,
-      #Slider-{{ section.id }} .media::before {
-        padding-bottom: {{ 1 | divided_by: section.blocks.first.settings.image.aspect_ratio | times: 100 }}%;
-        content: '';
-        display: block;
+  assign render_adapt_styles = false
+  if section.settings.slide_height == 'adapt_image' and desktop_adapt_image != blank
+    assign render_adapt_styles = true
+  endif
+  if mobile_slide_height == 'adapt_image' and mobile_adapt_image != blank
+    assign render_adapt_styles = true
+  endif
+-%}
+
+{%- if render_adapt_styles -%}
+  {%- style -%}
+    {%- if mobile_slide_height == 'adapt_image' and mobile_adapt_image != blank -%}
+      @media screen and (max-width: 749px) {
+        #Slider-{{ section.id }}:not(.banner--mobile-bottom) .slideshow__slide::before,
+        #Slider-{{ section.id }}.banner--mobile-bottom .slideshow__media::before {
+          padding-bottom: {{ 1 | divided_by: mobile_adapt_image.aspect_ratio | times: 100 }}%;
+          content: '';
+          display: block;
+        }
       }
-    }
+    {%- elsif mobile_slide_height == 'inherit' and section.settings.slide_height == 'adapt_image' and desktop_adapt_image != blank -%}
+      @media screen and (max-width: 749px) {
+        #Slider-{{ section.id }}::before,
+        #Slider-{{ section.id }} .media::before,
+        #Slider-{{ section.id }}:not(.banner--mobile-bottom) .banner__content::before {
+          padding-bottom: {{ 1 | divided_by: desktop_adapt_image.aspect_ratio | times: 100 }}%;
+          content: '';
+          display: block;
+        }
+      }
+    {%- endif -%}
+
+    {%- if section.settings.slide_height == 'adapt_image' and desktop_adapt_image != blank -%}
+      @media screen and (min-width: 750px) {
+        #Slider-{{ section.id }}::before,
+        #Slider-{{ section.id }} .media::before {
+          padding-bottom: {{ 1 | divided_by: desktop_adapt_image.aspect_ratio | times: 100 }}%;
+          content: '';
+          display: block;
+        }
+      }
+    {%- endif -%}
   {%- endstyle -%}
 {%- endif -%}
 
@@ -101,7 +128,7 @@
   {%- endif -%}
 
   <div
-    class="slideshow banner banner--{{ section.settings.slide_height }} grid grid--1-col slider slider--everywhere{% if section.settings.show_text_below %} banner--mobile-bottom{% endif %}{% if section.blocks.first.settings.image == blank %} slideshow--placeholder{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
+    class="slideshow banner banner--{{ section.settings.slide_height }}{% unless mobile_slide_height == 'inherit' %} banner--mobile-height-{{ mobile_slide_height }}{% endunless %}{% if mobile_slide_height == 'adapt_image' and mobile_adapt_image == blank %} slideshow--mobile-adapt-placeholder{% endif %} grid grid--1-col slider slider--everywhere{% if section.settings.show_text_below %} banner--mobile-bottom{% endif %}{% if section.blocks.first.settings.image == blank %} slideshow--placeholder{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
     id="Slider-{{ section.id }}"
     aria-live="polite"
     aria-atomic="true"
@@ -343,7 +370,8 @@
         <div class="slideshow__text-wrapper banner__content banner__content--{{ block.settings.box_align }} page-width{% if block.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if settings.animations_reveal_on_scroll and forloop.index == 1 %} scroll-trigger animate--slide-in{% endif %}">
           <div class="slideshow__text banner__box content-container content-container--full-width-mobile color-{{ block.settings.color_scheme }} gradient slideshow__text--{{ block.settings.text_alignment }} slideshow__text-mobile--{{ block.settings.text_alignment_mobile }}">
             {%- if block.settings.heading != blank -%}
-              <h1 class="banner__heading inline-richtext {{ block.settings.heading_size }}">
+              {%- assign mobile_heading_size = block.settings.mobile_heading_size | default: 'inherit' -%}
+              <h1 class="banner__heading inline-richtext {{ block.settings.heading_size }}{% unless mobile_heading_size == 'inherit' %} banner__heading--mobile-{{ mobile_heading_size }}{% endunless %}">
                 {{ block.settings.heading }}
               </h1>
             {%- endif -%}
@@ -494,6 +522,35 @@
     },
     {
       "type": "select",
+      "id": "mobile_slide_height",
+      "options": [
+        {
+          "value": "inherit",
+          "label": "Use desktop setting"
+        },
+        {
+          "value": "adapt_image",
+          "label": "Adapt to first image"
+        },
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "medium",
+          "label": "Medium"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        }
+      ],
+      "default": "inherit",
+      "label": "Mobile slide height",
+      "info": "Controls the height below 750px. Adapt uses the first slide's mobile image, or its desktop image when no mobile image is selected."
+    },
+    {
+      "type": "select",
       "id": "slider_visual",
       "options": [
         {
@@ -640,6 +697,38 @@
           ],
           "default": "h1",
           "label": "t:sections.all.heading_size.label"
+        },
+        {
+          "type": "select",
+          "id": "mobile_heading_size",
+          "options": [
+            {
+              "value": "inherit",
+              "label": "Use desktop setting"
+            },
+            {
+              "value": "h2",
+              "label": "Small"
+            },
+            {
+              "value": "h1",
+              "label": "Medium"
+            },
+            {
+              "value": "h0",
+              "label": "Large"
+            },
+            {
+              "value": "hxl",
+              "label": "Extra large"
+            },
+            {
+              "value": "hxxl",
+              "label": "Extra extra large"
+            }
+          ],
+          "default": "inherit",
+          "label": "Mobile heading size"
         },
         {
           "type": "inline_richtext",
