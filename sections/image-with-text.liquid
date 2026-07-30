@@ -1,4 +1,5 @@
 {{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
+{{ 'ext-component-image-with-text.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -141,7 +142,7 @@
 {% schema %}
 {
   "name": "t:sections.image-with-text.name",
-  "class": "section",
+  "class": "section ext-image-with-text",
   "disabled_on": {
     "groups": ["header", "footer"]
   },
