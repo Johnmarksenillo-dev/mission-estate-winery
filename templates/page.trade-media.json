@@ -734,8 +734,8 @@
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
         "section_id": "",
-        "title": "Domestic",
-        "heading_size": "h0",
+        "title": "DOMESTIC MARKET SALES REPRESENTATIVES",
+        "heading_size": "h1",
         "title_alignment": "left",
         "image_width": "full",
         "image_ratio": "adapt",
