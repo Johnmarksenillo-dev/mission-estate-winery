@@ -27,6 +27,24 @@
   #Banner-{{ section.id }}::after {
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
+
+  #Banner-{{ section.id }}.banner--section-linked .banner__section-link {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    display: block;
+  }
+
+  #Banner-{{ section.id }}.banner--section-linked .banner__content {
+    z-index: 3;
+    pointer-events: none;
+  }
+
+  #Banner-{{ section.id }}.banner--section-linked .banner__buttons,
+  #Banner-{{ section.id }}.banner--section-linked .banner__buttons a {
+    position: relative;
+    pointer-events: auto;
+  }
 {%- endstyle -%}
 
 {%- liquid
@@ -49,12 +67,25 @@
   if section.index == 1
     assign fetch_priority = 'high'
   endif
+
+  assign banner_link_label = blank
+  for block in section.blocks
+    if block.type == 'heading' and block.settings.heading != blank
+      assign banner_link_label = block.settings.heading | strip_html
+      break
+    endif
+  endfor
 -%}
 
 <div
   id="Banner-{{ section.id }}"
-  class="banner banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.image_height == 'adapt' and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
+  class="banner banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.image_height == 'adapt' and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if section.settings.enable_section_link and section.settings.section_link != blank %} banner--section-linked{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
 >
+  {%- if section.settings.enable_section_link and section.settings.section_link != blank -%}
+    <a href="{{ section.settings.section_link }}" class="banner__section-link">
+      <span class="visually-hidden">{{ banner_link_label | default: 'Image banner' | escape }}</span>
+    </a>
+  {%- endif -%}
   {%- if section.settings.image != blank -%}
     <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
       {%- liquid
@@ -184,6 +215,17 @@
       "type": "image_picker",
       "id": "image_2",
       "label": "t:sections.image-banner.settings.image_2.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_section_link",
+      "default": false,
+      "label": "Enable clickable section"
+    },
+    {
+      "type": "url",
+      "id": "section_link",
+      "label": "Section link"
     },
     {
       "type": "range",
