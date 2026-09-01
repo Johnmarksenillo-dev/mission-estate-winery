@@ -29,7 +29,13 @@
                   style="--animation-order: {{ forloop.index }};"
                 {% endif %}
               >
-                {{ block.settings.heading }}
+                {%- if block.settings.enable_heading_link and block.settings.heading_link != blank -%}
+                  <a href="{{ block.settings.heading_link }}">
+                    {{ block.settings.heading }}
+                  </a>
+                {%- else -%}
+                  {{ block.settings.heading }}
+                {%- endif -%}
               </h2>
             {%- when 'caption' -%}
               <p
@@ -238,6 +244,17 @@
           ],
           "default": "h1",
           "label": "t:sections.all.heading_size.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_heading_link",
+          "default": false,
+          "label": "Enable clickable heading"
+        },
+        {
+          "type": "url",
+          "id": "heading_link",
+          "label": "Heading link"
         }
       ]
     },
