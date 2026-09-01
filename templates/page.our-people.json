@@ -294,7 +294,9 @@
           "type": "heading",
           "settings": {
             "heading": "SALES TEAM",
-            "heading_size": "h1"
+            "heading_size": "h1",
+            "enable_heading_link": true,
+            "heading_link": "shopify://pages/trade-media"
           }
         },
         "text_anY8ig": {
@@ -345,7 +347,9 @@
           "type": "heading",
           "settings": {
             "heading": "Explore our wines",
-            "heading_size": "h1"
+            "heading_size": "h1",
+            "enable_heading_link": false,
+            "heading_link": ""
           }
         },
         "button_K3JmJf": {
