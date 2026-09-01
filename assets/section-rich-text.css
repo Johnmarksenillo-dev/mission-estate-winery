@@ -2,6 +2,10 @@
   z-index: 1;
 }
 
+.rich-text h2 a{
+  text-decoration: none;
+}
+
 .rich-text__wrapper {
   display: flex;
   justify-content: center;
