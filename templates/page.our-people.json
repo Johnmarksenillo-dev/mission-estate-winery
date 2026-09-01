@@ -23,10 +23,34 @@
         "slide_B9R7dh": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/HO_SLT_1_2026.jpg",
+            "image": "shopify://shop_images/florence-charvin-MISSION-portraits-DSCF3032__2.png",
             "video_url": "",
+            "mobile_video_url": "",
             "heading": "Our People",
             "heading_size": "hxl",
+            "mobile_heading_size": "inherit",
+            "subheading": "Our people are our foundation and our future.  Our values are rooted deeply in our culture and everything we do nurtures an environment for support and success.",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-d536de6d-9eba-4ca5-b804-ae369f8ab959",
+            "text_alignment_mobile": "left"
+          }
+        },
+        "slide_QeeYP6": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/HO_SLT_1_2026.jpg",
+            "video_url": "",
+            "mobile_video_url": "",
+            "heading": "Our People",
+            "heading_size": "hxl",
+            "mobile_heading_size": "inherit",
             "subheading": "Our people are our foundation and our future.  Our values are rooted deeply in our culture and everything we do nurtures an environment for support and success.",
             "button_label": "",
             "link": "",
@@ -41,12 +65,14 @@
         }
       },
       "block_order": [
-        "slide_B9R7dh"
+        "slide_B9R7dh",
+        "slide_QeeYP6"
       ],
       "name": "t:sections.slideshow.presets.name",
       "settings": {
         "layout": "full_bleed",
         "slide_height": "large",
+        "mobile_slide_height": "inherit",
         "slider_visual": "dots",
         "auto_rotate": false,
         "change_slides_speed": 5,
@@ -246,6 +272,10 @@
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
+        "desktop_layout": "grid",
+        "slider_controls_position": "bottom_with_pagination",
+        "slider_arrow_color": "#002855",
+        "slider_arrow_background": "rgba(0,0,0,0)",
         "column_alignment": "left",
         "background_style": "none",
         "button_label": "Button label",
