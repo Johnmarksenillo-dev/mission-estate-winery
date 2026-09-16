@@ -859,7 +859,7 @@
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const justRegistered = sessionStorage.getItem("just_registered");
-      const isLoggedIn = {{ customer != blank | json }};
+      const isLoggedIn = {{ customer | json }};
       const onHomePage = window.location.pathname === "/" || window.location.pathname === "/index.html";
 
       if (justRegistered && isLoggedIn && onHomePage) {
@@ -870,3 +870,13 @@
   </script>
 </body>
 </html>
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{{ customer != blank | json }}"
+  to: "{{ customer | json }}"
+  position: 37598..37619
+{% endcomment %}

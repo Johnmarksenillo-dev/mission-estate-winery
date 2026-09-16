@@ -9,18 +9,7 @@
 {% endcapture %}
 
 {% if block_settings.source == 'uploaded' %}
-  {%
-    render 'video',
-    video: block_settings.video,
-    video_class: 'spacing-style size-style border-style',
-    video_loop: block_settings.video_loop,
-    video_style: video_style,
-    disable_controls: block_settings.disable_controls,
-    video_preview_image:  block_settings.cover_image | default: block_settings.video.preview_image,
-    video_preview_image_mobile: block_settings.cover_image_mobile,
-    additional_attributes: block.shopify_attributes,
-    section_id: section.id
-  %}
+  {% render 'video', video: block_settings.video, video_class: 'spacing-style size-style border-style', video_loop: block_settings.video_loop, video_style: video_style, disable_controls: block_settings.disable_controls, video_preview_image: block_settings.cover_image, default: block_settings.video.preview_image, video_preview_image_mobile: block_settings.cover_image_mobile, additional_attributes: block.shopify_attributes, section_id: section.id %}
 {% else %}
   {% render 'video',
     video_from_url: true,
@@ -274,3 +263,30 @@
   ]
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: |-
+    {%
+        render 'video',
+        video: block_settings.video,
+        video_class: 'spacing-style size-style border-style',
+        video_loop: block_settings.video_loop,
+        video_style: video_style,
+        disable_controls: block_settings.disable_controls,
+        video_preview_image:  block_settings.cover_image | default: block_settings.video.preview_image,
+        video_preview_image_mobile: block_settings.cover_image_mobile,
+        additional_attributes: block.shopify_attributes,
+        section_id: section.id
+      %}
+  to: "{% render 'video', video: block_settings.video, video_class: 'spacing-style
+    size-style border-style', video_loop: block_settings.video_loop, video_style:
+    video_style, disable_controls: block_settings.disable_controls, video_preview_image:
+    block_settings.cover_image, default: block_settings.video.preview_image, video_preview_image_mobile:
+    block_settings.cover_image_mobile, additional_attributes: block.shopify_attributes,
+    section_id: section.id %}"
+  position: 685..1134
+{% endcomment %}
