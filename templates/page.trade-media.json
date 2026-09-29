@@ -65,7 +65,9 @@
           "type": "heading",
           "settings": {
             "heading": "TRADE PORTAL",
-            "heading_size": "h1"
+            "heading_size": "h1",
+            "enable_heading_link": false,
+            "heading_link": ""
           }
         },
         "text_d7DPVd": {
@@ -96,6 +98,7 @@
         "text_d7DPVd",
         "button_YQ8NWr"
       ],
+      "disabled": true,
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "section_id": "",
@@ -114,19 +117,30 @@
           "type": "heading",
           "settings": {
             "heading": "MEDIA ASSETS",
-            "heading_size": "h1"
+            "heading_size": "h1",
+            "enable_heading_link": false,
+            "heading_link": ""
           }
         },
         "text_68WBK4": {
           "type": "text",
           "settings": {
-            "text": "<p>For all media enquiries, high resolution photography or logo requests, please contact our marketing team.</p>",
+            "text": "<p>For all media enquiries, please contact our marketing team at <a href=\"mailto:info@missionestate.co.nz\" title=\"mailto:info@missionestate.co.nz\">info@missionestate.co.nz</a>.</p>",
+            "font_desk": 18,
+            "font_mob": 16
+          }
+        },
+        "text_trRyJY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For access to high resolution imagery, bottle shots and tasting notes please click this <a href=\"https://drive.google.com/drive/folders/1om9RN28_jyRmgfBS_XpsewRB_4tFJMrQ?usp=drive_link\" title=\"https://drive.google.com/drive/folders/1om9RN28_jyRmgfBS_XpsewRB_4tFJMrQ?usp=drive_link\">link</a>.</p>",
             "font_desk": 18,
             "font_mob": 16
           }
         },
         "button_X4hbBM": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "CONTACT US",
             "button_new_tab": false,
@@ -142,6 +156,7 @@
       "block_order": [
         "heading_XGq9Ti",
         "text_68WBK4",
+        "text_trRyJY",
         "button_X4hbBM"
       ],
       "name": "t:sections.rich-text.presets.name",
@@ -308,6 +323,7 @@
         "column_rmkKY7",
         "column_Yk7ewU"
       ],
+      "disabled": true,
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
         "section_id": "",
@@ -394,7 +410,9 @@
           "type": "heading",
           "settings": {
             "heading": "SALES TEAM",
-            "heading_size": "h1"
+            "heading_size": "h1",
+            "enable_heading_link": false,
+            "heading_link": ""
           }
         },
         "text_6BRc3P": {
@@ -429,6 +447,8 @@
       "settings": {
         "image": "shopify://shop_images/team.jpg",
         "image_2": "shopify://shop_images/Mission_Sales_Team.png",
+        "enable_section_link": false,
+        "section_link": "",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-center",
