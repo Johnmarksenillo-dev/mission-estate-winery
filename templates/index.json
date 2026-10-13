@@ -17,8 +17,10 @@
           "settings": {
             "image": "shopify://shop_images/Asset_19.png",
             "video_url": "https://cdn.shopify.com/videos/c/o/v/cbd08e49d57e4374aaf1e24c179be918.mp4",
+            "mobile_video_url": "",
             "heading": "CELEBRATING 175 YEARS",
             "heading_size": "hxxl",
+            "mobile_heading_size": "inherit",
             "subheading": "Crafted since 1851, poured for tomorrow. Mission Estate wine turns 175 years of French-rooted Hawke’s Bay mastery into your next unforgettable moment.",
             "button_label": "",
             "link": "",
@@ -35,9 +37,11 @@
       "block_order": [
         "slide_KxqpmG"
       ],
+      "disabled": true,
       "settings": {
         "layout": "full_bleed",
         "slide_height": "medium",
+        "mobile_slide_height": "inherit",
         "slider_visual": "dots",
         "auto_rotate": false,
         "change_slides_speed": 5,
@@ -290,6 +294,10 @@
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
+        "desktop_layout": "grid",
+        "slider_controls_position": "bottom_with_pagination",
+        "slider_arrow_color": "#002855",
+        "slider_arrow_background": "rgba(0,0,0,0)",
         "column_alignment": "left",
         "background_style": "none",
         "button_label": "",
