@@ -142,7 +142,7 @@
           "type": "button",
           "settings": {
             "button_label": "MISSION ESTATE WINERY EXPORT TRADE PRESENTER",
-            "button_new_tab": false,
+            "button_new_tab": true,
             "simple_link1": false,
             "button_link": "https://cdn.shopify.com/s/files/1/0738/5327/2315/files/Export_Trade_Presenter_2026.pdf?v=1774513181",
             "button_style_secondary": false,
