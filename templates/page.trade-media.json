@@ -125,7 +125,7 @@
         "text_68WBK4": {
           "type": "text",
           "settings": {
-            "text": "<p>For all media enquiries, please contact our marketing team at <a href=\"mailto:info@missionestate.co.nz\" title=\"mailto:info@missionestate.co.nz\">info@missionestate.co.nz</a>.</p>",
+            "text": "<p>For all media enquiries, please contact our marketing team at <a href=\"mailto:info@missionestate.co.nz\" target=\"_blank\" title=\"mailto:info@missionestate.co.nz\">info@missionestate.co.nz</a>.</p>",
             "font_desk": 18,
             "font_mob": 16
           }
@@ -133,7 +133,7 @@
         "text_trRyJY": {
           "type": "text",
           "settings": {
-            "text": "<p>For access to high resolution imagery, bottle shots and tasting notes please click this <a href=\"https://drive.google.com/drive/folders/1om9RN28_jyRmgfBS_XpsewRB_4tFJMrQ?usp=drive_link\" title=\"https://drive.google.com/drive/folders/1om9RN28_jyRmgfBS_XpsewRB_4tFJMrQ?usp=drive_link\">link</a>.</p>",
+            "text": "<p>For access to high resolution imagery, bottle shots and tasting notes please click this <a href=\"https://drive.google.com/drive/folders/1om9RN28_jyRmgfBS_XpsewRB_4tFJMrQ?usp=drive_link\" target=\"_blank\" title=\"https://drive.google.com/drive/folders/1om9RN28_jyRmgfBS_XpsewRB_4tFJMrQ?usp=drive_link\">link</a>.</p>",
             "font_desk": 18,
             "font_mob": 16
           }
