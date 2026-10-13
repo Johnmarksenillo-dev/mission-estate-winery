@@ -140,12 +140,11 @@
         },
         "button_X4hbBM": {
           "type": "button",
-          "disabled": true,
           "settings": {
-            "button_label": "CONTACT US",
+            "button_label": "MISSION ESTATE WINERY EXPORT TRADE PRESENTER",
             "button_new_tab": false,
             "simple_link1": false,
-            "button_link": "mailto:info@missionestate.co.nz",
+            "button_link": "https://cdn.shopify.com/s/files/1/0738/5327/2315/files/Export_Trade_Presenter_2026.pdf?v=1774513181",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -367,6 +366,7 @@
         },
         "button_3Fyy3L": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "MISSION ESTATE WINERY EXPORT TRADE PRESENTER",
             "link_target": "_self",
