@@ -150,13 +150,27 @@
             "button_link_2": "",
             "button_style_secondary_2": false
           }
+        },
+        "button_zjYcYw": {
+          "type": "button",
+          "settings": {
+            "button_label": "MISSION ESTATE WINERY DOMESTIC TRADE PRESENTER",
+            "button_new_tab": true,
+            "simple_link1": false,
+            "button_link": "https://cdn.shopify.com/s/files/1/0738/5327/2315/files/Mission_Domestic_Trade_Presenter_Screen_Spreads__Final2026.pdf?v=1792372789",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
         }
       },
       "block_order": [
         "heading_XGq9Ti",
         "text_68WBK4",
         "text_trRyJY",
-        "button_X4hbBM"
+        "button_X4hbBM",
+        "button_zjYcYw"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
