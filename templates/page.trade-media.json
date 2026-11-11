@@ -634,7 +634,7 @@
           "settings": {
             "image": "shopify://shop_images/florence-charvin-MISSION-Headshots-Emma-DSCF3670__2.jpg",
             "title": "",
-            "subtitle": "<strong> EMMA STARK - AUCLAND</strong>",
+            "subtitle": "<strong>&nbsp;EMMA STARK - AUCLAND</strong>",
             "text": "<p><strong>Sales & Marketing Coordinator</strong></p>",
             "simple_link1": false,
             "secondary_link1": false,
@@ -719,7 +719,7 @@
             "image": "shopify://shop_images/florence-charvin-MISSION-portraits-DSCF2975_copy2.jpg",
             "title": "",
             "subtitle": "<strong>RACHEL DENNIS – BAY OF PLENTY AND WAIKATO</strong>",
-            "text": "<p><a href=\"mailto:Rachel.dennis@missionestate.co.nz\"><span style=\"text-decoration:underline\">Rachel.dennis@missionestate.co.nz</span></a> | 021 540 679</p><p><br/>Rachel's longevity with Mission reflects her strong passion for the company and its wines. Her dedication and focus  on customer relationships have driven significant success,  both within her existing customer base and in generating new business.<br/></p>",
+            "text": "<p><a href=\"mailto:Rachel.dennis@missionestate.co.nz\"><span style=\"text-decoration:underline\">Rachel.dennis@missionestate.co.nz</span></a> | 021 540 679</p><p><br/>Rachel's longevity with Mission reflects her strong passion for the company and its wines. Her dedication and focus&nbsp;&nbsp;on customer relationships have driven significant success,&nbsp;&nbsp;both within her existing customer base and in generating new business.<br/></p>",
             "simple_link1": false,
             "secondary_link1": false,
             "button_1_url": "",
@@ -740,7 +740,28 @@
             "image": "shopify://shop_images/39c5277c-4b70-454b-8736-8dcbac583703.jpg",
             "title": "",
             "subtitle": "<strong>JOANNA DEMETRIOU - TARANAKI</strong>",
-            "text": "<p><a href=\"mailto:Joanna.demetriou@missionestate.co.nz\"><span style=\"text-decoration:underline\">Joanna.demetriou@missionestate.co.nz</span></a> | 021 492 204<br/><br/>From the home of the winery on the East Coast Joanna enjoys spreading the joy of our large variety of wines to the West Coast of Taranaki. Being with the company over a decade she enjoys sharing knowledge, award success & new exciting products</p>",
+            "text": "<p><a href=\"mailto:Joanna.demetriou@missionestate.co.nz\"><span style=\"text-decoration:underline\">Joanna.demetriou@missionestate.co.nz</span></a> | 021 492 204<br/><br/>From the home of the winery on the East Coast Joanna enjoys spreading the joy of our large variety of wines to the West Coast of Taranaki.&nbsp;Being with the company over a decade she enjoys sharing knowledge, award success & new exciting products</p>",
+            "simple_link1": false,
+            "secondary_link1": false,
+            "button_1_url": "",
+            "button_1_text": "",
+            "button1_bg_color": "#002855",
+            "button1_color": "#ffffff",
+            "primary_link2": false,
+            "button_2_url": "",
+            "button_class": "",
+            "button_2_text": "",
+            "button2_bg_color": "rgba(0,0,0,0)",
+            "button2_color": "#002855"
+          }
+        },
+        "column_8iyUn3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/florence-charvin-Catherine.jpg",
+            "title": "",
+            "subtitle": "<strong>CATHERINE HUNT - SOUTH OF FRANCE</strong>",
+            "text": "<p><a href=\"mailto:catherine.hunt@missionestate.co.nz\" title=\"mailto:catherine.hunt@missionestate.co.nz\">catherine.hunt@missionestate.co.nz</a> | 021 540 609<br/><br/>Catherine's love of good wine began while working in restaurants in the South of France, the start of a strong hospitality background. She has since built a varied career across sales, marketing, events, and business management. Today, she draws on this broad skill set to support existing and new customers, whilst growing partnerships and adding value. Catherine is supportive and endlessly enthusiastic, committed to helping her customers succeed with strong sell-through and her excellent customer service.<br/><br/></p>",
             "simple_link1": false,
             "secondary_link1": false,
             "button_1_url": "",
@@ -763,7 +784,8 @@
         "column_jKKGkC",
         "column_6XJRrG",
         "column_WAh6n7",
-        "column_UxYEpK"
+        "column_UxYEpK",
+        "column_8iyUn3"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
@@ -773,7 +795,7 @@
         "title_alignment": "left",
         "image_width": "full",
         "image_ratio": "adapt",
-        "columns_desktop": 5,
+        "columns_desktop": 3,
         "desktop_layout": "grid",
         "slider_controls_position": "bottom_with_pagination",
         "slider_arrow_color": "#002855",
